@@ -1,3 +1,6 @@
+"""
+This is a docstring. They are used to detail files at a high level.
+"""
 # These lines that start with a pound sign are comments. They do nothing to the program
 # except provide instructions, personal notes, or anything that you want really!
 
