@@ -1,0 +1,1 @@
+# how to write functions and what is scope
