@@ -6,6 +6,8 @@ This is an introduction to string manipulation in Python
 # lets set the user inputs equal to variables, then use them appropriately
 first_name = input("What is your first name?: ")
 
+# show a sloppy input below and dont pass it an argument to show that its optional for some functions
+
 last_name = input("What is your last name?: ")
 
 # since the values you input are set to variables, we can concatenate the strings

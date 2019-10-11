@@ -6,4 +6,4 @@ Task- variables and types
 
 # TODO: set a float equal to a variable, then print that float
 
-# TODO: use the function `type(variable-here)` to print examples of the types we have worked
+# TODO: use the function `type([variable-here])` to print examples of the types we have worked
