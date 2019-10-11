@@ -2,20 +2,21 @@
 Indexing and range function for lists, dictionaries, strings and numbers
 """
 
-# range for numbers is a function that includes zero but not the number in the range function
+# range values for numbers is a function that includes zero but not the number in the range function
+# the below for loop will only print numbers zero through 8, not including 9
 for num in range(9):
     print(num)
 
 # if you put in an initial argument, that number is included in the range. If you just put one
 # number, it starts with zero.
-for num in range(3,11):
+for num in range(3, 11):
     print(num)
 
 # if you want to access a part of a string, you can get a portion of the string with indexing
 beatles = "You say goodbye, and I say hello!"
-print(beatles[3:11])
+print("letters from the beatle song: " + beatles[3:11])
 
-# index lists wth for loops
+# index lists with for loops
 grades = [72, 87, 99, 45, 70]
 
 # when indexing lists, remember that the first position starts with zero
@@ -34,8 +35,13 @@ for num in grades:
 # the dictionary using dictionary[key] to find that key's value
 grades = {"Chris": 65, "Deshaun": 77, "Mariah": 88, "Paula": 94}
 
+# Here is how you access values in a dictioary- you pass it the key!
+print("Chris got a " + str(grades["Chris"]))
+
+# When you use a for loop with a dictionary, the variable gets set to every key item, NOT the value :)
 for student in grades:
     print(student + " got a " + str(grades[student]) + " score on their comp sci exam")
 
 # lets find out how many students had scores!
+# we do this by using the len() function with grades to print us the length of the grades dictionary
 print("Number of students: " + str(len(grades)))

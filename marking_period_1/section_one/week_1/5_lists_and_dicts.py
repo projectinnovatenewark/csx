@@ -2,8 +2,6 @@
 Here we will cover lists and dicts
 """
 
-# lists and dicts and why they're different
-
 # lists are a grouping of values
 class_list = ["Andy", "Bronny", "Carlos", "Denisa", "Enrique"]
 
@@ -12,5 +10,9 @@ class_list = ["Andy", "Bronny", "Carlos", "Denisa", "Enrique"]
 # the words and values represent the definitions
 grades_dict = {"Ang": 87, "Bronny": 95, "Carlos": 75, "Denisa": 55, "Enrique": 100}
 
-print("class list: " + class_list[0])
-print("bronny's grade: " + str(grades_dict["Bronny"]))
+# below is an example of indexing. the first item in any list has an index of ZERO
+# and the next item is 1, followed by 2, etc.
+print("The first student in the class class list is " + class_list[0])
+
+# in dictionaries, however, values can only be accessed by their key
+print("Bronny's grade: " + str(grades_dict["Bronny"]))
