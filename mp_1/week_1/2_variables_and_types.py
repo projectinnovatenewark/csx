@@ -27,8 +27,17 @@ String1 = "Wonderful!"
 # MULTIPLE VARIABLES IN ONE VARIABLE?! YEP!
 big_string = string1 + string2
 
+# Setting multiple variables in one line of code? Also yep. Just make sure you use your commas wisely!
+var1, var2, var3 = 1, 2, 3
+print(var1, var2, var3)
+
+# Booleans are true or false values. The first letter gets capitalized in the word
+boolean = False
+boolean2 = True
+
 # print is an example of a function. a function is a block of code that runs when it is called upon.
-# lets call the print function and pass it the variables to print them 
+# the items you place in the parentheses are called arguments
+# lets call the print function and pass arguments to print them 
 print("printing things, woohoo!!")
 print(2387938457)
 print(number1)
@@ -37,4 +46,6 @@ print(string1)
 # You can also "concatenate" strings together below and print multiple strings
 print(string1 + " i am python number " + string3 + ", hear me roar!!")
 
+# notice how the spacing is off in the output of big_string?
+# thats because variables dont account for spaces! put an extra space in the string to make it neat
 print(big_string)
