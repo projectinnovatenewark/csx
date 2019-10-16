@@ -31,6 +31,7 @@ print(addition, subtraction, multiplication)
 # but they are typed in all caps and don't change! Variables can be manipulated and change,
 # whereas constants must remain the same
 # for example, the corporate tax rate is 20%. Hence, that would be an example of a constant
+# you will also see for company profit we use the int() function, which converts items to the type of integer
 company_profit = int(input("How much money did your company make this year?: "))
 CORPORATE_TAX_RATE = .20
 taxes_paid = company_profit * CORPORATE_TAX_RATE

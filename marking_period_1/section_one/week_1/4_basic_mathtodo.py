@@ -14,4 +14,4 @@ Lets do a basic math problem
 
 # print out what each shareholder will receive from the profit
 
-# extra credit: print the remainder of 112 divided by 3
+# extra credit: print the remainder of the total profit divided by 6

@@ -12,3 +12,8 @@ last_name = input("What is your last name?: ")
 
 # since the values you input are set to variables, we can concatenate the strings
 print("My first name is " + first_name + " and my last name is " + last_name)
+
+# go back to the end of the input variables we've set and add .title() to the end of the line
+# the title() function capitalizes a variable
+# there are also casing functions for upper and lower cases, which are used the same as title
+# they are .upper() and .lower()
