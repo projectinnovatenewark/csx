@@ -2,6 +2,11 @@
 Indexing and range function for lists, dictionaries, strings and numbers
 """
 
+# for loops iterate through an item that is passed to it. how it iterates depends on the item you pass it.
+# for ranges, the variable you set will be equal to the number in the range, starting with the smallest number
+# for lists, the variable will iterate through each item in the list, starting with the first item
+# for dictionaries, the variable will represent each iterate through each key, starting with the first key
+
 # range values for numbers is a function that includes zero but not the number in the range function
 # the below for loop will only print numbers zero through 8, not including 9
 for num in range(9):
@@ -30,9 +35,9 @@ print("The first element in the list is " + str(grades[0]))
 for num in grades:
     print("Student number " + str(grades.index(num) + 1) + "'s grade is " + str(num))
 
-# lets make the reading of grades easier by attaching them to the name of the student that got the grade
-# when you use a for loop, it will return each key in the dictionary. You can access the value by indexing
-# the dictionary using dictionary[key] to find that key's value
+# lets make reading grades easier by attaching them to the name of the student that got the grade
+# when you use a for loop, it will return each key in the dictionary. You can access the value
+# by indexing the dictionary using dictionary[key] to find that key's value
 grades = {"Chris": 65, "Deshaun": 77, "Mariah": 88, "Paula": 94}
 
 # Here is how you access values in a dictioary- you pass it the key!
