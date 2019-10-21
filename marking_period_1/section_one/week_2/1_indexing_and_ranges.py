@@ -35,9 +35,9 @@ print("The first element in the list is " + str(grades[0]))
 for num in grades:
     print("Student number " + str(grades.index(num) + 1) + "'s grade is " + str(num))
 
-# lets make the reading of grades easier by attaching them to the name of the student that got the grade
-# when you use a for loop, it will return each key in the dictionary. You can access the value by indexing
-# the dictionary using dictionary[key] to find that key's value
+# lets make reading grades easier by attaching them to the name of the student that got the grade
+# when you use a for loop, it will return each key in the dictionary. You can access the value
+# by indexing the dictionary using dictionary[key] to find that key's value
 grades = {"Chris": 65, "Deshaun": 77, "Mariah": 88, "Paula": 94}
 
 # Here is how you access values in a dictioary- you pass it the key!
