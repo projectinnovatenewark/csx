@@ -22,6 +22,8 @@ print(addition, subtraction, multiplication, division, exponents, remainder)
 # when setting multiple variables, you can also set them like this
 addition, subtraction, multiplication = 4 + 4, 20 - 6, 2 * 2
 
+##############################################################################################
+
 # notice in the variables above, we used the same names. Variables can change and be reassigned.
 # Let's reprint the variables from above and see if they change to our new mathematical operations
 print("Math Section Two")

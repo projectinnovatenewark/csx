@@ -1,5 +1,5 @@
 """
-if, else, elif, while, and try/except/else with error handling
+if, else, elif, while loops
 """
 
 num = 3
@@ -21,6 +21,16 @@ if num % 2 == 0:
 else:
     print(num, "is an odd number.")
 
-# lets take 12 and subt
+# lets take 12 and add each number between it and zero to a variable (i.e. 12 + 11 + 10.....0)
 countdown = 12
 countdown_sum = 0
+
+while countdown > 0:
+    countdown_sum += countdown
+    countdown -= 1
+    print("countdown equals", countdown)
+    print("countdown sum equals", countdown_sum)
+
+print("countdown now equals", countdown)
+
+print(countdown_sum)
