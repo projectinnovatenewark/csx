@@ -62,3 +62,12 @@ week_three_nfl_standings = {
         },
     }
 }
+
+def first_place_teams:
+    #find the first place team in each division and print out their record in a readable way
+
+def highest_scoring_team:
+    #find the highest score of a team in each conference
+
+def tied_a_game:
+    # there was a tie in one game. find the team and print the score
