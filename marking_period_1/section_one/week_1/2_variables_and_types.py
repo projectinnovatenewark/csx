@@ -49,6 +49,11 @@ boolean2 = True
 
 ##############################################################################################
 
+# if you want to set a variable to an empty value, use the None type
+variable_for_later = None
+
+##############################################################################################
+
 # print is an example of a function. a function is a block of code that runs when it is called upon.
 # the items you place in the parentheses are called arguments
 # lets call the print function and pass arguments to print them
