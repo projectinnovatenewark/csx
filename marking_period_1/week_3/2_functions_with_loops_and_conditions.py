@@ -3,10 +3,8 @@ Solidify learning of functions and combine loops/conditions within them
 """
 
 #  Imagine it's 3 games into the NFL season. Theres two conferences, each with four divisions.
-#  Each division has four teams. Each team has played three games. Each game will have a "W" or "L"
+#  Each division has four teams. Each team has played three games.
 #  The first score will always be the listed team's score.
-# TODO: Find the average score of each NFC East team and print out their highest/lowest scores
-# TODO: then print out each team's name followed by their average score, lowest and highest score
 
 week_three_nfl_standings = {
     "AFC": {
@@ -63,11 +61,18 @@ week_three_nfl_standings = {
     }
 }
 
+def team_statistics:
+    # TODO: print out each team's name followed by their average score, lowest and highest score
+
 def first_place_teams:
-    #find the first place team in each division and print out their record in a readable way
+    # TODO: find the first place team in each division and print out their record in a readable way
 
 def highest_scoring_team:
-    #find the highest score of a team in each conference
+    # TODO: find the highest score of a team in each conference
+    # TODO: i.e. AFC highest scoring team is the Baltimore Ravens and NFC highest scoring team is the New York Giants
 
 def tied_a_game:
-    # there was a tie in one game. find the team and print the score
+    # TODO: there was a tie in one game. find the team and print the score
+
+def division_leader(division):
+    # TODO: find the team in the lead of the division provided (AFC or NFC)

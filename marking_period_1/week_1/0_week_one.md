@@ -21,5 +21,4 @@ We have some preferences here that we want to make clear to students.
     What matters is that you learn the fundamentals of programming- and since Python is one of the most readable and popular
     programming languages of all, that's what we're going to be using in this class!
 
-4)  To run a program in Python 3, which is what you're using, go to the files folder in the terminal (i.e. cd python_work).
-    Then, enter the following command into the terminal `python3 name_of_file.py`.
+4)  To run a program in Python 3 using VS Code, navigate to the top right of your VS Code window when in a Python file and click the green arrow which is titled "run python file in your terminal"

@@ -21,7 +21,7 @@ print("The first student in the class class list is " + CLASS_LIST[0])
 # in dictionaries, however, values can only be accessed by their key
 print("Bronny's grade: " + str(GRADES_DICT["Bronny"]))
 
-print("Denisa's score is " + str(GRADES_DICT["Denisa"]))
+print("Denisa's grade: " + str(GRADES_DICT["Denisa"]))
 
 ##############################################################################################
 
