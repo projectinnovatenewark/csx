@@ -10,7 +10,7 @@ CLASS_LIST = ["Andy", "Bronny", "Carlos", "Denisa", "Enrique"]
 # dictionaries are similar, except they have keys which have values
 # similarly to how a dictionary has words with definitions, the keys represent
 # the words and values represent the definitions
-GRADES_DICT = {"Ang": 87, "Bronny": 95, "Carlos": 75, "Denisa": 55, "Enrique": 100}
+GRADES_DICT = {"Andy": 87, "Bronny": 95, "Carlos": 75, "Denisa": 55, "Enrique": 100}
 
 ##############################################################################################
 
@@ -21,7 +21,7 @@ print("The first student in the class class list is " + CLASS_LIST[0])
 # in dictionaries, however, values can only be accessed by their key
 print("Bronny's grade: " + str(GRADES_DICT["Bronny"]))
 
-print("Denisa's score is " + str(GRADES_DICT["Denisa"]))
+print("Denisa's grade: " + str(GRADES_DICT["Denisa"]))
 
 ##############################################################################################
 

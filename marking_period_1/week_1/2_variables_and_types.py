@@ -28,7 +28,7 @@ string3 = "369"
 
 # naming variables is important!!! this has a capital "S" in string, so its different
 # than the previous variable of string1
-String1 = "Wonderful!"
+string1 = "Wonderful!"
 
 ##############################################################################################
 
@@ -46,6 +46,11 @@ print(var1, var2, var3)
 # Booleans are true or false values. The first letter gets capitalized in the word
 boolean = False
 boolean2 = True
+
+##############################################################################################
+
+# if you want to set a variable to an empty value, use the None type
+variable_for_later = None
 
 ##############################################################################################
 
