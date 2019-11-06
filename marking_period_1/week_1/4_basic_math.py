@@ -49,3 +49,22 @@ summation = 3 + 3.0
 # sign below and .2f, you specify that the variable "summation", which follows the string, will have two
 # decimal points.
 print("The sum of x and y is %.2f" %summation)
+
+number_list = [1, 2, 3, 4, 5, 6]
+# min finds the minimum of a set of numbers
+print(min(number_list))
+
+# max finds the max of a set of numbers
+print(max(number_list))
+
+# abs finds the absolute value
+print(abs(150))
+
+# the absolute value of a negative number is the positive of that number
+print(abs(-43))
+
+# sum adds numbers together if you're either
+#   a) too lazy to put plus signs between everything
+#   b) have a super long list that makes your head spin
+#   c) both of the above
+print(sum(number_list))

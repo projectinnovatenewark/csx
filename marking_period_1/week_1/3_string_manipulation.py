@@ -31,4 +31,35 @@ print("Hello, my name is", var_one, var_two)
 # input an item into a string
 numbers = [3, 6, 9]
 song_lyric = "{0} {1} {2}, transit line".format(numbers[0], numbers[1], numbers[2])
+
 print(song_lyric)
+
+# this would produce the same output as the line above. you can set the variable to be printed inside 
+# the format function allows you to set the variable inputs in the function
+song_lyric = "{first} {second} {third}, transit line".format(first="three", second="six", third="nine")
+
+print(song_lyric)
+
+# the join function combines multiple strings into one from a list
+list_to_join = ["combine", "these", "words", "into", "one", "string"]
+print(",".join(list_to_join))
+
+# split seperates a string into a list. the split occurs in the character that you specify
+# i.e. a period as shown below splits the string every time a period is shown
+string_to_listify = "combine, these, words, into, one, string"
+print(string_to_listify.split(","))
+
+# the replace function exchanges one input for another
+# lets make this polite statement a little less formal
+print("Hey, how are you?".replace("Hey", "Sup"))
+
+
+# startswith returns a boolean value (true/false) on whether or not a string begins with a certain
+# set of characters. Lets check if someone is saying hello in the following two statements
+print("Hello, I am saying hi to someone".startswith("Hello"))
+print("Whats good?".startswith("Hello"))
+
+# endswith returns a boolean value (true/false) on whether or not a string ends with a certain
+# set of characters. Lets check if these statements are questions
+print("Am I a question?".endswith("?"))
+print("I'm not a question.".endswith("?"))
