@@ -61,17 +61,17 @@ week_three_nfl_standings = {
     }
 }
 
-def team_statistics:
+def team_statistics():
     # TODO: print out each team's name followed by their average score, lowest and highest score
 
-def first_place_teams:
+def first_place_teams():
     # TODO: find the first place team in each division and print out their record in a readable way
 
-def highest_scoring_team:
+def highest_scoring_team():
     # TODO: find the highest score of a team in each conference
     # TODO: i.e. AFC highest scoring team is the Baltimore Ravens and NFC highest scoring team is the New York Giants
 
-def tied_a_game:
+def tied_a_game():
     # TODO: there was a tie in one game. find the team and print the score
 
 def division_leader(division):
