@@ -21,6 +21,8 @@ def dictionary_reader(dictionary):
 # now that we are at the leftmost part of the page, we have exited the scope of the function above
 dictionary_reader(EXAMPLE_DICTIONARY_TWO)
 
+##################################################################################################
+
 # below are examples by using variables & the timing of a function call to portray scope
 # here we call s after the function is called, which will return a NameError
 def func():
@@ -28,18 +30,24 @@ def func():
 func()
 s = "I love Paris in the summer!"
 
+##################################################################################################
+
 # here, since the variable is declared before the function is called, it will return the s2 value
-# def func2():
-#     print(s2)
-# s2 = "I love Paris in the summer!"
-# func2()
+def func2():
+    print(s2)
+s2 = "I love Paris in the summer!"
+func2()
+
+##################################################################################################
 
 # here, the variable in the function is referenced within the function's scope, therefore it will
 # print the "I love London" statement
-# def func3(): 
-#     s3 = "I love London!"
-#     print(s3) 
+def func3(): 
+    s3 = "I love London!"
+    print(s3) 
 
-# s3 = "I love Paris!"
-# func3()
-# print(s3)
+##################################################################################################
+
+s3 = "I love Paris!"
+func3()
+print(s3)

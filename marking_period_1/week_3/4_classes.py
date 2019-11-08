@@ -16,34 +16,38 @@ print("e.kind", e.kind)                  # shared by all Cats
 print("d.name", d.name)                  # unique to d
 print("e.name", e.name)                  # unique to e
 
-# class Cat:
+##################################################################################################
 
-#     tricks = []  # mistaken use of a class variable shared by all Cats due to scope
+class Cat:
 
-#     def __init__(self, name):
-#         self.name = name
+    tricks = []  # mistaken use of a class variable shared by all Cats due to scope
 
-#     def add_trick(self, trick):
-#         self.tricks.append(trick)
+    def __init__(self, name):
+        self.name = name
 
-# d = Cat('Fido')
-# e = Cat('Bella')
-# d.add_trick('hit yarn')
-# e.add_trick('attack bird')
-# d.tricks  # unexpectedly shared by all dogs
+    def add_trick(self, trick):
+        self.tricks.append(trick)
 
-# class Cat:
+d = Cat('Fido')
+e = Cat('Bella')
+d.add_trick('hit yarn')
+e.add_trick('attack bird')
+d.tricks  # unexpectedly shared by all dogs
 
-#     def __init__(self, name):
-#         self.name = name
-#         self.tricks = []  # creates a new empty list for each Cat
+##################################################################################################
 
-#     def add_trick(self, trick):
-#         self.tricks.append(trick)
+class Cat:
 
-# d = Cat('Fido')
-# e = Cat('Bella')
-# d.add_trick('hit yarn')
-# e.add_trick('attak bird')
-# d.tricks
-# e.tricks
+    def __init__(self, name):
+        self.name = name
+        self.tricks = []  # creates a new empty list for each Cat
+
+    def add_trick(self, trick):
+        self.tricks.append(trick)
+
+d = Cat('Fido')
+e = Cat('Bella')
+d.add_trick('hit yarn')
+e.add_trick('attak bird')
+d.tricks
+e.tricks

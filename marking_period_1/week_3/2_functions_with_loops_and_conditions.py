@@ -1,78 +1,84 @@
 """
-Solidify learning of functions and combine loops/conditions within them
+Here we will show a couple of examples of functions that use loops and conditionals
 """
 
-#  Imagine it's 3 games into the NFL season. Theres two conferences, each with four divisions.
-#  Each division has four teams. Each team has played three games.
-#  The first score will always be the listed team's score.
+unsorted_num_list = [3456, 43659, 123, 9029, 750, 5, 100000]
 
-week_three_nfl_standings = {
-    "AFC": {
-        "East": {
-            "Buffalo Bills": [[12, 20], [23, 30], [30, 10]],
-            "Miami Dolphins": [[40, 42], [40, 30], [15, 19]],
-            "New England Patriots": [[10, 10], [50, 10], [42, 30]],
-            "New York Jets": [[10, 30], [20, 40], [15, 50]]
-        },
-        "South": {
-            "Houston Texans": [[32, 45], [25, 6], [30, 40]],
-            "Indianapolis Colts": [[40, 20], [11, 18], [15, 19]],
-            "Jacksonville Jaguars": [[20, 3], [25, 20], [27, 45]],
-            "Tennessee Titans": [[34, 6], [3, 10], [29, 34]]
-        },
-        "North": {
-            "Baltimore Ravens": [[33, 10], [40, 20], [15, 12]],
-            "Cincinnati Bengals": [[25, 28], [25, 20], [40, 20]],
-            "Cleveland Browns": [[29, 34], [30, 22], [25, 34]],
-            "Pittsburgh Steelers": [[15, 19], [10, 3], [25, 28]]
-        },
-        "West": {
-            "Denver Broncos": [[15, 19], [10, 6], [40, 20]],
-            "Kansas City Chiefs": [[40, 20], [11, 18], [15, 19]],
-            "Oakland Raiders": [[25, 28], [6, 18], [10, 18]],
-            "San Diego Chargers": [[29, 34], [30, 22], [25, 34]]
-        }
-    },
-    "NFC": {
-        "East": {
-            "Dallas Cowboys": [[15, 19], [10, 3], [25, 28]],
-            "New York Giants": [[32, 45], [25, 6], [30, 40]],
-            "Philadelphia Eagles": [[40, 20], [11, 18], [15, 19]],
-            "Washington Redskins": [[20, 3], [25, 20], [27, 45]]
-        },
-        "South": {
-            "Atlanta Falcons": [[29, 34], [30, 42], [40, 53]],
-            "Carolina Panthers": [[20, 3], [25, 20], [27, 45]],
-            "New Orleans Saints": [[32, 45], [25, 6], [30, 40]],
-            "Tampa Bay Buccaneers": [[15, 19], [10, 3], [25, 28]]
-        },
-        "North": {
-            "Chicago Bears": [[29, 34], [30, 42], [40, 53]],
-            "Detroit Lions": [[40, 20], [11, 18], [15, 19]],
-            "Green Bay Packers": [[25, 28], [25, 20], [40, 20]],
-            "Minnesota Vikings": [[29, 34], [30, 22], [25, 34]]
-        },
-        "West": {
-            "Arizona Cardinals": [[20, 3], [25, 20], [27, 45]],
-            "St. Louis Rams": [[25, 28], [25, 20], [40, 20]],
-            "San Francisco 49ers": [[10, 3], [21, 28], [29, 34]],
-            "Seattle Seahawks": [[29, 34], [30, 42], [40, 53]]
-        },
-    }
-}
+# theres a million ways to get it- choose one
 
-def team_statistics():
-    # TODO: print out each team's name followed by their average score, lowest and highest score
+# music lyrics aside, theres so many ways to solve the same problem in coding
+# we will start off real complex, then break it down to a built in function
 
-def first_place_teams():
-    # TODO: find the first place team in each division and print out their record in a readable way
+def sort_a_list(data_list):
+    new_list = []
 
-def highest_scoring_team():
-    # TODO: find the highest score of a team in each conference
-    # TODO: i.e. AFC highest scoring team is the Baltimore Ravens and NFC highest scoring team is the New York Giants
+    while data_list:
+        minimum = data_list[0]  # arbitrary number in list
+        for x in data_list: 
+            if x < minimum:
+                minimum = x
+        new_list.append(minimum)
+        data_list.remove(minimum)
 
-def tied_a_game():
-    # TODO: there was a tie in one game. find the team and print the score
+    print(new_list)
 
-def division_leader(division):
-    # TODO: find the team in the lead of the division provided (AFC or NFC)
+sort_a_list(unsorted_num_list)
+
+##################################################################################################
+
+# this function does the same thing as the function above
+# an important lesson about becoming a programmer is that you need to understand
+# underlying concepts. There will always be a tool for you to automatically accomplish
+# a task, but what will make you a better programmer is knowing how those tools work
+print(sorted(unsorted_num_list))
+
+# lets try a for loop within a for loop
+
+adjective = ["red", "big", "tasty"]
+fruits = ["cherry", "coconut", "mango"]
+
+for word in adjective:
+    for fruit in fruits:
+        print(word, fruit)
+
+##################################################################################################
+
+# below you will see your first sorting algorithm. there are many varieties of sorting algorithms
+num_list_unsorted = [8,2,1,3,5,4]
+
+def insertionSort(num_list):
+    """the sorting algorithm starts with the first item in a list and sorts it accordingly onward"""
+    # for every element in our array
+    for index in range(1, len(num_list)):
+        current = num_list[index]
+        position = index
+
+        while position > 0 and num_list[position-1] > current:
+            print("Swapped {} for {}".format(num_list[position], num_list[position-1]))
+            num_list[position] = num_list[position-1]
+            print(num_list)
+            position -= 1
+
+        num_list[position] = current
+
+    return num_list
+
+print(insertionSort(num_list_unsorted))
+
+##################################################################################################
+
+# below we want to iterate through a list of lists using a nested for loop,
+# or in simpler terms a for loop within a for loop. this is very common
+# in data structures and you will master this in no time!
+
+my_movies = [
+    ['How I Met Your Mother', 'Friends', 'Silicon Valley'],
+    ['Family Guy', 'South Park', 'Rick and Morty'],
+    ['Breaking Bad', 'Game of Thrones', 'The Wire']
+]
+
+for sublist in my_movies:
+    for movie_name in sublist:
+        char_num = len(movie_name)
+        print("The title " + movie_name + " is " + str(char_num) + " characters long.")
+        
