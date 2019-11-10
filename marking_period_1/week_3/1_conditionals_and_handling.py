@@ -11,8 +11,10 @@ elif num < 0:
 else:
     print(num, "is a zero value.")
 
-# notice how we used the same variable of "num" but reassigned its value- we can
-# do that because it is a variable and NOT a constant
+##################################################################################################
+
+# notice how we used the same variable of "num" from the above function but reassigned its value..
+# we can do that because it is a variable and NOT a constant
 
 num = 533
 
@@ -20,6 +22,8 @@ if num % 2 == 0:
     print(num, "is an even number.")
 else:
     print(num, "is an odd number.")
+
+##################################################################################################
 
 # lets take 12 and add each number between it and zero to a variable (i.e. 12 + 11 + 10.....0)
 countdown = 12
@@ -35,19 +39,27 @@ print("countdown now equals", countdown)
 
 print(countdown_sum)
 
+##################################################################################################
+
 number_list = [3, 15, 31, 1, 11, 107]
 # all is helpful when you want to assess every value of a set
 # lets check if all the numbers are odd
 if all(numbers % 2 != 0 for numbers in number_list):
     print("all the numbers are odd")
 
+##################################################################################################
+
 # any is helpful when you want to see if a single value (or more!) satisfies your conditional
 if any(numbers % 2 == 0 for numbers in number_list):
     print("there is at least one even number")
 
+##################################################################################################
+
 # enumerate gives you the index value and actual value of values in a list
 for numbers in enumerate(number_list):
     print(numbers)
+
+##################################################################################################
 
 # switch statements are common in other languages. What a switch statement does is take a
 # case and apply it. Say you want to know what the name of the day is by it's place in the

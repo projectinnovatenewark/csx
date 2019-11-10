@@ -15,7 +15,14 @@ print("My first name is " + first_name + " and my last name is " + last_name)
 print(first_name.title()) # this title-izes the first name
 
 # there are also casing functions for upper and lower cases, which are used the same as title
-# they are .upper() and .lower()
+# they are .upper() and .lower(). we will explore these below
+mixed_string = "frAnCiNe"
+
+print(mixed_string.lower())
+
+print(mixed_string.upper())
+
+print(mixed_string.title())
 
 # there are many methods of string formatting including the format() function and using
 # percent signs to include numbers. here are brief examples of each
@@ -52,7 +59,6 @@ print(string_to_listify.split(","))
 # the replace function exchanges one input for another
 # lets make this polite statement a little less formal
 print("Hey, how are you?".replace("Hey", "Sup"))
-
 
 # startswith returns a boolean value (true/false) on whether or not a string begins with a certain
 # set of characters. Lets check if someone is saying hello in the following two statements

@@ -14,6 +14,8 @@ while unconfirmed_users:
     print("Verifying username " + current_user.title())
     confirmed_users.append(current_user)
 
+##################################################################################################
+
 # TODO: display all the confirmed users with a for loop
 print('\nThe following users have been confirmed:')
 for user in confirmed_users:

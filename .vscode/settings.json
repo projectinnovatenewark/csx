@@ -1,0 +1,6 @@
+{
+    "python.linting.enabled": true,
+    "python.linting.lintOnSave": true,
+    "files.autoSave": "onFocusChange",
+    "python.linting.pylintArgs": ["--max-line-length=100"]
+}

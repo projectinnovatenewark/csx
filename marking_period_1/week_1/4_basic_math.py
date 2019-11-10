@@ -63,6 +63,9 @@ print(abs(150))
 # the absolute value of a negative number is the positive of that number
 print(abs(-43))
 
+# the absolute value of a float is the positive of that number including the decimal values
+print(abs(-43.5))
+
 # sum adds numbers together if you're either
 #   a) too lazy to put plus signs between everything
 #   b) have a super long list that makes your head spin
