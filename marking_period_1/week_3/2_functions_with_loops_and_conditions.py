@@ -46,7 +46,7 @@ for word in adjective:
 # below you will see your first sorting algorithm. there are many varieties of sorting algorithms
 num_list_unsorted = [8,2,1,3,5,4]
 
-def insertionSort(num_list):
+def insertion_sort(num_list):
     """the sorting algorithm starts with the first item in a list and sorts it accordingly onward"""
     # for every element in our array
     for index in range(1, len(num_list)):
@@ -63,7 +63,7 @@ def insertionSort(num_list):
 
     return num_list
 
-print(insertionSort(num_list_unsorted))
+print(insertion_sort(num_list_unsorted))
 
 ##################################################################################################
 

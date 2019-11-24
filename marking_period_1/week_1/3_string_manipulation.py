@@ -10,9 +10,17 @@ last_name = input("What is your last name?: ")
 # since the values you input are set to variables, we can concatenate the strings
 print("My first name is " + first_name + " and my last name is " + last_name)
 
+# you can also seperate variables in concatenation with commas
+var_one = "scooby"
+var_two = "doo"
+print("Hello, my name is", var_one, var_two)
+
 # go back to the end of the input variables we've set and add .title() to the end of the line
 # the title() function capitalizes a variable
 print(first_name.title()) # this title-izes the first name
+
+
+##############################################################################################
 
 # there are also casing functions for upper and lower cases, which are used the same as title
 # they are .upper() and .lower(). we will explore these below
@@ -29,10 +37,15 @@ print(mixed_string.title())
 integer_number = 3
 print("Here is the number as a float: %.2f" %integer_number)
 
-# you can also seperate variables in concatenation with commas
-var_one = "scooby"
-var_two = "doo"
-print("Hello, my name is", var_one, var_two)
+# the python 3 way to do the above is strictly by using the format function as shown below
+# you can also add a number (i.e. 04 below) to add padding to the front of a number
+# which means that the first number will print with 6 digits (including the decimal point)
+# and add any additional digits as zeros in front of the number
+integer_number = 6
+float_number = 5
+print("Here is first variable passed into format {:06.2f} and here is the second {:.2f}".format(integer_number, float_number))
+
+##############################################################################################
 
 # lastly you can use lists (which will be explored more later) to format and directly
 # input an item into a string
@@ -47,6 +60,8 @@ song_lyric = "{first} {second} {third}, transit line".format(first="three", seco
 
 print(song_lyric)
 
+##############################################################################################
+
 # the join function combines multiple strings into one from a list
 list_to_join = ["combine", "these", "words", "into", "one", "string"]
 print(",".join(list_to_join))
@@ -56,14 +71,20 @@ print(",".join(list_to_join))
 string_to_listify = "combine, these, words, into, one, string"
 print(string_to_listify.split(","))
 
+##############################################################################################
+
 # the replace function exchanges one input for another
 # lets make this polite statement a little less formal
 print("Hey, how are you?".replace("Hey", "Sup"))
+
+##############################################################################################
 
 # startswith returns a boolean value (true/false) on whether or not a string begins with a certain
 # set of characters. Lets check if someone is saying hello in the following two statements
 print("Hello, I am saying hi to someone".startswith("Hello"))
 print("Whats good?".startswith("Hello"))
+
+##############################################################################################
 
 # endswith returns a boolean value (true/false) on whether or not a string ends with a certain
 # set of characters. Lets check if these statements are questions
