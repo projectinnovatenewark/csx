@@ -55,7 +55,7 @@ if any(numbers % 2 == 0 for numbers in number_list):
 
 ##################################################################################################
 
-# enumerate gives you the index value and actual value of values in a list
+# enumerate gives you the index value and actual value of items in a list
 for numbers in enumerate(number_list):
     print(numbers)
 
