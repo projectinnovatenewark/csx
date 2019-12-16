@@ -77,7 +77,8 @@ print("List stepper:", list_stepper)
 
 # list comprehensions are ways to define potentially lengthy lists in one line
 # while you may not recognize the syntax here, just know that you are creating a list of
-# squares for all numbers between zero and ten and printing them
+# squares for all numbers between zero and ten and printing them. for ___ in something means
+# that ____ is what we call the items we are iterating through.
 squares = [i**2 for i in range(10)]
 print("Squares list", squares)
 

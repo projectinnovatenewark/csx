@@ -21,4 +21,10 @@ We have some preferences here that we want to make clear to students.
     What matters is that you learn the fundamentals of programming- and since Python is one of the most readable and popular
     programming languages of all, that's what we're going to be using in this class!
 
-4)  To run a program in Python 3 using VS Code, navigate to the top right of your VS Code window when in a Python file and click the green arrow which is titled "run python file in your terminal"
+4)  To run a program in Python 3 using VS Code, navigate to the top right of your VS Code window when in a Python file and click 
+    the green arrow which is titled "run python file in your terminal"
+
+5)  Whether we are describing a terminal/command prompt entry or running through a lesson, we type user inputs the same. If a custom
+    item is meant to be input by the user, it'll be denoted as [SOMETHING_HERE]. For example, there is a function called typeof()
+    which accepts an input and returns it's type. If we had a program and were writing an example for someone to input whatever they
+    wanted, we would type something like `type_assessment = typeof([SOME_INPUT])

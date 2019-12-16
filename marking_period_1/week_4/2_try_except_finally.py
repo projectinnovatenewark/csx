@@ -7,14 +7,14 @@ try/except/finally with error handling
 # exception will be raised, and the finally code block executes thereafter.
 
 try:
-  f = open("test.txt", 'r')
-  data = f.read()
-  print("Trying")
+    f = open("test.txt", 'r')
+    data = f.read()
+    print("Trying")
 except:
-  print("Fiddlesticks! Failed")
+    print("Fiddlesticks! Failed")
 finally:
-  print("Finally!")
-  print("All Done")
+    print("Finally!")
+    print("All Done")
 
 # when using explicit error handling, its important to handle errors efficiently.
 # With try/except/finally's, an IOError is the most common type to be served.
@@ -50,7 +50,7 @@ except IOError as e:
 except:
   print("Fiddlesticks! Failed")
 finally:
-  print("Finally!")
+  print("Finally! We iz done!")
 print("All Done")
 
 # this function does something similar to a try/except

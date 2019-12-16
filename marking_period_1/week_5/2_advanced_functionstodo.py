@@ -61,6 +61,9 @@ week_three_nfl_standings = {
     }
 }
 
+# note: you are welcome to create 'helper functions' or smaller functions that make solving these
+# problems easier.
+
 def team_statistics():
     # TODO: print out each team's name followed by their average score, lowest and highest score
 

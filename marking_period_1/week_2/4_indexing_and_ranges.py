@@ -9,6 +9,8 @@ Indexing and range function for lists, dictionaries, strings and numbers
 
 # range values for numbers is a function that includes zero but not the number in the range function
 # the below for loop will only print numbers zero through 8, not including 9
+# `num` is the variable we assign to every number in the range. In the first `iteration` of this for
+# loop, zero would be assigned to num. In the second iteration, num would be assigned one (and so on)
 for num in range(9):
     print(num)
 
@@ -39,7 +41,7 @@ print("The first element in the list is " + str(grades[0]) +
 
 # lets print each grade with the number of the position of the list
 # but, lets make it readable! add one to the index number so it starts at one instead of zero
-# to find the index of an element in a list, use the index function as shown below
+# to find the index of an element in a list, use the index function as shown below.
 for num in grades:
     print("Student number " + str(grades.index(num) + 1) + "'s grade is " + str(num))
 
