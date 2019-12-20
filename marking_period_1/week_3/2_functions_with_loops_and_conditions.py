@@ -2,13 +2,30 @@
 Here we will show a couple of examples of functions that use loops and conditionals
 """
 
+# functions are blocks of code that execute when called upon. a function definition is the naming
+# of these set of instructions. `def functionName([arguments-if-needed]):` is the format.
+# functions can take an argument and do things with it inside the function. if you want to
+# create a function that adds 10 to any given number and prints the new number, you would
+# write something like this:
+
+def addTen(x):
+    newNum = x + 10
+    print(newNum)
+
+# then to call this function and pass it an argument of a number, do this
+addTen(5)
+
+# remember, if we wanted to set a number equal to a variable and pass that variable, it would be
+# doing the same thing
+num = 23
+addTen(num)
+
+##################################################################################################
+
 unsorted_num_list = [3456, 43659, 123, 9029, 750, 5, 100000]
 
-# theres a million ways to get it- choose one
-
-# music lyrics aside, theres so many ways to solve the same problem in coding
-# we will start off real complex, then break it down to a built in function
-
+# here is a long way to create a function and solve the problem above by sorting the above list
+# and putting the sorted items in a new list
 def sort_a_list(data_list):
     new_list = []
 
@@ -24,15 +41,15 @@ def sort_a_list(data_list):
 
 sort_a_list(unsorted_num_list)
 
-##################################################################################################
-
 # this function does the same thing as the function above
 # an important lesson about becoming a programmer is that you need to understand
 # underlying concepts. There will always be a tool for you to automatically accomplish
 # a task, but what will make you a better programmer is knowing how those tools work
 print(sorted(unsorted_num_list))
 
-# lets try a for loop within a for loop
+##################################################################################################
+
+# lets try a for loop within a for loop. we want the output to be "red cherry", "big coconut", etc.
 
 adjective = ["red", "big", "tasty"]
 fruits = ["cherry", "coconut", "mango"]
@@ -41,10 +58,10 @@ for word in adjective:
     for fruit in fruits:
         print(word, fruit)
 
-# oops, that doesnt give us exactly what we expected! let's change it to a dictionary
-# and see if that helps?
+# TODO: oops, that doesnt give us exactly what we expected! let's change it to a dictionary
+# TODO: and see if that helps?
 
-# TODO: switch the above problem to a dictionary
+# TODO: switch the above problem to a dictionary and get the desired output
 
 ##################################################################################################
 

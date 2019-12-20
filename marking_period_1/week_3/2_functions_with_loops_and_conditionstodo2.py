@@ -36,8 +36,10 @@ transactions_data = [
     },
 ]
 
+# TODO: do all of the below todo's inside a function called "transactify" and pass it an argument
+# TODO: which will be the transactions_data list
+
 # TODO: create and print a list of all transactions above $100
 # TODO: create and print a list of places we made transactions
 # TODO: create and print a list of the bank accounts we use
-
-# TODO: do all of the above todo's inside a function called "transactify"
+# TODO: print out each transaction in a string indicating "You spent $ X at X with your X account"

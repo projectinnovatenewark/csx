@@ -42,10 +42,17 @@ print(countdown_sum)
 ##################################################################################################
 
 number_list = [3, 15, 31, 1, 11, 107]
+
 # all is helpful when you want to assess every value of a set
 # lets check if all the numbers are odd
 if all(numbers % 2 != 0 for numbers in number_list):
     print("all the numbers are odd")
+
+##################################################################################################
+
+# not in checks to see if an item is not in a list
+if (1000000 not in number_list):
+    print("there is not one million in the number list")
 
 ##################################################################################################
 
