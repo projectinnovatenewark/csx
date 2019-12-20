@@ -2,6 +2,10 @@
 Introduce data structures like queue, stack, etc.
 """
 
+# python lists breakdown: https://developers.google.com/edu/python/lists
+# python dicts breakdown: https://developers.google.com/edu/python/dict-files
+    # and methods for dicts: 
+
 
 # Stacks follow the Last-in-First-Out (LIFO) principle. As if stacking
 # coins one on top of the other, the last coin we put on the top

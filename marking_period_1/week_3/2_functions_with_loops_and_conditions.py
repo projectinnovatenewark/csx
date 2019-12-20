@@ -41,29 +41,34 @@ for word in adjective:
     for fruit in fruits:
         print(word, fruit)
 
+# oops, that doesnt give us exactly what we expected! let's change it to a dictionary
+# and see if that helps?
+
+# TODO: switch the above problem to a dictionary
+
 ##################################################################################################
 
 # below you will see your first sorting algorithm. there are many varieties of sorting algorithms
-num_list_unsorted = [8,2,1,3,5,4]
-
-def insertion_sort(num_list):
-    """the sorting algorithm starts with the first item in a list and sorts it accordingly onward"""
+# reference link here: https://tutorialedge.net/compsci/sorting/insertion-sort-in-python/
+def insertion_sort(some_list):
     # for every element in our array
-    for index in range(1, len(num_list)):
-        current = num_list[index]
+    for index in range(1, len(some_list)):
+        current = some_list[index]
         position = index
 
-        while position > 0 and num_list[position-1] > current:
-            print("Swapped {} for {}".format(num_list[position], num_list[position-1]))
-            num_list[position] = num_list[position-1]
-            print(num_list)
+        while position > 0 and some_list[position-1] > current:
+            print("Swapped {} for {}".format(some_list[position], some_list[position-1]))
+            some_list[position] = some_list[position-1]
+            print(some_list)
             position -= 1
 
-        num_list[position] = current
+        some_list[position] = current
 
-    return num_list
+    print("Sorting Completed.")
+    print(some_list)
 
-print(insertion_sort(num_list_unsorted))
+arr = [12, 11, 2, 13, 5, 6, 19, 9, 17]
+insertion_sort(arr)
 
 ##################################################################################################
 

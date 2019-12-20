@@ -24,16 +24,21 @@ print(first_name.title()) # this title-izes the first name
 
 # there are also casing functions for upper and lower cases, which are used the same as title
 # they are .upper() and .lower(). we will explore these below
+
+# new string tools! you can start a string with '\n' when printing it to print
+# on a new line, which would add a line above it. "\" is a special character, also called
+# the "escape" character. It is used in representing certain 'whitespace characters' or
+# adding space between characters. : "\t" is a tab and "\n" is a newline,
 mixed_string = "frAnCiNe"
 
 print(mixed_string.lower())
 
-print(mixed_string.upper())
+print("\n" + mixed_string.upper())
 
-print(mixed_string.title())
+print("\t" + mixed_string.title())
 
 # there are many methods of string formatting including the format() function and using
-# percent signs to include numbers. here are brief examples of each
+# percent signs (%) to include numbers. here are brief examples of each
 integer_number = 3
 print("Here is the number as a float: %.2f" %integer_number)
 
