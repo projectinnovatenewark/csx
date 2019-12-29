@@ -1,71 +1,116 @@
-"""
-Understanding classes and scope within a class
-"""
+# """
+# Understanding classes and scope within a class
+# """
 
-# The variable Cat could have been named anything. The "Cat()" says to
-# create a new object and to run the strangely named function __init__ (two
-# underscores before and after 'init').
-# __init__ is special Python function that it is called automatically on an object
-# creation statement. The computer science term for it is constructor, as its
-# job is to build an object of the type specified by the class.
-# The 'self' parameter in __init__ just refers to the instance being created, in
-# this case Cat. __init__ creates the object, putting in default values for all the
-# fields, then returns the object into the variable Cat. The main program then
-# goes on to set the various fields of the Cat object, and then access and print
-# one of them. Note that the fields of an object can be set/accessed with a
-# reference of the form:
-# object.field
+# # The variable Cat could have been named anything. The "Cat()" says to
+# # create a new object and to run the strangely named function __init__ (two
+# # underscores before and after 'init').
+# # __init__ is special Python function that it is called automatically on an object
+# # creation statement. The computer science term for it is constructor, as its
+# # job is to build an object of the type specified by the class.
+# # The 'self' parameter in __init__ just refers to the instance being created, in
+# # this case Cat. __init__ creates the object, putting in default values for all the
+# # fields, then returns the object into the variable Cat. The main program then
+# # goes on to set the various fields of the Cat object, and then access and print
+# # one of them. Note that the fields of an object can be set/accessed with a
+# # reference of the form:
+# # object.field
 
-# As shown below, we also pass an inital value into the object Cat(). We then set
-# the input to "name" inside the init constructor and set the Cat's name value
-# to the input it receives
+# # As shown below, we also pass an inital value into the object Cat(). We then set
+# # the input to "name" inside the init constructor and set the Cat's name value
+# # to the input it receives
 
-class Cat:
+# # For more info on classes, refer to the Python docs:
+# # https://docs.python.org/3/tutorial/classes.html
 
-    kind = 'feline'         # class variable shared by all instances
+# class Cat:
 
-    def __init__(self, name):
-        self.name = name    # instance variable unique to each instance
+#     kind = 'feline'         # class variable shared by all instances
 
-d = Cat('Fido')
-e = Cat('Bella')
-print("d.kind", d.kind)                  # shared by all Cats
-print("e.kind", e.kind)                  # shared by all Cats
-print("d.name", d.name)                  # unique to d
-print("e.name", e.name)                  # unique to e
+#     def __init__(self, name):
+#         self.name = name    # instance variable unique to each instance
 
-##################################################################################################
+# # this will create two new instances of a Cat class with the self.names of Fido and Bella
+# d = Cat('Fido')
+# e = Cat('Bella')
 
-class Cat:
+# # since kind is declared for all cats, the kind will be shared by both Fido and Bella
+# print("d.kind", d.kind)                  # shared by all Cats
+# print("e.kind", e.kind)                  # shared by all Cats
+# print("d.name", d.name)                  # unique to d
+# print("e.name", e.name)                  # unique to e
 
-    tricks = []  # mistaken use of a class variable shared by all Cats due to scope
+# ##################################################################################################
 
-    def __init__(self, name):
-        self.name = name
+# class Cat:
 
-    def add_trick(self, trick):
-        self.tricks.append(trick)
+#     tricks = []  # mistaken use of a class variable shared by all Cats due to scope
 
-d = Cat('Fido')
-e = Cat('Bella')
-d.add_trick('hit yarn')
-e.add_trick('attack bird')
-d.tricks  # unexpectedly shared by all dogs
+#     def __init__(self, name):
+#         self.name = name
 
-##################################################################################################
+#     def add_trick(self, trick):
+#         self.tricks.append(trick)
 
-class Cat:
+# d = Cat('Fido')
+# e = Cat('Bella')
+# d.add_trick('hit yarn')
+# e.add_trick('attack bird')
+# d.tricks  # unexpectedly shared by all dogs
 
-    def __init__(self, name):
-        self.name = name
-        self.tricks = []  # creates a new empty list for each Cat
+# ##################################################################################################
 
-    def add_trick(self, trick):
-        self.tricks.append(trick)
+# class Cat:
 
-d = Cat('Fido')
-e = Cat('Bella')
-d.add_trick('hit yarn')
-e.add_trick('attak bird')
-d.tricks
-e.tricks
+#     def __init__(self, name):
+#         self.name = name
+#         self.tricks = []  # creates a new empty list for each Cat
+
+#     def add_trick(self, trick):
+#         self.tricks.append(trick)
+
+# d = Cat('Fido')
+# e = Cat('Bella')
+# d.add_trick('hit yarn')
+# e.add_trick('attak bird')
+# d.tricks
+# e.tricks
+
+# here is an example of a class with "magic methods". review this link for more
+# info on magic methods: https://www.python-course.eu/python3_magic_methods.php
+
+# our magic method here is __str__
+
+class Classmate:
+    def __init__(self, first_name, last_name, city, age):
+        self.first_name = first_name
+        self.last_name = last_name
+        self.city = city
+        self.age = age
+
+    def __str__(self):
+        s = ["-----",
+             f"First Name : {self.first_name}",
+             f"Last Name : {self.last_name}",
+             f"City : {self.city}",
+             f"Age : {self.age}"]
+        return "\n".join(s)
+
+def complete_form(n_users):
+    value = [User(ask_user("Enter First Name: ").title(),
+                ask_user("Enter Last Name: ").title(),
+                ask_user("Enter City: ").title(),
+                ask_user("Enter Age: ", type=int))
+                for question in range(n_users)
+            ]
+            
+    return value
+
+def ask_user(message='', type=str):
+    user_input = ''
+    while not user_input:
+        try:
+            user_input = type(input(message).strip())
+        except ValueError:
+            continue
+    return user_input
