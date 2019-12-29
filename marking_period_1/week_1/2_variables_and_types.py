@@ -28,7 +28,7 @@ string3 = "369"
 
 # naming variables is important!!! this has a capital "S" in string, so its different
 # than the previous variable of string1
-string1 = "Wonderful!"
+String1 = "Wonderful!"
 
 ##############################################################################################
 
