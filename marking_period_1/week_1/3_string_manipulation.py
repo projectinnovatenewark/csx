@@ -10,7 +10,11 @@ last_name = input("What is your last name?: ")
 # since the values you input are set to variables, we can concatenate the strings
 print("My first name is " + first_name + " and my last name is " + last_name)
 
-# you can also seperate variables in concatenation with commas
+# you can also seperate variables in concatenation with commas. this is the preferred
+# method of concatenation. we try not to build the string using simple addition, since
+# that is quite slow in Python (strings are immutable objects, so each string addition
+# involves creating a new string of the right length and copying the content of the two
+# strings being added).
 var_one = "scooby"
 var_two = "doo"
 print("Hello, my name is", var_one, var_two)

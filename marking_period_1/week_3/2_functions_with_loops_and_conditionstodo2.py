@@ -42,4 +42,5 @@ transactions_data = [
 # TODO: create and print a list of all transactions above $100
 # TODO: create and print a list of places we made transactions
 # TODO: create and print a list of the bank accounts we use
-# TODO: print out each transaction in a string indicating "You spent $ X at X with your X account"
+# TODO: print out each transaction in a string indicating:
+# TODO: "You spent $ X at X with your X account"
