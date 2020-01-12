@@ -2,9 +2,12 @@
 Creating classes for your classmates
 """
 
-# TODO: Create a class for your classmates that would include an input for
-# TODO: first name, last name, favorite class, favorite hobby/activity, and
-# TODO: what college they want to go to or job they want to get out of high school
+# TODO: Create a class for an Employee, and include basic data
+# TODO: like hours worked, salary, first name, last name, age, and title
 
-# TODO: after creating the class and testing it, run it with your partner(s)
-# TODO: and learn something new about your classmates
+# TODO: Create a function inside the class and print out a formatted
+# TODO: set of strings explaining the details from the employee. Use the f shorthand
+# TODO: for formatting that was used in the previous example.
+
+# TODO: Then, call that function to print out those strings with a class
+# TODO: of Employee set equal to a variable employeeOne

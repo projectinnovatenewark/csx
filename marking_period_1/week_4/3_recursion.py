@@ -24,16 +24,9 @@ Example recursion functions. reference: https://realpython.com/python-thinking-r
 # the first few numbers in the fibonacci sequence are 1, 1, 2, 3, 5, 8, 13, 21, 34, 55
 
 def fibonacci(num):
-    """use recursion to complete a fibonacci sequence"""
-    print(num)
-    if num < 0:
-        print("Incorrect input")
-    # First Fibonacci number is 0
-    elif num == 1:
-        return 0
-    # Second Fibonacci number is 1
-    elif num == 2:
-        return 1
+    """use recursion to find the n'th term in the fibonacci sequence"""
+    if (num < 2):
+        return num
     else:
         return fibonacci(num-1)+fibonacci(num-2)
 

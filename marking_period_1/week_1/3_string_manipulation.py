@@ -10,7 +10,11 @@ last_name = input("What is your last name?: ")
 # since the values you input are set to variables, we can concatenate the strings
 print("My first name is " + first_name + " and my last name is " + last_name)
 
-# you can also seperate variables in concatenation with commas
+# you can also seperate variables in concatenation with commas. this is the preferred
+# method of concatenation. we try not to build the string using simple addition, since
+# that is quite slow in Python (strings are immutable objects, so each string addition
+# involves creating a new string of the right length and copying the content of the two
+# strings being added).
 var_one = "scooby"
 var_two = "doo"
 print("Hello, my name is", var_one, var_two)
@@ -67,14 +71,20 @@ print(song_lyric)
 
 ##############################################################################################
 
-# the join function combines multiple strings into one from a list
+# the join function combines items in a list. in this case, it will create a large string
 list_to_join = ["combine", "these", "words", "into", "one", "string"]
+
+# the first input specifies how to join the items in the list. It will join them with a comma
 print(",".join(list_to_join))
 
-# split seperates a string into a list. the split occurs in the character that you specify
-# i.e. a period as shown below splits the string every time a period is shown
-string_to_listify = "combine, these, words, into, one, string"
-print(string_to_listify.split(","))
+# but that looks kind of silly! Lets join them with a space instead to see the better outcome.
+print(" ".join(list_to_join))
+
+# split seperates a string into items in a list. the split occurs in the character that you specify
+# for example, in the split we put an empty space. This will split the string into items whenever
+# there is a space, so each word will represent an item in the list.
+string_to_listify = "lets separate these words into separate items in a list"
+print(string_to_listify.split(" "))
 
 ##############################################################################################
 
