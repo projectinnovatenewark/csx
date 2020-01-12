@@ -1,5 +1,5 @@
 """
-Introduce data structures like queue, stack, etc.
+Introduce data structures like queue and stack
 """
 
 # python lists breakdown: https://developers.google.com/edu/python/lists

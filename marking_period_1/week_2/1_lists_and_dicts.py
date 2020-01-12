@@ -43,3 +43,45 @@ print(first_student + "'s grade was", first_student_grade)
 
 # tuples are lists that cannot have their values modified and they are denoted with parentheses
 months = ('January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December')
+
+# what about 'nested' data types? a list can be made up of dictionaries. Values in dictionaries
+# can be lists. How would we handle that? Lets look at this data here. You can see that each item in the list
+# is a dictionary that represents a class
+classes = [
+    {
+        'subject': 'math',
+        'level': 'linear algebra',
+        'students': ['billy', 'beatrice', 'bronny', 'bart'],
+        'teacher_description': {
+            'name': 'Betty',
+            'education': ['Masters of Math', 'Bachelors of Science']
+        },
+        'classTime': ['11:00 AM', '12:30 PM']
+    },
+    {
+        'subject': 'english',
+        'level': 'composition',
+        'students': ['chris', 'callie', 'crysta', 'calista'],
+        'teacher_description': {
+            'name': 'Joanny',
+            'education': ['PHD of English', 'Masters of Literacy', 'Bachelors of Biology']
+        },
+        'classTime': ['1:00 PM', '2:45 PM']
+    }
+]
+
+# crazy data! how would we find the math teacher's level, the first student listed in her class, and her education?
+# lets go through that here. since the dictionary with 'math' is the first ITEM in the LIST of classes.
+math = classes[0]
+
+# here is how to find the math classes' level- by using either the math variable above OR the classes list directly
+math_level = math['level']
+math_level2 = classes[0]['level']
+
+# we will do the same for the first student
+math_first_student = math['students'][0]
+math_first_student_again = classes[0]['students'][0]
+
+# lastly, lets find the teacher's education level
+math_teacher_education = math['teacher_description']['education']
+math_teacher_education_again = classes[0]['teacher_description']['education']

@@ -35,6 +35,7 @@ while countdown > 0:
     print("countdown equals", countdown)
     print("countdown sum equals", countdown_sum)
 
+# this code below the while loop will NOT run until the while loop 'breaks'
 print("countdown now equals", countdown)
 
 print(countdown_sum)
