@@ -48,7 +48,7 @@ summation = 3 + 3.0
 # formatting is important for numbers if you want to specify an output. By using the percent
 # sign below and .2f, you specify that the variable "summation", which follows the string, will have two
 # decimal points.
-print("The sum of x and y is %.2f" %summation)
+print("The sum of our int and our float is %.2f" %summation)
 
 number_list = [1, 2, 3, 4, 5, 6]
 # min finds the minimum of a set of numbers

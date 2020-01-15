@@ -20,5 +20,5 @@ confirmed_users = []
 ##################################################################################################
 
 # TODO: instead of using the pop method, let's setup a while loop that uses the length of the new list
-# TODO: to iterate through the names. In each name, we will want to add "confirmed", before each
+# TODO: of confirmed users to iterate through the names. In each name, we will want to add "confirmed", before each
 # TODO: name in the string.
