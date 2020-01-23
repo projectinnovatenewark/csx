@@ -140,12 +140,18 @@ the_office = {
     },
 }
 
-# TODO: Find the value of 'Season 3'. Print it. Now Print out 'Episode 6' in Season 3.
+# for example, to find the title of episode 1 in season 3, you would use this:
+# print(the_office["Season 3"]["Episode 1"])
 
-# TODO: Loop through the the_office object and print out the value of each key.
+# TODO: Question 1: What type of data set is the_office? Is it a list, dictionary, string, etc.?
 
-# TODO: Create a nested for loop that would list an output for each episode
-# TODO: that would state "Episode __ of Season __ is titled '____' "
+# TODO: Question 2: Find the value of 'Season 3'. Print it. Now Print out 'Episode 6' in Season 3.
+
+# TODO: Question 3: Loop through the the_office object and print out the value of each key.
+
+# TODO: Question 4: Create a nested for loop that would list an output for each episode
+
+# TODO: Question 5: that would state "Episode __ of Season __ is titled '____' "
 
 ##################################################################################################
 
@@ -192,6 +198,9 @@ math_classes = [
         }
     },
 ]
+
+# for example, to find the value of MP4 in the Calculus level math class, I would run
+# print(math_classes[3]['averages]['MP4])
 
 # TODO: Question 1: What type of data set is classes? Is it a list, dictionary, string, etc.?
 
