@@ -32,25 +32,26 @@ try:
     finally:
         f.close()
 except:
-  print("Fiddlesticks! Failed")
+    print("Fiddlesticks! Failed")
 finally:
-  print("All Done")
+    print("All Done")
 
 # this is a cleaner way to do the same thing as above.
-# When we use the "with-as" tags, it automatically executes the 
+# When we use the "with-as" tags, it automatically executes the
 # open and subsequent "close" tag. Now the above function looks
 # a lot cleaner and can be done in less lines of code
 
 try:
-  with open("test.txt", "r") as f:
-    data = f.read()
-    print(data)
+    with open("test.txt", "r") as f:
+        data = f.read()
+        print(data)
 except IOError as e:
-  print(e)
+    print(e)
 except:
-  print("Fiddlesticks! Failed")
+    print("Fiddlesticks! Failed")
 finally:
-  print("Finally! We iz done!")
+    print("Finally! We iz done!")
+
 print("All Done")
 
 # this function does something similar to a try/except
@@ -60,9 +61,9 @@ print("All Done")
 class BadNumbersError(Exception):
     pass
 
-def addnumbers(x,y):
-    if x ==3:
+def addnumbers(x, y):
+    if x == 3:
         raise BadNumbersError("We don't like the number 3")
     return x+y
- 
-print(addnumbers(3,2))
+
+print(addnumbers(3, 2))
