@@ -30,15 +30,20 @@ countdown = 12
 countdown_sum = 0
 
 while countdown > 0:
-    countdown_sum += countdown
-    countdown -= 1
+    countdown_sum += countdown # += or -= will add/subtract a number to a variable and then
+                               # reassign the NEW value to that variable
+
+    countdown -= 1 # in this case of -= it will subtract one from countdown and then countdown will
+                   # equal countdown - 1. so, in the first iteration of the while loop, countdown
+                   # will go from 12 to 11
     print("countdown equals", countdown)
     print("countdown sum equals", countdown_sum)
 
-# this code below the while loop will NOT run until the while loop 'breaks'
-print("countdown now equals", countdown)
+# this code below the while loop will NOT run until the while loop 'breaks', which would happen when
+# the condition of countdown > 0 is no longer true
+print("countdown now equals: ", countdown)
 
-print(countdown_sum)
+print("the final countdown equals: ", countdown_sum)
 
 ##################################################################################################
 
