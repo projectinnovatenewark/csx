@@ -1,5 +1,5 @@
 """
-This is an introduction to basic math in Python
+This is an introduction to basic math and imports in Python
 """
 
 # here are some basic mathematical functions shown in Python
@@ -13,8 +13,8 @@ multiplication = 3 * 4
 division = 12 / 4
 exponents = 2 ** 2
 
-# the number 9 goes into 120 13 times, with a remainder of 3. This is also called a "modulo operator"
-# modulo returns the remainder
+# the number 9 goes into 120 13 times, with a remainder of 3. This is also called a
+# "modulo operator" modulo returns the remainder
 remainder = 120 % 9
 print("Math Section One")
 print(addition, subtraction, multiplication, division, exponents, remainder)
@@ -32,8 +32,10 @@ print(addition, subtraction, multiplication)
 # Here is a new concept we haven't covered yet- constants! Constants are like variables,
 # but they are typed in all caps and don't change! Variables can be manipulated and change,
 # whereas constants must remain the same
+
 # for example, the corporate tax rate is 20%. Hence, that would be an example of a constant
-# you will also see for company profit we use the int() function, which converts items to the type of integer
+# you will also see for company profit we use the int() function, which converts items to the
+# type of integer
 company_profit = int(input("How much money did your company make this year?: "))
 CORPORATE_TAX_RATE = .20
 taxes_paid = company_profit * CORPORATE_TAX_RATE
@@ -43,14 +45,26 @@ taxes_paid = company_profit * CORPORATE_TAX_RATE
 print("I paid " + str(taxes_paid) + " dollars in taxes for my business")
 
 # if you do calculations between a integer and float, the output is a float
-summation = 3 + 3.0
+summation = 3 + 3.0 # summation will now equal 6.0
+
+# let's say you want to add to the variable summation. You want to increment it by one, for
+# whatever reason. There's one way to do this that is ugly, not fun, and definitely not cool 🛑.
+# Lets do it that way first.
+summation = summation + 1 # summation will now be 7.0
+
+# Using += will add whatever value comes after to the variable, then reassign the variable
+# to that new value. Since summation was 7.0 and we use += 2, the value of summation after
+# this line will be 9.0
+# LETS. MAKE. IT. BETTER 🔥
+summation += 2 # summation will now equal 9.0
 
 # formatting is important for numbers if you want to specify an output. By using the percent
-# sign below and .2f, you specify that the variable "summation", which follows the string, will have two
-# decimal points.
-print("The sum of our int and our float is %.2f" %summation)
+# sign below and .2f, you specify that the variable "summation", which follows the string, will
+# have two decimal points.
+print("The sum of our int and float, after incrementing it a bit, is %.2f" %summation)
 
 number_list = [1, 2, 3, 4, 5, 6]
+
 # min finds the minimum of a set of numbers
 print(min(number_list))
 
