@@ -85,3 +85,22 @@ print(abs(-43.5))
 #   b) have a super long list that makes your head spin
 #   c) both of the above
 print(sum(number_list))
+
+# We also have the math package/module from python. Python has a built in tool that we
+# can import and use to help us in mathematical operations. Normally imports go at the
+# TOP of a file, but we will put it here to consolidate the lesson.
+
+import math
+
+# now that we have math imported, we can use methods attached to the module. One such
+# method is pow() 👊🏿. No, not a punch, this is used to check a mathematical power.
+# For example, pow(3, 3) would be three raised to the third power, which is 27.
+
+doing_math_package_stuff = math.pow(3, 3)
+doing_math_stuff = 3**3
+
+print('Here is the output of the math module example: ', doing_math_package_stuff)
+print('Here is regular 3**3 without the math package: ', doing_math_stuff)
+
+# As you can see, the math package result returns a float whereas the normal math
+# operation returned an integer. Nothing interesting here, just a lil' note.
