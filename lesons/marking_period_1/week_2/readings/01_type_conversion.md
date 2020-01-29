@@ -21,4 +21,4 @@ dict() – This function is used to convert a tuple of order (key,value) into a 
 
 str() – Used to convert integer into a string.
 
-complex(real,imag) – This functionconverts real numbers to complex(real,imag) number.
+complex(real,imag) – This function converts real numbers to complex(real,imag) number.

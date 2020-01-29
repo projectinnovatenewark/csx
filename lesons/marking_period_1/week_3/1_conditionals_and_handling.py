@@ -30,15 +30,20 @@ countdown = 12
 countdown_sum = 0
 
 while countdown > 0:
-    countdown_sum += countdown
-    countdown -= 1
+    countdown_sum += countdown # += or -= will add/subtract a number to a variable and then
+                               # reassign the NEW value to that variable
+
+    countdown -= 1 # in this case of -= it will subtract one from countdown and then countdown will
+                   # equal countdown - 1. so, in the first iteration of the while loop, countdown
+                   # will go from 12 to 11
     print("countdown equals", countdown)
     print("countdown sum equals", countdown_sum)
 
-# this code below the while loop will NOT run until the while loop 'breaks'
-print("countdown now equals", countdown)
+# this code below the while loop will NOT run until the while loop 'breaks', which would happen when
+# the condition of countdown > 0 is no longer true
+print("countdown now equals: ", countdown)
 
-print(countdown_sum)
+print("the final countdown equals: ", countdown_sum)
 
 ##################################################################################################
 
@@ -49,7 +54,7 @@ number_list = [3, 15, 31, 1, 11, 107]
 if all(numbers % 2 != 0 for numbers in number_list):
     print("all the numbers are odd")
 
-##################################################################################################
+# ##################################################################################################
 
 # not in checks to see if an item is not in a list
 if (1000000 not in number_list):
@@ -67,7 +72,7 @@ if any(numbers % 2 == 0 for numbers in number_list):
 for numbers in enumerate(number_list):
     print(numbers)
 
-##################################################################################################
+# ##################################################################################################
 
 # switch statements are common in other languages. What a switch statement does is take a
 # case and apply it. Say you want to know what the name of the day is by it's place in the
@@ -84,7 +89,7 @@ def week(i):
         4:'Thursday',
         5:'Friday',
         6:'Saturday'
-        }
+    }
     # this will return the printed statement of the number being passed as an argument
     # or it will return "invalid day of the week" if that number isn't in the switcher dictionary
     return print(switcher.get(i, "Invalid day of week"))
