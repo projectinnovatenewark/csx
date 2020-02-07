@@ -7,6 +7,10 @@ Task- variables and types
 # TODO: `My name is _____ and I am ______ years old.` First, try doing this using
 # TODO: "+" to combine your variables and the strings, then print the result.
 
+name = "francine"
+age = 26
+#print("My name is " + name + " and I am " + age + " years old.")
+
 # Lesson Learned:
 # This should throw you a fun error, because concatenation can only be done with
 # strings, not strings and integers/floats. Commas, however, simply print 
@@ -15,9 +19,16 @@ Task- variables and types
 # TODO: Let's use commas to print our desired output instead. Refer to the output
 # TODO: above of `My name is _____ and I am ______ years old.`
 
+print("My name is", name, "and I am", age, "years old.")
+
 # TODO: Set a variable equal to the float `1.0`, then set another variable of
 # TODO: `futureAge` equal to the age variable plus the variable you set equal to 1.0
 # TODO: Print a statement of `Next year, I will be ____ years old`.
+
+variable = 1.0
+age = 26
+futureAge = age + variable
+print("Next year, I will be", futureAge, "years old.")
 
 # Lesson Learned:
 # You can see that adding a float to an integer makes the result a float!
@@ -28,6 +39,17 @@ Task- variables and types
 # TODO: To check the type of something in python, you use the type() function.
 # TODO: For example, type("Hello") would yield string, and type(6) would yield int.
 # TODO: So, create on print statement that would print the type of each variable you've set.
+
+number = 1
+print(type(1))
+decimal = 1.0
+print(type(1.0))
+theTruth = True
+print(type(True))
+noWhere = None
+print(type(None))
+stringCheese = "Hello"
+print(type("Hello"))
 
 # Lesson Learned:
 # Types are important in Python and you can check different elements' types using type().
@@ -42,7 +64,10 @@ Task- variables and types
 # TODO: str() function as such: str(age). The print statement will no longer throw an
 # TODO: error 🎯 since age was converted to a string.
 
+print("My name is " + name + " and I am " + str(age) + " years old.")
 # Lesson Learned:
 # We can change types in Python when appropriate, and we learned one way to do so with str()
 
 # Good job, guys! First todo down 💪🏾
+
+print(120%9)

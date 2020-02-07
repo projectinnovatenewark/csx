@@ -17,3 +17,13 @@ ADVANCED_FORECAST = {
     "Friday": {"morning": [42, 50], "afternoon": [45, 52], "evening": [54, 35]},
     "Saturday": {"morning": [40, 43], "afternoon": [52, 64], "evening": [60, 37]},
 }
+
+for day in ADVANCED_FORECAST:
+    high, low = None, None 
+    dayValue = ADVANCED_FORECAST[day]
+    for temp in dayValue:
+        tempValue = dayValue[temp]
+        print(day, tempValue)
+        if tempValue is None:
+            print(tempValue)
+                 

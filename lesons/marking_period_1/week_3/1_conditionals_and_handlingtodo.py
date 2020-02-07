@@ -8,6 +8,8 @@ confirmed_users = []
 # TODO: verify each user until theres no more unconfirmed users, then
 # TODO: move verified users into confirmed users all by using a while loop
 
+
+
 ##################################################################################################
 
 # TODO: display all the confirmed users with a for loop
