@@ -16,6 +16,9 @@ GRADES_DICT = {"Andy": 87, "Bronny": 95, "Carlos": 75, "Denisa": 55, "Enrique": 
 
 # below is an example of indexing. the first item in any list has an index of ZERO
 # and the next item is 1, followed by 2, etc.
+
+# Note: Accessing values from something with square brackets [] in Python is called
+# bracket notation. In the next lesson, lesson 2, you will see "dot notation".
 print("The first student in the class class list is " + CLASS_LIST[0])
 
 # in dictionaries, however, values can only be accessed by their key. The format to finding
@@ -73,15 +76,18 @@ classes = [
 # crazy data! how would we find the math teacher's level, the first student listed in her class, and her education?
 # lets go through that here. since the dictionary with 'math' is the first ITEM in the LIST of classes.
 math = classes[0]
-
+print('math: ', math)
 # here is how to find the math classes' level- by using either the math variable above OR the classes list directly
 math_level = math['level']
 math_level2 = classes[0]['level']
+print('math level: ', math_level, 'should equal this', math_level2)
 
 # we will do the same for the first student
 math_first_student = math['students'][0]
 math_first_student_again = classes[0]['students'][0]
+print('math first student: ', math_first_student, 'should equal this', math_first_student_again)
 
 # lastly, lets find the teacher's education level
 math_teacher_education = math['teacher_description']['education']
 math_teacher_education_again = classes[0]['teacher_description']['education']
+print('math teacher education: ', math_teacher_education, 'should equal this', math_teacher_education_again)

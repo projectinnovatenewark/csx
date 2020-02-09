@@ -1,6 +1,7 @@
 """
 This is a docstring. They are used to detail files at a high level.
 """
+
 # These lines that start with a pound sign are comments. They do nothing to the program
 # except provide instructions, personal notes, or anything that you want really!
 
@@ -34,6 +35,7 @@ String1 = "Wonderful!"
 
 # MULTIPLE VARIABLES IN ONE VARIABLE?! YEP!
 big_string = string1 + string2
+print(big_string)
 
 ##############################################################################################
 
@@ -62,8 +64,15 @@ print(2387938457)
 print(number1)
 print(string1)
 
+string1 = "hello"
+string3 = 45
+
+# FIXME: the code right here is broken, let's run it for fun to show that numbers cannot be
+# concatenated directly with strings
+# print(string1, " i am python number " + string3, ", hear me roar!!")
+
 # You can also "concatenate" strings together below and print multiple strings
-print(string1 + " i am python number " + string3 + ", hear me roar!!")
+print(string1, " i am python number ", string3, ", hear me roar!!")
 
 # notice how the spacing is off in the output of big_string?
 # thats because variables dont account for spaces! put an extra space in the string to make it neat

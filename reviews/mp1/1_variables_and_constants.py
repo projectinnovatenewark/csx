@@ -1,3 +1,0 @@
-"""
-Variables and constants review
-"""
