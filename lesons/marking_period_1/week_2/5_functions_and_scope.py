@@ -42,9 +42,9 @@ func2()
 
 # here, the variable in the function is referenced within the function's scope, therefore it will
 # print the "I love London" statement
-def func3(): 
-    s3 = "I love London!"
-    print(s3) 
+def func3():
+    s3 = "I love Peru!"
+    print(s3)
 
 ##################################################################################################
 
