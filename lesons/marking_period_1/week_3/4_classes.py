@@ -1,80 +1,80 @@
-# """
-# Understanding classes and scope within a class
-# """
+"""
+Understanding classes and scope within a class
+"""
 
-# # The variable Cat could have been named anything. The "Cat()" says to
-# # create a new object and to run the strangely named function __init__ (two
-# # underscores before and after 'init').
-# # __init__ is special Python function that it is called automatically on an object
-# # creation statement. The computer science term for it is constructor, as its
-# # job is to build an object of the type specified by the class.
-# # The 'self' parameter in __init__ just refers to the instance being created, in
-# # this case Cat. __init__ creates the object, putting in default values for all the
-# # fields, then returns the object into the variable Cat. The main program then
-# # goes on to set the various fields of the Cat object, and then access and print
-# # one of them. Note that the fields of an object can be set/accessed with a
-# # reference of the form:
-# # object.field
+# The variable Cat could have been named anything. The "Cat()" says to
+# create a new object and to run the strangely named function __init__ (two
+# underscores before and after 'init').
+# __init__ is special Python function that it is called automatically on an object
+# creation statement. The computer science term for it is constructor, as its
+# job is to build an object of the type specified by the class.
+# The 'self' parameter in __init__ just refers to the instance being created, in
+# this case Cat. __init__ creates the object, putting in default values for all the
+# fields, then returns the object into the variable Cat. The main program then
+# goes on to set the various fields of the Cat object, and then access and print
+# one of them. Note that the fields of an object can be set/accessed with a
+# reference of the form:
+# object.field
 
-# # As shown below, we also pass an inital value into the object Cat(). We then set
-# # the input to "name" inside the init constructor and set the Cat's name value
-# # to the input it receives
+# As shown below, we also pass an inital value into the object Cat(). We then set
+# the input to "name" inside the init constructor and set the Cat's name value
+# to the input it receives
 
-# # For more info on classes, refer to the Python docs:
-# # https://docs.python.org/3/tutorial/classes.html
+# For more info on classes, refer to the Python docs:
+# https://docs.python.org/3/tutorial/classes.html
 
-# class Cat:
+class Cat:
 
-#     kind = 'feline'         # class variable shared by all instances
+    kind = 'feline'         # class variable shared by all instances
 
-#     def __init__(self, name):
-#         self.name = name    # instance variable unique to each instance
+    def __init__(self, name):
+        self.name = name    # instance variable unique to each instance
 
-# # this will create two new instances of a Cat class with the self.names of Fido and Bella
-# d = Cat('Fido')
-# e = Cat('Bella')
+# this will create two new instances of a Cat class with the self.names of Fido and Bella
+d = Cat('Fido')
+e = Cat('Bella')
 
-# # since kind is declared for all cats, the kind will be shared by both Fido and Bella
-# print("d.kind", d.kind)                  # shared by all Cats
-# print("e.kind", e.kind)                  # shared by all Cats
-# print("d.name", d.name)                  # unique to d
-# print("e.name", e.name)                  # unique to e
+# since kind is declared for all cats, the kind will be shared by both Fido and Bella
+print("d.kind", d.kind)                  # shared by all Cats
+print("e.kind", e.kind)                  # shared by all Cats
+print("d.name", d.name)                  # unique to d
+print("e.name", e.name)                  # unique to e
 
-# ##################################################################################################
+##################################################################################################
 
-# class Cat:
+class Cat:
 
-#     tricks = []  # mistaken use of a class variable shared by all Cats due to scope
+    tricks = []  # mistaken use of a class variable shared by all Cats due to scope
 
-#     def __init__(self, name):
-#         self.name = name
+    def __init__(self, name):
+        self.name = name
 
-#     def add_trick(self, trick):
-#         self.tricks.append(trick)
+    def add_trick(self, trick):
+        self.tricks.append(trick)
 
-# d = Cat('Fido')
-# e = Cat('Bella')
-# d.add_trick('hit yarn')
-# e.add_trick('attack bird')
-# d.tricks  # unexpectedly shared by all dogs
+d = Cat('Fido')
+e = Cat('Bella')
+d.add_trick('hit yarn')
+e.add_trick('attack bird')
+print(d.tricks)  # unexpectedly shared by all dogs
 
-# ##################################################################################################
+##################################################################################################
 
-# class Cat:
+class Cat:
 
-#     def __init__(self, name):
-#         self.name = name
-#         self.tricks = []  # creates a new empty list for each Cat
+    def __init__(self, name):
+        self.name = name
+        self.tricks = []  # creates a new empty list for each Cat
 
-#     def add_trick(self, trick):
-#         self.tricks.append(trick)
+    def add_trick(self, trick):
+        self.tricks.append(trick)
 
-# d = Cat('Fido')
-# e = Cat('Bella')
-# d.add_trick('hit yarn')
-# e.add_trick('attak bird')
-# d.tricks
-# e.tricks
+d = Cat('Fido')
+e = Cat('Bella')
+d.add_trick('hit yarn')
+e.add_trick('attak bird')
+d.tricks
+e.tricks
 
 # here is an example of a class with "magic methods". review this link for more
 # info on magic methods: https://www.python-course.eu/python3_magic_methods.php
@@ -88,8 +88,10 @@ class Classmate:
         self.city = city
         self.age = age
 
-    # this is a function 
+    # this is a function
     def __str__(self):
+        # here we will create a list of items to print within the class definition
+        # and then join them to create one string. The dashes are just for readability.
         s = ["----------",
              # the f before each string allows for f-string literals
              # these allow for the format() function to be used, and for
@@ -102,14 +104,15 @@ class Classmate:
         return print("\n".join(s))
 
 def complete_form(n_users):
-    """This function will ask questions with the helper function of ask_user() and create Classmates.
-       This function will return a list with the number of classmates you've passed to this function."""
+    """The function will ask questions with the helper function of ask_user() and create Classmates.
+    This function will return a list with the number of classmates you passed to this function."""
     # here we used a list comprehension to create classes for the amount n_users
     # and add them to the list
     value = [Classmate(ask_user("Enter First Name: ").title(),
                        ask_user("Enter Last Name: ").title(),
                        ask_user("Enter City: ").title(),
-                       # this type=int specifies that the age input will only work if it is passed a number
+                       # this type=int specifies that the age input will
+                       # only work if it is passed a number
                        ask_user("Enter Age: ", type=int)
                       )
              for question in range(n_users)
@@ -142,6 +145,7 @@ if __name__ == '__main__':
 
     # here we specify that we want three classes of Classmate to be instantiated
     USERS = complete_form(3)
+
     # since the complete_form function returns a list of Classmates, we can iterate
     # through that list with a for loop. Then, we will call the __str__ function for
     # each of those objects

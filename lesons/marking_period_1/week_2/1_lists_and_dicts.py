@@ -16,6 +16,9 @@ GRADES_DICT = {"Andy": 87, "Bronny": 95, "Carlos": 75, "Denisa": 55, "Enrique": 
 
 # below is an example of indexing. the first item in any list has an index of ZERO
 # and the next item is 1, followed by 2, etc.
+
+# Note: Accessing values from something with square brackets [] in Python is called
+# bracket notation. In the next lesson, lesson 2, you will see "dot notation".
 print("The first student in the class class list is " + CLASS_LIST[0])
 
 # in dictionaries, however, values can only be accessed by their key. The format to finding

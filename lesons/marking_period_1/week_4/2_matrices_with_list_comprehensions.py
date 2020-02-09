@@ -7,13 +7,15 @@ Understand how multi-dimensional matrices work using list comprehensions and loo
 # 36 possible outcomes. We can tabulate these in a two-dimensional table with one die in the
 # rows, one die in the columns, and the sum of both die where the two positions meet.
 
-#   -	1	2	3	4	5	6
-#   1	2	3	4	5	6	7
-#   2	3	4	5	6	7	8
-#   3	4	5	6	7	8	9
-#   4	5	6	7	8	9	10
-#   5	6	7	8	9	10	11
-#   6	7	8	9	10	11	12
+
+#    columns
+# rows  #   -	1	2	3	4	5	6
+        #   1	2	3	4	5	6	7
+        #   2	3	4	5	6	7	8
+        #   3	4	5	6	7	8	9
+        #   4	5	6	7	8	9	10
+        #   5	6	7	8	9	10	11
+        #   6	7	8	9	10	11	12
 
 
 # In Python, a multi-dimensional table like this can be implemented as a sequence of sequences.
@@ -25,11 +27,11 @@ Understand how multi-dimensional matrices work using list comprehensions and loo
 # example creates a table as a sequence of sequences and then fills in each cell of the table.
 
 table = [[0 for i in range(6)] for j in range(6)]
-print(table)
+print('first table: ', table)
 for d1 in range(6):
     for d2 in range(6):
         table[d1][d2] = d1+d2+2
-print(table)
+print('second table', table)
 
 # This program produced the following output.
 
@@ -109,11 +111,15 @@ for i in range(6):
 # use of the power of the for statement to step through the elements without using an index.
 
 fq = 13*[0]
-print(fq)
+print('this is fq, ', fq)
 for row in table:
+    print('row: ', row)
     for c in row:
+        print('c: ', c)
         fq[c] += 1
-print(fq[2:])
+        print(fq)
+
+print('this is fq 2, ', fq[2:])
 
 # We initialize the frequency table, fq, to be a list of 13 zeroes.
 
