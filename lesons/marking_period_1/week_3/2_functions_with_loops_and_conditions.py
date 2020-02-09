@@ -8,7 +8,8 @@ Here we will show a couple of examples of functions that use loops and condition
 # create a function that adds 10 to any given number and prints the new number, you would
 # write something like this:
 
-def addTen(x):
+def addTen(x): # the parameter, in this case 'x', is sometimes called an alias for the actual
+               # argument that is passed
     newNum = x + 10
     print(newNum)
 
