@@ -9,7 +9,7 @@ Task- variables and types
 
 # Lesson Learned:
 # This should throw you a fun error, because concatenation can only be done with
-# strings, not strings and integers/floats. Commas, however, simply print 
+# strings, not strings and integers/floats. Commas, however, simply print
 # separate elements rather than attempting to concatenate strings.
 
 # TODO: Let's use commas to print our desired output instead. Refer to the output
@@ -34,9 +34,9 @@ Task- variables and types
 # The type() function is an example of a polymorphic function, meaning that the same
 # function name can be used for different types. BIG. WORDS. GET. YOU. JOBS. 💰
 
-# TODO: Lastly, we will introduce type conversion. There are functions you can use to 
+# TODO: Lastly, we will introduce type conversion. There are functions you can use to
 # TODO: convert things in Python. The first we will use is str(). Try the first
-# TODO: step instructed of using plus signs to concatenate strings to print 
+# TODO: step instructed of using plus signs to concatenate strings to print
 # TODO: `My name is _____ and I am ______ years old.` using the name and age variables.
 # TODO: However, this time when you're concatenating the age variable, wrap it in the
 # TODO: str() function as such: str(age). The print statement will no longer throw an
