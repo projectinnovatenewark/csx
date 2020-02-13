@@ -46,6 +46,10 @@ languages1.extend(languages2)
 # Extended List
 print('Language List: ', languages1)
 
+# or if you want to replace an item in a list you can simply set it's index position to a new value
+languages1[0] = "Malaysian"
+print(languages1)
+
 ##############################################################################################
 
 # # slicing is a way to segment items in a list

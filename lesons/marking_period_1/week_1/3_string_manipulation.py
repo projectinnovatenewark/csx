@@ -8,7 +8,7 @@ first_name = input("What is your first name?: ")
 last_name = input("What is your last name?: ")
 
 # since the values you input are set to variables, we can concatenate the strings
-print("My first name is " + first_name + " and my last name is " + last_name)
+print("My first name is", first_name, "and my last name is", last_name)
 
 # you can also seperate variables in concatenation with commas. this is the preferred
 # method of concatenation. we try not to build the string using simple addition, since
@@ -22,7 +22,6 @@ print("Hello, my name is", var_one, var_two)
 # go back to the end of the input variables we've set and add .title() to the end of the line
 # the title() function capitalizes a variable
 print(first_name.title()) # this title-izes the first name
-
 
 ##############################################################################################
 
@@ -46,6 +45,8 @@ print("\t" + mixed_string.title())
 integer_number = 3
 print("Here is the number as a float: %.2f" %integer_number)
 
+##############################################################################################
+
 # the python 3 way to do the above is strictly by using the format function as shown below
 # you can also add a number (i.e. 04 below) to add padding to the front of a number
 # which means that the first number will print with 6 digits (including the decimal point)
@@ -63,11 +64,19 @@ song_lyric = "{0} {1} {2}, transit line".format(numbers[0], numbers[1], numbers[
 
 print(song_lyric)
 
-# this would produce the same output as the line above. you can set the variable to be printed inside 
+##############################################################################################
+
+# this would produce the same output as the line above. you can set the variable to be printed inside
 # the format function allows you to set the variable inputs in the function
 song_lyric = "{first} {second} {third}, transit line".format(first="three", second="six", third="nine")
 
 print(song_lyric)
+
+##############################################################################################
+
+students = ["Marcus", "Gary", "Francine"]
+attendance_output = "The present students are {}, {}, and {}".format(students[0], students[1], students[2])
+print(attendance_output)
 
 ##############################################################################################
 
