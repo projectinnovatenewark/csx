@@ -20,94 +20,98 @@ names = [
 # Lists can also be displayed as below. We will refer to the above as spreading.
 # names = ["John", "Marshall"]
 
-# print(names)
+print(names)
 
-###############################################################################
+##############################################################################
 
 # There are plenty of actions we can perform on lists
 # .append adds items to the end of a list
 
-# print(names)
-# names.append("Alshon")
-# print(names)
+print(names)
+names.append("Alshon")
+print(names)
 
-# ###############################################################################
+###############################################################################
 
 # .remove is used to remove items from a list
 
-# names.remove("Chris")
-# print(names)
+names.remove("Nicole")
+print(names)
 # Notice that this method does not return a value
 
-# ###############################################################################
+###############################################################################
+
+# YOu can replace an item in a list by calling the index and assigning a new value
+
+names[4] = "Johnny"
 
 # .insert adds an item to a list to a specific index
 
-# print(names)
-# names.insert(1, "Joyce") # This will now be the second item in the list.
-# print(names)
+print(names)
+names.insert(1, "Joyce") # This will now be the second item in the list.
+print(names)
 
-# # .pop will remove the last item from a list AND return it's value
+# .pop will remove the last item from a list AND return it's value
 
-# print(names)
-# print(names.pop()) # Here you can see that Alshon was removed from the list names
-# print(names)
+print(names)
+print(names.pop()) # Here you can see that Alshon was removed from the list names
+print(names)
 
-# # You can use index to pop a specific item by position
+# You can use index to pop a specific item by position
 
-# print(names)
-# second_name = names.pop(2) # Since .pop returns a value, you can also set it to a variable.
-# print(second_name)
-# print(names)
+print(names)
+second_name = names.pop(2) # Since .pop returns a value, you can also set it to a variable.
+print(second_name)
+print(names)
 
-# ###############################################################################
+###############################################################################
 
-# # .extend can add a list to the end of another list
+# .extend can add a list to the end of another list
 
-# superlatives = ["Best Dressed", "Class Clown", "Most Likely to be famous"]
-# print(superlatives)
-# extra_superlatives = ["Most likely to brighten your day", "Coolest car"]
-# print(extra_superlatives)
-# superlatives.extend(extra_superlatives)
-# print(superlatives) # You can see extra_superlatives was added to the superlatives list
-# print(extra_superlatives) # You can see that extra_superlatives still retains its list.
+superlatives = ["Best Dressed", "Class Clown", "Most Likely to be famous"]
+print(superlatives)
+extra_superlatives = ["Most likely to brighten your day", "Coolest car"]
+print(extra_superlatives)
+superlatives.extend(extra_superlatives)
+print(superlatives) # You can see extra_superlatives was added to the superlatives list
+print(extra_superlatives) # You can see that extra_superlatives still retains its list.
 
-# ###############################################################################
+###############################################################################
 
 
-# # The first item in a list has an index of 0
+# The first item in a list has an index of 0
 
-# fruits = ["apple", "pear", "orange", "banana", "pineapple", "watermelon"]
-# print(fruits)
-# print(fruits[2])
-# second_item = fruits[1]
-# print(second_item)
+fruits = ["apple", "pear", "orange", "banana", "pineapple", "watermelon"]
+print(fruits)
+print(fruits[2])
+second_item = fruits[1]
+print(second_item)
 
-# # slicing is a quick way to split up lists into segments by using index positions
+# slicing is a quick way to split up lists into segments by using index positions
 
-# first_half = fruits[:3]
-# second_half = fruits[3:]
-# print(first_half)
-# # You can see here that the list first_half grabs the first 3 items (Index 0 through 2)
+first_half = fruits[:3]
+second_half = fruits[3:]
+print(first_half)
+# You can see here that the list first_half grabs the first 3 items (Index 0 through 2)
 
-# print(second_half)
-# # You can see here that the list second_half grabs the last 3 items (Index 3 through 5)
+print(second_half)
+# You can see here that the list second_half grabs the last 3 items (Index 3 through 5)
 
-# # This will include each item except the first and last
-# # This can be printed directly instead of using a variable as well
+# This will include each item except the first and last
+# This can be printed directly instead of using a variable as well
 
-# print(fruits[1:5])
+print(fruits[1:5])
 
 # An index of -1 will always be the last item in a list
 
-# print(fruits[-1]) 
-# print(fruits[:-1]) # This index returns all items EXCEPT the last
+print(fruits[-1]) 
+print(fruits[:-1]) # This index returns all items EXCEPT the last
 
-# # This last one is a stepper. It will return values from 0 through 5, but skipping
-# # every other value (hence the 2)
-# print(fruits[0:5:2])
+# This last one is a stepper. It will return values from 0 through 5, but skipping
+# every other value (hence the 2)
+print(fruits[0:5:2])
 
-# # ################################################################################
+# ################################################################################
 
 # DICTIONARIES
 
@@ -115,46 +119,46 @@ names = [
 # Each key is assigned a value that can be used to return said value
 # Dictionaries use {}
 
-# materials = {
-#     "shirt": "cotton",
-#     "pants": "polyester",
-#     "sheets": "linen"
-# }
+materials = {
+    "shirt": "cotton",
+    "pants": "polyester",
+    "sheets": "linen"
+}
 
-# print(materials)
+print(materials)
 
-# # This is how you use the key to return its value
-# # print(materials["pants"])
-
-# ###############################################################################
-
-# # to append a dictionary, use the following format - dictionary["new_key"] = "new_value"
-
-# new_key = "towel"
-# new_material = "microfiber"
-# materials[new_key] = new_material
-# # This would be the same as materials["towel"] = "microfiber"
-# # But when you are using a variable equal to a string, you do not need to wrap it in quotes
-# # since its value is already a string.
-# print(materials)
+# This is how you use the key to return its value
+# print(materials["pants"])
 
 ###############################################################################
 
-# # use .update to update a key's value
+# to append a dictionary, use the following format - dictionary["new_key"] = "new_value"
 
-# materials.update({"shirt": "bamboo cotton"})
-# print(materials)
+new_key = "towel"
+new_material = "microfiber"
+materials[new_key] = new_material
+# This would be the same as materials["towel"] = "microfiber"
+# But when you are using a variable equal to a string, you do not need to wrap it in quotes
+# since its value is already a string.
+print(materials)
+
+##############################################################################
+
+# use .update to update a key's value
+
+materials.update({"shirt": "bamboo cotton"})
+print(materials)
 # Notice the syntax used - it is similar to the way dictionaries are created from scratch
 
-# ###############################################################################
+###############################################################################
 
-# # You can use .pop here too! You have to reference a key to be able to do so though.
-# # materials.pop() will return an error message
+# You can use .pop here too! You have to reference a key to be able to do so though.
+# materials.pop() will return an error message
 
-# materials.pop("shirt")
-# print(materials)
+materials.pop("shirt")
+print(materials)
 
-# ###############################################################################
+###############################################################################
 
 
 # the get method will find a value for a key in a dictionary
@@ -165,8 +169,8 @@ print(second_value)
 
 ###############################################################################
 
-a second argument with the get function is what is returned if the first argument isnt in the dict
-this will return 321 since there is no key "Four"
+# a second argument with the get function is what is returned if the first argument isnt in the dict
+# this will return 321 since there is no key "Four"
 
 fourth_value = example_dict.get("Four", 1000)
 print(fourth_value)
