@@ -58,7 +58,7 @@ print("Here is first variable passed into format {:06.2f} and here is the second
 ##############################################################################################
 
 # lastly you can use lists (which will be explored more later) to format and directly
-# input an item into a string
+# input an item into a string. numbers[0] would represent the first number in the list
 numbers = [3, 6, 9]
 song_lyric = "{0} {1} {2}, transit line".format(numbers[0], numbers[1], numbers[2])
 
@@ -74,6 +74,8 @@ print(song_lyric)
 
 ##############################################################################################
 
+# as we explored above, this is a list. students[0] would be "Marcus", students[1] would
+# be "Gary", and so on
 students = ["Marcus", "Gary", "Francine"]
 attendance_output = "The present students are {}, {}, and {}".format(students[0], students[1], students[2])
 print(attendance_output)
