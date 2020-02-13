@@ -163,22 +163,22 @@ example_dict = {"One": 10, "Two": 20, "Three": 30}
 second_value = example_dict.get("Two")
 print(second_value)
 
-# ###############################################################################
+###############################################################################
 
-# a second argument with the get function is what is returned if the first argument isnt in the dict
-# this will return 321 since there is no key "Four"
+a second argument with the get function is what is returned if the first argument isnt in the dict
+this will return 321 since there is no key "Four"
 
-# fourth_value = example_dict.get("Four", 1000)
-# print(fourth_value)
+fourth_value = example_dict.get("Four", 1000)
+print(fourth_value)
 
-# ###############################################################################
+###############################################################################
 
-# # Nested Data Structures
-# # These data structures can be used together to create complex data sets!
-# # Below is an example of a dictionary holding multiple dictionaries and lists!
+# Nested Data Structures
+# These data structures can be used together to create complex data sets!
+# Below is an example of a dictionary holding multiple dictionaries and lists!
 
-# # This is what a spread data set would look like with correct tabulation.
-# # If something is nested, it should be tabbed once from the original position
+# This is what a spread data set would look like with correct tabulation.
+# If something is nested, it should be tabbed once from the original position
 bobs_burgers = {
     "season 1": {
         "episode 1": {
@@ -221,4 +221,31 @@ bobs_burgers = {
         }
     }
 }
-    
+# Matrices
+
+# Python doesn't have a formal way of creating a matrix, but we can think of one as a list of lists.
+# What do we mean by this?
+# Take the following for example
+# [[1, 4, 5, 12], 
+# [-5, 8, 9, 0],
+# [-6, 7, 11, 19]]
+
+# You can see by the bracket notation that the list starts, then the first 'value'
+#  in the list is another list and so on!
+# This can be used and treated like any other list
+
+list1 = [
+    [1, 4, 5, 12], 
+    [-5, 8, 9, 0],
+    [-6, 7, 11, 19]
+]
+print(list1)
+print("The last item in the list is:", list1[-1])
+
+# You can even call on an item inside the main list
+
+print("The second item in the second list is:", list1[1][1])
+
+print(list1[0]*4)
+
+# This is an important concept going forward and will be called on later in the semester.
