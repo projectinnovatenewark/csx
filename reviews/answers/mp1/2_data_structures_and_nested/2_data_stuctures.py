@@ -29,7 +29,7 @@ print(gatorade_flavors)
 #TODO: Check the list using the .get() method to see if there is a Green gatorade flavor.
 #TODO: If there isn't a green flavor, return "Missing"
 
-green_flavor = gatorde_flavors.get("Green", "Missing")
+green_flavor = gatorade_flavors.get("Green", "Missing")
 print("Green is", green_flavor)
 
 #TODO: Create a food shopping list containing: 
@@ -56,7 +56,7 @@ new_list = [
     "Green Beans",
     "Rice"
 ]
-shopping_list.extend(new_list)
+shopping_list.append(new_list)
 print(shopping_list)
 
 #TODO: Return the 4th item in the shopping list using its index
