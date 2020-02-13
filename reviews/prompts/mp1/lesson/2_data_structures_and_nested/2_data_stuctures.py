@@ -234,6 +234,7 @@ bobs_burgers = {
 # [-5, 8, 9, 0],
 # [-6, 7, 11, 19]]
 
+# This is an example of a 4x3 Matrix
 # You can see by the bracket notation that the list starts, then the first 'value'
 #  in the list is another list and so on!
 # This can be used and treated like any other list

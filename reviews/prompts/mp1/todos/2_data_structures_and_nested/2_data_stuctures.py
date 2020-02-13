@@ -24,11 +24,11 @@ Data Structures TODO Answers
 #TODO: Milk, Eggs, Spinach, Asparagus, Chicken, Oreos.
 
 
-print(shopping_list)
-
 #TODO: Since we are trying to eat healthy, Remove Oreos from the shopping list
-#TODO: Then add: Salmon, Green Beans, and Rice and print the new list
 
+#TODO: Add salmon via the append method
+
+#TODO: Replace asparagus with broccolli using the  because its cheaper than asparagus
 
 #TODO: Return the 4th item in the shopping list using its index
 

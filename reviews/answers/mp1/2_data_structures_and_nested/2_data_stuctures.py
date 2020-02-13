@@ -63,7 +63,8 @@ print("The fourth item in the list is", shopping_list[3])
 
 #TODO: Use the .remove method to remove the last item in the list and print it in the format 
 #TODO: '___ is now removed.'
-#TODO: Then use the pop method to print a new statement '___ is now removed.'
+#TODO: Then use the pop method to remove the 2nd item and print a new statement 
+# '___ is now removed.'
 
 print("We are removing", shopping_list.pop(1))
 print("The new shopping list is", shopping_list)
