@@ -47,16 +47,14 @@ shopping_list = [
 print(shopping_list)
 
 #TODO: Since we are trying to eat healthy, Remove Oreos from the shopping list
-#TODO: Then add: Salmon, Green Beans, and Rice and print the new list
-# Hint: Create a new list!
 
 shopping_list.remove("Oreos")
-new_list = [
-    "Salmon",
-    "Green Beans",
-    "Rice"
-]
-shopping_list.append(new_list)
+
+# Add salmon via the append method
+shopping_list.append("Salmon")
+
+# Replace asparagus with broccolli using the  because its cheaper than asparagus
+shopping_list[3] = "Broccoli"
 print(shopping_list)
 
 #TODO: Return the 4th item in the shopping list using its index
@@ -67,6 +65,6 @@ print("The fourth item in the list is", shopping_list[3])
 #TODO: '___ is now removed.'
 #TODO: Then use the pop method to print a new statement '___ is now removed.'
 
-print("We are removing", shopping_list.pop())
+print("We are removing", shopping_list.pop(1))
 print("The new shopping list is", shopping_list)
 
