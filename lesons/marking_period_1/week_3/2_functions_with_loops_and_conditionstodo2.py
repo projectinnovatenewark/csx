@@ -44,3 +44,9 @@ transactions_data = [
 # TODO: create and print a list of the bank accounts we use
 # TODO: print out each transaction in a string indicating:
 # TODO: "You spent $ X at X with your X account"
+
+def transactify():
+    print(transactions_data)
+
+
+transactify()
