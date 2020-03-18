@@ -76,11 +76,6 @@ e.add_trick('attak bird')
 d.tricks
 e.tricks
 
-# here is an example of a class with "magic methods". review this link for more
-# info on magic methods: https://www.python-course.eu/python3_magic_methods.php
-
-# our magic method here is __str__
-
 class Classmate:
     def __init__(self, first_name, last_name, city, age):
         self.first_name = first_name
@@ -89,7 +84,7 @@ class Classmate:
         self.age = age
 
     # this is a function
-    def __str__(self):
+    def format_class(self):
         # here we will create a list of items to print within the class definition
         # and then join them to create one string. The dashes are just for readability.
         s = ["----------",
@@ -147,7 +142,7 @@ if __name__ == '__main__':
     USERS = complete_form(3)
 
     # since the complete_form function returns a list of Classmates, we can iterate
-    # through that list with a for loop. Then, we will call the __str__ function for
+    # through that list with a for loop. Then, we will call the format_class function for
     # each of those objects
     for a in range(len(USERS)):
-        USERS[a].__str__()
+        USERS[a].format_class()
