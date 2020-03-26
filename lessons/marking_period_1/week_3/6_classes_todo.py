@@ -16,4 +16,3 @@ Creating classes for your classmates
 # TODO: Animal/Mammal & Fish/Dog & Clown Fish inheritance question
 # Within fish and mammal class - Ask to set self.habitat as either land or sea
 # Any child of these would have that habitat since it is inherited
-
