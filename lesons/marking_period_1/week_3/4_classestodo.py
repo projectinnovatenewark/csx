@@ -11,3 +11,9 @@ Creating classes for your classmates
 
 # TODO: Then, call that function to print out those strings with a class
 # TODO: of Employee set equal to a variable employeeOne
+
+# TODO: Employee & COntractor inheritance question
+# TODO: Animal/Mammal & Fish/Dog & Clown Fish inheritance question
+# Within fish and mammal class - Ask to set self.habitat as either land or sea
+# Any child of these would have that habitat since it is inherited
+
