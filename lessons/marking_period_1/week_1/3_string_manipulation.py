@@ -99,28 +99,28 @@ print('this is the new var:', new_var)
 # but that looks kind of silly! Lets join them with a space instead to see the better outcome.
 print(" ".join(list_to_join))
 
-# # split seperates a string into items in a list. the split occurs in the character that you specify
-# # for example, in the split we put an empty space. This will split the string into items whenever
-# # there is a space, so each word will represent an item in the list.
-# string_to_listify = "lets separate these words into separate items in a list"
-# print(string_to_listify.split(" "))
+# split seperates a string into items in a list. the split occurs in the character that you specify
+# for example, in the split we put an empty space. This will split the string into items whenever
+# there is a space, so each word will represent an item in the list.
+string_to_listify = "lets separate these words into separate items in a list"
+print(string_to_listify.split(" "))
 
-# ##############################################################################################
+##############################################################################################
 
-# # the replace function exchanges one input for another
-# # lets make this polite statement a little less formal
-# print("Hey, how are you?".replace("Hey", "Sup"))
+# the replace function exchanges one input for another
+# lets make this polite statement a little less formal
+print("Hey, how are you?".replace("Hey", "Sup"))
 
-# ##############################################################################################
+##############################################################################################
 
-# # startswith returns a boolean value (true/false) on whether or not a string begins with a certain
-# # set of characters. Lets check if someone is saying hello in the following two statements
-# print("Hello, I am saying hi to someone".startswith("Hello"))
-# print("Whats good?".startswith("Hello"))
+# startswith returns a boolean value (true/false) on whether or not a string begins with a certain
+# set of characters. Lets check if someone is saying hello in the following two statements
+print("Hello, I am saying hi to someone".startswith("Hello"))
+print("Whats good?".startswith("Hello"))
 
-# ##############################################################################################
+##############################################################################################
 
-# # endswith returns a boolean value (true/false) on whether or not a string ends with a certain
-# # set of characters. Lets check if these statements are questions
-# print("Am I a question?".endswith("?"))
-# print("I'm not a question.".endswith("?"))
+# endswith returns a boolean value (true/false) on whether or not a string ends with a certain
+# set of characters. Lets check if these statements are questions
+print("Am I a question?".endswith("?"))
+print("I'm not a question.".endswith("?"))
