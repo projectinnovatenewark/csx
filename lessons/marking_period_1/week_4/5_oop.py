@@ -10,25 +10,70 @@ Learn the elements of Object Oriented Programming
 # 1) Object
 # The object is an entity that has state and behavior. It may be any real-world object
 # like the mouse, keyboard, chair, table, pen, etc. Everything in Python is an object,
-# and almost everything has attributes and methods. All functions have a built-in attribute
+# and almost everything has attributes and methods. All functions also have a built-in attribute
 # __doc__, which returns the doc string defined in the function source code.
 
 # EXAMPLE:
 
+# the format function we've used previously is built into Python. Therefore, it should have a
+# docstring that we can log using the print function!
+print(format.__doc__)
+
 ##################################################################################################
 
 # 2) Class
+# A Class is like an object constructor, or a "blueprint" for creating objects.
+
 # The class can be defined as a collection of objects. It is a logical entity that
 # has some specific attributes and methods. For example: if you have an employee class
 # then it should contain an attribute and method, i.e. an email id, name, age, salary, etc.
 
+# Here we will provide a more simple example than the Employee class.
+
 # EXAMPLE:
+
+class MyClass:
+  """define some random class and assign it a prop"""
+  randomProperty = 10
+
+# lets instantiate an example of this class
+instantiatedClass = MyClass()
+print(instantiatedClass.randomProperty)
+
+# since this object has a doc string, we can access it using the doc function like in our
+# last example
+print(instantiatedClass.__doc__)
 
 ##################################################################################################
 
 # 3) Method
 # The method is a function that is associated with an object. In Python, a method is not
 # unique to class instances. Any object type can have methods.
+
+class Doggo:
+
+    # Class Attribute added to all instantiations of the Doggo class
+    species = 'mammal'
+
+    # initializer function
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    # a method of this class
+    def description(self):
+        return "{} is {} years old".format(self.name, self.age)
+
+    # another method of this class
+    def speak(self, sound):
+        return "{} says {}".format(self.name, sound)
+
+# Instantiate the Doggo object
+pierreTheDog = Doggo("Pierre", 6)
+
+# call our instance methods
+print(pierreTheDog.description())
+print(pierreTheDog.speak("Wuuf Wuuf"))
 
 # EXAMPLE:
 
@@ -91,7 +136,7 @@ y.welcome()
 
 # 5) Polymorphism
 # The word polymorphism means having many forms. In programming, polymorphism means same
-# function name (but different signatures) being uses for different types.
+# function name (but different signatures) being used for different types.
 
 # EXAMPLE:  
 # len() being used for a string 
@@ -106,8 +151,31 @@ print(len([10, 20, 30]))
 # Encapsulation is also an important aspect of object-oriented programming. It is used to restrict
 # access to methods and variables. In encapsulation, code and data are wrapped together within a
 # single unit from being modified by accident.
+# Reference here: https://docs.python.org/3/tutorial/classes.html#python-scopes-and-namespaces
 
 # EXAMPLE:
+def encapsulation_example():
+    def do_local():
+        spam = "local spam"
+
+    def do_nonlocal():
+        nonlocal spam
+        spam = "nonlocal spam"
+
+    def do_global():
+        global spam
+        spam = "global spam"
+
+    spam = "test spam"
+    do_local()
+    print("After local assignment:", spam)
+    do_nonlocal()
+    print("After nonlocal assignment:", spam)
+    do_global()
+    print("After global assignment:", spam)
+
+encapsulation_example()
+print("In global scope:", spam)
 
 ##################################################################################################
 
