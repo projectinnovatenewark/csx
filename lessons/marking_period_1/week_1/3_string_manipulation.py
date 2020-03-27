@@ -72,7 +72,7 @@ song_lyric = "{first} {second} {third}, transit line".format(first="three", seco
 
 print(song_lyric)
 
-##############################################################################################
+# ##############################################################################################
 
 # as we explored above, this is a list. students[0] would be "Marcus", students[1] would
 # be "Gary", and so on
@@ -85,8 +85,8 @@ print(attendance_output)
 # the join function combines items in a list. in this case, it will create a large string
 list_to_join = ["combine", "these", "words", "into", "one", "string"]
 
-# the first input specifies how to join the items in the list. It will join them with a comma
-print(",".join(list_to_join))
+# # the first input specifies how to join the items in the list. It will join them with a comma
+# print(",".join(list_to_join))
 
 # these methods will not change the original list. as you can see from this output, it stays the same
 print('as you can see, the list has not changed', list_to_join)

@@ -17,6 +17,7 @@ Example recursion functions. reference: https://realpython.com/python-thinking-r
 #     # Recursive case: n! = n * (n-1)!
 #     else:
 #         return n * factorial_recursive(n-1)
+# print(factorial_recursive(10))
 
 # The Fibonacci sequence is a set of numbers that starts with a one or a zero,
 # followed by a one, and proceeds based on the rule that each number
@@ -30,4 +31,4 @@ def fibonacci(num):
     else:
         return fibonacci(num-1)+fibonacci(num-2)
 
-print(fibonacci(7))
+print(fibonacci(10))
