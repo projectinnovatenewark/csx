@@ -58,6 +58,8 @@ print("All Done")
 # In the code above, you can see we created a class called BadNumbrersError.
 # Then in our function, we added a check. If x==3, then raise a BadNumbersError
 # exception and pass in the text “We don’t like the number 3”.
+# This is a simple way to raise a custom exception using a python class.
+# 'pass' is used for no particular reason. It is there purely for syntax reasons.
 class BadNumbersError(Exception):
     pass
 
