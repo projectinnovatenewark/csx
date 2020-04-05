@@ -39,8 +39,12 @@ grades = [72, 87, 99, 45, 70]
 print("The first element in the list is " + str(grades[0]) +
       "and the last element in the array is " + str(grades[-1]))
 
-# lets print each grade with the number of the position of the list
-# but, lets make it readable! add one to the index number so it starts at one instead of zero
+# lets show how a for loop works with lists. This loop will "iterate" over each number. Each
+# item in the list will iterated over in this loop.
+for num in grades:
+    print(num) # this will happen once for every "iteration"
+
+# now, lets make it readable! add one to the index number so it starts at one instead of zero
 # to find the index of an element in a list, use the index function as shown below.
 for num in grades:
     print("Student number " + str(grades.index(num) + 1) + "'s grade is " + str(num))
@@ -66,3 +70,58 @@ for student in grades:
 # lets find out how many students had scores!
 # we do this by using the len() function with grades to print us the length of the grades dictionary
 print("Number of students: " + str(len(grades)))
+
+##############################################################################################
+
+# FIXME: ADD IN A NOTE ABOUT HOW WHILE LOOPS/FOR LOOPS DECIDE WHETHER TO ITERATE IN DIFFERENT DATA
+# FIXME: TYPES (I.E. LIST, DICT, NUMBER, ETC.)
+
+##############################################################################################
+
+# "continue" statement:
+# The continue statement rejects all the remaining statements in the current iteration of the loop
+# and moves the control back to the top of the loop.
+
+# In this example, we provide a sneak peak at a conditional. The condition we are using is an "if"
+# condition. That just means "if the following condition is true, then do something within the scope
+# of this statement". While we haven't really addressed scope, just know that everything following
+# the if statement that is tabbed inward represents the scope of that if statement.
+# Example:
+if ("5" == str(5)):
+    print('this is in the scope of the if statement')
+    print('this would also be in the scope of the if statement')
+print('this would NO LONGER be in the scope of the if statement')
+
+# The continue statement can be used in both while and for loops.
+for letter in 'Python': # this will iterate through every letter in the word Python.
+   if (letter == 'h'):
+      continue
+   print('Current Letter :', letter)
+
+var = 10
+while var > 0:
+    var -= 1 # this will subtract one from the "var" variable and set it equal to that new value
+    if(var == 5):
+        print("This iteration, since the if statement condition was true, we will trigger the continue statement. That will skip the current iteration and not execute the print statement within the while loop.")
+        continue
+    print("Current variable value :", var)
+# this would execute after the while loop is done running.
+print("Good bye!") # since this tabulation is set to the same spacing as the while loop,
+                   # this print statement won't run until the while loop is complete.
+
+# "break" statement:
+
+for letter in 'Python':
+    if letter == 'h': # this will, again, iterate through every letter in the word Python.
+        break
+    print('Current Letter :', letter)
+
+var = 10
+while var > 0:
+    var -= 1 # this will subtract one from the "var" variable and set it equal to that new value
+    if (var == 5):
+        print("This iteration, since the if statement condition was true, will trigger the break statement. That end the current iteration and then end the for loop.")
+        break
+    print("Current variable value :", var)
+print("Good bye!") # since this tabulation is set to the same spacing as the while loop,
+                   # this print statement won't run until the while loop is complete.

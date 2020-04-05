@@ -111,7 +111,12 @@ initializeGame()
 
 # below we want to iterate through a list of lists using a nested for loop,
 # or in simpler terms a for loop within a for loop. this is very common
-# in data structures and you will master this in no time!
+# in data structures and you will master this in no time! The first sublist in
+# my_shows would be the entire list of ['How I Met Your Mother', 'Friends', 'Silicon Valley']
+# Then, second for loop of "for show_name in sublist:" would iterate through each of those
+# items in the list. Once the second for loop is completed, the program will return to the first
+# for loop and move on to the second list of ['Family Guy', 'South Park', 'Rick and Morty'] and
+# repeat the second for loop for that list's items.
 
 my_shows = [
     ['How I Met Your Mother', 'Friends', 'Silicon Valley'],
@@ -169,9 +174,14 @@ the_office = {
 
 # TODO: Question 3: Loop through the the_office object and print out the value of each key.
 
+# let's remember something when using a nested for loop here. The first iteration of our
+# top level for loop would be "Season 1" since it is the first key in our dictionary. You
+# might want to set a variable between the top level for loop and the nested loop. Remember,
+# if the iteration of each loop is a key, that variable you'd set between loops should follow
+# the format of variableName = dictionaryName[keyName]. Then, you can iterate through that new
+# variable, since it should equal the value of the key which is a dictionary.
 # TODO: Question 4: Create a nested for loop that would list an output for each episode
-
-# TODO: Question 5: that would state "Episode __ of Season __ is titled '____' "
+# TODO: that would state "Episode __ of Season __ is titled '____' "
 
 ##################################################################################################
 
