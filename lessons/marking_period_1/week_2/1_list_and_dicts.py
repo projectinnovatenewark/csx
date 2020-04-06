@@ -15,7 +15,8 @@ GRADES_DICT = {"Andy": 87, "Bronny": 95, "Carlos": 75, "Denisa": 55, "Enrique": 
 ##############################################################################################
 
 # below is an example of indexing. the first item in any list has an index of ZERO
-# and the next item is 1, followed by 2, etc.
+# and the next item is 1, followed by 2, etc.. "Index" refers to the position
+# of an item in a list.
 
 # Note: Accessing values from something with square brackets [] in Python is called
 # bracket notation. In the next lesson, lesson 2, you will see "dot notation".

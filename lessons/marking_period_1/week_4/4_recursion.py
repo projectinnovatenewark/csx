@@ -4,7 +4,8 @@ Example recursion functions. reference: https://realpython.com/python-thinking-r
 
 # the first example we will review is recursively executing a factorial.
 # Factorial multiplies every number by the number before it until it hits 1
-# i.e. 5! is equal to 5 x 4 x 3 x 2
+# i.e. 5! would equal 5 x 4 x 3 x 2
+# or 3! would equal 3 x 2
 
 # recursion is a functioning that calls itself, thus breaking a large
 # problem down into smaller and smaller sub-problems until it is solved

@@ -1,7 +1,7 @@
 """
 Understanding classes and scope within a class
 """
-​
+
 # The variable Cat could have been named anything. The "Cat()" says to
 # create a new object and to run the strangely named function __init__ (two
 # underscores before and after 'init').
@@ -145,7 +145,7 @@ if __name__ == '__main__':
     # through that list with a for loop. Then, we will call the format_class function for
     # each of those objects
     for a in range(len(USERS)):
-#         USERS[a].format_class()
+        USERS[a].format_class()
 
 ###################################################################################################
 

@@ -41,7 +41,7 @@ print(names)
 
 ###############################################################################
 
-# YOu can replace an item in a list by calling the index and assigning a new value
+# You can replace an item in a list by calling the index and assigning a new value
 
 names[4] = "Johnny"
 
@@ -60,7 +60,7 @@ print(names)
 # You can use index to pop a specific item by position
 
 print(names)
-second_name = names.pop(2) # Since .pop returns a value, you can also set it to a variable.
+second_name = names.pop(2) # .pop returns a value, so you can set it equal to a variable.
 print(second_name)
 print(names)
 
@@ -139,7 +139,7 @@ new_material = "microfiber"
 materials[new_key] = new_material
 # This would be the same as materials["towel"] = "microfiber"
 # But when you are using a variable equal to a string, you do not need to wrap it in quotes
-# since its value is already a string.
+# since it's value is already a string.
 print(materials)
 
 ##############################################################################
