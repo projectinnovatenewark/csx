@@ -6,8 +6,11 @@ Using functions and understanding scope
 # the parameter name can be anything you want---whatever you pass to the function
 # when you call it will be renamed to the argument you pass to the function when defining the function.
 def addTen(n):
-    newNum = n + 10
-    return newNum
+    newNum = n + 10 # this is within the scope of the function
+    return newNum # this is also within the scope of the function
+
+print("We have exited the function") # since this line is not indented within the function, it is outside
+                                     # the scope of the function and the function definition has therefore ended
 
 # now that we are at the leftmost part of the page, we have exited the scope of the function above.
 # this function should now take the argument passed, which is 3, and add ten to it. It will then return
@@ -76,7 +79,7 @@ EXAMPLE_DICTIONARY_TWO = {"Andy": 73, "Brovan": 90, "Celeste": 65, "Danilo": 84,
 # One important concept of functions is that they can be reused. Therefore, we can execute the
 # same function to perform operations on BOTH of the above dictionaries.
 def dictionary_reader(dictionary):
-    """This function will format and print a dictionary. Just as a file get a doc strings, functions get one too!"""
+    """This function will format and print a dictionary. Just as a file gets a doc string, functions get one too!"""
     print("Let's output a dictionary")
 
     for student in dictionary:
