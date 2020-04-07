@@ -60,21 +60,22 @@ print(var_1)
 
 #################################################################################################
 
-#  Constants
+# Constants
 
 GRAVITY = 9.8
-#  constants are defined only in all caps
-#  gravity = variable    GRAVITY = constant
+# constants are defined only in all caps
+# gravity = variable    GRAVITY = constant
 
 GRAVITY = 11.2
 print(GRAVITY)
+
 # When you try to redefine a constant, you'll see an error in your terminal
 # Constants are rarely used, but in most cases they are imported from other files.
 
 #################################################################################################
 
-#  Concatenate
-#  concatenate is just combing strings
+# Concatenation
+# Concatenation is the combining of strings
 
 
 print("Hello my name is " + "Gary")

@@ -2,55 +2,41 @@
 Here we will show a couple of examples of functions that use loops and conditionals
 """
 
-# functions are blocks of code that execute when called upon. a function definition is the naming
-# of these set of instructions. `def functionName([arguments-if-needed]):` is the format.
-# functions can take an argument and do things with it inside the function. if you want to
-# create a function that adds 10 to any given number and prints the new number, you would
-# write something like this:
+unsorted_num_list = [10, 22, 8, 15, 7, 18, 3]
 
-def addTen(x): # the parameter, in this case 'x', is sometimes called an alias for the actual
-               # argument that is passed
-    newNum = x + 10
-    print(newNum)
+# Here is a long way to create a function and solve the problem above by sorting thec
 
-# then to call this function and pass it an argument of a number, do this
-addTen(5)
-
-# remember, if we wanted to set a number equal to a variable and pass that variable, it would be
-# doing the same thing
-num = 23
-addTen(num)
-
-##################################################################################################
-
-unsorted_num_list = [3456, 43659, 123, 9029, 750, 5, 100000]
-
-# here is a long way to create a function and solve the problem above by sorting the above list
-# and putting the sorted items in a new list
+# unsorted_num_list and putting the sorted items in a new list.
 def sort_a_list(data_list):
     new_list = []
 
+    # FIXME: INCLUDE A LOGIC MODEL FOR THIS.
     while data_list:
         minimum = data_list[0]  # arbitrary number in list
-        for x in data_list: 
+        for x in data_list:
+            print('x: ', x, 'minimum: ', minimum)
             if x < minimum:
+                print('X is less than MIN. x: ', x, 'minimum: ', minimum)
                 minimum = x
         new_list.append(minimum)
         data_list.remove(minimum)
+        print('End while loop iteration. new_list: ', new_list, 'data_list: ', data_list)
 
     print(new_list)
 
 sort_a_list(unsorted_num_list)
 
-# this function does the same thing as the function above
-# an important lesson about becoming a programmer is that you need to understand
-# underlying concepts. There will always be a tool for you to automatically accomplish
-# a task, but what will make you a better programmer is knowing how those tools work
+# This function does the same thing as the function above function.
+
+# An important lesson about becoming a programmer is that you must understand underlying concepts.
+# There's always tools to solve your problem quickly with imported functions, but what matters
+# is that you understand how those functions work!
 print(sorted(unsorted_num_list))
 
 ##################################################################################################
 
-# lets try a for loop within a for loop. we want the output to be "red cherry", "big coconut", etc.
+# lets try a for loop within a for loop. we want the outputs to be "red cherry",
+# "big coconut", and "tasty mango".
 
 adjective = ["red", "big", "tasty"]
 fruits = ["cherry", "coconut", "mango"]
@@ -59,40 +45,78 @@ for word in adjective:
     for fruit in fruits:
         print(word, fruit)
 
-# TODO: oops, that doesnt give us exactly what we expected! let's change it to a dictionary
-# TODO: and see if that helps?
+# TODO: Oops! That doesnt give us exactly what we expected! let's change the adjective and fruit
+# TODO: lists to a single dictionary and get the desired outcome.
 
-# TODO: switch the above problem to a dictionary and get the desired output
+# TODO: Switch the above data sets to a dictionary and change the loop to achieve your
+# TODO: desired outcome.
 
 ##################################################################################################
 
-# below you will see your first sorting algorithm. there are many varieties of sorting algorithms
-# reference link here: https://tutorialedge.net/compsci/sorting/insertion-sort-in-python/
-def insertion_sort(some_list):
-    # for every element in our array
-    for index in range(1, len(some_list)):
-        current = some_list[index]
-        position = index
+# Lets develop a small program using multiple functions to create a game. A user will input how
+# many times they want to play the game. The game is to guess a number between one and ten.
+# If they guess the number correctly, the program should tell the user they won. If they guess
+# incorrectly, it should tell them they were wrong.
 
-        while position > 0 and some_list[position-1] > current:
-            print("Swapped {} for {}".format(some_list[position], some_list[position-1]))
-            some_list[position] = some_list[position-1]
-            print(some_list)
-            position -= 1
+# Python has some pre-defined packages you can import functions from. We will explore this more in-
+# depth later in the course. The "random" package has a function used to generate a random integer.
+from random import randint
 
-        some_list[position] = current
+def inquireUserGames():
+    """ask a user how many times they want to play"""
+    timesToPlay = input("How many times would you like to play the 'Guess the Number' game?: ")
+    numTimesToPlay = int(timesToPlay)
+    userStartedGameString = "You've signed on to play {} games!".format(timesToPlay)
+    # Let's return TWO variables to display some cool Python functionality. We can now
+    # set two variables equal to the value of calling this function.
+    return numTimesToPlay, userStartedGameString
 
-    print("Sorting Completed.")
-    print(some_list)
+def playTheGame():
+    """ask user for a number between 1 and 10, generate a random number between 1 and 10, then see
+    if those numbers match. If they do, congratulate the user! If not, tell 'em they guess wrong"""
 
-arr = [12, 11, 2, 13, 5, 6, 19, 9, 17]
-insertion_sort(arr)
+    # Generate a random number between 1 and 10
+    randomNumber = randint(1, 10)
+    # Get an input from the user
+    promptUserForNumber = input("Guess a number between 1 and 10: ")
+    # Convert their input into an integer so you can check for equality between
+    # the input and the random number generated
+    userNumber = int(promptUserForNumber)
+
+    # Check if the random number and user number equal each other
+    if (randomNumber == userNumber):
+        print("You guessed correctly! Number", userNumber, "was the correct guess.", "\n")
+    else:
+        print("Wrong Answer!!! Number", randomNumber, "doesnt equal", userNumber, "\n")
+
+def initializeGame():
+    """Lets initialize our game and call the inquireUserGames function."""
+    # The first variable will equal the first returned value, and the second variable
+    # will equal the second returned value.
+    userGameCount, userWelcomeString = inquireUserGames()
+    print("\n", userWelcomeString, "\n")
+
+    # userGameCount will equal the user's input from their desired number of games to play.
+    # This while loop will continue to run until userGameCount equals zero.
+    while userGameCount:
+        playTheGame()
+        # Every time we run the playTheGame function we want to decrement the userGameCount
+        # by one until it hits zero, at which point the while loop will stop running.
+        userGameCount -= 1
+
+# Lets call the initializeGame function to get things going!
+initializeGame()
 
 ##################################################################################################
 
 # below we want to iterate through a list of lists using a nested for loop,
 # or in simpler terms a for loop within a for loop. this is very common
-# in data structures and you will master this in no time!
+# in data structures and you will master this in no time! The first sublist in
+# my_shows would be the entire list of ['How I Met Your Mother', 'Friends', 'Silicon Valley']
+# Then, second for loop of "for show_name in sublist:" would iterate through each of those
+# items in the list. Once the second for loop is completed, the program will return to the first
+# for loop and move on to the second list of ['Family Guy', 'South Park', 'Rick and Morty'] and
+# repeat the second for loop for that list's items.
 
 my_shows = [
     ['How I Met Your Mother', 'Friends', 'Silicon Valley'],
@@ -150,9 +174,14 @@ the_office = {
 
 # TODO: Question 3: Loop through the the_office object and print out the value of each key.
 
+# let's remember something when using a nested for loop here. The first iteration of our
+# top level for loop would be "Season 1" since it is the first key in our dictionary. You
+# might want to set a variable between the top level for loop and the nested loop. Remember,
+# if the iteration of each loop is a key, that variable you'd set between loops should follow
+# the format of variableName = dictionaryName[keyName]. Then, you can iterate through that new
+# variable, since it should equal the value of the key which is a dictionary.
 # TODO: Question 4: Create a nested for loop that would list an output for each episode
-
-# TODO: Question 5: that would state "Episode __ of Season __ is titled '____' "
+# TODO: that would state "Episode __ of Season __ is titled '____' "
 
 ##################################################################################################
 

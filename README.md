@@ -47,16 +47,16 @@
         'git pull origin master'
         
 12. Next you should copy and paste the todos (file ends in 'todo') into VS Code
- a. Go to -> https://github.com/projectinnovatenewark/csx/tree/master/lesons/marking_period_1
+ a. Go to -> https://github.com/projectinnovatenewark/student_repository/tree/master/todos
+    to see the assignment files separated by week.
  b. Create a file in your 'python-work' folder in VS Code:
           right click on 'python-work' folder
           click 'new file'
           name the new file 'currentlesson.py' (.py tells VS Code that it is a pthon file)
- c. Copy the lesson in your new file and learn!
+ c. Copy the first lesson from week one in your new file and try to solve it. 
+    To run your code, simply click on the green arrow at the top right of your VS Code window.
  
 13. When you are finished with the lesson and complete the corresponding todo
           (todo's are meant to test what you learned from the lesson)
  a. repeat step 12.b but instead name the file 'currentlessontodo.py'
  b. try to complete the todo and then peer review
-
-
