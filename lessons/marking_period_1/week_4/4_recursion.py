@@ -10,15 +10,15 @@ Example recursion functions. reference: https://realpython.com/python-thinking-r
 # recursion is a functioning that calls itself, thus breaking a large
 # problem down into smaller and smaller sub-problems until it is solved
 
-# def factorial_recursive(n):
-#     # Base case: 1! = 1
-#     if n == 1:
-#         return 1
+def factorial_recursive(n):
+    # Base case: 1! = 1
+    if (n == 1):
+        return 1
 
-#     # Recursive case: n! = n * (n-1)!
-#     else:
-#         return n * factorial_recursive(n-1)
-# print(factorial_recursive(10))
+    # Recursive case: n! = n * (n-1)!
+    else:
+        return n * factorial_recursive(n-1)
+print(factorial_recursive(10))
 
 # The Fibonacci sequence is a set of numbers that starts with a one or a zero,
 # followed by a one, and proceeds based on the rule that each number

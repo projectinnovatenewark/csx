@@ -14,20 +14,20 @@ Indexing and range function for lists, dictionaries, strings and numbers
 for num in range(9):
     print(num)
 
-##############################################################################################
+####################################################################################################
 
 # if you put in an initial argument, that number is included in the range. If you just put one
 # number, it starts with zero.
 for num in range(3, 11):
     print(num)
 
-##############################################################################################
+####################################################################################################
 
 # if you want to access a part of a string, you can get a portion of the string with indexing
 beatles = "You say goodbye, and I say hello!"
 print("letters from the beatle song: " + beatles[3:11])
 
-##############################################################################################
+####################################################################################################
 
 # index lists with for loops
 grades = [72, 87, 99, 45, 70]
@@ -49,7 +49,7 @@ for num in grades:
 for num in grades:
     print("Student number " + str(grades.index(num) + 1) + "'s grade is " + str(num))
 
-##############################################################################################
+####################################################################################################
 
 # lets make reading grades easier by attaching them to the name of the student that got the grade
 # when you use a for loop, it will return each key in the dictionary. You can access the value
@@ -61,7 +61,7 @@ print("Chris got a " + str(grades["Chris"]))
 
 # When you use a for loop with a dictionary, the variable gets set to every key item, NOT the value :)
 # here we are also introduced to tabulation (aka spacing with tabs). It is important to understand
-# that functions and loops use a colon and work within a 'scope', or whatever falls within the 
+# that functions and loops use a colon and work within a 'scope', or whatever falls within the
 # tabulation set by the line thereafter. We use four spaces in one tab to denote that certain code
 # falls within a function
 for student in grades:
@@ -71,12 +71,28 @@ for student in grades:
 # we do this by using the len() function with grades to print us the length of the grades dictionary
 print("Number of students: " + str(len(grades)))
 
-##############################################################################################
+####################################################################################################
 
-# FIXME: ADD IN A NOTE ABOUT HOW WHILE LOOPS/FOR LOOPS DECIDE WHETHER TO ITERATE IN DIFFERENT DATA
-# FIXME: TYPES (I.E. LIST, DICT, NUMBER, ETC.)
+# The way that a for loop/while loop decides to continue running is if it evaluates a condition
+# as true. We will go over what is considered "True" for different types of iterable data using
+# loops.
 
-##############################################################################################
+# This will continue to run until all the items have been removed with the .pop method
+# and your list is empty. An empty list equates to a False condition, and the loop will end.
+grocery_list = ['Bread', 'Butter', 'Frozen Pizza', 'Mozz Sticks', 'Ice Cream']
+while grocery_list:
+    purchased_item = grocery_list.pop()
+    print(f'You purchased {purchased_item} and removed it from your list.')
+    print('Your remaining items are', grocery_list)
+
+# If you have a number that you are decrementing, the while loop will run until that number
+# is zero. A zero value equates to a False condition, and the loop will then end.
+i = 10
+while i:
+    print(i)
+    i -= 1
+
+####################################################################################################
 
 # "continue" statement:
 # The continue statement rejects all the remaining statements in the current iteration of the loop
@@ -87,7 +103,7 @@ print("Number of students: " + str(len(grades)))
 # of this statement". While we haven't really addressed scope, just know that everything following
 # the if statement that is tabbed inward represents the scope of that if statement.
 # Example:
-if ("5" == str(5)):
+if (str(5) == '5'):
     print('this is in the scope of the if statement')
     print('this would also be in the scope of the if statement')
 print('this would NO LONGER be in the scope of the if statement')
@@ -123,5 +139,4 @@ while var > 0:
         print("This iteration, since the if statement condition was true, will trigger the break statement. That end the current iteration and then end the for loop.")
         break
     print("Current variable value :", var)
-print("Good bye!") # since this tabulation is set to the same spacing as the while loop,
-                   # this print statement won't run until the while loop is complete.
+print("Your while loop has ended. Good bye!") # since this tabulation is set to the same spacing as the while loop, this will run once the loop is complete

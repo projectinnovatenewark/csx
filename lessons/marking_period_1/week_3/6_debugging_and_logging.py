@@ -14,10 +14,13 @@ def isPrime(n):
         if (num % n == 0): #argument in if statement should start with arbitrary number THEN for range variable 
             truth_val = False
             print("Condition is satisfied") #this is an exmple of logging to check if the function is at least being tested.
-            break
-    return truth_val 
+        break # when would this break statement occur?
+    return truth_val
 
-num = 15
+isPrime(13)
+
+####################################################################################################
+
 def num_analyzer(): #argument needed in function definition
     """numAnalyzer should accept an argument and return if it is even or false AND if it is prime
     it shold test from every number """
@@ -33,4 +36,4 @@ def num_analyzer(): #argument needed in function definition
 
         num = 1
 
-num_analyzer(num)
+num_analyzer(15)

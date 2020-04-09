@@ -2,9 +2,69 @@
 Here we will show a couple of examples of functions that use loops and conditionals
 """
 
+# Let's walk through how to use functions and return values with one another. We will
+# write a program that specifies what type of pizza pie a user wants with separate functions
+# for each of the following. One function should ask a user what size they want and only
+# accept small, medium, or large. Another function should ask about toppings, but tell the
+# user they don't have pepperoni (if they ask for pepperoni). Our last function should confirm
+# the order with the user.
+
+def sizeInquiry():
+    """Ask a user what size pizza they want and return it if it is a valid response"""
+    sizeOfPie = input("What size pie do you want? (small, medium, or large): ")
+    acceptableInputs = ["small", "medium", "large"]
+    if (sizeOfPie not in acceptableInputs):
+        print("Try again and enter a valid pizza size.")
+        return False
+    else:
+        return sizeOfPie
+
+def toppingsInquiry():
+    """Ask a user what toppings they want- make sure to let them know we dont have pepperoni if they ask!"""
+    toppings = input("What toppings would you like to have with your pizza?: (separate your toppings with commas and no spaces in between) ")
+    # Lets split the user's string into separate items in a list. We want to make sure they didnt try to order pepperoni!
+    listOfToppings = toppings.split(",")
+
+    if ("pepperoni" in listOfToppings):
+        followUp = input("Sorry dog, we don't have pepperoni. Do you want to change your order? (y/n) ")
+        if (followUp == "y"):
+            return False
+        if (followUp == "n"):
+            listOfToppings.remove("pepperoni")
+            toppingsString = ", ".join(listOfToppings)
+            return toppingsString
+    else:
+        return toppings
+
+def formatOrder(s, t):
+    """Create a basic formatted string to output to our user"""
+    userMessage = f"Your order is for a {s} pizza with {t}"
+    return userMessage
+
+def main():
+    """Guide a user through ordering a pizza"""
+
+    # The return value of a function call can be set equal to a variable.
+    size = sizeInquiry()
+    if (size is False):
+        # If the input value was incorrect and returned False, then we want to return a main function call to start over.
+        return main()
+
+    toppings = toppingsInquiry()
+    if (toppings is False):
+        # If the input value was incorrect and returned False, then we want to return a main function call to start over.
+        return main()
+
+    message = formatOrder(size, toppings)
+    print(message)
+
+main()
+
+####################################################################################################
+
 unsorted_num_list = [10, 22, 8, 15, 7, 18, 3]
 
-# Here is a long way to create a function and solve the problem above by sorting thec
+# Here is a long way to create a function and solve the problem above by sorting them
 
 # unsorted_num_list and putting the sorted items in a new list.
 def sort_a_list(data_list):
@@ -33,7 +93,7 @@ sort_a_list(unsorted_num_list)
 # is that you understand how those functions work!
 print(sorted(unsorted_num_list))
 
-##################################################################################################
+####################################################################################################
 
 # lets try a for loop within a for loop. we want the outputs to be "red cherry",
 # "big coconut", and "tasty mango".
@@ -51,7 +111,7 @@ for word in adjective:
 # TODO: Switch the above data sets to a dictionary and change the loop to achieve your
 # TODO: desired outcome.
 
-##################################################################################################
+####################################################################################################
 
 # Lets develop a small program using multiple functions to create a game. A user will input how
 # many times they want to play the game. The game is to guess a number between one and ten.
@@ -66,7 +126,7 @@ def inquireUserGames():
     """ask a user how many times they want to play"""
     timesToPlay = input("How many times would you like to play the 'Guess the Number' game?: ")
     numTimesToPlay = int(timesToPlay)
-    userStartedGameString = "You've signed on to play {} games!".format(timesToPlay)
+    userStartedGameString = f"You've signed on to play {timesToPlay} games!"
     # Let's return TWO variables to display some cool Python functionality. We can now
     # set two variables equal to the value of calling this function.
     return numTimesToPlay, userStartedGameString
@@ -107,7 +167,7 @@ def initializeGame():
 # Lets call the initializeGame function to get things going!
 initializeGame()
 
-##################################################################################################
+####################################################################################################
 
 # below we want to iterate through a list of lists using a nested for loop,
 # or in simpler terms a for loop within a for loop. this is very common
@@ -129,7 +189,7 @@ for sublist in my_shows:
         char_num = len(show_name)
         print("The title " + show_name + " is " + str(char_num) + " characters long.")
 
-##################################################################################################
+####################################################################################################
 
 # below we want to iterate through a dictionary of key value pairs- where the values are
 # dictionaries! We wil again use a nested for loop here. Here we have the first six
@@ -183,7 +243,7 @@ the_office = {
 # TODO: Question 4: Create a nested for loop that would list an output for each episode
 # TODO: that would state "Episode __ of Season __ is titled '____' "
 
-##################################################################################################
+####################################################################################################
 
 # Lets try looping through a different nested data structure. Imagine having a set of classes
 # in a list. However, each class would be an object with info like subject, level, teacher,

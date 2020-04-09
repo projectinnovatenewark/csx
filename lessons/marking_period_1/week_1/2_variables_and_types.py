@@ -12,49 +12,49 @@ This is a docstring. They are used to detail files at a high level.
 # a number without a decimal point is of the type integer
 number1 = 5 # integer
 
-##############################################################################################
+####################################################################################################
 
 # a number with a decimal point is a float
 float2 = 6.3 # floating point number
 float1 = 7. # also a floating point number
 
-##############################################################################################
+####################################################################################################
 
 # anything wrapped in quotes is a string
 string1 = "Hello" # string over here
 string2 = "my name is 29#$%@#$^%" #literally, anything wrapped in quotes is a string
 string3 = "369"
 
-##############################################################################################
+####################################################################################################
 
 # naming variables is important!!! this has a capital "S" in string, so its different
 # than the previous variable of string1
 String1 = "Wonderful!"
 
-##############################################################################################
+####################################################################################################
 
 # MULTIPLE VARIABLES IN ONE VARIABLE?! YEP!
 big_string = string1 + string2
 print(big_string)
 
-##############################################################################################
+####################################################################################################
 
 # Setting multiple variables in one line of code? Also yep. Make sure you use your commas wisely!
 var1, var2, var3 = 1, 2, 3
 print(var1, var2, var3)
 
-##############################################################################################
+####################################################################################################
 
 # Booleans are true or false values. The first letter gets capitalized in the word
 boolean = False
 boolean2 = True
 
-##############################################################################################
+####################################################################################################
 
 # if you want to set a variable to an empty value, use the None type
 variable_for_later = None
 
-##############################################################################################
+####################################################################################################
 
 # print is an example of a function. a function is a block of code that runs when it is called upon.
 # the items you place in the parentheses are called arguments

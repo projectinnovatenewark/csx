@@ -40,9 +40,10 @@ print(var1)
 print("{:.2f}".format(var1))
 
 # After printing var1 with format(), you can see we added 2 decimal points with the "{:.2f}"
-# you can add places in front of the first number as well
+# you can add places in front of the first number as well. This can also be done with the f
+# shorthand, as we will show below, by putting the variable in front of the colon.
 
-print("{:010.3f}, {:.2f}".format(var1, var1))
+print(f"{var1:010.3f}, {var1:.2f}")
 
 ###################################################################################################
 
