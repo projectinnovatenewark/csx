@@ -60,7 +60,7 @@ def main():
 
 main()
 
-##################################################################################################
+####################################################################################################
 
 unsorted_num_list = [10, 22, 8, 15, 7, 18, 3]
 
@@ -93,7 +93,7 @@ sort_a_list(unsorted_num_list)
 # is that you understand how those functions work!
 print(sorted(unsorted_num_list))
 
-##################################################################################################
+####################################################################################################
 
 # lets try a for loop within a for loop. we want the outputs to be "red cherry",
 # "big coconut", and "tasty mango".
@@ -111,7 +111,7 @@ for word in adjective:
 # TODO: Switch the above data sets to a dictionary and change the loop to achieve your
 # TODO: desired outcome.
 
-##################################################################################################
+####################################################################################################
 
 # Lets develop a small program using multiple functions to create a game. A user will input how
 # many times they want to play the game. The game is to guess a number between one and ten.
@@ -167,7 +167,7 @@ def initializeGame():
 # Lets call the initializeGame function to get things going!
 initializeGame()
 
-##################################################################################################
+####################################################################################################
 
 # below we want to iterate through a list of lists using a nested for loop,
 # or in simpler terms a for loop within a for loop. this is very common
@@ -189,7 +189,7 @@ for sublist in my_shows:
         char_num = len(show_name)
         print("The title " + show_name + " is " + str(char_num) + " characters long.")
 
-##################################################################################################
+####################################################################################################
 
 # below we want to iterate through a dictionary of key value pairs- where the values are
 # dictionaries! We wil again use a nested for loop here. Here we have the first six
@@ -243,7 +243,7 @@ the_office = {
 # TODO: Question 4: Create a nested for loop that would list an output for each episode
 # TODO: that would state "Episode __ of Season __ is titled '____' "
 
-##################################################################################################
+####################################################################################################
 
 # Lets try looping through a different nested data structure. Imagine having a set of classes
 # in a list. However, each class would be an object with info like subject, level, teacher,

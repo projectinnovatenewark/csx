@@ -48,6 +48,11 @@ outputOurNumber()
 
 def daysActivities(typeOfDay):
     dayString = ""
+    # These if statements check to see if the typeOfDay argument is equal to something- in our case
+    # we are checking in three different statements if typeOfDay is either "fun", "productive",
+    # or "lazy". If one of those if's is true, then we do whatever is within the scope of that if
+    # block. If none of the if statements are true, we execute what is in the "else" block.
+
     if (typeOfDay == "fun"):
         dayString = "You should enjoy some of your favorite activities"
     if (typeOfDay == "productive"):
@@ -57,6 +62,8 @@ def daysActivities(typeOfDay):
     else:
         dayString = "I can only compute one of the three provided types of days. Try again, chief!"
 
+    # This will return the variable dayString and end the function. When a return statement is run,
+    # the function will effectively stop running.
     return dayString
 
 def inquireDay():

@@ -14,7 +14,7 @@ def f():
 
 # since the function f() is called after the variable s is declared, then
 # there wont be an error thrown
-s = "My parents are from there!" 
+s = "My parents are from there!"
 f()
 print(s)
 
