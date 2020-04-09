@@ -1,5 +1,5 @@
 """
-if, else, elif, while loops
+if, elif, else
 """
 
 num = 3
@@ -54,7 +54,7 @@ number_list = [3, 15, 31, 1, 11, 107]
 if all(numbers % 2 != 0 for numbers in number_list):
     print("all the numbers are odd")
 
-# ##################################################################################################
+##################################################################################################
 
 # not in checks to see if an item is not in a list
 if (1000000 not in number_list):
@@ -72,7 +72,7 @@ if any(numbers % 2 == 0 for numbers in number_list):
 for numbers in enumerate(number_list):
     print(numbers)
 
-# ##################################################################################################
+##################################################################################################
 
 # switch statements are common in other languages. What a switch statement does is take a
 # case and apply it. Say you want to know what the name of the day is by it's place in the

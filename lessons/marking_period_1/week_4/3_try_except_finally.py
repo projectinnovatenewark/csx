@@ -16,6 +16,19 @@ finally:
     print("Finally!")
     print("All Done")
 
+# This is the same code as above, except that the "else" block will ONLY happen if there is no error.
+# Finally will happen whether there is an error or not. Else will only happen if there is no error.
+
+try:
+    f = open("test.txt", 'r')
+    data = f.read()
+    print("Trying")
+except:
+    print("Fiddlesticks! Failed")
+else:
+    print("Finally!")
+    print("All Done")
+
 # when using explicit error handling, its important to handle errors efficiently.
 # With try/except/finally's, an IOError is the most common type to be served.
 # So, let's try it this way

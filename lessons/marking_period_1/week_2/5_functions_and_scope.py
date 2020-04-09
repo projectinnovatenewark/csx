@@ -9,16 +9,16 @@ def addTen(n):
     newNum = n + 10 # this is within the scope of the function
     return newNum # this is also within the scope of the function
 
-print("We have exited the function") # since this line is not indented within the function, it is outside
-                                     # the scope of the function and the function definition has therefore ended
+print("This is not a part of the function") # since this line is not indented within the function, it is outside
+                                            # the scope of the function and the function definition has therefore ended
 
-# now that we are at the leftmost part of the page, we have exited the scope of the function above.
-# this function should now take the argument passed, which is 3, and add ten to it. It will then return
+# Now that we are at the leftmost part of the page, we have exited the scope of the function above.
+# This function should now take the argument passed, which is 3, and add ten to it. It will then return
 # that value. What you see below is called "calling a function", which basically runs the function above.
 print("First call to addTen function: ")
 addTen(3)
 
-# huh, why didnt this create an output?! Well, we didn't print it!! We could either
+# Huh, why didnt this function call create an output?! Well, we didn't print it!! We could either
 # 1) change the "return" value to be a print statement...or
 # 2) we can print the function call itself!
 
@@ -40,7 +40,7 @@ def outputOurNumber():
 print("Calling our outputOurNumber function: ")
 outputOurNumber()
 
-##################################################################################################
+####################################################################################################
 
 # Calling functions within other functions and using their return values.
 # Having return values from functions is important when you want to use that value,
@@ -59,10 +59,12 @@ def daysActivities(typeOfDay):
 
     return dayString
 
-# This function will ask the user what type of day they want to have
 def inquireDay():
-    # We will take this user input value and pass it as an argument to our "daysActivities" function.
+    """This function will ask the user what type of day they want to have"""
+
+    # We will take the user input value and pass it as an argument to our "daysActivities" function.
     userDay = input("What type of day do you want to have? You can choose from fun, productive, or lazy. Enter your choice!: ")
+
     # This variable below would be equal to the return value of the function call
     userMessage = daysActivities(userDay)
     print(userMessage)
@@ -70,7 +72,7 @@ def inquireDay():
 # This is a regular old function call
 inquireDay()
 
-##################################################################################################
+####################################################################################################
 
 # here are a couple of dictionaries
 EXAMPLE_DICTIONARY_ONE = {"Abigail": 78, "Brian": 86, "Carlito": 95, "Debbie": 100, "Erion": 88}
@@ -93,7 +95,7 @@ dictionary_reader(EXAMPLE_DICTIONARY_ONE)
 # Here we see the same function performing operations with our second argument
 dictionary_reader(EXAMPLE_DICTIONARY_TWO)
 
-#################################################################################################
+####################################################################################################
 
 # below are examples by using variables & the timing of a function call to portray scope
 # here we call "s" after the function is called, which will return a NameError
@@ -102,24 +104,23 @@ def func():
 func()
 s = "I love Paris in the summer!"
 
-##################################################################################################
+####################################################################################################
 
-# here, since the variable is declared before the function is called, it will return the "s2" value
+# here, since the variable is declared before the function is called, it will print the "s2" value
 def func2():
     print(s2)
 s2 = "I love San Diego in the summer!"
 func2()
 
-##################################################################################################
+####################################################################################################
 
 # here, the variable in the function is referenced within the function's scope, therefore it will
 # print the "I love London" statement
-def func3(): 
+def func3():
     s3 = "I love London!"
-    print(s3) 
-
-##################################################################################################
+    print(s3)
 
 s3 = "I love Malaysia!"
 func3()
+
 print(s3)
