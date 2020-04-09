@@ -2,28 +2,28 @@
 Actions you can perform on lists and dictionaries
 """
 
-# LIST
+# LIST METHODS
 
 # the append method adds an item to the end of a list
 medals = ["gold", "silver"]
 medals.append("bronze")
 print(medals)
 
-##############################################################################################
+####################################################################################################
 
 # the insert method adds an item to a specific index
 priority_list = ["go to sports practice", "hangout with friends", "talk to mom", "eat vegetables"]
 priority_list.insert(2, "study computer science")
 print(priority_list)
 
-##############################################################################################
+####################################################################################################
 
 # the remove method will remove a specific item from a list
 fruits = ["apples", "oranges", "asparagus", "bananas"]
 fruits.remove("asparagus")
 print(fruits)
 
-##############################################################################################
+####################################################################################################
 
 # the pop method will remove the last item from a list and return it's value
 # you could also pick an index item to remove. i.e. removing the first item and
@@ -32,7 +32,7 @@ shopping_list = ["t-shirt", "laptop", "belt", "dress", "mousepad"]
 last_item = shopping_list.pop()
 print("last item:", last_item, "and shopping list:", shopping_list)
 
-##############################################################################################
+####################################################################################################
 
 # the extend method adds a list to the end of another list
 # language list
@@ -50,7 +50,7 @@ print('Language List: ', languages1)
 languages1[0] = "Malaysian"
 print(languages1)
 
-##############################################################################################
+####################################################################################################
 
 # # slicing is a way to segment items in a list
 table_items = ["cloth", "mug", "newspaper", "magazine", "remote", "coozie"]
@@ -77,7 +77,7 @@ all_but_first_and_last = table_items[1:5]
 list_stepper = table_items[0:5:2]
 print("List stepper:", list_stepper)
 
-##############################################################################################
+####################################################################################################
 
 # list comprehensions are ways to define potentially lengthy lists in one line
 # while you may not recognize the syntax here, just know that you are creating a list of
@@ -97,7 +97,7 @@ print("Squares of odd numbers list", squares_of_odd_numbers)
 squares_of_even_numbers_without_4 = [i**2 for i in range(1, 10) if i % 2 == 0 and i != 4]
 print("Squares of even numbers without 4 list", squares_of_even_numbers_without_4)
 
-##############################################################################################
+####################################################################################################
 
 # DICTIONARIES
 
@@ -112,13 +112,11 @@ print("post c sharp", programming_languages)
 programming_languages.update({2: "Golang"})
 print("post golang", programming_languages)
 
-##############################################################################################
-
 # while the pop can remove a key-value pair
 programming_languages.pop(1)
 print("post pop 1", programming_languages)
 
-##############################################################################################
+####################################################################################################
 
 # the get method will find a value for a key in a dictionary
 # you can also specify a return value if the key does not exist in the dictionary

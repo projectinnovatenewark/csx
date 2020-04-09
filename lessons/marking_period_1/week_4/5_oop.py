@@ -62,11 +62,11 @@ class Doggo:
 
     # a method of this class
     def description(self):
-        return "{} is {} years old".format(self.name, self.age)
+        return f"{self.name} is {self.age} years old"
 
     # another method of this class
     def speak(self, sound):
-        return "{} says {}".format(self.name, sound)
+        return f"{self.name} says {sound}"
 
 # Instantiate the Doggo object
 pierreTheDog = Doggo("Pierre", 6)
