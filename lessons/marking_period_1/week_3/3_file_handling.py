@@ -11,21 +11,21 @@ fh = open("hello.txt", "r")
 ####################################################################################################
 
 # to read a text file, use
-fh = open("hello.txt", "r")
+fh = open("my_name_is.txt", "r")
 contents = fh.read()
 print(contents)
 
 ####################################################################################################
 
 # to read one line at a time, use
-fh = open("hello.txt", "r")
+fh = open("my_name_is.txt", "r")
 contents = fh.readline()
 print(contents)
 
 ####################################################################################################
 
 # to separate each line into items in a list, use the .readlines() function.
-fh = open("hello.txt", "r")
+fh = open("my_name_is.txt", "r")
 contents = fh.readlines()
 print(contents)
 
@@ -36,28 +36,30 @@ for line in contents:
 ####################################################################################################
 
 # to write to a file, use
-fh = open("hello.txt","w")
-write("Hello World")
+fh = open("hello.txt", "w")
+fh.write("Hello World")
 fh.close()
 
 ####################################################################################################
 
 # to write to a file, use
 fh = open("hello.txt", "w")
-lines_of_text = ["a line of text ", "another line of text ", "a third line"]
+lines_of_text = ["a line of text ", "another line of text ", "a third line "]
 fh.writelines(lines_of_text)
 fh.close()
 
 ####################################################################################################
 
 # to append to file, use:
-fh = open("Hello.txt", "a")
-write("Hello World again")
+fh = open("hello.txt", "a")
+message = "Hello world, again"
+fh.write(message)
 fh.close()
 
 ####################################################################################################
 
 # after you are done reading or writing to a file, you should close it using the .close() function.
 fh = open("hello.txt", "r")
-print fh.read()
+contents = fh.read()
+print(contents)
 fh.close()
