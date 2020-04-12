@@ -7,7 +7,8 @@ This is a docstring. They are used to detail files at a high level.
 
 # Variables can be thought of as "containers" for a value. These values have types.
 # Types include things like integers, strings, floats, booleans, lists, and dictionaries.
-# The name of the variable is on the left of the `=` sign and on the right is the content of the variable
+# The name of the variable is on the left of the `=` sign and on the right is the content
+# of the variable
 
 # a number without a decimal point is of the type integer
 number1 = 5 # integer
@@ -22,7 +23,7 @@ float1 = 7. # also a floating point number
 
 # anything wrapped in quotes is a string
 string1 = "Hello" # string over here
-string2 = "my name is 29#$%@#$^%" #literally, anything wrapped in quotes is a string
+string2 = "my name is 29#$%@#$^%" # literally, anything wrapped in quotes is a string
 string3 = "369"
 
 ####################################################################################################
@@ -72,7 +73,7 @@ string3 = 45
 # print(string1, " i am python number " + string3, ", hear me roar!!")
 
 # You can also "concatenate" strings together below and print multiple strings
-print(string1, " i am python number ", string3, ", hear me roar!!")
+print(string1, " i am python number", string3, ",hear me roar!!")
 
 # notice how the spacing is off in the output of big_string?
 # thats because variables dont account for spaces! put an extra space in the string to make it neat

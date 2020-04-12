@@ -24,7 +24,7 @@ print("addition: ", addition, "subtraction: ", subtraction, "multiplication: ", 
 addition, subtraction, multiplication = 4 + 4, 20 - 6, 2 * 2
 
 print("Lets see if our variables changed.")
-print(addition, subtraction, multiplication)
+print("addition: ", addition, "subtraction: ", subtraction, "multiplication: ", multiplication)
 
 ####################################################################################################
 
