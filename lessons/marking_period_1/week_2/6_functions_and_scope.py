@@ -47,6 +47,7 @@ outputOurNumber()
 # and not just log it in that moment. Here is an example of one such case:
 
 def daysActivities(typeOfDay):
+    """Analyze a user's input and return a message for them"""
     dayString = ""
     # These if statements check to see if the typeOfDay argument is equal to something- in our case
     # we are checking in three different statements if typeOfDay is either "fun", "productive",

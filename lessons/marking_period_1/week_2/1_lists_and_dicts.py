@@ -10,6 +10,10 @@ CLASS_LIST = ["Andy", "Bronny", "Carlos", "Denisa", "Enrique"]
 # of an item in a list.
 print("The first student in the class class list is", CLASS_LIST[0])
 
+# To add an item to a list, you use the append function as such
+CLASS_LIST.append("Susan")
+print(CLASS_LIST)
+
 ####################################################################################################
 
 # dictionaries have keys which in turn have values similarly to how a real life dictionary
@@ -20,6 +24,11 @@ GRADES_DICT = {"Andy": 87, "Bronny": 95, "Carlos": 75, "Denisa": 55, "Enrique": 
 # a key's value is `dictionary[key]`
 print("Bronny's grade: ", GRADES_DICT["Bronny"])
 print("Denisa's grade: ", GRADES_DICT["Denisa"])
+
+# To add a key/value pair to a dictionary, you simply place a new key in brackets and set
+# it equal to the desired value
+GRADES_DICT["Susan"] = 92
+print(GRADES_DICT)
 
 ####################################################################################################
 

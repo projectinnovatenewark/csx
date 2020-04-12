@@ -11,13 +11,21 @@ Learn the elements of Object Oriented Programming
 # The object is an entity that has state and behavior. It may be any real-world object
 # like the mouse, keyboard, chair, table, pen, etc. Everything in Python is an object,
 # and almost everything has attributes and methods. All functions also have a built-in attribute
-# __doc__, which returns the doc string defined in the function source code.
+# __doc__, which returns the doc string defined in the function's source code.
 
 # EXAMPLE:
 
-# the format function we've used previously is built into Python. Therefore, it should have a
-# docstring that we can log using the print function!
+# the .format() function for formatting strings we've used previously is built into Python.
+# Therefore, it should have a docstring that we can log using the print function!
 print(format.__doc__)
+
+# Even strings and other basic types are of a certain class that has methods and attributes of
+# their own.
+randomString = "Blah"
+print(type(randomString)) # outputs "<class 'str'>"
+
+# upper, lower, and title are examples of built in methods that you can perform on strings.
+print(randomString.upper())
 
 ##################################################################################################
 
@@ -50,6 +58,8 @@ print(instantiatedClass.__doc__)
 # The method is a function that is associated with an object. In Python, a method is not
 # unique to class instances. Any object type can have methods.
 
+# EXAMPLE:
+
 class Doggo:
 
     # Class Attribute added to all instantiations of the Doggo class
@@ -75,8 +85,6 @@ pierreTheDog = Doggo("Pierre", 6)
 print(pierreTheDog.description())
 print(pierreTheDog.speak("Wuuf Wuuf"))
 
-# EXAMPLE:
-
 ##################################################################################################
 
 # 4) Inheritance
@@ -100,14 +108,14 @@ class Person:
 x = Person("Janet", "Jackson")
 x.printname()
 
-# Lets create a child class that will inherit the properties of this parent
+# Lets create a child class that will inherit the properties of this parent class
 class Student(Person):
   pass
 
 # and check to see if the child class inherited the properties of it's parent class, including
-# the constructor and printname method
-x = Student("Mariano", "Rivera")
-x.printname()
+# the init constructor and printname method
+y = Student("Mariano", "Rivera")
+y.printname()
 
 # Note: When you add the __init__() function, the child class will no longer inherit the parent's
 # __init__() function. That means the constructor will change and the values you pass to the class
@@ -115,21 +123,22 @@ x.printname()
 
 # Lastly, we will tinker with inheritance and use a super() function. If we want to inherit
 # the methods and properties from the parent, we add super() to the init of the child.
-# since we added this, we now will not need to add these lines that originally appeared
+# Since we added this, we now will not need to add these lines that originally appeared
 # in the parent:
     # self.firstname = fname
     # self.lastname = lname
-# So, instead of having to repeat this in our child's constructor, it assumes the init function
+# So, instead of having to repeat those lines of code in our child's constructor, it assumes the init function
 # from it's parent and automatically sets fname and lname to the variables of firstname and lastname.
 class NewStudent(Person):
-  def __init__(self, fname, lname, year):
+  def __init__(self, fname, lname, year, gpa):
     super().__init__(fname, lname)
-    self.graduationyear = year
+    self.graduationYear = year
+    self.gradePointAverage = gpa
 
   def welcome(self):
-    print("Welcome", self.firstname, self.lastname, "to the class of", self.graduationyear)
+    print("Welcome", self.firstname, self.lastname, "to the class of", self.graduationYear, "who received a GPA of", self.gradePointAverage)
 
-y = NewStudent("Lonzo", "Ball", 2017)
+y = NewStudent("Lonzo", "Ball", 2017, 3.6)
 y.welcome()
 
 ##################################################################################################
@@ -141,7 +150,7 @@ y.welcome()
 # EXAMPLE:  
 # len() being used for a string 
 print(len("geeks")) 
-  
+
 # len() being used for a list 
 print(len([10, 20, 30]))
 
@@ -156,31 +165,36 @@ print(len([10, 20, 30]))
 # EXAMPLE:
 def encapsulation_example():
     def do_local():
-        spam = "local spam"
+      spam = "local spam"
 
     def do_nonlocal():
-        nonlocal spam
-        spam = "nonlocal spam"
+      nonlocal spam
+      spam = "nonlocal spam"
 
     def do_global():
-        global spam
-        spam = "global spam"
+      global spam
+      spam = "global spam"
 
     spam = "test spam"
+
     do_local()
-    print("After local assignment:", spam)
+    print("After local assignment:", spam) # spam would still be "test spam"
+
     do_nonlocal()
-    print("After nonlocal assignment:", spam)
+    print("After nonlocal assignment:", spam) # spam would now be "nonlocal spam"
+
+    # when you call this function, you will set a global variable of spam equal to "global spam"
     do_global()
-    print("After global assignment:", spam)
+    print("After global assignment:", spam) # spam would still be "nonlocal spam" since the local variable
+                                            # would take precedence over the global variable within this function
 
 encapsulation_example()
 print("In global scope:", spam)
 
 ##################################################################################################
 
-# 7) Data Abstraction
-# Data abstraction and encapsulation both are often used as synonyms. Both are nearly synonym
+# 7) Data Abstraction (feel free to skim over this as it is very similar to encapsulation)
+# Data abstraction and encapsulation both are often used as synonyms. Both are nearly synonymous
 # because data abstraction is achieved through encapsulation. Abstraction is used to hide internal
 # details and show only functionalities. Abstracting something means to give names to things so that
 # the name captures the core of what a function or a whole program does.
@@ -195,35 +209,41 @@ print("In global scope:", spam)
 # https://www.cs.usfca.edu/~wolber/bookChapters/CS_Text_11.pdf
 
 # EXAMPLE:
-# Lets create a data abstraction for a 'facebook user'. While there is likely tens of thousands of data
-# points tied to a social media account, we can create an abstraction of that by defining the data
-# for a person. We can then use this abstraction to create single instances later in the program
+# Let's create a data abstraction for a 'facebook user'. While there is likely tens of thousands of data
+# points tied to a social media account structure, we can create an abstraction of that by defining the data
+# for a person's home page. We can then use this abstraction to create single instances later in the program
 # with a new example user.
-class Person:
-    def __init__(self): # this function called on creation
+class FBPerson:
+    # as you can see, we are not setting parameters here and instead setting our attributes outside of the
+    # class instantiation
+    def __init__(self): # this function is called on a class instantiation
         self.firstName=""
         self.lastName=""
         self.id=""
         self.email=""
         self.friends=[]
 
-p1 = Person() # object creation statement
-p1.firstName = "Shaquille" # setting fields
+p1 = FBPerson() # class instantiation being set to a variable of p1
+
+# As you may not have seen before, we can change class attributes one by one outside of a class instantiation
+p1.firstName = "Shaquille"
 p1.lastName = "O'Neal"
 p1.id = "34"
 p1.email = "drshaq@tnt.co"
 print(p1.firstName) # accessing a field
 
-# as is the nature of coding, let's do the above in a much simpler way that we began to learn
-# in our classes lesson from a few classes ago (yep, that was intentional 😂)
+# As is the nature of coding, let's do the above in a much simpler way that we learned
+# in our "classes" lesson from a few classes ago (yep, that was intentional 😂)
 
 class User:
+    # this is an example of our normal initializer function for a class
     def __init__(self,first,last,id,email):
         self.firstName=first
         self.lastName=last
         self.id=id
         self.email=email
         self.friends=[]
+
 # main
 u1 = User("Kobe","Bryant","8","laker4life@mamba.co")
 print(u1.firstName)
@@ -246,17 +266,17 @@ class Bird:
     print("Most of the birds can fly but some cannot.") 
     
 # below you can see both the sparrow and ostrich classes overriding the flight method from Bird
-class sparrow(Bird): 
+class Sparrow(Bird): 
   def flight(self): 
     print("Sparrows can fly.") 
-      
-class ostrich(Bird): 
+
+class Ostrich(Bird): 
   def flight(self): 
     print("Ostriches cannot fly.") 
-      
+
 obj_bird = Bird() 
-obj_spr = sparrow() 
-obj_ost = ostrich() 
+obj_spr = Sparrow() 
+obj_ost = Ostrich() 
   
 obj_bird.intro() 
 obj_bird.flight() 
@@ -274,38 +294,40 @@ obj_ost.flight()
 # this example, let’s create a function called “func()” which will take an object which we will name
 # “obj”. Though we are using the name ‘obj’, any instantiated object will be able to be called into
 # this function. Next, lets give the function something to do that uses the ‘obj’ object we passed
-# to it. In this case lets call the three methods, viz., capital(), language() and type(), each of
+# to it. In this case lets call the three methods, capital(), language() and type(), each of
 # which is defined in the two classes ‘India’ and ‘USA’. Next, let’s create instantiations of both
 # the ‘India’ and ‘USA’ classes if we don’t have them already. With those, we can call their action
 # using the same func() function:
 
 class India(): 
-    def capital(self): 
-        print("New Delhi is the capital of India.") 
-   
-    def language(self): 
-        print("Hindi the primary language of India.") 
-   
-    def type(self): 
-        print("India is a developing country.") 
-   
-class USA(): 
-    def capital(self): 
-        print("Washington, D.C. is the capital of USA.") 
-   
-    def language(self): 
-        print("English is the primary language of USA.") 
-   
-    def type(self): 
-        print("USA is a developed country.") 
+  def capital(self): 
+      print("New Delhi is the capital of India.") 
   
-def func(obj): 
-    obj.capital() 
-    obj.language() 
-    obj.type() 
+  def language(self): 
+      print("Hindi the primary language of India.") 
+  
+  def type(self): 
+      print("India is a developing country.") 
+
+class USA(): 
+  def capital(self): 
+      print("Washington, D.C. is the capital of USA.") 
+  
+  def language(self): 
+      print("English is the primary language of USA.") 
+  
+  def type(self): 
+      print("USA is a developed country.") 
+
+def func(obj):
+  """this function will take in a class and call functions from within it
+  since it an apply to different class types, it is an example of polymorphism"""
+  obj.capital() 
+  obj.language() 
+  obj.type() 
    
 obj_ind = India() 
 obj_usa = USA() 
    
 func(obj_ind) 
-func(obj_usa) 
+func(obj_usa)
