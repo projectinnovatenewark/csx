@@ -193,7 +193,7 @@ print("In global scope:", spam)
 
 ##################################################################################################
 
-# 7) Data Abstraction
+# 7) Data Abstraction (feel free to skim over this as it is very similar to encapsulation)
 # Data abstraction and encapsulation both are often used as synonyms. Both are nearly synonymous
 # because data abstraction is achieved through encapsulation. Abstraction is used to hide internal
 # details and show only functionalities. Abstracting something means to give names to things so that
