@@ -11,7 +11,7 @@ Introduction to the packages Numpy, Pandas, Matplotlib, Scikit-Learn, Scipy, Asy
 ####################################################################################################
 
 # Let's start with the numpy package. We can install this package using pip (the python package
-# installer). The command is `pip install numpy`. Numpy is the fundamental package for scientific
+# installer). The command is `pip3 install numpy`. Numpy is the fundamental package for scientific
 # computing with Python. It contains various features including these important ones:
 # 1) A powerful N-dimensional array object
 # 2) Sophisticated (broadcasting) functions

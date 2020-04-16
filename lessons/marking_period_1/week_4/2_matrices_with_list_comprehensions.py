@@ -69,6 +69,7 @@ for row in table:
     print(row)
 
 # the output would look like
+# the output would look like
 
 # [2, 3, 4, 5, 6, 7]
 # [3, 4, 5, 6, 7, 8]
@@ -144,6 +145,8 @@ m3 = [4*[0] for i in range(3)]
 for i in range(3):
     for j in range(4):
         m3[i][j] = m1[i][j]+m2[i][j]
+
+print("\n", m3)
 
 # In this example we created two input matrices, m1 and m2, each three by four. We
 # initialized a third matrix, m3, to three rows of four zeroes, using a comprehension.
