@@ -102,18 +102,18 @@ print("Squares of even numbers without 4 list", squares_of_even_numbers_without_
 # DICTIONARIES
 
 # the equivalent of an append method for dictionaries is shown here
-programming_languages = {1 : "Python", 2 : "Java"}
+programming_languages = {"One" : "Python", "Two" : "Java"}
 print(programming_languages)
 
-programming_languages[3] = "CSharp"
+programming_languages["Three"] = "CSharp"
 print("post c sharp", programming_languages)
 
 # the update method will update the value of a key
-programming_languages.update({2: "Golang"})
+programming_languages.update({"Two": "Golang"})
 print("post golang", programming_languages)
 
 # while the pop can remove a key-value pair
-programming_languages.pop(1)
+programming_languages.pop("One")
 print("post pop 1", programming_languages)
 
 ####################################################################################################

@@ -1,61 +1,61 @@
-"""
-Here we will cover lists and dicts
-"""
+# """
+# Here we will cover lists and dicts
+# """
 
-# lists are a grouping of values
-CLASS_LIST = ["Andy", "Bronny", "Carlos", "Denisa", "Enrique"]
+# # lists are a grouping of values
+# CLASS_LIST = ["Andy", "Bronny", "Carlos", "Denisa", "Enrique"]
 
-# below is an example of indexing. the first item in any list has an index of ZERO
-# and the next item is 1, followed by 2, etc.. "Index" refers to the position
-# of an item in a list.
-print("The first student in the class class list is", CLASS_LIST[0])
+# # below is an example of indexing. the first item in any list has an index of ZERO
+# # and the next item is 1, followed by 2, etc.. "Index" refers to the position
+# # of an item in a list.
+# print("The first student in the class class list is", CLASS_LIST[0])
 
-# To add an item to a list, you use the append function as such
-CLASS_LIST.append("Susan")
-print(CLASS_LIST)
+# # To add an item to a list, you use the append function as such
+# CLASS_LIST.append("Susan")
+# print(CLASS_LIST)
 
-####################################################################################################
+# ####################################################################################################
 
-# dictionaries have keys which in turn have values similarly to how a real life dictionary
-# has words with definitions, the keys represent the words and values represent the definitions.
-GRADES_DICT = {"Andy": 87, "Bronny": 95, "Carlos": 75, "Denisa": 55, "Enrique": 100}
+# # dictionaries have keys which in turn have values similarly to how a real life dictionary
+# # has words with definitions, the keys represent the words and values represent the definitions.
+# GRADES_DICT = {"Andy": 87, "Bronny": 95, "Carlos": 75, "Denisa": 55, "Enrique": 100}
 
-# in dictionaries, however, values can only be accessed by their key. The format to finding
-# a key's value is `dictionary[key]`
-print("Bronny's grade: ", GRADES_DICT["Bronny"])
-print("Denisa's grade: ", GRADES_DICT["Denisa"])
+# # in dictionaries, however, values can only be accessed by their key. The format to finding
+# # a key's value is `dictionary[key]`
+# print("Bronny's grade: ", GRADES_DICT["Bronny"])
+# print("Denisa's grade: ", GRADES_DICT["Denisa"])
 
-# To add a key/value pair to a dictionary, you simply place a new key in brackets and set
-# it equal to the desired value
-GRADES_DICT["Susan"] = 92
-print(GRADES_DICT)
+# # To add a key/value pair to a dictionary, you simply place a new key in brackets and set
+# # it equal to the desired value
+# GRADES_DICT["Susan"] = 92
+# print(GRADES_DICT)
 
-####################################################################################################
+# ####################################################################################################
 
-# Lets think more about how variable assignments can play in here.
-CLASS_LIST = ["Aaron", "Bello", "Carla", "Droov", "Ebron"]
-GRADES_DICT = {"Aaron": 87, "Bello": 95, "Carla": 75, "Droov": 55, "Ebron": 100}
+# # Lets think more about how variable assignments can play in here.
+# CLASS_LIST = ["Aaron", "Bello", "Carla", "Droov", "Ebron"]
+# GRADES_DICT = {"Aaron": 87, "Bello": 95, "Carla": 75, "Droov": 55, "Ebron": 100}
 
-# Hmm. so, the first student in class can be found using CLASS_LIST[0]. We can set that equal
-# to a variable like this.
-first_student = CLASS_LIST[0] # this will equal "Aaron"
+# # Hmm. so, the first student in class can be found using CLASS_LIST[0]. We can set that equal
+# # to a variable like this.
+# first_student = CLASS_LIST[0] # this will equal "Aaron"
 
-# Now, since this student has a grade in the grades list, let's use this variable to find the
-# value of their grade in the list!
-first_student_grade = GRADES_DICT[first_student] # this is the equivalent of GRADES_DICT["Aaron"]
+# # Now, since this student has a grade in the grades list, let's use this variable to find the
+# # value of their grade in the list!
+# first_student_grade = GRADES_DICT[first_student] # this is the equivalent of GRADES_DICT["Aaron"]
 
-# Lets print this out together in a readable way. Reminder- when you combine strings with commas,
-# a space is placed between the strings. However, when you use a `+` , there are no spaces added
-print(first_student + "'s grade was", first_student_grade)
+# # Lets print this out together in a readable way. Reminder- when you combine strings with commas,
+# # a space is placed between the strings. However, when you use a `+` , there are no spaces added
+# print(first_student + "'s grade was", first_student_grade)
 
-####################################################################################################
+# ####################################################################################################
 
-# tuples are lists that cannot have their values modified and they are denoted with parentheses
-months = ('January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December')
+# # tuples are lists that cannot have their values modified and they are denoted with parentheses
+# months = ('January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December')
 
-# FIXME: Uncomment the code below if you want to show the error that would run
-# Here is an example of trying to change a tuple's value. It will throw you an error.
-# months[0] = "June" # Will output "TypeError: 'tuple' object does not support item assignment"
+# # FIXME: Uncomment the code below if you want to show the error that would run
+# # Here is an example of trying to change a tuple's value. It will throw you an error.
+# # months[0] = "June" # Will output "TypeError: 'tuple' object does not support item assignment"
 
 ####################################################################################################
 
