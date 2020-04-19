@@ -24,5 +24,10 @@ import importable_stuff
 # You could also do the above and rename it with `as`, by doing the following:
 # `from importable_stuff import DAYS_OF_WEEK as week`
 
+# Lastly, if you want to import multiple objects from another file, there's
+# an easier way to do that than writing multiple import lines. This would look like the following:
+# from importable_stuff import DAYS_OF_WEEK, MONTHS
+# This would let you access both the DAYS_OF_WEEK and MONTHS lists.
+
 # TODO: Try each of the above methods for importing and test them by printing
 # TODO: your import.
