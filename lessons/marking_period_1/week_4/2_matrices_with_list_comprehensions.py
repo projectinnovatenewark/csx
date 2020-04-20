@@ -145,6 +145,8 @@ for i in range(3):
     for j in range(4):
         m3[i][j] = m1[i][j]+m2[i][j]
 
+print("\n", m3)
+
 # In this example we created two input matrices, m1 and m2, each three by four. We
 # initialized a third matrix, m3, to three rows of four zeroes, using a comprehension.
 # Then we iterated through all rows (using the i variable), and all columns (using the j variable)
