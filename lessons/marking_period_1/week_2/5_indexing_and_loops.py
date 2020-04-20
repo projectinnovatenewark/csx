@@ -11,6 +11,7 @@ Indexing and range function for lists, dictionaries, strings and numbers
 # the below for loop will only print numbers zero through 8, not including 9
 # `num` is the variable we assign to every number in the range. In the first `iteration` of this for
 # loop, zero would be assigned to num. In the second iteration, num would be assigned one (and so on)
+print("range 9 loop: ")
 for num in range(9):
     print(num)
 
@@ -18,6 +19,7 @@ for num in range(9):
 
 # if you put in an initial argument, that number is included in the range. If you just put one
 # number, it starts with zero.
+print("range 3, 11 loop: ")
 for num in range(3, 11):
     print(num)
 

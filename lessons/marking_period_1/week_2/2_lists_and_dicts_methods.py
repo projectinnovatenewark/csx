@@ -93,7 +93,7 @@ print("Squares of odd numbers list", squares_of_odd_numbers)
 
 # lets throw an extra condition in there. what if we want ONLY even numbers NOT including 4?
 # we can simply use 'and'! also, since zero does not have a remainder when divided by two,
-# 
+
 squares_of_even_numbers_without_4 = [i**2 for i in range(1, 10) if i % 2 == 0 and i != 4]
 print("Squares of even numbers without 4 list", squares_of_even_numbers_without_4)
 

@@ -20,7 +20,7 @@ var_two = "doo"
 print("Hello, my name is", var_one, var_two)
 
 # go back to the end of the input variables we've set and add .title() to the end of the line
-# the title() function capitalizes a variable
+# the title() function capitalizes the first letter of every word in a string.
 print(first_name.title()) # this title-izes the first name
 
 ####################################################################################################
