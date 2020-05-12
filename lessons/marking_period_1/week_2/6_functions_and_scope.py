@@ -96,7 +96,7 @@ def dictionary_reader(dictionary):
     print("\n")
 
     for student in dictionary: # TODO: Hi Teacher! Let's show how we can set a variable of grade to access every
-                                 TODO: student's grade, then use that in our print statement.
+                               # TODO: student's grade, then use that in our print statement.
         print(student + " got a score of " + str(dictionary[student]) + " on their exam!")
 
     print("\n")
