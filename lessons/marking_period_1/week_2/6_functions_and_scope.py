@@ -2,10 +2,11 @@
 Using functions and understanding scope
 """
 
-# This is a function. Functions are defined using the format `def functionName(parameterName):`
-# the parameter name can be anything you want---whatever you pass to the function
-# when you call it will be renamed to the argument you pass to the function when defining the function.
-def addTen(n):
+# A function is a block of code that executes some task. Functions are defined using the format
+# `def functionName(parameterName):` The parameter name can be anything you want---whatever you pass as
+# an argument to the function when you "call" it will be renamed to the parameter you set when defining the function.
+# To "call" a function simply means to run it.
+def addTen(n): # "addTen" is the name of the function and "n" is the parameter name
     newNum = n + 10 # this is within the scope of the function
     return newNum # this is also within the scope of the function
 
@@ -14,12 +15,13 @@ print("This is not a part of the function") # since this line is not indented wi
 
 # Now that we are at the leftmost part of the page, we have exited the scope of the function above.
 # This function should now take the argument passed, which is 3, and add ten to it. It will then return
-# that value. What you see below is called "calling a function", which basically runs the function above.
+# that value. What you see below is called "calling a function", which basically runs the function with the given input.
 print("First call to addTen function: ")
-addTen(3)
+addTen(3) # "3" is the argument we pass, which will be assigned to the variable "n" within the function call.
 
 # Huh, why didnt this function call create an output?! Well, we didn't print it!! We could either
-# 1) change the "return" value to be a print statement...or
+# 1) change the "return" value to be a print statement in the function
+# ...OR...
 # 2) we can print the function call itself!
 
 # To do it the first way, you would just replace "return newNum" with "print(newNum)" within the
@@ -30,7 +32,7 @@ print("Second call to addTen function: ")
 print(addTen(5))
 
 # Functions also don't NEED parameters. They can perform some operation that doesn't require an argument.
-# In this case, we will just print a "global" variable that would be accessible by the whole file- including
+# In this case, we will just print a "global" variable that would be accessible to the whole file- including
 # within the scope of this function!
 randomNumVar = 12345
 def outputOurNumber():
@@ -43,12 +45,12 @@ outputOurNumber()
 ####################################################################################################
 
 # Calling functions within other functions and using their return values.
+
 # Having return values from functions is important when you want to use that value,
 # and not just log it in that moment. Here is an example of one such case:
 
 def daysActivities(typeOfDay):
     """Analyze a user's input and return a message for them"""
-    dayString = ""
     # These if statements check to see if the typeOfDay argument is equal to something- in our case
     # we are checking in three different statements if typeOfDay is either "fun", "productive",
     # or "lazy". If one of those if's is true, then we do whatever is within the scope of that if
@@ -56,9 +58,9 @@ def daysActivities(typeOfDay):
 
     if (typeOfDay == "fun"):
         dayString = "You should enjoy some of your favorite activities"
-    if (typeOfDay == "productive"):
+    elif (typeOfDay == "productive"):
         dayString = "Let's get some work done, player!"
-    if (typeOfDay == "lazy"):
+    elif (typeOfDay == "lazy"):
         dayString = "You work too hard, and this day is all about YOU. Do NOTHING and enjoy it, you deserve it :)"
     else:
         dayString = "I can only compute one of the three provided types of days. Try again, chief!"
@@ -91,22 +93,27 @@ EXAMPLE_DICTIONARY_TWO = {"Andy": 73, "Brovan": 90, "Celeste": 65, "Danilo": 84,
 def dictionary_reader(dictionary):
     """This function will format and print a dictionary. Just as a file gets a doc string, functions get one too!"""
     print("Let's output a dictionary")
+    print("\n")
 
-    for student in dictionary:
+    for student in dictionary: # TODO: Hi Teacher! Let's show how we can set a variable of grade to access every
+                                 TODO: student's grade, then use that in our print statement.
         print(student + " got a score of " + str(dictionary[student]) + " on their exam!")
 
+    print("\n")
     print("This function has finished running.")
 
 # Here we pass the function an argument for our first dictionary
 dictionary_reader(EXAMPLE_DICTIONARY_ONE)
 
-# Here we see the same function performing operations with our second argument
+print("\n")
+
+# Here we see the same function performing operations with our second dictionary
 dictionary_reader(EXAMPLE_DICTIONARY_TWO)
 
-####################################################################################################
+###################################################################################################
 
-# below are examples by using variables & the timing of a function call to portray scope
-# here we call "s" after the function is called, which will return a NameError
+# Below are examples of using variables & the timing of a function call to portray scope.
+# Here we call "s" after the function is called, which will return a NameError
 def func():
     print(s)
 func()
@@ -114,7 +121,7 @@ s = "I love Paris in the summer!"
 
 ####################################################################################################
 
-# here, since the variable is declared before the function is called, it will print the "s2" value
+# Here, since the variable is declared before the function is called, it will print the "s2" value
 def func2():
     print(s2)
 s2 = "I love San Diego in the summer!"
@@ -122,7 +129,7 @@ func2()
 
 ####################################################################################################
 
-# here, the variable in the function is referenced within the function's scope, therefore it will
+# Here, the variable in the function is referenced within the function's scope, therefore it will
 # print the "I love London" statement
 def func3():
     s3 = "I love London!"
