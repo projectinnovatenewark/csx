@@ -9,7 +9,9 @@ Importing other files
 import importable_stuff
 
 # The most straightforward way to import a file is:
+
 # `import importable_stuff`
+
 # Then, to access the constant `DAYS_OF_WEEK` from that file,
 # you would do so with "dot notation". For example, in this import case,
 # you would find that constant using print(importable_stuff.DAYS_OF_WEEK)
