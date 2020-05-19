@@ -45,6 +45,35 @@ outputOurNumber()
 ####################################################################################################
 
 # Calling functions within other functions and using their return values.
+# Here we will show you how the "control" of a program will navigate the code.
+
+def addTwo(j):
+    newNum = j + 2
+    return newNum # Control 3: "j", which is equal to the argument of 9 that was passed, has 2
+                  # added to it and 11 is returned.
+
+def addFive(k):
+    return k + 5 # Control 6: "k", which is equal to the arugment of 11 that was passed, has 5
+                 # added to it and that valur of 16 is returned.
+
+def addingChain(i):
+    curr_num = addTwo(i) # Control 2: addTwo function is called and passed "i", which is equal to 9
+    # Control 4: The value of 11 that was returned from the addTwo function call is set to a
+    # variable called curr_num
+
+    new_num = addFive(curr_num) # Control 5: addFive function is called and passed curr_num, which is equal to 11
+    # Control 7: The value of 16 that was returned from the addFive function call is set to a
+    # variable called new_num
+
+    return new_num # Control 8: The new_num variable, which equals 16, is returned and the
+                   # addingChain function call has ended
+
+print(addingChain(9)) # Control 1: the addingChain function gets called and passed 9 as an argument
+# Control 9: After the function call is complete, the print statement prints the return value.
+
+####################################################################################################
+
+# Calling functions within other functions and using conditions.
 
 # Having return values from functions is important when you want to use that value,
 # and not just log it in that moment. Here is an example of one such case:
@@ -82,6 +111,9 @@ def inquireDay():
 # This is a regular old function call
 inquireDay()
 
+# TODO: Hey, Teach! You should have your students walk you through the control of the above function
+# TODO: call. Make sure the class understands the flow of the program 🚀
+
 ####################################################################################################
 
 # here are a couple of dictionaries
@@ -95,8 +127,8 @@ def dictionary_reader(dictionary):
     print("Let's output a dictionary")
     print("\n")
 
-    for student in dictionary: # TODO: Hi Teacher! Let's show how we can set a variable of grade to access every
-                               # TODO: student's grade, then use that in our print statement.
+    for student in dictionary: # TODO: Hi Teacher! Let's show how we can set a variable of grade to
+                               # TODO: access every student's grade, then use that in our print statement.
         print(student + " got a score of " + str(dictionary[student]) + " on their exam!")
 
     print("\n")
