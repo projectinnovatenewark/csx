@@ -111,6 +111,9 @@ def inquireDay():
 # This is a regular old function call
 inquireDay()
 
+# TODO: Hey, Teach! You should have your students walk you through the control of the above function
+# TODO: call. Make sure the class understands the flow of the program 🚀
+
 ####################################################################################################
 
 # here are a couple of dictionaries
