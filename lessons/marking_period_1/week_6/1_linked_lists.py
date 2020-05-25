@@ -50,7 +50,6 @@
 
 # A linked list node
 class Node:
-
 	# Constructor to create a new node
 	def __init__(self, data):
 		self.data = data
@@ -59,7 +58,6 @@ class Node:
 
 # Class to create a Doubly Linked List
 class DoublyLinkedList:
-
 	# Constructor for empty Doubly Linked List
 	def __init__(self):
 		self.head = None
@@ -85,7 +83,6 @@ class DoublyLinkedList:
 	# Given a node as prev_node, insert a new node after
 	# the given node
 	def insert_after(self, prev_node, data):
-
 		# 1. Check if the given prev_node is None
 		if prev_node is None:
 			print("the given previous node cannot be NULL")
@@ -111,7 +108,6 @@ class DoublyLinkedList:
 	# Given a reference to the head of DLL and integer
 	# appends a new node at the end
 	def append(self, data):
-
 		# 1. Allocates node
 		# 2. Put in the data
 		new_node = Node(data)
@@ -139,17 +135,16 @@ class DoublyLinkedList:
 	# This function prints contents of linked list
 	# starting from the given node
 	def output_list(self, node):
-
 		print("\nTraversal in forward direction")
 		while node:
 			print(" % d" %(node.data))
-			last = node 
+			last = node
 			node = node.next
 
 		print("\nTraversal in reverse direction")
 		while last:
-			print(" % d" %(last.data)) 
-			last = last.prev 
+			print(" % d" %(last.data))
+			last = last.prev
 
 # Driver program to test above functions
 
@@ -173,7 +168,7 @@ dllist.append(4)
 
 # Insert 8, after 7.
 # So linked list becomes 1->7->8->6->4->None
-dllist.insert_after(dllist.head.next, 8) 
+dllist.insert_after(dllist.head.next, 8)
 
 print("Created DLL is: ")
 dllist.output_list(dllist.head)
