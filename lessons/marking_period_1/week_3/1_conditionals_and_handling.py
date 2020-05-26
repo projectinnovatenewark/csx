@@ -1,27 +1,27 @@
 """
-if, elif, else and iterating operations
+if, elif, else and iteratable operations
 """
 
-num = 0 # TODO: Teacher, try changing this summer up to satisfy the different conditions.
+num = 3 # TODO: Teacher, try changing this summer up to satisfy the different conditions.
 
-if num > 0:
+if (num > 0):
     print(num, "is a positive number.")
-if num > 2: # any number of if statements will be evaluated upon running the code
+if (num > 2): # any number of if statements will be evaluated upon running the code
     print(num, "is greater than 2.")
-elif num < 0: # the elif statement will only be triggered if none of the "if" statements are true.
+elif (num < 0): # the elif statement will only be triggered if none of the "if" statements are true.
     print(num, "is a negative number.")
 else: # the else statement will only run if none of the conditions above it are true.
     print(num, "is a zero value.")
 
 ####################################################################################################
 
-# notice how we used the same variable of "num" from the above function but reassigned its value..
+# notice how we used the same variable of "num" from the above function but reassigned its value.
 # we can do that because it is a variable and NOT a constant
 
 num = 2
 num = 533
 
-if num % 2 == 0:
+if (num % 2 == 0):
     print(num, "is an even number.")
 else:
     print(num, "is an odd number.")
@@ -75,27 +75,38 @@ print("Squares of odd numbers list", squares_of_odd_numbers)
 number_list = [3, 15, 31, 1, 11, 107]
 
 # `all` is helpful when you want to assess every value of a set
-# lets check if all the numbers are odd
-if all(numbers % 2 != 0 for numbers in number_list):
+# lets check if all the number are odd
+if all(number % 2 != 0 for number in number_list):
     print("all the numbers are odd")
 
 ####################################################################################################
+
+number_list = [3, 15, 31, 1, 11, 107]
 
 # `not in` checks to see if an item is not in a list
 if (1000000 not in number_list):
     print("there is not one million in the number list")
 
+# `in` checks to see if an item is in a list
+if (15 in number_list):
+    print("fifteen is in the number list")
+
 ####################################################################################################
 
+number_list = [3, 15, 31, 1, 11, 107]
+
 # `any` is helpful when you want to see if a single value (or more!) satisfies your conditional
-if any(numbers % 2 == 0 for numbers in number_list):
+if any(number % 2 == 0 for number in number_list):
     print("there is at least one even number")
 
 ####################################################################################################
 
-# `enumerate` gives you the index value and actual value of values in a list
-for numbers in enumerate(number_list):
-    print(numbers)
+number_list = [3, 15, 31, 1, 11, 107]
+
+# `enumerate` gives you the index position and actual value of the items in a list
+for number in enumerate(number_list):
+    print(number) # enumerate returns you a tuple in the form of (index, value). Remember- tuples are
+                  # lists that cannot be changed!
 
 ####################################################################################################
 
@@ -107,16 +118,16 @@ def week(i):
     """this function serves as a switch case equivalent in Python"""
 
     switcher = {
-        0:'Sunday',
-        1:'Monday',
-        2:'Tuesday',
-        3:'Wednesday',
-        4:'Thursday',
-        5:'Friday',
-        6:'Saturday'
+        1:'Sunday',
+        2:'Monday',
+        3:'Tuesday',
+        4:'Wednesday',
+        5:'Thursday',
+        6:'Friday',
+        7:'Saturday'
     }
     # this will return the printed statement of the number being passed as an argument
     # or it will return "invalid day of the week" if that number isn't in the switcher dictionary
     return print(switcher.get(i, "Invalid day of week"))
 
-week(3)
+week(9)
