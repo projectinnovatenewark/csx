@@ -2,25 +2,46 @@
 Here we will cover lists and dicts
 """
 
-# lists are a grouping of values
+# A 'list' is a grouping of values that are ordered and changeable.
+# In Python lists are written with square brackets, as shown below:
 CLASS_LIST = ["Andy", "Bronny", "Carlos", "Denisa", "Enrique"]
 
-# below is an example of indexing. the first item in any list has an index of ZERO
-# and the next item is 1, followed by 2, etc.. "Index" refers to the position
-# of an item in a list.
-print("The first student in the class class list is", CLASS_LIST[0])
+# An index refers to a position within an ordered list. 
+# For the following list, the indexes break down like this:
+CLASS_LIST = ["Andy", "Bronny", "Carlos", "Denisa", "Enrique"]
+#               0        1         2          3         4 
+# As you can see, the first item in any list has an index of ZERO
+# and the next item is 1, followed by 2, etc.. 
 
-# To add an item to a list, you use the append function as such
+# In addition, Python supports negative indexes, in which case it counts from the end. 
+# So the last character can be indexed with -1, the second to last with -2, etc.:
+CLASS_LIST = ["Andy", "Bronny", "Carlos", "Denisa", "Enrique"]
+#               -5       -4        -3        -2        -1 
+
+# You can access single elements from a list using the name followed by a number in [], like so:
+print(CLASS_LIST[0]) # first element
+
+#You can also save a single element from the list as variable, like so:
+second = CLASS_LIST[1] # second element
+print(second)
+
+# To add an item to a list, you use the append function as such:
 CLASS_LIST.append("Susan")
 print(CLASS_LIST)
 
+# The append function adds an item to the end of the list. For this reason, the index value of 
+# "Susan" in the example above will be both '5' and '-1'. You can check this with the following code:
+print(CLASS_LIST[5])
+print(CLASS_LIST[-1])
+
+#TODO: Section 1 of TODO 2.1
 ####################################################################################################
 
-# dictionaries have keys which in turn have values similarly to how a real life dictionary
+# Dictionaries have keys which in turn have values similarly to how a real life dictionary
 # has words with definitions, the keys represent the words and values represent the definitions.
 GRADES_DICT = {"Andy": 87, "Bronny": 95, "Carlos": 75, "Denisa": 55, "Enrique": 100}
 
-# in dictionaries, however, values can only be accessed by their key. The format to finding
+# In dictionaries, however, values can only be accessed by their key. The format to finding
 # a key's value is `dictionary[key]`
 print("Bronny's grade: ", GRADES_DICT["Bronny"])
 print("Denisa's grade: ", GRADES_DICT["Denisa"])
@@ -30,6 +51,7 @@ print("Denisa's grade: ", GRADES_DICT["Denisa"])
 GRADES_DICT["Susan"] = 92
 print(GRADES_DICT)
 
+#TODO: Section 2 of TODO 2.1
 ####################################################################################################
 
 # Lets think more about how variable assignments can play in here.
@@ -50,7 +72,7 @@ print(first_student + "'s grade was", first_student_grade)
 
 ####################################################################################################
 
-# tuples are lists that cannot have their values modified and they are denoted with parentheses
+# Tuples are lists that cannot have their values modified and they are denoted with parentheses
 months = ('January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December')
 
 # FIXME: Uncomment the code below if you want to show the error that would run
