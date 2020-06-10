@@ -1,1 +1,2 @@
 # FIXME: write the lesson for heaps
+# https://www.tutorialspoint.com/data_structures_algorithms/heap_data_structure.htm#:~:text=Min%2DHeap%20%E2%88%92%20Where%20the%20value,input%20and%20order%20of%20arrival.
