@@ -2,7 +2,7 @@
 if, elif, else and iteratable operations
 """
 
-num = 3 # TODO: Teacher, try changing this summer up to satisfy the different conditions.
+num = 3 # TODO: Teacher, try changing this number up to satisfy the different conditions.
 
 if (num > 0):
     print(num, "is a positive number.")
