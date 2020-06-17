@@ -50,6 +50,7 @@ print("countdown now equals: ", countdown)
 
 print("the final countdown equals: ", countdown_sum)
 
+#TODO: Section 1 of TODO 3.1
 ####################################################################################################
 
 # As a reminder, before jumping into a new way of iterating through a list, here is a review on
@@ -108,6 +109,7 @@ for number in enumerate(number_list):
     print(number) # enumerate returns you a tuple in the form of (index, value). Remember- tuples are
                   # lists that cannot be changed!
 
+#TODO: Section 2 of TODO 3.1
 ####################################################################################################
 
 # `switch` statements are common in other languages. What a switch statement does is take a
@@ -131,3 +133,4 @@ def week(i):
     return print(switcher.get(i, "Invalid day of week"))
 
 week(9)
+#TODO: Section 3 of TODO 3.1

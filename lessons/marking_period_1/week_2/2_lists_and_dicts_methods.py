@@ -18,14 +18,14 @@ print(priority_list)
 
 ####################################################################################################
 
-# The remove method will remove a specific item from a list.
+# The remove method removes a specific item from a list.
 fruits = ["apples", "oranges", "asparagus", "bananas"]
 fruits.remove("asparagus")
 print(fruits)
 
 ####################################################################################################
 
-# The pop method will remove the last item from a list and return it's value. Therefore, you could
+# The pop method removes the last item from a list and returns it's value. Therefore, you could
 # set the pop() method equal to a variable.
 # You could also pick an index item to remove (i.e. removing the first item and
 # returning it's value would be .pop(0))
@@ -51,6 +51,7 @@ print('Language List: ', languages1)
 languages1[0] = "Malaysian"
 print(languages1)
 
+#TODO: Section 1 of TODO 2.2
 ####################################################################################################
 
 # Slicing is a way to segment items in a list.
@@ -80,6 +81,7 @@ all_but_first_and_last = table_items[1:5]
 list_stepper = table_items[0:5:2]
 print("List stepper:", list_stepper)
 
+#TODO: Section 2 of TODO 2.2
 ####################################################################################################
 
 # List comprehensions are ways to define potentially lengthy lists in one line.
@@ -101,6 +103,7 @@ print("Squares of odd numbers list", squares_of_odd_numbers)
 squares_of_even_numbers_without_4 = [i**2 for i in range(1, 10) if i % 2 == 0 and i != 4]
 print("Squares of even numbers without 4 list", squares_of_even_numbers_without_4)
 
+#TODO: Section 3 of TODO 2.2
 ####################################################################################################
 
 # DICTIONARIES
@@ -131,6 +134,7 @@ print("post pop 1", programming_languages)
 lang_two = programming_languages.pop("Two")
 print("post pop 2: programming_languages is equal to- ", programming_languages, "and the lang_two variable that we set equal to a pop() is- ", lang_two)
 
+#TODO: Section 4 of TODO 2.2
 ####################################################################################################
 
 # the get method will find a value for a key in a dictionary
@@ -143,3 +147,5 @@ print(second_value)
 # this will return 321 since there is no key "Four"
 fourth_value = example_dict.get("Four", 321)
 print(fourth_value)
+
+#TODO: Section 5 of TODO 2.2
