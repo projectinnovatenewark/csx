@@ -1,1 +1,0 @@
-# FIXME: write a lesson on hoffman coding

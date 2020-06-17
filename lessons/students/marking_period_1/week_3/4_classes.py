@@ -25,10 +25,10 @@ Understanding classes and scope within a class
 ​
 class Cat:
 ​
-    kind = 'feline'         # class variable shared by all instances
+    kind = 'feline'         # class attribute shared by all instances
 ​
     def __init__(self, name):
-        self.name = name    # instance variable unique to each instance
+        self.name = name    # instance attribute unique to each instance
 ​
 # this will create two new instances of a Cat class with the self.names of Fido and Bella
 d = Cat('Fido')
@@ -44,7 +44,7 @@ print("e.name", e.name)                  # unique to e
 ​
 class Cat:
 ​
-    tricks = []  # mistaken use of a class variable shared by all Cats due to scope
+    tricks = []  # mistaken use of a class attribute shared by all Cats due to scope
 ​
     def __init__(self, name):
         self.name = name
@@ -56,7 +56,9 @@ d = Cat('Fido')
 e = Cat('Bella')
 d.add_trick('hit yarn')
 e.add_trick('attack bird')
-print(d.tricks)  # unexpectedly shared by all dogs
+print(d.tricks)  # unexpectedly shared by all dogs. that is because tricks was set as a class
+                 # attribute rather than an instance attribute. more on that in the link below:
+                 # https://dzone.com/articles/python-class-attributes-vs-instance-attributes#:~:text=A%20class%20attribute%20is%20a,.)%20%2C%20of%20the%20class.
 ​
 ####################################################################################################
 ​
