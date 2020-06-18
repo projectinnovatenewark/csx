@@ -38,12 +38,14 @@ String1 = "Wonderful!"
 big_string = string1 + string2
 print(big_string)
 
+# TODO: Section 1 of TODO 1.2
 ####################################################################################################
 
 # Setting multiple variables in one line of code? Also yep. Make sure you use your commas wisely!
 var1, var2, var3 = 1, 2, 3
 print(var1, var2, var3)
 
+# TODO: Section 2 of TODO 1.2
 ####################################################################################################
 
 # Booleans are true or false values. The first letter gets capitalized in the word
@@ -55,6 +57,7 @@ boolean2 = True
 # if you want to set a variable to an empty value, use the None type
 variable_for_later = None
 
+# TODO: Section 3 of TODO 1.2
 ####################################################################################################
 
 # print is an example of a function. a function is a block of code that runs when it is called upon.
@@ -78,3 +81,32 @@ print(string1, " i am python number", string3, ",hear me roar!!")
 # notice how the spacing is off in the output of big_string?
 # thats because variables dont account for spaces! put an extra space in the string to make it neat
 print(big_string)
+####################################################################################################
+
+# Type conversion. 
+
+# Python defines type conversion functions to directly convert one data type to another.
+
+# For example, you can convert integers to strings by wrapping the variable in the string function, 
+# as seen below:
+
+player_name = "Lebron James"
+player_weight = 250
+
+print(player_name + " weighs " + str(player_weight) + " pounds ")
+
+# Similarly, you can convert an integer into a float:
+
+num = 18
+floaty = float(num)
+print(floaty)
+
+# See below on how to convert the different data types
+
+# String: str()
+# Float: float()
+# Integer: integer()
+# Boolean: bool()
+
+
+# TODO: Section 4 of TODO 1.2
