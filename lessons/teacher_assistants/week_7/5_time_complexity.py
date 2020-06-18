@@ -1,0 +1,2 @@
+# FIXME: explain time complexity with big_o using examples.
+# FIXME: here is a good source: https://towardsdatascience.com/understanding-time-complexity-with-python-examples-2bda6e8158a7#:~:text=Computational%20Complexity,-Computational%20complexity%20is&text=The%20space%20complexity%20is%20basically,only%20on%20the%20time%20complexity.

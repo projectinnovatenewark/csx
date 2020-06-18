@@ -18,28 +18,32 @@ Introduction to the packages Numpy, Pandas, Matplotlib, Scikit-Learn, Scipy, Asy
 # 3) Tools for integrating C/C++ and Fortran code
 # 4) Useful linear algebra, Fourier transform, and random number capabilities
 
-# Python program to demonstrate  
-# basic array characteristics 
-import numpy as np 
-  
-# Creating array object 
-arr = np.array( [[ 1, 2, 3], 
-                 [ 4, 2, 5]] ) 
-  
-# Printing type of arr object 
-print("Array is of type: ", type(arr)) 
-  
-# Printing array dimensions (axes) 
-print("No. of dimensions: ", arr.ndim) 
-  
-# Printing shape of array 
-print("Shape of array: ", arr.shape) 
-  
-# Printing size (total number of elements) of array 
-print("Size of array: ", arr.size) 
-  
-# Printing type of elements in array 
-print("Array stores elements of type: ", arr.dtype) 
+# Python program to demonstrate
+# basic array characteristics
+import numpy as np
+
+# Creating array object
+arr = np.array(
+    [
+        [1, 2, 3],
+        [4, 2, 5]
+    ]
+)
+
+# Printing type of arr object
+print("Array is of type: ", type(arr))
+
+# Printing array dimensions (axes)
+print("No. of dimensions: ", arr.ndim)
+
+# Printing shape of array
+print("Shape of array: ", arr.shape)
+
+# Printing size (total number of elements) of array
+print("Size of array: ", arr.size)
+
+# Printing type of elements in array
+print("Array stores elements of type: ", arr.dtype)
 
 
 ####################################################################################################
@@ -55,14 +59,17 @@ print("Array stores elements of type: ", arr.dtype)
 import numpy as np
 import pandas as pd
 
-
 # this example will create a nice data frame to present this data in a readable way
-df2 = pd.DataFrame({'A': 1.,
-    'B': pd.Timestamp('20130102'),
-    'C': pd.Series(1, index=list(range(4)), dtype='float32'),
-    'D': np.array([3] * 4, dtype='int32'),
-    'E': pd.Categorical(["test", "train", "test", "train"]),
-    'F': 'foo'})
+df2 = pd.DataFrame(
+    {
+        'A': 1.,
+        'B': pd.Timestamp('20130102'),
+        'C': pd.Series(1, index=list(range(4)), dtype='float32'),
+        'D': np.array([3] * 4, dtype='int32'),
+        'E': pd.Categorical(["test", "train", "test", "train"]),
+        'F': 'foo'
+    }
+)
 
 print(df2)
 
@@ -72,14 +79,17 @@ print(df2)
 ####################################################################################################
 
 # Matplotlib
+# FIXME: include an example of matplotlib
 
 ####################################################################################################
 
 # Scikit-Learn
+# FIXME: include an example of scikit-learn
 
 ####################################################################################################
 
 # Scipy
+# FIXME: include an example of scipy
 
 ####################################################################################################
 
