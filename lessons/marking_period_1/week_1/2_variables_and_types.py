@@ -98,8 +98,11 @@ print(player_name + " weighs " + str(player_weight) + " pounds ")
 # Similarly, you can convert an integer into a float:
 
 num = 18
-floaty = float(num)
-print(floaty)
+floated_num = float(num)
+print(floated_num)
+
+# And you can check type of something in Python by wrapping `type()` and printing it
+print(type(floated_num))
 
 # See below on how to convert the different data types
 
