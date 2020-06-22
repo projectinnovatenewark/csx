@@ -5,7 +5,7 @@ Understanding classes and scope within a class
 # The variable Cat could have been named anything. The "Cat()" says to
 # create a new object and to run the strangely named function __init__ (two
 # underscores before and after 'init').
-# __init__ is special Python function that it is called automatically on an object
+# __init__ is a special Python function that it is called automatically on an object
 # creation statement. The computer science term for it is constructor, as its
 # job is to build an object of the type specified by the class.
 # The 'self' parameter in __init__ just refers to the instance being created, in
@@ -85,6 +85,10 @@ class Classmate:
         self.city = city
         self.age = age
 ​
+# TODO: Section 1 of the TODO 3.4
+
+########################################################################################
+
     # this is a function
     def format_class(self):
         # here we will create a list of items to print within the class definition
@@ -100,6 +104,10 @@ class Classmate:
              f"Age : {self.age}"]
         return print("\n".join(s))
 ​
+# TODO: Section 2 of the TODO 3.4
+
+####################################################################################################
+
 def complete_form(n_users):
     """The function will ask questions with the helper function of ask_user() and create Classmates.
     This function will return a list with the number of classmates you passed to this function."""
@@ -184,4 +192,8 @@ s1 = Student("Tiny", "Tim", 2020)
 s1.identifier()
 # And here you see that you can call the function from the derived child class
 s1.welcome()
+
+# TODO: Section 3 & 4 of the TODO 3.4
+
+###################################################################################################
 
