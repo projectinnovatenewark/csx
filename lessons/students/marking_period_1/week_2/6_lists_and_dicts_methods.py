@@ -51,7 +51,7 @@ print('Language List: ', languages1)
 languages1[0] = "Malaysian"
 print(languages1)
 
-#TODO: Section 1 of TODO 2.2
+#TODO: Section 1 of TODO 6
 ####################################################################################################
 
 # Slicing is a way to segment items in a list.
@@ -81,7 +81,7 @@ all_but_first_and_last = table_items[1:5]
 list_stepper = table_items[0:5:2]
 print("List stepper:", list_stepper)
 
-#TODO: Section 2 of TODO 2.2
+#TODO: Section 2 of TODO 6
 ####################################################################################################
 
 # List comprehensions are ways to define potentially lengthy lists in one line.
@@ -103,7 +103,7 @@ print("Squares of odd numbers list", squares_of_odd_numbers)
 squares_of_even_numbers_without_4 = [i**2 for i in range(1, 10) if i % 2 == 0 and i != 4]
 print("Squares of even numbers without 4 list", squares_of_even_numbers_without_4)
 
-#TODO: Section 3 of TODO 2.2
+#TODO: Section 3 of TODO 6
 ####################################################################################################
 
 # DICTIONARIES
@@ -134,7 +134,7 @@ print("post pop 1", programming_languages)
 lang_two = programming_languages.pop("Two")
 print("post pop 2: programming_languages is equal to- ", programming_languages, "and the lang_two variable that we set equal to a pop() is- ", lang_two)
 
-#TODO: Section 4 of TODO 2.2
+#TODO: Section 4 of TODO 6
 ####################################################################################################
 
 # the get method will find a value for a key in a dictionary
@@ -148,4 +148,4 @@ print(second_value)
 fourth_value = example_dict.get("Four", 321)
 print(fourth_value)
 
-#TODO: Section 5 of TODO 2.2
+#TODO: Section 5 of TODO 6

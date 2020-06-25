@@ -34,7 +34,7 @@ print(CLASS_LIST)
 print(CLASS_LIST[5])
 print(CLASS_LIST[-1])
 
-#TODO: Section 1 of TODO 2.1
+#TODO: Section 1 of TODO 5
 ####################################################################################################
 
 # Dictionaries have keys which in turn have values similarly to how a real life dictionary
@@ -54,7 +54,7 @@ print("Denisa's grade: ", grade)
 GRADES_DICT["Susan"] = 92
 print(GRADES_DICT)
 
-#TODO: Section 2 of TODO 2.1
+#TODO: Section 2 of TODO 5
 ####################################################################################################
 
 # Lets think more about how variable assignments can play in here.

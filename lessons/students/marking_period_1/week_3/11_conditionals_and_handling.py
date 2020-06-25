@@ -115,8 +115,6 @@ for number in enumerate(number_list):
     print(number[1]) # this will be the item
 
 # TODO: Section 3 of TODO 11
-
-#TODO: Section 2 of TODO 3.1
 ####################################################################################################
 
 # `switch` statements are common in other languages. What a switch statement does is take a
@@ -140,4 +138,3 @@ def week(i):
     return print(switcher.get(i, "Invalid day of week"))
 
 week(9)
-#TODO: Section 3 of TODO 3.1
