@@ -21,7 +21,7 @@ CLASS_LIST = ["Andy", "Bronny", "Carlos", "Denisa", "Enrique"]
 # You can access single elements from a list using the name followed by a number in [], like so:
 print(CLASS_LIST[0]) # first element
 
-#You can also save a single element from the list as variable, like so:
+#You can also set a single element from the list as a variable, like so:
 second = CLASS_LIST[1] # second element
 print(second)
 
@@ -44,7 +44,10 @@ GRADES_DICT = {"Andy": 87, "Bronny": 95, "Carlos": 75, "Denisa": 55, "Enrique": 
 # In dictionaries, however, values can only be accessed by their key. The format to finding
 # a key's value is `dictionary[key]`
 print("Bronny's grade: ", GRADES_DICT["Bronny"])
-print("Denisa's grade: ", GRADES_DICT["Denisa"])
+
+#Just like lists,you can set a single element from the dictionary as a variable, like so:
+grade = GRADES_DICT["Denisa"]
+print("Denisa's grade: ", grade)
 
 # To add a key/value pair to a dictionary, you simply place a new key in brackets and set
 # it equal to the desired value
