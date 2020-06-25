@@ -115,7 +115,6 @@ for number in enumerate(number_list):
     print(number[1]) # this will be the item
 
 # TODO: Section 3 of TODO 11
-
 ####################################################################################################
 
 # `switch` statements are common in other languages. What a switch statement does is take a
