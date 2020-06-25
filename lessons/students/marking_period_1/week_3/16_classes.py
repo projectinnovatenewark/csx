@@ -5,7 +5,7 @@ Understanding classes and scope within a class
 # The variable Cat could have been named anything. The "Cat()" says to
 # create a new object and to run the strangely named function __init__ (two
 # underscores before and after 'init').
-# __init__ is special Python function that it is called automatically on an object
+# __init__ is a special Python function that it is called automatically on an object
 # creation statement. The computer science term for it is constructor, as its
 # job is to build an object of the type specified by the class.
 # The 'self' parameter in __init__ just refers to the instance being created, in
@@ -25,10 +25,10 @@ Understanding classes and scope within a class
 ​
 class Cat:
 ​
-    kind = 'feline'         # class variable shared by all instances
+    kind = 'feline'         # class attribute shared by all instances
 ​
     def __init__(self, name):
-        self.name = name    # instance variable unique to each instance
+        self.name = name    # instance attribute unique to each instance
 ​
 # this will create two new instances of a Cat class with the self.names of Fido and Bella
 d = Cat('Fido')
@@ -44,7 +44,7 @@ print("e.name", e.name)                  # unique to e
 ​
 class Cat:
 ​
-    tricks = []  # mistaken use of a class variable shared by all Cats due to scope
+    tricks = []  # mistaken use of a class attribute shared by all Cats due to scope
 ​
     def __init__(self, name):
         self.name = name
@@ -56,7 +56,9 @@ d = Cat('Fido')
 e = Cat('Bella')
 d.add_trick('hit yarn')
 e.add_trick('attack bird')
-print(d.tricks)  # unexpectedly shared by all dogs
+print(d.tricks)  # unexpectedly shared by all dogs. that is because tricks was set as a class
+                 # attribute rather than an instance attribute. more on that in the link below:
+                 # https://dzone.com/articles/python-class-attributes-vs-instance-attributes#:~:text=A%20class%20attribute%20is%20a,.)%20%2C%20of%20the%20class.
 ​
 ####################################################################################################
 ​
@@ -83,6 +85,10 @@ class Classmate:
         self.city = city
         self.age = age
 ​
+# TODO: Section 1 of the TODO 3.4
+
+########################################################################################
+
     # this is a function
     def format_class(self):
         # here we will create a list of items to print within the class definition
@@ -98,6 +104,10 @@ class Classmate:
              f"Age : {self.age}"]
         return print("\n".join(s))
 ​
+# TODO: Section 2 of the TODO 3.4
+
+####################################################################################################
+
 def complete_form(n_users):
     """The function will ask questions with the helper function of ask_user() and create Classmates.
     This function will return a list with the number of classmates you passed to this function."""
@@ -182,4 +192,8 @@ s1 = Student("Tiny", "Tim", 2020)
 s1.identifier()
 # And here you see that you can call the function from the derived child class
 s1.welcome()
+
+# TODO: Section 3 & 4 of the TODO 3.4
+
+###################################################################################################
 
