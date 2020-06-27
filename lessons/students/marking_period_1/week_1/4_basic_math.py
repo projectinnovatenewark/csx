@@ -62,7 +62,7 @@ summation += 2 # summation will now equal 9.0
 # have two decimal points.
 print("The sum of our int and float, after incrementing it a bit, is %.2f" %summation)
 
-# TODO: Section 1 of TODO 1.4
+# TODO: Section 1 of TODO 4
 
 ####################################################################################################
 
@@ -91,7 +91,7 @@ print(abs(-43))
 # The absolute value of a float is the positive of that number including the decimal values
 print(abs(-43.5))
 
-# TODO: Section 2 of TODO 1.4
+# TODO: Section 2 of TODO 4
 
 ####################################################################################################
 
