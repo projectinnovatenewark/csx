@@ -2,7 +2,7 @@
 if, elif, else and iteratable operations
 """
 
-num = 3 # TODO: Teacher, try changing this number up to satisfy the different conditions.
+num = 3 # FIXME: Teacher, try changing this number up to satisfy the different conditions.
 
 if (num > 0):
     print(num, "is a positive number.")
@@ -25,6 +25,8 @@ if (num % 2 == 0):
     print(num, "is an even number.")
 else:
     print(num, "is an odd number.")
+
+# TODO: Section 1 of TODO 11
 
 ####################################################################################################
 
@@ -49,6 +51,8 @@ while countdown > 0:
 print("countdown now equals: ", countdown)
 
 print("the final countdown equals: ", countdown_sum)
+
+# TODO: Section 2 of TODO 11
 
 ####################################################################################################
 
@@ -107,7 +111,10 @@ number_list = [3, 15, 31, 1, 11, 107]
 for number in enumerate(number_list):
     print(number) # enumerate returns you a tuple in the form of (index, value). Remember- tuples are
                   # lists that cannot be changed!
+    print(number[0]) # this will be the index number
+    print(number[1]) # this will be the item
 
+# TODO: Section 3 of TODO 11
 ####################################################################################################
 
 # `switch` statements are common in other languages. What a switch statement does is take a
