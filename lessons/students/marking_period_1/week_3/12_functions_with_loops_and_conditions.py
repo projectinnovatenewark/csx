@@ -2,175 +2,8 @@
 Here we will show a couple of examples of functions that use loops and conditionals
 """
 
-# Let's walk through how to use functions and return values with one another. We will
-# write a program that specifies what type of pizza pie a user wants with separate functions
-# for each of the following. One function should ask a user what size they want and only
-# accept small, medium, or large. Another function should ask about toppings, but tell the
-# user they don't have pepperoni (if they ask for pepperoni). Our last function should confirm
-# the order with the user.
-
-def sizeInquiry():
-    """Ask a user what size pizza they want and return it if it is a valid response"""
-    sizeOfPie = input("What size pie do you want? (small, medium, or large): ")
-    acceptableInputs = ["small", "medium", "large"]
-    if (sizeOfPie not in acceptableInputs):
-        print("Try again and enter a valid pizza size.")
-        return False
-    else:
-        return sizeOfPie
-
-def toppingsInquiry():
-    """Ask a user what toppings they want- make sure to let them know we dont have pepperoni if they ask!"""
-    toppings = input("What toppings would you like to have with your pizza?: (separate your toppings with commas and no spaces in between) ")
-    # Lets split the user's string into separate items in a list. We want to make sure they didnt try to order pepperoni!
-    listOfToppings = toppings.split(",")
-
-    if ("pepperoni" in listOfToppings):
-        followUp = input("Sorry dog, we don't have pepperoni. Do you want to change your order? (y/n) ")
-        if (followUp == "y"):
-            return False
-        if (followUp == "n"):
-            listOfToppings.remove("pepperoni")
-            toppingsString = ", ".join(listOfToppings)
-            return toppingsString
-    else:
-        return toppings
-
-def formatOrder(s, t):
-    """Create a basic formatted string to output to our user"""
-    userMessage = f"Your order is for a {s} pizza with {t}"
-    return userMessage
-
-def main():
-    """Guide a user through ordering a pizza"""
-
-    # The return value of a function call can be set equal to a variable.
-    size = sizeInquiry()
-    if (size is False):
-        # If the input value was incorrect and returned False, then we want to return a main function call to start over.
-        return main()
-
-    toppings = toppingsInquiry()
-    if (toppings is False):
-        # If the input value was incorrect and returned False, then we want to return a main function call to start over.
-        return main()
-
-    message = formatOrder(size, toppings)
-    print(message)
-
-main()
-
-####################################################################################################
-
-unsorted_num_list = [10, 22, 8, 15, 7, 18, 3]
-
-# Here is a long way to create a function and solve the problem above by sorting them
-
-# unsorted_num_list and putting the sorted items in a new list.
-def sort_a_list(data_list):
-    new_list = []
-
-    # FIXME: INCLUDE A LOGIC MODEL FOR THIS.
-    while data_list:
-        minimum = data_list[0]  # arbitrary number in list
-        for x in data_list:
-            print('x: ', x, 'minimum: ', minimum)
-            if x < minimum:
-                print('X is less than MIN. x: ', x, 'minimum: ', minimum)
-                minimum = x
-        new_list.append(minimum)
-        data_list.remove(minimum)
-        print('End while loop iteration. new_list: ', new_list, 'data_list: ', data_list)
-
-    print(new_list)
-
-sort_a_list(unsorted_num_list)
-
-# This function does the same thing as the function above function.
-
-# An important lesson about becoming a programmer is that you must understand underlying concepts.
-# There's always tools to solve your problem quickly with imported functions, but what matters
-# is that you understand how those functions work!
-print(sorted(unsorted_num_list))
-
-####################################################################################################
-
-# lets try a for loop within a for loop. we want the outputs to be "red cherry",
-# "big coconut", and "tasty mango".
-
-adjective = ["red", "big", "tasty"]
-fruits = ["cherry", "coconut", "mango"]
-
-for word in adjective:
-    for fruit in fruits:
-        print(word, fruit)
-
-# TODO: Oops! That doesnt give us exactly what we expected! let's change the adjective and fruit
-# TODO: lists to a single dictionary and get the desired outcome.
-
-# TODO: Switch the above data sets to a dictionary and change the loop to achieve your
-# TODO: desired outcome.
-
-####################################################################################################
-
-# Lets develop a small program using multiple functions to create a game. A user will input how
-# many times they want to play the game. The game is to guess a number between one and ten.
-# If they guess the number correctly, the program should tell the user they won. If they guess
-# incorrectly, it should tell them they were wrong.
-
-# Python has some pre-defined packages you can import functions from. We will explore this more in-
-# depth later in the course. The "random" package has a function used to generate a random integer.
-from random import randint
-
-def inquireUserGames():
-    """ask a user how many times they want to play"""
-    timesToPlay = input("How many times would you like to play the 'Guess the Number' game?: ")
-    numTimesToPlay = int(timesToPlay)
-    userStartedGameString = f"You've signed on to play {timesToPlay} games!"
-    # Let's return TWO variables to display some cool Python functionality. We can now
-    # set two variables equal to the value of calling this function.
-    return numTimesToPlay, userStartedGameString
-
-def playTheGame():
-    """ask user for a number between 1 and 10, generate a random number between 1 and 10, then see
-    if those numbers match. If they do, congratulate the user! If not, tell 'em they guess wrong"""
-
-    # Generate a random number between 1 and 10
-    randomNumber = randint(1, 10)
-    # Get an input from the user
-    promptUserForNumber = input("Guess a number between 1 and 10: ")
-    # Convert their input into an integer so you can check for equality between
-    # the input and the random number generated
-    userNumber = int(promptUserForNumber)
-
-    # Check if the random number and user number equal each other
-    if (randomNumber == userNumber):
-        print("You guessed correctly! Number", userNumber, "was the correct guess.", "\n")
-    else:
-        print("Wrong Answer!!! Number", randomNumber, "doesnt equal", userNumber, "\n")
-
-def initializeGame():
-    """Lets initialize our game and call the inquireUserGames function."""
-    # The first variable will equal the first returned value, and the second variable
-    # will equal the second returned value.
-    userGameCount, userWelcomeString = inquireUserGames()
-    print("\n", userWelcomeString, "\n")
-
-    # userGameCount will equal the user's input from their desired number of games to play.
-    # This while loop will continue to run until userGameCount equals zero.
-    while userGameCount:
-        playTheGame()
-        # Every time we run the playTheGame function we want to decrement the userGameCount
-        # by one until it hits zero, at which point the while loop will stop running.
-        userGameCount -= 1
-
-# Lets call the initializeGame function to get things going!
-initializeGame()
-
-####################################################################################################
-
-# below we want to iterate through a list of lists using a nested for loop,
-# or in simpler terms a for loop within a for loop. this is very common
+# Below we want to iterate through a list of lists using a nested for loop,
+# or in simpler terms a for loop within a for loop. This is very common
 # in data structures and you will master this in no time! The first sublist in
 # my_shows would be the entire list of ['How I Met Your Mother', 'Friends', 'Silicon Valley']
 # Then, second for loop of "for show_name in sublist:" would iterate through each of those
@@ -191,7 +24,7 @@ for sublist in my_shows:
 
 ####################################################################################################
 
-# below we want to iterate through a dictionary of key value pairs- where the values are
+# Below we want to iterate through a dictionary of key value pairs - where the values are
 # dictionaries! We wil again use a nested for loop here. Here we have the first six
 # episodes from the first three seasons each in the show, The Office.
 
@@ -225,27 +58,38 @@ the_office = {
     },
 }
 
-# for example, to find the title of episode 1 in season 3, you would use this:
-# print(the_office["Season 3"]["Episode 1"])
+# For example, to find the title of episode 1 in season 3, you would use this:
+# print(the_office["Season 3"]["Episode 1"]). Starting from the beginning, 'the_office' 
+# is a dictionary. Each key in 'the_office' is paired with another dictionary as its value.
 
-# TODO: Question 1: What type of data set is the_office? Is it a list, dictionary, string, etc.?
+# Lets find the value of 'Season 3' and print it.
 
-# TODO: Question 2: Find the value of 'Season 3'. Print it. Now Print out 'Episode 6' in Season 3.
+print(the_office["Season 3"])
 
-# TODO: Question 3: Loop through the the_office object and print out the value of each key.
+# Now lets print out the title of 'Episode 6' in Season 3.
+season_3 = the_office["Season 3"]
+print(season_3["Episode 6"])
 
-# let's remember something when using a nested for loop here. The first iteration of our
+# Let's remember something when using a nested for loop here. The first iteration of our
 # top level for loop would be "Season 1" since it is the first key in our dictionary. You
-# might want to set a variable between the top level for loop and the nested loop. Remember,
+# might want to set a variable between the top level for loop and the nested loop just as we did above. Remember,
 # if the iteration of each loop is a key, that variable you'd set between loops should follow
 # the format of variableName = dictionaryName[keyName]. Then, you can iterate through that new
-# variable, since it should equal the value of the key which is a dictionary.
-# TODO: Question 4: Create a nested for loop that would list an output for each episode
-# TODO: that would state "Episode __ of Season __ is titled '____' "
+# variable, since it should equal the value of the key which is a dictionary. The first iteration of the below
+# will print "Season 1, Episode: 1 Pilot"
+
+
+for season_num in the_office:
+    season = the_office[season_num] # Setting variables can be very helpful in making your code more readable
+    for episode_num in season:
+        episode = season[episode_num]
+        print(f"{season_num}, {episode_num}: {episode}")
+
+# TODO: Section 1 of TODO 12
 
 ####################################################################################################
 
-# Lets try looping through a different nested data structure. Imagine having a set of classes
+# Lets try looping through a different nested data structure. Imagine having a set of math classes
 # in a list. However, each class would be an object with info like subject, level, teacher,
 # students, and average quarterly grades. Following the data set, we will show a couple examples
 # of how to use it.
@@ -289,22 +133,62 @@ math_classes = [
     },
 ]
 
-# for example, to find the value of MP4 in the Calculus level math class, I would run
-# print(math_classes[3]['averages]['MP4])
+# Using what we learned from the previous section, we want to put our for loops 
+# inside meaningful functions; that way we can call on them whenever we need to use them.
+# This allows our program to be a little more dynamic if we have other data sets besides
+# 'math_classes' that have a similar structure. Lets see how to find the entire dictionary 
+# for the Calculus course. To do so, we will set up a for loop with a conditional 
+# statement in it to test which level we are iterating on. Then we can go ahead 
+# and print the entire calculus dictionary, also known as 'math_classes' third key. We want to 
+# put this inside a funciton 'findCalc' and pass the parameter of data so it's versatile.
+# Then when we call the function to run, we pass the argument of 'math_classes' to loop through.
 
-# TODO: Question 1: What type of data set is classes? Is it a list, dictionary, string, etc.?
+def findCalc(data):
+    for key in data:
+        level = key["level"]
+        if (level == "Calculus"):
+            print(key)
 
-# TODO: Question 2:   How would I find the entire dictionary for the calculus course?
-# TODO: Question 2: How would I find the 2nd student in the list of students from the Algebra class?
+findCalc(math_classes)
 
-# TODO: Question 3: How would I find the MP4 grade from the calculus class?
+# Now lets find the 2nd student in the list of students from the Algebra class.
+# Remember to keep in mind setting variables is important! It gives 
+# readability to your code and it's easier to get your desired output. Note how the 
+# name of the function stays relevant to the purpose of your code. Just like variable
+# naming, we want to give useful names to our functions. 
 
-# TODO: Question 4: How would I print each student's name from all of the classes?
+def findSecond(data):
+    for key in data:
+        level = key["level"]
+        student = key["students"]
+        if (level == "Algebra"):
+            print(student[1])
 
-# TODO: Question 5: How could I modify the above to print a statement for each student to say
-# TODO: 'Teacher ____ teaches subject _____ to ______'
+findSecond(math_classes)
 
-# TODO: Question 6: How could I find yearly grades average between marking periods for each class?
-# TODO: for example, I would want all of the averages added up for each course, then divided by the
-# TODO: number of marking periods to determine the average yearly grade for the course.
-        
+# Lets print each student from every class inside the funciton 'printStudents'. We want to iterate
+# through each classand then iterate through each student in the class and print their name.
+
+def printStudents(data):
+    for key in data:
+        students = key["students"]
+        for student in students:
+            print(student)
+
+printStudents(math_classes)
+
+# Lets make the above a little more coherent. Now we want to print the statement,
+# '{Teacher} teaches {subject} to {student}'. First we need to set our variables just like
+# in previous examples, and a simple nested for loop can be used!
+
+def printStatement(data):
+    for key in data:
+        students = key["students"]
+        teacher = key["teacher"]
+        subject = key["subject"]   
+        for student in students:
+            print("{} teaches {} to {}".format(teacher, subject, student))
+
+printStatement(math_classes)
+
+# TODO: Section 2 of TODO 12
