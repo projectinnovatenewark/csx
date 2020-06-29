@@ -10,6 +10,7 @@ last_name = input("What is your last name?: ")
 # since the values you input are set to variables, we can concatenate the strings
 print("My first name is", first_name, "and my last name is", last_name)
 
+
 # you can also seperate variables in concatenation with commas. this is the preferred
 # method of concatenation. we try not to build the string using simple addition, since
 # that is quite slow in Python (strings are immutable objects, so each string addition
@@ -19,10 +20,7 @@ var_one = "scooby"
 var_two = "doo"
 print("Hello, my name is", var_one, var_two)
 
-# go back to the end of the input variables we've set and add .title() to the end of the line
-# the title() function capitalizes the first letter of every word in a string.
-print(first_name.title()) # this title-izes the first name
-
+#TODO: Section 1 of TODO 3
 ####################################################################################################
 
 # there are also casing functions for upper and lower cases, which are used the same as title
@@ -45,6 +43,11 @@ print("\t" + mixed_string.title())
 integer_number = 3
 print("Here is the number as a float: %.2f" %integer_number)
 
+# the title() function capitalizes the first letter of every word in a string.
+# take the variable mixed_string from the example avoce and add .title() to the end of the line
+print(mixed_string.title()) # this title-izes the name
+
+#TODO: Section 2 of TODO 3
 ####################################################################################################
 
 # the python 3 way to do the above is strictly by using the format function as shown below
@@ -139,3 +142,5 @@ print("Whats good?".startswith("Hello"))
 # set of characters. Lets check if these statements are questions
 print("Am I a question?".endswith("?"))
 print("I'm not a question.".endswith("?"))
+
+#TODO: Section 3 of TODO 3
