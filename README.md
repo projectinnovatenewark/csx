@@ -10,8 +10,8 @@
       VS Code Extensions to Download:
         Python
         
-4. Create a foder named 'Programming'
-  a. Inside 'Programming' - create a folder named 'python-work'
+4. Create a folder named 'programming'
+  a. Inside 'programming' - create a folder named 'python-work'
   
 5. To open a terminal in VS Code:
         Use 'Shift + Ctrl + `'
@@ -28,15 +28,15 @@
 7. To check what your working directory is enter 'pwd' into your terminal
 
 8. When you want to go up a level in your directory, enter 'cd ..' into your terminal
-    ex: if you are in '/Users/christiantavares/Desktop/Programming/python-work'
+    ex: if you are in '/Users/username/Desktop/programming/python-work'
         Enter in the Terminal: 'cd ..'
-        your working directory will then be ''/Users/christiantavares/Desktop/Programming'
+        your working directory will then be ''/Users/username/Desktop/programming'
 
 9. When you want to chamge your working directory, enter 'cd "directory name"'
-        if you are in '/Users/christiantavares/Desktop/Programming'
+        if you are in '/Users/username/Desktop/programming'
         Enter in the Terminal: 'cd python-work' (If you begin to type the name of the desired directory,
                                                  you can hit the tab button and the directory should fill in)
-        your working directory will then be ''/Users/christiantavares/Desktop/Programming/python-work'
+        your working directory will then be '/Users/username/Desktop/programming/python-work'
         
 10. The steps to commit code to Github are:
         'git add .'
