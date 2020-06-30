@@ -34,7 +34,7 @@ print("range 3, 11 loop: ")
 for num in range(3, 11):
     print(num)
 
-# TODO: Section 1 of the TODO
+# TODO: Section 1 of TODO 5
 
 ####################################################################################################
 
@@ -75,7 +75,7 @@ print("End of second for loop. \n")
 # to print us the length, or the number of items in the list.
 print("Number of students: " + str(len(grades)))
 
-# TODO: Section 2 of the TODO
+# TODO: Section 2 of TODO 5
 
 ####################################################################################################
 
@@ -115,7 +115,7 @@ while grocery_list:
     print(f'You purchased {purchased_item} and removed it from your list.')
     print('Your remaining items are', grocery_list)
 
-# TODO: Section 3 of the TODO
+# TODO: Section 3 of TODO 5
 
 # If you have a number that you are decrementing, the while loop will run until that number
 # is zero. A zero value equates to a False condition, and the loop will then end.
@@ -124,7 +124,7 @@ while i:
     print(i)
     i -= 1
 
-# TODO: Section 4 of the TODO
+# TODO: Section 4 of TODO 5
 
 ####################################################################################################
 
@@ -181,4 +181,4 @@ while var > 2: # this loop will only run if "var" is greater than 2.
     print("Current variable value :", var)
 print("Your while loop has ended. Good bye!") # since this tabulation is set to the same spacing as the while loop, this will run once the loop is complete
 
-# TODO: Section 5 of the TODO
+# TODO: Section 5 of TODO 5
