@@ -133,8 +133,6 @@ print("post pop 1", programming_languages)
 lang_two = programming_languages.pop("Two")
 print("post pop 2: programming_languages is equal to- ", programming_languages, "and the lang_two variable that we set equal to a pop() is- ", lang_two)
 
-####################################################################################################
-
 # The get method will find a value for a key in a dictionary.
 # You can also specify a return value if the key does not exist in the dictionary.
 example_dict = {"One": 10, "Two": 20, "Three": 30}
