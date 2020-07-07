@@ -134,9 +134,14 @@ lang_two = programming_languages.pop("Two")
 print("post pop 2: programming_languages is equal to- ", programming_languages, "and the lang_two variable that we set equal to a pop() is- ", lang_two)
 
 # The get method will find a value for a key in a dictionary.
-# You can also specify a return value if the key does not exist in the dictionary.
 example_dict = {"One": 10, "Two": 20, "Three": 30}
 second_value = example_dict.get("Two")
+print(second_value)
+# If the key that you provide does not exist in the dictionary, it will return 'None':
+fourth_value = example_dict.get("Four")
+print(second_value)
+# You can also specify a return value if the key does not exist in the dictionary:
+fourth_value = example_dict.get("Four", "Does not exisit.")
 print(second_value)
 
 #TODO: Section 3 of TODO 6
