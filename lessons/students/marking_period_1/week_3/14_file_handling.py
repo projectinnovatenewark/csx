@@ -15,12 +15,14 @@ fh = open("my_name_is.txt", "r")
 contents = fh.read()
 print(contents)
 
+# TODO: Section 1 of TODO 14
 ####################################################################################################
 
 # to read one line at a time, use
 fh = open("my_name_is.txt", "r")
 contents = fh.readline()
 print(contents)
+
 
 ####################################################################################################
 
@@ -33,6 +35,7 @@ print(contents)
 for line in contents:
     print(line)
 
+# TODO: Section 2 of TODO 14
 ####################################################################################################
 
 # to write to a file, use
@@ -56,6 +59,7 @@ message = "Hello world, again"
 fh.write(message)
 fh.close()
 
+# TODO: Section 3 of TODO 14
 ####################################################################################################
 
 # after you are done reading or writing to a file, you should close it using the .close() function.
@@ -63,3 +67,5 @@ fh = open("hello.txt", "r")
 contents = fh.read()
 print(contents)
 fh.close()
+
+# TODO: Section 4 of TODO 14
