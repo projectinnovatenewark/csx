@@ -23,6 +23,7 @@ print("Hello, my name is", var_one, var_two)
 # the title() function capitalizes the first letter of every word in a string.
 print(first_name.title()) # this title-izes the first name
 
+# TODO: Section 1 of TODO 3
 ####################################################################################################
 
 # there are also casing functions for upper and lower cases, which are used the same as title
@@ -81,6 +82,7 @@ students = ["Marcus", "Gary", "Francine"]
 attendance_output = "The present students are {}, {}, and {}".format(students[0], students[1], students[2])
 print(attendance_output)
 
+# TODO: Section 2 of TODO 3
 ####################################################################################################
 
 # the join function combines items in a list. in this case, it will create a large string
