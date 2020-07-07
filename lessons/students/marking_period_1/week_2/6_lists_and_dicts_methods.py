@@ -81,6 +81,7 @@ all_but_first_and_last = table_items[1:5]
 list_stepper = table_items[0:5:2]
 print("List stepper:", list_stepper)
 
+#TODO: Section 2 of TODO 6
 ####################################################################################################
 
 # List comprehensions are ways to define potentially lengthy lists in one line.
@@ -102,7 +103,6 @@ print("Squares of odd numbers list", squares_of_odd_numbers)
 squares_of_even_numbers_without_4 = [i**2 for i in range(1, 10) if i % 2 == 0 and i != 4]
 print("Squares of even numbers without 4 list", squares_of_even_numbers_without_4)
 
-#TODO: Section 2 of TODO 6
 ####################################################################################################
 
 # DICTIONARIES
