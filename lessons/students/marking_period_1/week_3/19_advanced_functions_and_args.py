@@ -2,7 +2,6 @@
 Learning more advanced functions and navigating loops through dictionaries
 """
 
-
 # *args being set in a function's parameters allows additional arguments to be passed. They will
 # turn into a tuple named after what you put following the asterisk. **kwargs being set in a function's
 # parameters allows additional arguments to be passed as a key/value pair in a dictionary. The dict
@@ -27,6 +26,9 @@ def make_sandwhich(bread, *ingredients):
 make_sandwhich("Rye", "Turkey", "Swiss", "Lettuce", "Mayo")
 make_sandwhich("Burnt", "Cheese")
 
+#TODO: Section 1 of TODO 19
+####################################################################################################
+
 # When you add **kwargs as a parameter in a function, the name of your kwargs becomes a dictionary
 # within that function.
 def build_profile(f_name, l_name, **user_info):
@@ -45,3 +47,5 @@ def build_profile(f_name, l_name, **user_info):
 
 user_profile = build_profile("Marky", "Mark", sport = "basketball", residence = "South Orange")
 print(user_profile)
+
+#TODO: Section 2 of TODO 19
