@@ -128,7 +128,7 @@ math_first_student = math['students'][0]
 math_first_student_again = classes[0]['students'][0]
 print('math first student: ', math_first_student, 'should equal this', math_first_student_again)
 
-# Lastly, lets find the teacher's education level
+# Lastly, let's find the teacher's education level
 math_teacher_education = math['teacher_description']['education']
 math_teacher_education_again = classes[0]['teacher_description']['education']
 print('math teacher education: ', math_teacher_education, 'should equal this', math_teacher_education_again)
