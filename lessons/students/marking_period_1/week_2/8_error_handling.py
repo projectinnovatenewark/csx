@@ -1,5 +1,5 @@
 """
-Common errors you will/may have already encounter
+Common errors you will/may have already encounter(ed).
 """
 
 # Below are a few examples of errors you will undoubtedly see in your time as a programmer.
