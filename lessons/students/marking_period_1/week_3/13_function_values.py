@@ -108,6 +108,7 @@ def initializeGame():
     print("\n", userWelcomeString, "\n")
 
     # userGameCount will equal the user's input from their desired number of games to play.
+    # userWelcomeString will equal the output "You've signed on to play {userGameCount} games!"
     # This while loop will continue to run until userGameCount equals zero.
     while userGameCount:
         playTheGame()
@@ -118,5 +119,5 @@ def initializeGame():
 # Lets call the initializeGame function to get things going!
 initializeGame()
 
-# TODO: Complete 13_function_values TODO
+# TODO: Complete TODO 13
 
