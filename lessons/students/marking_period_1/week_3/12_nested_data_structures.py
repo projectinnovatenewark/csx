@@ -85,7 +85,7 @@ for season_num in the_office:
         episode = season[episode_num]
         print(f"{season_num}, {episode_num}: {episode}")
 
-# TODO: Complete 12.1_nested_data_structures.py TODO
+# TODO: Complete Section 1 of TODO 12
 
 ####################################################################################################
 
@@ -136,7 +136,7 @@ math_classes = [
 
 # Lets see how to find the entire dictionary for the Calculus course. To do so, we 
 # will set up a for loop with a conditional statement in it to test which level 
-# we are iterating on. Then we can go ahead and print the entire calculus dictionary,
+# we are iterating over. Then we can go ahead and print the entire calculus dictionary,
 # also known as 'math_classes' third key
 
 for key in math_classes:
@@ -174,4 +174,4 @@ for key in math_classes:
     for student in students:
         print("{} teaches {} to {}".format(teacher, subject, student))
 
-# TODO: Complete 12.2_nested_data_structures.py TODO
+# TODO: Complete Section 2 of TODO 12
