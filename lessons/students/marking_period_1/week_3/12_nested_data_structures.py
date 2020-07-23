@@ -85,7 +85,7 @@ for season_num in the_office:
         episode = season[episode_num]
         print(f"{season_num}, {episode_num}: {episode}")
 
-# TODO: Section 1 of TODO 12
+# TODO: Complete Section 1 of TODO 12
 
 ####################################################################################################
 
@@ -133,62 +133,45 @@ math_classes = [
     },
 ]
 
-# Using what we learned from the previous section, we want to put our for loops 
-# inside meaningful functions; that way we can call on them whenever we need to use them.
-# This allows our program to be a little more dynamic if we have other data sets besides
-# 'math_classes' that have a similar structure. Lets see how to find the entire dictionary 
-# for the Calculus course. To do so, we will set up a for loop with a conditional 
-# statement in it to test which level we are iterating on. Then we can go ahead 
-# and print the entire calculus dictionary, also known as 'math_classes' third key. We want to 
-# put this inside a funciton 'findCalc' and pass the parameter of data so it's versatile.
-# Then when we call the function to run, we pass the argument of 'math_classes' to loop through.
 
-def findCalc(data):
-    for key in data:
-        level = key["level"]
-        if (level == "Calculus"):
-            print(key)
+# Lets see how to find the entire dictionary for the Calculus course. To do so, we 
+# will set up a for loop with a conditional statement in it to test which level 
+# we are iterating over. Then we can go ahead and print the entire calculus dictionary,
+# also known as 'math_classes' third key
 
-findCalc(math_classes)
+for key in math_classes:
+    level = key["level"]
+    if (level == "Calculus"):
+        print(key)
 
 # Now lets find the 2nd student in the list of students from the Algebra class.
 # Remember to keep in mind setting variables is important! It gives 
-# readability to your code and it's easier to get your desired output. Note how the 
-# name of the function stays relevant to the purpose of your code. Just like variable
-# naming, we want to give useful names to our functions. 
+# readability to your code and it's easier to get your desired output.
 
-def findSecond(data):
-    for key in data:
-        level = key["level"]
-        student = key["students"]
-        if (level == "Algebra"):
-            print(student[1])
+for key in math_classes:
+    level = key["level"]
+    student = key["students"]
+    if (level == "Algebra"):
+        print(student[1])
 
-findSecond(math_classes)
+# Lets print each student from every class. We want to iterate through each class
+# and then iterate through each student in the class and print their name.
 
-# Lets print each student from every class inside the funciton 'printStudents'. We want to iterate
-# through each classand then iterate through each student in the class and print their name.
+for key in math_classes:
+    students = key["students"]
+    for student in students:
+        print(student)
 
-def printStudents(data):
-    for key in data:
-        students = key["students"]
-        for student in students:
-            print(student)
-
-printStudents(math_classes)
 
 # Lets make the above a little more coherent. Now we want to print the statement,
 # '{Teacher} teaches {subject} to {student}'. First we need to set our variables just like
 # in previous examples, and a simple nested for loop can be used!
 
-def printStatement(data):
-    for key in data:
-        students = key["students"]
-        teacher = key["teacher"]
-        subject = key["subject"]   
-        for student in students:
-            print("{} teaches {} to {}".format(teacher, subject, student))
+for key in math_classes:
+    students = key["students"]
+    teacher = key["teacher"]
+    subject = key["subject"]   
+    for student in students:
+        print("{} teaches {} to {}".format(teacher, subject, student))
 
-printStatement(math_classes)
-
-# TODO: Section 2 of TODO 12
+# TODO: Complete Section 2 of TODO 12
