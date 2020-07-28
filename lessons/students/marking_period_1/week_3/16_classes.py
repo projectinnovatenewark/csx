@@ -199,7 +199,7 @@ s1.identifier()
 # And here you see that you can call the function from the derived child class.
 s1.welcome()
 
-# TODO: Section 3 & 4 of the TODO 16
+# TODO: Section 3 TODO 16
 
 ###################################################################################################
 
