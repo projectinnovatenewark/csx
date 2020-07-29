@@ -116,7 +116,7 @@ inquireDay()
 
 ####################################################################################################
 
-# here are a couple of dictionaries
+# Here are a couple of dictionaries
 EXAMPLE_DICTIONARY_ONE = {"Abigail": 78, "Brian": 86, "Carlito": 95, "Debbie": 100, "Erion": 88}
 EXAMPLE_DICTIONARY_TWO = {"Andy": 73, "Brovan": 90, "Celeste": 65, "Danilo": 84, "Epsilo": 78}
 
@@ -171,3 +171,5 @@ s3 = "I love Malaysia!"
 func3()
 
 print(s3)
+
+# TODO: Section 1 of TODO 10
