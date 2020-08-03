@@ -307,4 +307,3 @@ math_classes = [
 # TODO: Question 6: How could I find yearly grades average between marking periods for each class?
 # TODO: for example, I would want all of the averages added up for each course, then divided by the
 # TODO: number of marking periods to determine the average yearly grade for the course.
-        

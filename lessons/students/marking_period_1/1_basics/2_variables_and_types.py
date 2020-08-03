@@ -38,14 +38,14 @@ String1 = "Wonderful!"
 big_string = string1 + string2
 print(big_string)
 
-# TODO: Section 1 of TODO 1.2
+# TODO: Section 1 of TODO 2
 ####################################################################################################
 
 # Setting multiple variables in one line of code? Also yep. Make sure you use your commas wisely!
 var1, var2, var3 = 1, 2, 3
 print(var1, var2, var3)
 
-# TODO: Section 2 of TODO 1.2
+# TODO: Section 2 of TODO 2
 ####################################################################################################
 
 # Booleans are true or false values. The first letter gets capitalized in the word
@@ -57,7 +57,7 @@ boolean2 = True
 # if you want to set a variable to an empty value, use the None type
 variable_for_later = None
 
-# TODO: Section 3 of TODO 1.2
+# TODO: Section 3 of TODO 2
 ####################################################################################################
 
 # print is an example of a function. a function is a block of code that runs when it is called upon.
@@ -112,4 +112,4 @@ print(type(floated_num))
 # Boolean: bool()
 
 
-# TODO: Section 4 of TODO 1.2
+# TODO: Section 4 of TODO 2
