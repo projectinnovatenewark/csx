@@ -1,3 +1,9 @@
+"""Binary Search Tree"""
+
+# A binary search tree is very similar in structure to a binary tree. The primary
+# difference is that in the binary search tree, the left child is always less than or equal to
+# the parent node whereas the right child is always greater than the parent node.
+
 class Node:
     def __init__(self, data):
 
@@ -20,15 +26,15 @@ class Node:
         else:
             self.data = data
 
-    def search_value(self, lkpval):
-        if lkpval < self.data:
+    def search_value(self, lookup_value):
+        if lookup_value < self.data:
             if self.left is None:
-                return str(lkpval)+' Not Found'
-            return self.left.search_value(lkpval)
-        elif lkpval > self.data:
+                return str(lookup_value)+' Not Found'
+            return self.left.search_value(lookup_value)
+        elif lookup_value > self.data:
             if self.right is None:
-                return str(lkpval)+' Not Found'
-            return self.right.search_value(lkpval)
+                return str(lookup_value)+' Not Found'
+            return self.right.search_value(lookup_value)
         else:
             print(str(self.data) + ' is found')
 
