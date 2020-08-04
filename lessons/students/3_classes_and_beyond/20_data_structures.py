@@ -34,6 +34,8 @@ print(f"Removed: {last_item}")
 # Now we can print our finalized stack.
 print(f"Finalized Stack: \n {letters}") # The output should read as ['c', 'a'].
 
+# TODO: Complete Section 1 of TODO 20
+
 ##################################################################################################
 
 # A queue is also a linear data structure that stores items. Like stacks, lists can be used
@@ -67,3 +69,5 @@ print(f"Removed: {first_item}")
 
 # Now let's print our finalized queue.
 print(f"Finalized Queue: \n {fruits}") # ['mango', 'orange'] is our output.
+
+# TODO: Complete Section 2 of TODO 20
