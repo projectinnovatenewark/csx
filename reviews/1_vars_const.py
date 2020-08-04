@@ -81,7 +81,7 @@ print(GRAVITY)
 
 print("Hello my name is " + "Gary")
 
-# Tip: Using plus signs is inconvienant and slows down your code.
+# Tip: Using plus signs is inconvienent and slows down your code.
 # See how the next example uses commas to seperate strings and automatically adds a space.
 
 name = "Gary"
