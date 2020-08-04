@@ -4,7 +4,7 @@ Handling files via read, write, and open
 
 # FIXME: IMPORTANT! YOUR WORKING DIRECTORY OF YOUR TERMINAL MUST BE IN THE
 # FIXME: "2_functions_and_conditions" FOLDER FOR THE PROGRAM TO RUN. IT WILL NOT
-# FIXME: RECOGNIZE THE HELLO.TXT FILE UNTIL YOUR WORKING DIRECTORY IS WITHIN WEEK_3.
+# FIXME: RECOGNIZE THE HELLO.TXT FILE UNTIL YOUR WORKING DIRECTORY IS "2_functions_and_conditions".
 
 # To open a text file, reference the code below.
 fh = open("hello.txt", "r")
