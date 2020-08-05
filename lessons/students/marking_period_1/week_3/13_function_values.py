@@ -1,6 +1,6 @@
 """ 
 In this lesson, we will go over some more function work as well as using a 
-funcitons return value in other functions
+funcitons return value in other functions.
 """
 
 # First, let's review a concept from lesson 6: pop(). If you recall, pop()
