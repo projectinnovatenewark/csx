@@ -31,5 +31,4 @@ import importable_stuff
 # from importable_stuff import DAYS_OF_WEEK, MONTHS
 # This would let you access both the DAYS_OF_WEEK and MONTHS lists.
 
-# TODO: Try each of the above methods for importing and test them by printing
-# TODO: your import.
+#TODO: Section 1 of TODO 7
