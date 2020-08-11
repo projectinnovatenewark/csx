@@ -37,8 +37,7 @@ print(big_string)
 ####################################################################################################
 
 # Setting multiple variables in one line of code? Also yep. This is possible only when you use
-# commas to separate them out. Be sure to keep track of this, as it can get confusing
-# if you set too many variables on the same line.
+# commas to separate them out. The positions of the varibale names correspond with the values.
 var1, var2, var3 = 1, 2, 3
 print(var1, var2, var3)
 
