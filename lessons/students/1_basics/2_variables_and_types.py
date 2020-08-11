@@ -5,6 +5,8 @@ This is a docstring. They are used to detail files at a high level.
 # These lines that start with a pound sign are comments. They do nothing to the program
 # except provide instructions, personal notes, or anything that you want really!
 
+# TITLE  Section 1 of TODO 2
+
 # Variables can be thought of as "pointers" to a value. These values have types.
 # Types include things like integers, strings, floats, booleans, lists, and dictionaries.
 # The name of the variable is on the left of the `=` sign and on the right is the content
@@ -31,10 +33,13 @@ big_string = string1 + string2
 print(big_string)
 
 # When you see, TODO: Section x of TODO y, you should stop where you are and head over to
-# the corresponding assignment for this section of the lesson.
+# the corresponding assignment for this section of the lesson. The line below instructs
+# you to visit section 1 of the 2nd TODO and complete it before moving on to the next section.
 # TODO: Section 1 of TODO 2
 
 ####################################################################################################
+
+# TITLE  Section 2 of TODO 2
 
 # Setting multiple variables in one line of code? Also yep. This is possible only when you use
 # commas to separate them out. The positions of the varibale names correspond with the values.
@@ -54,6 +59,8 @@ variable_for_later = None
 
 ####################################################################################################
 
+# TITLE  Section 3 of TODO 2
+
 # Print is an example of a function. A function is a block of code that runs when
 # it is called upon. The items you place in the parentheses are called arguments. Lets
 # call the print function and pass arguments to print them.
@@ -66,7 +73,9 @@ print(num3)
 print(string1)
 
 # FIXME: The code right here is broken, let's run it for fun to show that strings cannot be
-# concatenated directly non-strings. Be sure to comment it out before moving on in the lesson.
+# FIXME: concatenated directly non-strings.
+
+# HINT: Be sure to comment it out before moving on in the lesson, or else your program will not run.
 print(string1 + " I am python number " + num3, ", hear me roar!!")
 
 # You can print any type by separating them with commas, as Python will automatically pass
@@ -78,6 +87,8 @@ print(string1, " I am python number", num3, ",hear me roar!!")
 # TODO: Section 3 of TODO 2
 
 ####################################################################################################
+
+# TITLE  Section 4 of TODO 2
 
 # Sometimes when you are dealing with variables, you are ggoing to want to check the type of
 # the variable to make sure you are correctly using it. Python has a built in funciton for this!

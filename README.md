@@ -37,8 +37,8 @@ are typically self-explanatory.
            be in the "programming" folder, and the path response you get from the pwd command should end in "programming"
            (i.e. user/Documents/programming)
         c. Create a folder called "python-work" by entering the command `mkdir python-work`
-        d. Download the following VS Code extensions- Python and TODO Highlight. You can find the extensions tab in VS
-           Code by clicking "Shift + Ctrl + X" (windows) or "Shift + Command + X" (mac). Once there, search for those exact extensions and download the first result for each of them. Once you are done downloading those extensions, return back to the main "Explorer" page where you will be viewing your folders/files by clicking "Shift + Ctrl + E" (windows) or "Shift + Command + E" (mac).
+        d. Download the following VS Code extensions- Python and Highlight. You can find the extensions tab in VS
+           Code by clicking "Shift + Ctrl + X" (windows) or "Shift + Command + X" (mac). Once there, search for those exact extensions and download the first result for each of them. Once you are done downloading those extensions, return back to the main "Explorer" page where you will be viewing your folders/files by clicking "Shift + Ctrl + E" (windows) or "Shift + Command + E" (mac). There are icons on the left panel of your VS Code to navigate through these different pages as well. You will see how these extensions are to be used at the bottom of this README
         
 6. Create a repository in Github -> https://help.github.com/en/enterprise/2.13/user/articles/creating-a-new-repository
         Then copy this set of commands into your terminal after creating repository:
@@ -69,14 +69,27 @@ are typically self-explanatory.
         
 11. To pull code from the master branch of a repository:
         `git pull origin master`
+
+12. We will now include steps so that your files are formatted appropriately with the extensions you installed. Here are the different conventions we use
+        a. Comment Blocks. Sections of code from a lesson are meant to be run in isolation. If a line in the file is completely composed of pound signs, it is a divider between sections. Each of these sections that are comment blocked should be ran one-by-one so you can observe their outputs and understand the content.
+
+        b. Before reviewing the following, make sure that the Highlight extension by "Fabio Spampinato" is installed in your VS Code application as well as the "Python" extension by Microsoft. You should also have the VS Code "settings.json" file that comes with the csx repository copied and pasted into your own "settings.json" file. To access your own settings.json file click "Shift + Control (Command for Mac) + P" and type in "Open Settings (JSON)" and click on the option of the same name. That file should be scrapped and replaced entirely with the settings.json file that comes with the csx repository that is stored in the folder called ".vscode".
+
+        ## FIXME's: callout questions and in-class demonstrations. FIXME's are meant to catch the teacher and students attention to do something. The FIXME will include items such as callout questions (questions to randomly choose a student from the class to solve), or in-class demonstrations (i.e. change a variable to show a different output). FIXME's will be highlighted red if you have the Highlight extension installed in your VS Code window.
+
+        ## TODO's: working as a class. When you see a TODO in a lesson, it means that the class should pause the lesson and begin working on a problem. Nearly all TODO's in our lessons would lead to a question in the student_repository. There are often several TODO's per lesson and it is very important that you stop teaching and give the students time to solve each problem. After a reasonable amount of time (and drop-by support to students that need help), the teacher can then demo the solution on either the whiteboard or the projector with your computer connected. TODO's will be highlighted yellow if you have the Highlight extension installed in your VS Code window.
+
+        ## TITLE: is what will be placed at the top of each section.
+
+        ## HINT: is what will be used to give some tips or tricks to our students.
         
-12. Next you should copy and paste the todos (file ends in "todo") into VS Code
+13. Next you should copy and paste the todos (file ends in "todo") into VS Code
         a. Go to -> https://github.com/projectinnovatenewark/student_repository/tree/master/todos
            to see the assignment files separated by week.
         b. Create a file in your "python-work" folder in VS Code:
-           right click on "python-work" folder
-           click "new file"
-           name the new file "currentlesson.py" (.py tells VS Code that it is a pthon file)
+           - right click on "python-work" folder
+           - click "new file"
+           - name the new file "currentlesson.py" (.py tells VS Code that it is a pthon file)
         c. Copy the first lesson from week one in your new file and try to solve it. 
            To run your code, simply click on the green arrow at the top right of your VS Code window.
  
