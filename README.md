@@ -82,6 +82,10 @@ are typically self-explanatory.
         ## TITLE: is what will be placed at the top of each section.
 
         ## HINT: is what will be used to give some tips or tricks to our students.
+
+        ## TAKEAWAY: you will see this after an important lesson/todo to highlight what you should takeaway from it. These statements are crucial to summarize what you've learned.
+
+        ## IMPORTANT: an important statement will be used to emphasize a section of the lesson. There will only be a handful of these throughout the curriculum- so make sure to read into these statements!
         
 13. Next you should copy and paste the todos (file ends in "todo") into VS Code
         a. Go to -> https://github.com/projectinnovatenewark/student_repository/tree/master/todos
