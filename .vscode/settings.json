@@ -79,13 +79,13 @@
             "filterFileRegex": ".*(?<!CHANGELOG.md)$",
             "decorations": [
                 {
-                "overviewRulerColor": "#cc00cc",
-                "backgroundColor": "#cc00cc",
+                "overviewRulerColor": "#82b74b",
+                "backgroundColor": "#82b74b",
                 "color": "#1f1f1f",
                 "fontWeight": "bold"
                 },
                 {
-                "backgroundColor": "#cc00cc",
+                "backgroundColor": "#82b74b",
                 "color": "#1f1f1f"
                 }
             ]
@@ -94,13 +94,13 @@
             "filterFileRegex": ".*(?<!CHANGELOG.md)$",
             "decorations": [
                 {
-                "overviewRulerColor": "#cc00cc",
-                "backgroundColor": "#cc00cc",
+                "overviewRulerColor": "#ff7b25",
+                "backgroundColor": "#ff7b25",
                 "color": "#1f1f1f",
                 "fontWeight": "bold"
                 },
                 {
-                "backgroundColor": "#cc00cc",
+                "backgroundColor": "#ff7b25",
                 "color": "#1f1f1f"
                 }
             ]
