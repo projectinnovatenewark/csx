@@ -71,17 +71,22 @@ are typically self-explanatory.
         `git pull origin master`
 
 12. We will now include steps so that your files are formatted appropriately with the extensions you installed. Here are the different conventions we use
+
         a. Comment Blocks. Sections of code from a lesson are meant to be run in isolation. If a line in the file is completely composed of pound signs, it is a divider between sections. Each of these sections that are comment blocked should be ran one-by-one so you can observe their outputs and understand the content.
 
         b. Before reviewing the following, make sure that the Highlight extension by "Fabio Spampinato" is installed in your VS Code application as well as the "Python" extension by Microsoft. You should also have the VS Code "settings.json" file that comes with the csx repository copied and pasted into your own "settings.json" file. To access your own settings.json file click "Shift + Control (Command for Mac) + P" and type in "Open Settings (JSON)" and click on the option of the same name. That file should be scrapped and replaced entirely with the settings.json file that comes with the csx repository that is stored in the folder called ".vscode".
 
-        ## FIXME's: callout questions and in-class demonstrations. FIXME's are meant to catch the teacher and students attention to do something. The FIXME will include items such as callout questions (questions to randomly choose a student from the class to solve), or in-class demonstrations (i.e. change a variable to show a different output). FIXME's will be highlighted red if you have the Highlight extension installed in your VS Code window.
+        c. ## FIXME's: callout questions and in-class demonstrations. FIXME's are meant to catch the teacher and students attention to do something. The FIXME will include items such as callout questions (questions to randomly choose a student from the class to solve), or in-class demonstrations (i.e. change a variable to show a different output). FIXME's will be highlighted red if you have the Highlight extension installed in your VS Code window.
 
-        ## TODO's: working as a class. When you see a TODO in a lesson, it means that the class should pause the lesson and begin working on a problem. Nearly all TODO's in our lessons would lead to a question in the student_repository. There are often several TODO's per lesson and it is very important that you stop teaching and give the students time to solve each problem. After a reasonable amount of time (and drop-by support to students that need help), the teacher can then demo the solution on either the whiteboard or the projector with your computer connected. TODO's will be highlighted yellow if you have the Highlight extension installed in your VS Code window.
+        d. ## TODO's: working as a class. When you see a TODO in a lesson, it means that the class should pause the lesson and begin working on a problem. Nearly all TODO's in our lessons would lead to a question in the student_repository. There are often several TODO's per lesson and it is very important that you stop teaching and give the students time to solve each problem. After a reasonable amount of time (and drop-by support to students that need help), the teacher can then demo the solution on either the whiteboard or the projector with your computer connected. TODO's will be highlighted yellow if you have the Highlight extension installed in your VS Code window.
 
-        ## TITLE: is what will be placed at the top of each section.
+        e. ## TITLE: is what will be placed at the top of each section.
 
-        ## HINT: is what will be used to give some tips or tricks to our students.
+        f. ## HINT: is what will be used to give some tips or tricks to our students.
+
+        g. ## TAKEAWAY: you will see this after an important lesson/todo to highlight what you should takeaway from it. These statements are crucial to summarize what you've learned.
+
+        h. ## IMPORTANT: an important statement will be used to emphasize a section of the lesson. There will only be a handful of these throughout the curriculum- so make sure to read into these statements!
         
 13. Next you should copy and paste the todos (file ends in "todo") into VS Code
         a. Go to -> https://github.com/projectinnovatenewark/student_repository/tree/master/todos
