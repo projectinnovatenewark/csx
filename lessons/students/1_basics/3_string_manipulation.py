@@ -57,7 +57,7 @@ integer_number = 3
 print("Here is the number as a float: %.2f" %integer_number)
 
 # The best way to do the above is strictly by using the format function as shown below.
-# You can also add a number (i.e. 04 below) to add padding to the front of a number
+# You can also add a number (i.e. 06 below) to add padding to the front of a number
 # which means that the first number will print with 6 digits (including the decimal point)
 # and add any additional digits as zeros in front of the number.
 integer_number = 6
