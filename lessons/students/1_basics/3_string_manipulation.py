@@ -74,7 +74,7 @@ song_lyric = f"{num1}, {num2:.1f}, {num3:.2f} transit line." # You can also incl
 
 print(song_lyric)
 
-# When we explore lists and dictionaries in future lessons, you will see that items from lists and
+# When we explore lists and dictionaries in the future, you will see that items from lists and
 # key/value pairs from dictionaries can also be directly inserted into the f shorthand curly braces.
 # The first item in "students" is "Marcus", and we access the first item with the
 # convention "students[0]". The first item in a list is always zero, the second item is one, etc.
