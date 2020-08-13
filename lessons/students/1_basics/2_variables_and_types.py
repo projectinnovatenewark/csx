@@ -123,7 +123,7 @@ player_weight = 250
 
 print(player_name + " weighs " + str(player_weight) + " pounds.")
 
-# Similarly, you can convert a variable that has an integer as it's value into a float:
+# Similarly, you can convert a variable that has an integer as its value into a float:
 
 num = 18
 floated_num = float(num)
