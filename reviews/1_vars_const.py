@@ -25,7 +25,7 @@ no_value = None # This has no value
 
 # Variables
 
-# variables can be defined by any data type and structure. You'll see this as we progress 
+# variables can be defined by any data type and structure. You'll see this as we progress
 # through the semester.
 
 name = "Kobe"
@@ -35,7 +35,8 @@ boolean = True
 
 equation1 = 10 + 4
 
-# Variables can bhave their values reassigned as you wish. It can be the same data type or a completely different one!
+# Variables can behave their values reassigned as you wish. It can be the same data type or
+# a completely different one!
 
 #################################################################################################
 
@@ -80,7 +81,7 @@ print(GRAVITY)
 
 print("Hello my name is " + "Gary")
 
-# Tip: Using plus signs is inconvienant and slows down your code. 
+# Tip: Using plus signs is inconvienent and slows down your code.
 # See how the next example uses commas to seperate strings and automatically adds a space.
 
 name = "Gary"
