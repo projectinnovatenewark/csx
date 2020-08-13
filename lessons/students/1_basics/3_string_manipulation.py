@@ -9,24 +9,23 @@ This is an introduction to string manipulation in Python
 first_name = input("What is your first name?: ")
 last_name = input("What is your last name?: ")
 
-# Since the values you input are set to variables, we can concatenate the strings.
-print("My first name is", first_name, "and my last name is", last_name)
+# Since the values you input are set to variables, we can print them next to plan old strings.
+# Additionally, since we want a period at the end of the sentence, we will use a "+" sign so that
+# there isnt an extra space after the last_name variable (recall- spaces occur when you use commas).
+print("My first name is", first_name, "and my last name is", last_name + ".")
 
-# You can also seperate variables  with commas. This is the preferred
-# method when using the print function. We try not to build the string using simple addition, since
-# that is quite slow in Python. Strings are immutable objects, so each string addition
-# involves creating a new string of the right length and copying the content of the two
-# strings being added.
-var_one = "scooby"
-var_two = "doo"
-print("Hello, my name is", var_one, var_two)
+# Additionally, if you want a user to enter an input without having any words on the line of that
+# input, you can use an empty input function.
+print("Enter the name of your favorite movie on the next line:")
+movie = input()
+print("Your favorite movie is", movie)
 
 #TODO: Section 1 of TODO 3
 ####################################################################################################
 
 # TITLE Section 2 of TODO 3
 # Next we are going to introduce the title() function. This will capitalize the beginning of every
-# word in a string as well as make the rest of the characters lower case. 
+# word in a string as well as make the rest of the characters lower case.
 
 thor2 = "tHOr: the DARK wOrlD".title()
 print(thor2)
@@ -52,37 +51,37 @@ print("\t" + mixed_string.title())
 ####################################################################################################
 
 # TITLE Section 3 of TODO 3
-# There are many methods of string formatting including the format() function and using
-# percent signs (%) to include numbers. Here are brief examples of each:
+# There are many methods of string formatting including the .format() function and using
+# percent signs "%" to include numbers. Here are brief examples of each:
 integer_number = 3
 print("Here is the number as a float: %.2f" %integer_number)
 
-# The Python3 way to do the above is strictly by using the format function as shown below.
+# The best way to do the above is strictly by using the format function as shown below.
 # You can also add a number (i.e. 04 below) to add padding to the front of a number
 # which means that the first number will print with 6 digits (including the decimal point)
 # and add any additional digits as zeros in front of the number.
 integer_number = 6
-float_number = 5
+float_number = 5.1234
 print("Here is first variable passed into format {:06.2f} and here is the second {:.2f}".format(integer_number, float_number))
 
-# Lastly you can use lists (which will be explored more later) to format and directly
-# input an item into a string. For example, numbers[0] would represent the first number in the list.
-numbers = [3, 6, 9]
-song_lyric = "{0} {1} {2}, transit line".format(numbers[0], numbers[1], numbers[2])
+# Here we will introduce the primary method with which we will be inserting variables directly
+# into strings, called "f shorthand". Let's set some variables and insert them in a string that has
+# a lowercase "f" right before the first quotation mark in the string.
+
+num1, num2, num3 = 3, 6, 9
+song_lyric = f"{num1}, {num2:.1f}, {num3:.2f} transit line." # You can also include formatting like
+                                                             # our previous examples with ":.2f"
 
 print(song_lyric)
 
-# This would produce the same output as the line above. You can set the variable to be printed inside
-# the format function allows you to set the variable inputs in the function.
-numbers = [3, 6, 9]
-song_lyric = "{first} {second} {third}, transit line".format(first="three", second="six", third="nine")
-
-print(song_lyric)
-
-# As we explored above, this is a list. students[0] would be "Marcus", students[1] would
-# be "Gary", and so on.
+# When we explore lists and dictionaries in future lessons, you will see that items from lists and
+# key/value pairs from dictionaries can also be directly inserted into the f shorthand curly braces.
+# The first item in "students" is "Marcus", and we access the first item with the
+# convention "students[0]". The first item in a list is always zero, the second item is one, etc.
 students = ["Marcus", "Maria", "Sam"]
-attendance_output = "The present students are {}, {}, and {}".format(students[0], students[1], students[2])
+first_student = students[0] # This variable would equal the string "Marcus".
+
+attendance_output = f"The present students are {students[0]}, {students[1]}, and {students[2]}"
 print(attendance_output)
 
 #TODO: Section 3 of TODO 3
@@ -95,7 +94,8 @@ print(attendance_output)
 list_to_join = ["combine", "these", "words", "into", "one", "string"]
 print(",".join(list_to_join))
 
-# The join function will not change the original list. As you can see from this output, it stays the same.
+# The join function will not change the original list. As you can see from this output, it stays
+# the same.
 print('as you can see, the list has not changed', list_to_join)
 
 # If you wanted to capture the new value of combining the items in the list, you would have
@@ -128,13 +128,13 @@ print(listified_string)
 print("Hello, how are you?".replace("Hello", "Sup"))
 
 # The startswith funtion returns a boolean value (true/false) on whether or not a
-# string begins with a certain set of characters. Lets check if someone is saying hello 
+# string begins with a certain set of characters. Lets check if someone is saying hello
 # in the following two statements:
 print("Hello, I am saying hi to someone".startswith("Hello"))
 print("Whats good?".startswith("Hello"))
 
-# The endswith function returns a boolean value (true/false) on whether or not a string ends with a certain
-# set of characters. Lets check if these statements are questions:
+# The endswith function returns a boolean value (true/false) on whether or not a string ends
+# with a certain set of characters. Lets check if these statements are questions:
 print("Am I a question?".endswith("?"))
 print("I'm not a question.".endswith("?"))
 
