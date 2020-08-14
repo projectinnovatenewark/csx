@@ -2,12 +2,19 @@
 This is an introduction to string manipulation in Python
 """
 
-# TITLE Section 1 of Todo 3
+# TITLE Section 1 (5 minutes)
 
 # With the input function, you can get input from users.
 # Lets set the user inputs equal to variables, then use them appropriately.
 first_name = input("What is your first name?: ")
 last_name = input("What is your last name?: ")
+
+# Inputs automatically set a user input to a string- so what if we wanted to ask someone
+# for their age and have it set equal to an integer? We can wrap the entire input statement
+# in an int() function, and then the user's number input would be converted into a variable.
+# As you recall from last lesson, we can also convert values to strings with the str() function.
+age = int(input("What is your age?"))
+print("I am", str(age), "years old.")
 
 # Since the values you input are set to variables, we can print them next to plan old strings.
 # Additionally, since we want a period at the end of the sentence, we will use a "+" sign so that
@@ -20,11 +27,11 @@ print("Enter the name of your favorite movie on the next line:")
 movie = input()
 print("Your favorite movie is", movie)
 
-#TODO: Section 1 of TODO 3
+# TODO: Section 1 of TODO 3 (2 minutes for students, 1 minute demo)
 ####################################################################################################
 
-# TITLE Section 2 of TODO 3
-# Next we are going to introduce the title() function. This will capitalize the beginning of every
+# TITLE Section 2 (3 minutes)
+# Next we are going to introduce the .title() function. This will capitalize the beginning of every
 # word in a string as well as make the rest of the characters lower case.
 
 thor2 = "tHOr: the DARK wOrlD".title()
@@ -47,16 +54,16 @@ print("\n" + mixed_string.lower())
 
 print("\t" + mixed_string.title())
 
-#TODO: Section 2 of TODO 3
+# TODO: Section 2 of TODO 3 (4 minutes for students, 1 minute demo)
 ####################################################################################################
 
-# TITLE Section 3 of TODO 3
+# TITLE Section 3 (10 minutes)
 # There are many methods of string formatting including the .format() function and using
 # percent signs "%" to include numbers. Here are brief examples of each:
 integer_number = 3
 print("Here is the number as a float: %.2f" %integer_number)
 
-# The best way to do the above is strictly by using the format function as shown below.
+# The cleaner to do the above is strictly by using the format function as shown below.
 # You can also modify a number (i.e. 06 below) to add padding to the front of a number
 # which means that the first number will print with 6 digits (including the decimal point)
 # and add any additional digits as zeros in front of the number.
@@ -64,6 +71,7 @@ integer_number = 6
 float_number = 5.1234
 print("Here is first variable passed into format {:06.2f} and here is the second {:.2f}".format(integer_number, float_number))
 
+# IMPORTANT:
 # Here we will introduce the primary method with which we will be inserting variables directly
 # into strings, called "f shorthand". Let's set some variables and insert them in a string that has
 # a lowercase "f" right before the first quotation mark in the string.
@@ -80,14 +88,15 @@ print(song_lyric)
 # convention "students[0]". The first item in a list is always zero, the second item is one, etc.
 students = ["Marcus", "Maria", "Sam"]
 first_student = students[0] # This variable would equal the string "Marcus".
+print("The first student in the list is", first_student, "and the second student is", students[1] + ".")
 
-attendance_output = f"The present students are {students[0]}, {students[1]}, and {students[2]}"
+attendance_output = f"The present students are {students[0]}, {students[1]}, and {students[2]}."
 print(attendance_output)
 
-#TODO: Section 3 of TODO 3
+# TODO: Section 3 of TODO 3 (5 minutes for students, 2 minute demo)
 ####################################################################################################
 
-# TITLE: Section 4 of TODO 3
+# TITLE: Section 4 (7 minutes)
 # The join function combines items in a list. In this case, it will create a large string.
 # The first input specifies how to join the items in the list.
 # In the example below, it will join each item with a comma.
@@ -127,7 +136,7 @@ print(listified_string)
 # Lets make the following polite statement a little less formal:
 print("Hello, how are you?".replace("Hello", "Sup"))
 
-# The startswith funtion returns a boolean value (true/false) on whether or not a
+# The startswith function returns a boolean value (true/false) on whether or not a
 # string begins with a certain set of characters. Lets check if someone is saying hello
 # in the following two statements:
 print("Hello, I am saying hi to someone".startswith("Hello"))
@@ -138,4 +147,4 @@ print("Whats good?".startswith("Hello"))
 print("Am I a question?".endswith("?"))
 print("I'm not a question.".endswith("?"))
 
-#TODO: Section 4 of TODO 3
+# TODO: Section 4 of TODO 3 (3 minutes for students, 1 minute demo)
