@@ -95,10 +95,14 @@ summation -= 3
 # use. Below is a list of random numbers we are going to work on to show some examples.
 number_list = [13, 27, 4, 12, 39, 100]
 
-# To find the smallest number, or minimum, in a list, we can use the built in funciton: min().
+# IMPORTANT:
+# Certain functions have return values that can be be placed in print statements, and their return
+# values will be printed as a string when using f shorthand.
+
+# To find the smallest number, or minimum, in a list, we can use the built in function: min().
 print(f"The min of number_list is {min(number_list)}")
 
-# To find the largest number, or maximum, in a list, we can use the built in funciton: max().
+# To find the largest number, or maximum, in a list, we can use the built in function: max().
 print(f"The max of number_list is {max(number_list)}")
 
 # To find the summation of all the numbers in a list, we can use sum(). This is beneficial for when
