@@ -31,6 +31,28 @@ print("addition: ", addition, "subtraction: ", subtraction, "multiplication: ", 
 ####################################################################################################
 
 # TITLE Section 1.1:
+
+# Math in Python follows all the same rules as if you were completing a problem in
+# your notebook or with a scientific calculator. In other words, Python follows PEMDAS.
+# Let's test out some examples.
+
+eq1 = 4 * 12 - 10
+eq2 = (6 + 3) ** 2
+eq3 = 7 + 2 / 2 - 3
+
+print(f"we expect eq1 to equal 38. Python gives us {eq1}")
+print(f"we expect eq1 to equal 81. Python gives us {eq2}")
+print(f"we expect eq1 to equal 5. Python gives us {eq3}")
+
+# IMPORTANT:
+# Remember when you divide, the output will be a float. If you want an integer,
+# you should us type conversion.
+print(f"we expect eq1 to equal 5. Python gives us {int(eq3)}")
+
+
+####################################################################################################
+
+# TITLE Section 1.2:
 # Here is a new concept we haven't covered yet- constants! Constants are like variables,
 # but they are typed in all caps and don't change. Variables can be manipulated and change,
 # whereas constants must remain the same.
