@@ -123,3 +123,26 @@ print(f"The absolute value of {neg_float} is {abs(neg_float)}.")
 print(f"The absolute value of {pos_float} is {abs(pos_float)}.")
 
 # TODO: Section 2 of TODO 4
+
+####################################################################################################	
+
+# We also have the math package/module from python. Python has built in tools that we	
+# can import and use to help us in mathematical operations. Normally imports go at the	
+# TOP of a file, but we will put it here to consolidate the lesson.	
+
+import math	
+
+# Now that we have the math package imported, we can use methods attached to the module. One	
+# such method we can import is is pow() 👊🏿. This is used to check a mathematical power.	
+# For example, pow(3, 3) would be three raised to the third power, which is 27.	
+
+doing_math_pow = math.pow(3, 3)	
+
+# The ** exponent is the equivalent of the above.	
+doing_math_exp = 3**3	
+
+print('Here is the output of the math module example: ', doing_math_pow)	
+print('Here is regular 3**3 without the math package: ', doing_math_exp)	
+
+# As you can see, the math package result returns a float whereas the normal math	
+# operation returned an integer. Nothing interesting here, just a lil' note.
