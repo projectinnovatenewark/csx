@@ -2,16 +2,32 @@
 if, elif, else and iteratable operations
 """
 
-num = 3 # FIXME: Teacher, try changing this number up to satisfy the different conditions.
+# TITLE: Section 1:
+# The three major coniditional operators are: if, elif, and else. They are used to
+# test if a given condition is true or false. First lets go over "if" statements
+# practicing with the variable "num" below.
 
+num = 3 
+
+# When an if statement is true, like in our case below while "num = 3", then the code
+# that follows inside its scope will exectue. In this case, "num" is 3, so our print statement
+# should execute.
 if (num > 0):
-    print(num, "is a positive number.")
-if (num > 2): # any number of if statements will be evaluated upon running the code
-    print(num, "is greater than 2.")
-elif (num < 0): # the elif statement will only be triggered if none of the "if" statements are true.
-    print(num, "is a negative number.")
-else: # the else statement will only run if none of the conditions above it are true.
-    print(num, "is a zero value.")
+    print(f"{num} is a positive number.")
+if (num > 2): # Any number of if statements will be evaluated upon running the code.
+    print(f"{num} is greater than 2.")
+
+# An "elif" statement can be thought of as "else-if". So, the condition inside of the elif statement
+# will only run if the if statements before are false. In this case, since "num" is equal to 3
+# and the previous if statement is true, the below elif will not exectute.
+elif (num < 0):
+    print(f"{num} is a negative number.") # FIXME: Change "num" to the value of -1 to test the elif.
+
+# Below is an else statement. An else statement will only execute if all of the above if and elif
+# statements are false. Notice we do not specify a condition as well. This is because the condition
+# is always "if everything above is false".
+else:
+    print(f"{num} is a zero value.")
 
 ####################################################################################################
 
