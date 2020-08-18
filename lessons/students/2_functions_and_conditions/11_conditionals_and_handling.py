@@ -29,18 +29,24 @@ elif (num < 0):
 else:
     print(f"{num} is a zero value.")
 
-####################################################################################################
-
-# notice how we used the same variable of "num" from the above function but reassigned its value.
-# we can do that because it is a variable and NOT a constant
-
+# IMPORTANT:
+# Notice how we used the same variable of "num" from the above, but reassigned its value.
+# Remeber we can do that because it is a variable and NOT a constant.
 num = 2
-num = 533
+num1 = 533 # FIXME: Change num1 to equal 99 to test the below if statement.
 
-if (num % 2 == 0):
-    print(num, "is an even number.")
-else:
-    print(num, "is an odd number.")
+# Below is our first example of an "and" operator. This will mean that for the below if statement
+# to be true, both conditions on either side of the "and" must be true.
+if (num % 2 == 0 and num1 > 100):
+    print(f"{num} is even and {num1} is greater than 100")
+
+string1 = "Hello"
+num1 = 42
+
+# Next we'll look at the "or" operator. When this is used, as long as one of the conditions is true,
+# the if statement will be be reflected as true and the block will be executed.
+if (string1 == "What's up?" or num1 != 0):
+    print("At least one of these is right")
 
 # TODO: Section 1 of TODO 11
 
