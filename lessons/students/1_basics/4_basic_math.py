@@ -1,6 +1,7 @@
 """
 This is an introduction to basic math and imports in Python
 """
+
 # TITLE: Section 1: (8 min)
 # Math in Python works exactly as you'd think it should. It's just like using a calculator,
 # except you can store equations in variables. Below are basic mathematical operations you have 
@@ -30,7 +31,7 @@ print("addition: ", addition, "subtraction: ", subtraction, "multiplication: ", 
 
 ####################################################################################################
 
-# TITLE Section 1.1: (<5 min)
+# TITLE Section 1.1: (5 min)
 
 # Math in Python follows all the same rules as if you were completing a problem in
 # your notebook or with a scientific calculator. In other words, Python follows PEMDAS.
@@ -98,26 +99,28 @@ print(f"4. summation is {summation}")
 # use. Below is a list of random numbers we are going to work on to show some examples.
 number_list = [13, 27, 4, 12, 39, 100]
 
-# IMPORTANT:
-# Certain functions have return values that can be be placed in print statements, and their return
-# values will be printed as a string when using f shorthand.
-
 # To find the smallest number, or minimum, in a list, we can use the built in function: min().
-print(f"The min of number_list is {min(number_list)}")
+list_min = min(number_list)
+print(f"The min of number_list is {list_min}")
 
 # To find the largest number, or maximum, in a list, we can use the built in function: max().
-print(f"The max of number_list is {max(number_list)}")
+list_max = max(number_list)
+print(f"The max of number_list is {list_max}")
 
 # To find the summation of all the numbers in a list, we can use sum(). This is beneficial for when
 # you have a bunch of numbers and don't want to add them all together with a bunch of plus signs.
-print(f"The sum  of number_list is {sum(number_list)}")
+list_sum = sum(number_list)
+print(f"The sum  of number_list is {list_sum}")
 
 # If you remember from math class, absolute value can be defined as the distance of a number on a line from 0.
 # So the absolute value of 10 and -10 are both 10.
-neg = -10
-pos = 10
-print(f"The absolute value of {neg} is {abs(neg)}.")
-print(f"The absolute value of {pos} is {abs(pos)}.")
+neg_int = -10
+pos_int = 10
+
+abs_neg = abs(-10)
+abs_pos = abs(10)
+print(f"The absolute value of {neg_int} is {abs_neg}.")
+print(f"The absolute value of {pos_int} is {abs_pos}.")
 
 # The same concept applies to floats as well!
 neg_float = -49.232
@@ -125,11 +128,15 @@ pos_float = 3.5
 print(f"The absolute value of {neg_float} is {abs(neg_float)}.")
 print(f"The absolute value of {pos_float} is {abs(pos_float)}.")
 
+# IMPORTANT:
+# Certain functions have return values that can be be placed in print statements, and their return
+# values will be printed as a string when using f shorthand.
+
 # TODO: Section 2 of TODO 4
 
 ####################################################################################################	
 
-# TITLE: Bonus Section (<5 min)
+# TITLE: Bonus Section (8 min)
 # We also have the math package/module from python. Python has built in tools that we	
 # can import and use to help us in mathematical operations. Normally imports go at the	
 # TOP of a file, but we will put it here to consolidate the lesson.	
@@ -137,11 +144,14 @@ print(f"The absolute value of {pos_float} is {abs(pos_float)}.")
 import math	
 
 # Now that we have the math package imported, we can use methods attached to the module. One	
-# such function we can import is hypot(). This is used to find the length of a hypotenuse of
-# a right triangle replacing the need to type out the pyhtagorean theorem; aka the equation
-# (x**2 + y**2)**(1/2). See how the math package makes our life easier.
-hyp = math.hypot(3, 4)	
-pythag_theorem = (3**2 + 4**2)**(1/2)
+# such function we can import is hypot(a, b) where a and b are positive numbers. This is used to
+# find the length of a hypotenuse of a right triangle replacing the need to type out the pythagorean
+# theorem; aka the equation (x**2 + y**2)**(1/2). See how the math package makes our life easier.
+a = 3
+b = 4
+
+hyp = math.hypot(a, b)	
+pythag_theorem = (a**2 + b**2)**(1/2)
 
 print(f"Here is the output of the math module example: {hyp}")	
 print(f"Here we are using the pythagorean theorem equation: {pythag_theorem}")	
