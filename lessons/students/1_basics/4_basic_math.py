@@ -1,117 +1,147 @@
-"""
-This is an introduction to basic math and imports in Python
-"""
+# """
+# This is an introduction to basic math and imports in Python
+# """
+# # TITLE: Section 1:
+# # Math in Python works exactly as you'd think it should. It's just like using a calculator,
+# # except you can store equations in variables. Below are basic mathematical operations you have 
+# # seen in standard algebra classes.
+# addition = 2 + 2 # This is addition
+# subtraction = 10 - 5 # This is sutraction
+# multiplication = 3 * 4 # This is multiplication
+# division = 12 / 4 # This is division
+# exponents = 2 ** 2 # This is finding exponential value (2^2 or 2 squared)
 
-# Here are some basic mathematical functions shown in Python.
-# We will change these values later in this file to show that variables can change
-addition = 2 + 2
-subtraction = 10 - 5
-multiplication = 3 * 4
+# # IMPORTANT:
+# # In python 2, division of whole numbers always returned a whole number,
+# # but in python 3, they return float values.
 
-# Note: In python 2, division of whole numbers always returned a whole number,
-# but in python 3, they return float values
-division = 12 / 4
-exponents = 2 ** 2
+# # The "%" is called the modulo operator. The modulo operator is used to return the remainder
+# # of one number in the next. In the below example, 9 goes into 120 13 times with a remaineder of 3.
+# remainder = 120 % 9
+# print("Math Section One")
+# print(f"addition: {addition}, subtraction: {subtraction}, multiplication: {multiplication}, division: {division}, exponents: {exponents}, remainder: {remainder}.")
 
-# The number 9 goes into 120 13 times, with a remainder of 3. This is also called a
-# "modulo operator" modulo returns the remainder
-remainder = 120 % 9
-print("Math Section One")
-print("addition: ", addition, "subtraction: ", subtraction, "multiplication: ", multiplication, "division: ", division, "exponents: ", exponents, "remainder: ", remainder)
+# # Let us not forget, variables can be changed! Lets reassign multiple variables in one line.
+# # Use Lesson 2 Section 2 if you need a reminder on setting multiple variables in a line.
+# addition, subtraction, multiplication = 4 + 4, 20 - 6, 2 * 2
 
-# Let us not forget, variables can be changed! Lets reassign multiple variables in one line.
-# When setting multiple variables, you can also set them like this.
-addition, subtraction, multiplication = 4 + 4, 20 - 6, 2 * 2
+# print("Lets see if our variables changed.")
+# print("addition: ", addition, "subtraction: ", subtraction, "multiplication: ", multiplication)
 
-print("Lets see if our variables changed.")
-print("addition: ", addition, "subtraction: ", subtraction, "multiplication: ", multiplication)
+# ####################################################################################################
 
-####################################################################################################
+# # TITLE Section 1.1:
 
-# Here is a new concept we haven't covered yet- constants! Constants are like variables,
-# but they are typed in all caps and don't change! Variables can be manipulated and change,
-# whereas constants must remain the same.
+# # Math in Python follows all the same rules as if you were completing a problem in
+# # your notebook or with a scientific calculator. In other words, Python follows PEMDAS.
+# # Let's test out some examples.
 
-# For example, the corporate tax rate is 20%. Hence, that would be an example of a constant
-# you will also see for company profit we use the int() function, which converts items to the
-# type of integer.
-company_profit = int(input("How much money did your company make this year?: "))
-CORPORATE_TAX_RATE = .20
-taxes_paid = company_profit * CORPORATE_TAX_RATE
+# eq1 = 4 * 12 - 10
+# eq2 = (6 + 3) ** 2
+# eq3 = 7 + 2 / 2 - 3
 
-# Wait, you can't concatenate floats and strings!! lets use the str() function with the
-# "taxes_paid" variable to make the output work.
-print("I paid " + str(taxes_paid) + " dollars in taxes for my business")
+# print(f"we expect eq1 to equal 38. Python gives us {eq1}")
+# print(f"we expect eq1 to equal 81. Python gives us {eq2}")
+# print(f"we expect eq1 to equal 5. Python gives us {eq3}")
 
-# If you do calculations between a integer and float, the output is a float.
-summation = 3 + 3.0 # Summation will now equal 6.0
+# # IMPORTANT:
+# # Remember when you divide, the output will be a float. If you want an integer,
+# # you should us type conversion.
+# print(f"we expect eq1 to equal 5. Python gives us {int(eq3)}")
 
-# Let's say you want to add to the variable summation. You want to increment it by one, for
-# whatever reason. There's one way to do this that is ugly, not fun, and definitely not cool 🛑.
-# Lets do it that way first.
-summation = summation + 1 # Summation will now be 7.0
 
-# Using += will add whatever value comes after to the variable, then reassign the variable
-# to that new value. Since summation was 7.0 and we use += 2, the value of summation after
-# this line will be 9.0
-# LETS. MAKE. IT. BETTER 🔥
-summation += 2 # summation will now equal 9.0
+# ####################################################################################################
 
-# Formatting is important for numbers if you want to specify an output. By using the percent
-# sign below and .2f, you specify that the variable "summation", which follows the string, will
-# have two decimal points.
-print("The sum of our int and float, after incrementing it a bit, is %.2f" %summation)
+# # TITLE Section 1.2:
+# # Here is a new concept we haven't covered yet- constants! Constants are like variables,
+# # but they are typed in all caps and don't change. Variables can be manipulated and change,
+# # whereas constants must remain the same.
 
-# TODO: Section 1 of TODO 4
+# # For example, the corporate tax rate is 20%. Hence, that would be an example of a constant.
+# # You might also notice for company_profit, we use the int() function to convert the user input
+# # (a string) to an integer.
+# company_profit = int(input("How much money did your company make this year?: "))
+# CORPORATE_TAX_RATE = .20
 
-####################################################################################################
+# # IMPORTANT:
+# # Here we see our first example of copmbining new concepts. A mathematical equation is set using a
+# # vaiable and a constant. This is important to recognize because company_profit can change which
+# # will therefore change the value of taxes_paid.
+# taxes_paid = company_profit * CORPORATE_TAX_RATE
+# print(f"I paid ${taxes_paid:.2f} dollars in taxes for my business.")
 
-number_list = [1, 2, 3, 4, 5, 6]
+# # If you do calculations between a integer and float, the output is a float.
+# summation = 3 + 3.0 # Summation will now equal 6.0
 
-# min() finds the minimum of a set of numbers
-print(min(number_list))
+# # Let's say you want to add to the variable summation. You want to increment it by one, for
+# # whatever reason. There's one way to do this that is not the greatest.
+# # Lets do it that way first.
+# summation = summation + 1 # Summation will now be 7.0
 
-# max() finds the max of a set of numbers
-print(max(number_list))
+# # Using += will add whatever value comes after to the variable, then reassign the variable
+# # to that new value. Since summation was 7.0 and we use += 2, the value of summation after
+# # this line will be 9.0.
+# summation += 2 # summation will now equal 9.0
 
-# sum() adds numbers together if you're either:
-#   a) too lazy to put plus signs between everything
-#   b) have a super long list that makes your head spin
-#   c) both of the above
-print(sum(number_list))
+# # To the same tone, you can decrement with -=. Let's see how that looks.
+# summation -= 3
 
-####################################################################################################
+# # TODO: Section 1 of TODO 4
 
-# abs() finds the absolute value
-print(abs(150))
+# # ####################################################################################################
 
-# The absolute value of a negative number is the positive of that number
-print(abs(-43))
+# # TITLE: Section 2:
+# # Python makes it easy to find things like min and max too. Luckily there are built in functions we can
+# # use. Below is a list of random numbers we are going to work on to show some examples.
+# number_list = [13, 27, 4, 12, 39, 100]
 
-# The absolute value of a float is the positive of that number including the decimal values
-print(abs(-43.5))
+# # IMPORTANT:
+# # Certain functions have return values that can be be placed in print statements, and their return
+# # values will be printed as a string when using f shorthand.
 
-# TODO: Section 2 of TODO 4
+# # To find the smallest number, or minimum, in a list, we can use the built in function: min().
+# print(f"The min of number_list is {min(number_list)}")
 
-####################################################################################################
+# # To find the largest number, or maximum, in a list, we can use the built in function: max().
+# print(f"The max of number_list is {max(number_list)}")
 
-# We also have the math package/module from python. Python has a built in tool that we
-# can import and use to help us in mathematical operations. Normally imports go at the
-# TOP of a file, but we will put it here to consolidate the lesson.
+# # To find the summation of all the numbers in a list, we can use sum(). This is beneficial for when
+# # you have a bunch of numbers and don't want to add them all together with a bunch of plus signs.
+# print(f"The sum  of number_list is {sum(number_list)}")
 
-import math
+# # If you remember from math class, the absolute value of a number is the positive of any number.
+# # So the absolute value of 10 and -10 are both 10.
+# neg = -10
+# pos = 10
+# print(f"The absolute value of {neg} is {abs(neg)}.")
+# print(f"The absolute value of {pos} is {abs(pos)}.")
 
-# Now that we have the math package imported, we can use methods attached to the module. One
-# such method we can import is is pow() 👊🏿. This is used to check a mathematical power.
-# For example, pow(3, 3) would be three raised to the third power, which is 27.
+# # The same concept applies to floats as well!
+# neg_float = -49.232
+# pos_float = 49.232
+# print(f"The absolute value of {neg_float} is {abs(neg_float)}.")
+# print(f"The absolute value of {pos_float} is {abs(pos_float)}.")
 
-doing_math_pow = math.pow(3, 3)
+# # TODO: Section 2 of TODO 4
 
-# The ** exponent is the equivalent of the above.
-doing_math_exp = 3**3
+# ####################################################################################################	
 
-print('Here is the output of the math module example: ', doing_math_pow)
-print('Here is regular 3**3 without the math package: ', doing_math_exp)
+# TITLE: Bonus Section
+# We also have the math package/module from python. Python has built in tools that we	
+# can import and use to help us in mathematical operations. Normally imports go at the	
+# TOP of a file, but we will put it here to consolidate the lesson.	
 
-# As you can see, the math package result returns a float whereas the normal math
-# operation returned an integer. Nothing interesting here, just a lil' note.
+import math	
+
+# Now that we have the math package imported, we can use methods attached to the module. One	
+# such method we can import is hypot(). This is used to find the length of a hypotenuse of
+# a right triangle. This replaces the equation (x**2 + y**2)**(1/2). Looks pretty confusing right?
+# See how the math package makes our life easier.
+hyp = math.hypot(3, 4)	
+hyp_the_hard_way = (3**2 + 4**2)**(1/2)
+
+print(f"Here is the output of the math module example: {hyp}")	
+print(f"Here is regular 3**3 without the math package: {hyp_the_hard_way}")	
+
+# Packages can make your life much easier if you can use them right. Remember though,
+# it's always important to remember the underlying concept.
