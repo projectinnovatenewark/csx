@@ -1,7 +1,7 @@
 """
 This is an introduction to basic math and imports in Python
 """
-# TITLE: Section 1:
+# TITLE: Section 1: (8 min)
 # Math in Python works exactly as you'd think it should. It's just like using a calculator,
 # except you can store equations in variables. Below are basic mathematical operations you have 
 # seen in standard algebra classes.
@@ -16,7 +16,7 @@ exponents = 2 ** 2 # This is finding exponential value (2^2 or 2 squared)
 # but in python 3, they return float values.
 
 # The "%" is called the modulo operator. The modulo operator is used to return the remainder
-# of one number in the next. In the below example, 9 goes into 120 13 times with a remaineder of 3.
+# of one number in the next. In the below example, 9 goes into 120 13 times with a remainder of 3.
 remainder = 120 % 9
 print("Math Section One")
 print(f"addition: {addition}, subtraction: {subtraction}, multiplication: {multiplication}, division: {division}, exponents: {exponents}, remainder: {remainder}.")
@@ -30,7 +30,7 @@ print("addition: ", addition, "subtraction: ", subtraction, "multiplication: ", 
 
 ####################################################################################################
 
-# TITLE Section 1.1:
+# TITLE Section 1.1: (<5 min)
 
 # Math in Python follows all the same rules as if you were completing a problem in
 # your notebook or with a scientific calculator. In other words, Python follows PEMDAS.
@@ -49,10 +49,9 @@ print(f"we expect eq1 to equal 5. Python gives us {eq3}")
 # you should us type conversion.
 print(f"we expect eq1 to equal 5. Python gives us {int(eq3)}")
 
-
 ####################################################################################################
 
-# TITLE Section 1.2:
+# TITLE Section 1.2: (15 min)
 # Here is a new concept we haven't covered yet- constants! Constants are like variables,
 # but they are typed in all caps and don't change. Variables can be manipulated and change,
 # whereas constants must remain the same.
@@ -71,26 +70,30 @@ taxes_paid = company_profit * CORPORATE_TAX_RATE
 print(f"I paid ${taxes_paid:.2f} dollars in taxes for my business.")
 
 # If you do calculations between a integer and float, the output is a float.
-summation = 3 + 3.0 # Summation will now equal 6.0
+summation = 3 + 3.0 # summation will now equal 6.0
+print(f"1. summation is {summation}")
 
 # Let's say you want to add to the variable summation. You want to increment it by one, for
 # whatever reason. There's one way to do this that is not the greatest.
 # Lets do it that way first.
-summation = summation + 1 # Summation will now be 7.0
+summation = summation + 1 # summation will now be 7.0
+print(f"2. summation is {summation}")
 
 # Using += will add whatever value comes after to the variable, then reassign the variable
 # to that new value. Since summation was 7.0 and we use += 2, the value of summation after
 # this line will be 9.0.
 summation += 2 # summation will now equal 9.0
+print(f"3. summation is {summation}")
 
 # To the same tone, you can decrement with -=. Let's see how that looks.
-summation -= 3
+summation -= 3 # summation will now equal 6.0
+print(f"4. summation is {summation}")
 
 # TODO: Section 1 of TODO 4
 
-# ####################################################################################################
+####################################################################################################
 
-# TITLE: Section 2:
+# TITLE: Section 2: (10 min)
 # Python makes it easy to find things like min and max too. Luckily there are built in functions we can
 # use. Below is a list of random numbers we are going to work on to show some examples.
 number_list = [13, 27, 4, 12, 39, 100]
@@ -109,7 +112,7 @@ print(f"The max of number_list is {max(number_list)}")
 # you have a bunch of numbers and don't want to add them all together with a bunch of plus signs.
 print(f"The sum  of number_list is {sum(number_list)}")
 
-# If you remember from math class, the absolute value of a number is the positive of any number.
+# If you remember from math class, absolute value can be defined as the distance of a number on a line from 0.
 # So the absolute value of 10 and -10 are both 10.
 neg = -10
 pos = 10
@@ -118,7 +121,7 @@ print(f"The absolute value of {pos} is {abs(pos)}.")
 
 # The same concept applies to floats as well!
 neg_float = -49.232
-pos_float = 49.232
+pos_float = 3.5
 print(f"The absolute value of {neg_float} is {abs(neg_float)}.")
 print(f"The absolute value of {pos_float} is {abs(pos_float)}.")
 
@@ -126,7 +129,7 @@ print(f"The absolute value of {pos_float} is {abs(pos_float)}.")
 
 ####################################################################################################	
 
-# TITLE: Bonus Section
+# TITLE: Bonus Section (<5 min)
 # We also have the math package/module from python. Python has built in tools that we	
 # can import and use to help us in mathematical operations. Normally imports go at the	
 # TOP of a file, but we will put it here to consolidate the lesson.	
@@ -134,14 +137,14 @@ print(f"The absolute value of {pos_float} is {abs(pos_float)}.")
 import math	
 
 # Now that we have the math package imported, we can use methods attached to the module. One	
-# such method we can import is hypot(). This is used to find the length of a hypotenuse of
-# a right triangle. This replaces the equation (x**2 + y**2)**(1/2). Looks pretty confusing right?
-# See how the math package makes our life easier.
+# such function we can import is hypot(). This is used to find the length of a hypotenuse of
+# a right triangle replacing the need to type out the pyhtagorean theorem; aka the equation
+# (x**2 + y**2)**(1/2). See how the math package makes our life easier.
 hyp = math.hypot(3, 4)	
-hyp_the_hard_way = (3**2 + 4**2)**(1/2)
+pythag_theorem = (3**2 + 4**2)**(1/2)
 
 print(f"Here is the output of the math module example: {hyp}")	
-print(f"Here is regular 3**3 without the math package: {hyp_the_hard_way}")	
+print(f"Here we are using the pythagorean theorem equation: {pythag_theorem}")	
 
 # Packages can make your life much easier if you can use them right. Remember though,
 # it's always important to remember the underlying concept.
