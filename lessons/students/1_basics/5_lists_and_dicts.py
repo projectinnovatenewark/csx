@@ -10,7 +10,7 @@ CLASS_LIST = ["Andy", "Bronny", "Carlos", "Denisa", "Enrique"]
 # For the following list, the indexes break down like this:
 CLASS_LIST = ["Andy", "Bronny", "Carlos", "Denisa", "Enrique"]
 #               0        1         2          3         4
-# As you can see, the first item in any list has an index of ZERO
+# As you can see, the first item in any list has an index of ZERO!
 # and the next item is 1, followed by 2, etc.. 
 
 # In addition, Python supports negative indexes, in which case it counts from the end. 
@@ -45,7 +45,7 @@ GRADES_DICT = {"Andy": 87, "Bronny": 95, "Carlos": 75, "Denisa": 55, "Enrique": 
 # a key's value is `dictionary[key]`
 print("Bronny's grade: ", GRADES_DICT["Bronny"])
 
-#Just like lists,you can set a single element from the dictionary as a variable, like so:
+# Just like lists, you can set a single element from the dictionary as a variable, like so:
 grade = GRADES_DICT["Denisa"]
 print("Denisa's grade: ", grade)
 
