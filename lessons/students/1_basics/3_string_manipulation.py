@@ -55,7 +55,7 @@ print(mixed_string.title()) # this title-izes the name
 # and add any additional digits as zeros in front of the number.
 integer_number = 6
 float_number = 5
-print("First formatted variable: {:06.2f} and the second {:.2f}".format(integer_number, float_number))
+print("First formatted variable: {:06.2f} and the second variable: {:.2f}".format(integer_number, float_number))
 
 ####################################################################################################
 

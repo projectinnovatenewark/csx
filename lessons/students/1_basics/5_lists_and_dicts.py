@@ -45,7 +45,7 @@ GRADES_DICT = {"Andy": 87, "Bronny": 95, "Carlos": 75, "Denisa": 55, "Enrique": 
 # a key's value is `dictionary[key]`
 print("Bronny's grade: ", GRADES_DICT["Bronny"])
 
-#Just like lists,you can set a single element from the dictionary as a variable, like so:
+# Just like lists, you can set a single element from the dictionary as a variable, like so:
 grade = GRADES_DICT["Denisa"]
 print("Denisa's grade: ", grade)
 
