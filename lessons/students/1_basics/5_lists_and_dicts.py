@@ -2,8 +2,9 @@
 Here we will cover lists and dicts
 """
 
-# TITLE: Section 1: (4 min)
+# TITLE: Section 1: (5 min)
 # A 'list' is a grouping of values that are ordered and changeable.
+# Each "item" in a list is separated by a comma.
 # In Python lists are written with square brackets, as shown below:
 CLASS_LIST = ["Andy", "Bronny", "Carlos", "Denisa", "Enrique"]
 
@@ -14,7 +15,7 @@ CLASS_LIST = ["Andy", "Bronny", "Carlos", "Denisa", "Enrique"]
 # As you can see, the first item in any list has an index of ZERO
 # and the next item is 1, followed by 2, etc..
 
-# In addition, Python supports negative indexes, in which case it counts from the end. 
+# In addition, Python supports negative indexes, in which case it counts from the end.
 # So the last character can be indexed with -1, the second to last with -2, etc.:
 CLASS_LIST = ["Andy", "Bronny", "Carlos", "Denisa", "Enrique"]
 #               -5       -4        -3        -2        -1
@@ -22,24 +23,29 @@ CLASS_LIST = ["Andy", "Bronny", "Carlos", "Denisa", "Enrique"]
 # You can access single elements from a list using the name followed by a number in [], like so:
 print(CLASS_LIST[0]) # first element
 
-#You can also set a single element from the list as a variable, like so:
+# You can also set a single element from the list as a variable, like so:
 second = CLASS_LIST[1] # second element
 print(second)
 
-# To add an item to a list, you use the append function as such:
+# To add an item to the end of a list, you use the append function as such:
 CLASS_LIST.append("Susan")
 print(CLASS_LIST)
 
-# The append function adds an item to the end of the list. For this reason, the index value of 
-# "Susan" in the example above will be both '5' and '-1'. You can check this with the following code:
+# The append function adds an item to the end of the list. For this reason, the index value of
+# "Susan" in the example above will be both '5' and '-1'. You can check this with the following code
 print(CLASS_LIST[5])
 print(CLASS_LIST[-1])
 
-#TODO: Section 1 of TODO 5
+# Lastly, you can change an item based off of it's index position. Let's change the first item
+# to "Fred"
+CLASS_LIST[0] = "Fred"
+print(CLASS_LIST)
+
+#TODO: Section 1 of TODO 5 (4 minutes for students, 2 minute demo)
 ####################################################################################################
 
-# TITLE: Section 2: (4 min)
-# Dictionaries have keys which in turn have values similarly to how a real life dictionary
+# TITLE: Section 2: (6 min)
+# Dictionaries have keys which in turn have values similar to how a real life dictionary
 # has words with definitions, the keys represent the words and values represent the definitions.
 GRADES_DICT = {"Andy": 87, "Bronny": 95, "Carlos": 75, "Denisa": 55, "Enrique": 100}
 
@@ -75,7 +81,7 @@ first_student_grade = GRADES_DICT[first_student] # this is the equivalent of GRA
 # a space is placed between the strings. However, when you use a `+` , there are no spaces added
 print(first_student + "'s grade was", first_student_grade)
 
-#TODO: Section 2 of TODO 5
+#TODO: Section 2 of TODO 5 (5 minutes for students, 2 minute demo)
 ####################################################################################################
 
 # TITLE: Section 4: (2 min)
@@ -88,9 +94,9 @@ months = ('January', 'February', 'March', 'April', 'May', 'June', 'July', 'Augus
 
 ####################################################################################################
 
-# TITLE: Section 5: (6 min)
-# What about 'nested' data types? What if a list's items are all dictionaries? What if values in dictionaries
-# are lists? How would we handle that?
+# TITLE: Section 5: (10 min)
+# What about 'nested' data types? What if a list's items are all dictionaries? What if values in
+# dictionaries are lists? How would we handle that?
 
 # Lets look at this data here. You can see that each item in the list
 # is a dictionary that represents a class.
@@ -139,4 +145,4 @@ math_teacher_education = math['teacher_description']['education']
 math_teacher_education_again = classes[0]['teacher_description']['education']
 print('math teacher education: ', math_teacher_education, 'should equal this', math_teacher_education_again)
 
-#TODO: Section 3 of TODO 5
+#TODO: Section 3 of TODO 5 (5 minutes for students, 1 minute demo)
