@@ -58,7 +58,7 @@ grade = GRADES_DICT["Denisa"]
 print("Denisa's grade: ", grade)
 
 # To add a key/value pair to a dictionary, you simply place a new key in brackets and set
-# it equal to the desired value
+# it equal to the desired value.
 GRADES_DICT["Susan"] = 92
 print(GRADES_DICT)
 
