@@ -9,25 +9,16 @@ medals = ["gold", "silver"]
 medals.append("bronze")
 print(medals)
 
-####################################################################################################
-
-# TITLE: Section 2
 # The insert method adds an item to a specific index.
 priority_list = ["go to sports practice", "hangout with friends", "talk to mom", "eat vegetables"]
 priority_list.insert(2, "study computer science")
 print(priority_list)
 
-####################################################################################################
-
-# TITLE: Section 3
 # The remove method removes a specific item from a list.
 fruits = ["apples", "oranges", "asparagus", "bananas"]
 fruits.remove("asparagus")
 print(fruits)
 
-####################################################################################################
-
-# TITLE: Section 4
 # The pop method removes the last item from a list and returns it's value. Therefore, you could
 # set the pop() method equal to a variable.
 # You could also pick an index item to remove (i.e. removing the first item and
@@ -38,7 +29,7 @@ print("last item:", last_item, "and shopping list:", shopping_list)
 
 ####################################################################################################
 
-# TITLE: Section 5
+# TITLE: Section 1.1
 # The extend method adds a list to the end of another list.
 # A list of languages:
 languages1 = ['French', 'English', 'German']
@@ -58,7 +49,7 @@ print(languages1)
 #TODO: Section 1 of TODO 6
 ####################################################################################################
 
-# TITLE: Section 6
+# TITLE: Section 2
 # Slicing is a way to segment items in a list.
 table_items = ["cloth", "mug", "newspaper", "magazine", "remote", "coozie"]
 
@@ -86,10 +77,7 @@ all_but_first_and_last = table_items[1:5]
 list_stepper = table_items[0:5:2]
 print("List stepper:", list_stepper)
 
-#TODO: Section 2 of TODO 6
-####################################################################################################
-
-# TITLE: Section 7
+# TITLE: Section 2.1
 # IMPORTANT: List comprehensions are ways to define potentially lengthy lists in one line.
 # While you may not recognize the syntax here, just know that you are creating a list of
 # squares for all numbers between zero and ten, then printing them. "for x in something" means
@@ -97,10 +85,10 @@ print("List stepper:", list_stepper)
 squares = [i**2 for i in range(10)] 
 print("Squares list", squares)
 
-
+#TODO: Section 2 of TODO 6
 ####################################################################################################
 
-# TITLE: Section 8
+# TITLE: Section 3
 
 # The adding of a key/value pair to a dictionary is shown below.
 programming_languages = {"One" : "Python", "Two" : "Java"}
@@ -142,7 +130,7 @@ print(second_value)
 #TODO: Section 3 of TODO 6
 ####################################################################################################
 
-# TITLE: Section 9
+# TITLE: Section 4
 # A second argument with the get function is what is returned if the first argument isnt in the dict.
 # This will return 321 since there is no key "Four".
 fourth_value = example_dict.get("Four", 321)
