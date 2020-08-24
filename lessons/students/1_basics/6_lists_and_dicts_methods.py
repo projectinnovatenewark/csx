@@ -1,139 +1,149 @@
 """
-Actions you can perform on lists and dictionaries
+Methods you can perform on lists and dictionaries
 """
 
-# TITLE: Section 1
-
-# The append method adds an item to the end of a list.
+# TITLE: Section 1 (5 minutes)
+# The .append() method adds an item to the end of a list.
 medals = ["gold", "silver"]
 medals.append("bronze")
 print(medals)
 
-# The insert method adds an item to a specific index.
+# As a reminder, index positions are used to access items in a list- and you can also
+# set those values equal to a variable. We will demo those below by printing them using f shorthand.
+last_item = medals[2]
+print(f"The last item is {last_item} and the first item is {medals[0]}")
+
+# The .insert() method adds an item to a specific index. The first argument passed to this
+# method is the index position you want to add to, and the second argument is the item you want
+# to be added to that position.
 priority_list = ["go to sports practice", "hangout with friends", "talk to mom", "eat vegetables"]
 priority_list.insert(2, "study computer science")
 print(priority_list)
 
-# The remove method removes a specific item from a list.
+# The .remove() method removes a specific item from a list.
 fruits = ["apples", "oranges", "asparagus", "bananas"]
 fruits.remove("asparagus")
 print(fruits)
 
-# The pop method removes the last item from a list and returns it's value. Therefore, you could
-# set the pop() method equal to a variable.
-# You could also pick an index item to remove (i.e. removing the first item and
-# returning it's value would be .pop(0))
+# The .pop() method removes the last item from a list and returns it's value. Therefore, you could
+# set the .pop() method equal to a variable. You could also pick an index postion to remove from
+# the list with .pop() method.
 shopping_list = ["t-shirt", "laptop", "belt", "dress", "mousepad"]
-last_item = shopping_list.pop()
-print("last item:", last_item, "and shopping list:", shopping_list)
+list_item = shopping_list.pop() # This will remove the last item from the list and set
+                                # it equal to a variable, "list_item".
+
+shopping_list.pop(0) # This will remove the first index position's item from the list.
+
+# Lets print the list item and shopping list on different lines
+# TIP: \n creates a new line in the output (Lesson 3 flashback)
+print("List item:", list_item, "\nShopping list:", shopping_list)
 
 ####################################################################################################
 
-# TITLE: Section 1.1
-# The extend method adds a list to the end of another list.
-# A list of languages:
+# TITLE: Section 1.1 (6 minutes)
+# The .extend() method adds a list to the end of another list.
+# A list of languages.
 languages1 = ['French', 'English', 'German']
 
-# Another list of languages:
+# Another list of languages.
 languages2 = ['Spanish', 'Portuguese']
 
+# This will add the second list's items to the end of the first list's items.
 languages1.extend(languages2)
 
-# Extended List
+# Extended List.
 print('Language List: ', languages1)
 
 # Or if you want to replace an item in a list you can simply set it's index position to a new value.
-languages1[0] = "Malaysian"
-print(languages1)
+print("Language List first variable before change", languages1[0]) # This will be French
 
-#TODO: Section 1 of TODO 6
+languages1[0] = "Malaysian" # This will assign "Malaysian" to the first index position of the list.
+
+print("Language List first variable after change", languages1[0]) # This is now be "Malaysian", and
+                                                                  # "French" will be removed from the list.
+
+print("Languages List after methods were performed", languages1)
+
+# TODO: Section 1 of TODO 6 (5 minutes for students, 2 minute demo)
 ####################################################################################################
 
-# TITLE: Section 2
+# TITLE: Section 2 (7 minutes)
 # Slicing is a way to segment items in a list.
 table_items = ["cloth", "mug", "newspaper", "magazine", "remote", "coozie"]
+#                 0       1         2           3           4         5
+
+# The number to the left of the colon ":" is the lower bound of the slice, & the number to the right
+# is the upper bound. The upper bound's number's index position is NOT included in the slice.
+
+# This list slice would include the first index item and exclude the fifth index item.
+# Therefore, this slice of the list would include index positions 1 through 4.
+all_but_first_and_last = table_items[1:5] # TODO: Is index position 1 of "table_items" included
+                                          # TODO: in this slice? What about index position 5?
+print("All but first and last: ", all_but_first_and_last)
 
 # This slice would include index items zero, one, and two.
 # When there is no first number, the "lower bound" would be zero, thus including the first item.
-first_half = table_items[:3]
+first_half = table_items[:3] # The first item in this slice of the list would be "cloth".
+                             # and the last item would be "newspaper"
 
 # This slice would include index items three, four, and five.
 # When there is no secondary number, the "upper bound" would be the last index item in the list.
 second_half = table_items[3:]
 print("The first half:", first_half, "The second half:", second_half)
 
-# You can include negative numbers when indexing which start at the end of the list.
-# This item would be the last item in the list:
-last_item = table_items[-1]
-
-# This list would include all items except the last one:
-all_but_last_item = table_items[:-1]
-
-# This list would include the first index item and exclude the fifth index item:
-all_but_first_and_last = table_items[1:5]
-
-# This would print all items in the list from index zero to five:
+# This would print all items in the list from index zero to five.
 # The third number is a stepper, which would skip every other number.
 list_stepper = table_items[0:5:2]
+
 print("List stepper:", list_stepper)
 
-# TITLE: Section 2.1
-# IMPORTANT: List comprehensions are ways to define potentially lengthy lists in one line.
-# While you may not recognize the syntax here, just know that you are creating a list of
-# squares for all numbers between zero and ten, then printing them. "for x in something" means
-# that "x" is a variable assigned to the items we are iterating through.
-squares = [i**2 for i in range(10)] 
-print("Squares list", squares)
-
-#TODO: Section 2 of TODO 6
 ####################################################################################################
 
-# TITLE: Section 3
+# TITLE: Section 2.1 (3 minutes)
+# IMPORTANT: List comprehensions are ways to define potentially lengthy lists in one line.
+# While you may not recognize the syntax here, just know that you are creating a list of
+# squares for all numbers BETWEEN zero and ten, then printing them. "for x in something" means
+# that "x" is a variable assigned to the items we are iterating through.
+squares = [i**2 for i in range(10)] # Each "iteration" of this loop represents a number between
+                                    # 0 and 9, which will be named "i". We square the number "i"
+                                    # for each iteration and append it to the list, "squares".
+print("Squares list", squares)
 
-# The adding of a key/value pair to a dictionary is shown below.
+# TODO: Section 2 of TODO 6 (3 minutes for students, 2 minute demo)
+####################################################################################################
+
+# TITLE: Section 3 (7 minutes)
+
+# Let's define a dictionary called "programming_languages".
 programming_languages = {"One" : "Python", "Two" : "Java"}
 print(programming_languages)
 
-# This would add a key of "Three" with a value of "CSharp" to the dict "programming_languages":
+# This would add a key of "Three" with a value of "CSharp" to the dictionary "programming_languages"
 programming_languages["Three"] = "CSharp"
-print("post c sharp", programming_languages)
+print("After adding a key/value pair: ", programming_languages)
 
-# The update method will update the value of a key.
-programming_languages.update({"Two": "Golang"})
+# Here is how you would update the value of a key.
+programming_languages["Two"] = "Golang"
 print("post golang", programming_languages)
 
-# The generic way to update the value of a key.
-programming_languages["Two"] = "Julia"
-print("post julia", programming_languages)
-
-# The pop method can remove a key-value pair if you pass the key as an argument. Just as in lists,
-# the pop method returns a value, so you can set it equal to a variable.
-lang_one = programming_languages.pop("One")
-print("post pop 1", programming_languages)
-
-# Now lets pop the key/value pair of ``"Two": "Julia"` and set it equal to a variable. That variable
-# will be equal to the key.
+# The pop method can remove a key/value pair if you pass the key as an argument.
+# Now lets pop the key/value pair of "Two": "Golang" and set it equal to a variable. That
+# variable will be equal to the value, "Golang".
 lang_two = programming_languages.pop("Two")
-print("post pop 2: programming_languages is equal to- ", programming_languages, "and the lang_two variable that we set equal to a pop() is- ", lang_two)
+print("lang_two is equal to: ", lang_two)
+print("post pop 2: programming_languages is equal to: ", programming_languages)
 
 # The get method will find a value for a key in a dictionary.
 example_dict = {"One": 10, "Two": 20, "Three": 30}
 second_value = example_dict.get("Two")
 print(second_value)
-# If the key that you provide does not exist in the dictionary, it will return 'None':
+
+# If the key that you provide does not exist in the dictionary, it will return "None".
 fourth_value = example_dict.get("Four")
-print(second_value)
-# You can also specify a return value if the key does not exist in the dictionary:
-fourth_value = example_dict.get("Four", "Does not exisit.")
-print(second_value)
-
-#TODO: Section 3 of TODO 6
-####################################################################################################
-
-# TITLE: Section 4
-# A second argument with the get function is what is returned if the first argument isnt in the dict.
-# This will return 321 since there is no key "Four".
-fourth_value = example_dict.get("Four", 321)
 print(fourth_value)
 
-#TODO: Section 4 of TODO 6
+# You can also specify a return value if the key does not exist in the dictionary.
+fourth_value = example_dict.get("Four", "Does not exist.")
+print(fourth_value)
+
+# TODO: Section 3 TODO 6 (7 minutes for students, 3 minute demo)
