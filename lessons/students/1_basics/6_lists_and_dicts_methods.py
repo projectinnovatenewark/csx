@@ -2,28 +2,22 @@
 Actions you can perform on lists and dictionaries
 """
 
-# LIST METHODS
+# TITLE: Section 1
 
 # The append method adds an item to the end of a list.
 medals = ["gold", "silver"]
 medals.append("bronze")
 print(medals)
 
-####################################################################################################
-
 # The insert method adds an item to a specific index.
 priority_list = ["go to sports practice", "hangout with friends", "talk to mom", "eat vegetables"]
 priority_list.insert(2, "study computer science")
 print(priority_list)
 
-####################################################################################################
-
 # The remove method removes a specific item from a list.
 fruits = ["apples", "oranges", "asparagus", "bananas"]
 fruits.remove("asparagus")
 print(fruits)
-
-####################################################################################################
 
 # The pop method removes the last item from a list and returns it's value. Therefore, you could
 # set the pop() method equal to a variable.
@@ -35,6 +29,7 @@ print("last item:", last_item, "and shopping list:", shopping_list)
 
 ####################################################################################################
 
+# TITLE: Section 1.1
 # The extend method adds a list to the end of another list.
 # A list of languages:
 languages1 = ['French', 'English', 'German']
@@ -54,6 +49,7 @@ print(languages1)
 #TODO: Section 1 of TODO 6
 ####################################################################################################
 
+# TITLE: Section 2
 # Slicing is a way to segment items in a list.
 table_items = ["cloth", "mug", "newspaper", "magazine", "remote", "coozie"]
 
@@ -81,31 +77,18 @@ all_but_first_and_last = table_items[1:5]
 list_stepper = table_items[0:5:2]
 print("List stepper:", list_stepper)
 
-#TODO: Section 2 of TODO 6
-####################################################################################################
-
-# List comprehensions are ways to define potentially lengthy lists in one line.
+# TITLE: Section 2.1
+# IMPORTANT: List comprehensions are ways to define potentially lengthy lists in one line.
 # While you may not recognize the syntax here, just know that you are creating a list of
 # squares for all numbers between zero and ten, then printing them. "for x in something" means
 # that "x" is a variable assigned to the items we are iterating through.
-squares = [i**2 for i in range(10)]
+squares = [i**2 for i in range(10)] 
 print("Squares list", squares)
 
-# What if we wanted to only find the squares of odd numbers? Lets add a condition to the list
-# comprehension. The order of a list comprehension is action - for loop - conditional (optional).
-squares_of_odd_numbers = [i**2 for i in range(1, 10) if i % 2 != 0]
-print("Squares of odd numbers list", squares_of_odd_numbers)
-
-# Lets throw an extra condition in there. What if we want ONLY even numbers NOT including 4?
-# We can simply use 'and'. Also, since zero does not have a remainder when divided by two, we will
-# check to see if "i % 2" is equal to zero, and if it is then "i" would be zero.
-
-squares_of_even_numbers_without_4 = [i**2 for i in range(1, 10) if i % 2 == 0 and i != 4]
-print("Squares of even numbers without 4 list", squares_of_even_numbers_without_4)
-
+#TODO: Section 2 of TODO 6
 ####################################################################################################
 
-# DICTIONARIES
+# TITLE: Section 3
 
 # The adding of a key/value pair to a dictionary is shown below.
 programming_languages = {"One" : "Python", "Two" : "Java"}
@@ -147,6 +130,7 @@ print(second_value)
 #TODO: Section 3 of TODO 6
 ####################################################################################################
 
+# TITLE: Section 4
 # A second argument with the get function is what is returned if the first argument isnt in the dict.
 # This will return 321 since there is no key "Four".
 fourth_value = example_dict.get("Four", 321)
