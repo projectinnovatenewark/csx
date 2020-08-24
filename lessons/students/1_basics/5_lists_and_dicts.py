@@ -64,7 +64,7 @@ print(GRADES_DICT)
 
 ####################################################################################################
 
-# TITLE: Section 3: (8 min)
+# TITLE: Section 2.1: (8 min)
 # Lets think more about how variable assignments can play in here.
 CLASS_LIST = ["Aaron", "Bello", "Carla", "Droov", "Ebron"]
 GRADES_DICT = {"Aaron": 87, "Bello": 95, "Carla": 75, "Droov": 55, "Ebron": 100}
@@ -84,7 +84,7 @@ print(first_student + "'s grade was", first_student_grade)
 #TODO: Section 2 of TODO 5 (5 minutes for students, 2 minute demo)
 ####################################################################################################
 
-# TITLE: Section 4: (2 min)
+# TITLE: Section 3: (2 min)
 # Tuples are lists that cannot have their values modified and they are denoted with parentheses
 months = ('January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December')
 
@@ -94,7 +94,7 @@ months = ('January', 'February', 'March', 'April', 'May', 'June', 'July', 'Augus
 
 ####################################################################################################
 
-# TITLE: Section 5: (10 min)
+# TITLE: Section 3.1: (10 min)
 # What about 'nested' data types? What if a list's items are all dictionaries? What if values in
 # dictionaries are lists? How would we handle that?
 
