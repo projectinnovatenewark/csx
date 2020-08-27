@@ -2,6 +2,7 @@
 Common errors you will/may have already encounter(ed).
 """
 
+# TITLE: Section 1: No Dividing by Zero!
 # Below are a few examples of errors you will undoubtedly see in your time as a programmer.
 # These errors will show up in your terminal letting you know where the problem is, and the
 # type of error it is. Our first error is a ZeroDivisionError. This is pretty self explanatory.
@@ -14,6 +15,7 @@ number = 10 * (1/0)
 
 ####################################################################################################
 
+# TITLE: Section 2: NameErrors are Easy
 # You'll see below when we run our code again that we get a 'NameError'. This occurs when you try to 
 # use a variable in your program that has not been defined yet. The below code uses the 
 # variable 'spam' when 'spam' hasn't been defined (given a value). Again pay attention
@@ -24,6 +26,7 @@ equation = 4 + spam*3
 
 ####################################################################################################
 
+# TITLE: Know Your Types
 # Lastly let's take a look a a 'TypeError'. In this case, the error is occuring
 # because we are trying to add together a string with an integer. Because a string is 
 # involved, python thinks you are trying to concatenate '2' + 2, instead ofusing addition. 
