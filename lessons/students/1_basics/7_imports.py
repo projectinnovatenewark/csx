@@ -37,8 +37,6 @@ rand = randrange(1,11) # The lower bound is included, but the upper bound is exc
 rand_plus_two = rand + 2 
 print(f"Randomly generted number: {rand}. Here is rand + 2: {rand_plus_two}.")
 
-# TODO: Section 1 of TODO 7
-
 ####################################################################################################
 
 # TITLE: Section 2 Importing from Files in your directory
@@ -72,5 +70,4 @@ print(f"Importing and renaming the constant: {week}")
 from importable_stuff import DAYS_OF_WEEK, MONTHS
 print(DAYS_OF_WEEK,"\n", MONTHS) # "\n" prints whatever follows on a new line.
 
-# TODO: Try each of the above methods for importing and test them by printing
-# TODO: your import.
+# TODO: Complete TODO 7
