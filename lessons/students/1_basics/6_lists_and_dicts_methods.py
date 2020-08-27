@@ -10,8 +10,8 @@ print(medals)
 
 # As a reminder, index positions are used to access items in a list- and you can also
 # set those values equal to a variable. We will demo those below by printing them using f shorthand.
-last_item = medals[2]
-print(f"The last item is {last_item} and the first item is {medals[0]}")
+last_medal = medals[2]
+print(f"The last medal is {last_medal} and the first medal is {medals[0]}")
 
 # The .insert() method adds an item to a specific index. The first argument passed to this
 # method is the index position you want to add to, and the second argument is the item you want
@@ -28,15 +28,15 @@ print(fruits)
 # The .pop() method removes the last item from a list and returns it's value. Therefore, you could
 # set the .pop() method equal to a variable. You could also pick an index postion to remove from
 # the list with .pop() method.
-shopping_list = ["t-shirt", "laptop", "belt", "dress", "mousepad"]
-list_item = shopping_list.pop() # This will remove the last item from the list and set
-                                # it equal to a variable, "list_item".
+waiting_list = ["Candace", "Joe", "Ali", "Miller", "Carla"]
+person_in_line = waiting_list.pop() # This will remove the last item from the list and set
+                                    # it equal to a variable, "list_item".
 
-shopping_list.pop(0) # This will remove the first index position's item from the list.
+waiting_list.pop(0) # This will remove the first index position's item from the list.
 
 # Lets print the list item and shopping list on different lines
 # TIP: \n creates a new line in the output (Lesson 3 flashback)
-print("List item:", list_item, "\nShopping list:", shopping_list)
+print("Last person in line:", person_in_line, "\nList of people waiting:", waiting_list)
 
 ####################################################################################################
 
@@ -115,35 +115,35 @@ print("Squares list", squares)
 # TITLE: Section 3 (7 minutes)
 
 # Let's define a dictionary called "programming_languages".
-programming_languages = {"One" : "Python", "Two" : "Java"}
+programming_languages = {"lang_one" : "Python", "lang_two" : "Java"}
 print(programming_languages)
 
-# This would add a key of "Three" with a value of "CSharp" to the dictionary "programming_languages"
-programming_languages["Three"] = "CSharp"
+# This would add a key of "lang_three" with a value of "CSharp" to the dictionary "programming_languages"
+programming_languages["lang_three"] = "CSharp"
 print("After adding a key/value pair: ", programming_languages)
 
 # Here is how you would update the value of a key.
-programming_languages["Two"] = "Golang"
+programming_languages["lang_two"] = "Golang"
 print("post golang", programming_languages)
 
 # The pop method can remove a key/value pair if you pass the key as an argument.
-# Now lets pop the key/value pair of "Two": "Golang" and set it equal to a variable. That
+# Now lets pop the key/value pair of "lang_two": "Golang" and set it equal to a variable. That
 # variable will be equal to the value, "Golang".
-lang_two = programming_languages.pop("Two")
+lang_two = programming_languages.pop("lang_two")
 print("lang_two is equal to: ", lang_two)
 print("post pop 2: programming_languages is equal to: ", programming_languages)
 
 # The get method will find a value for a key in a dictionary.
-example_dict = {"One": 10, "Two": 20, "Three": 30}
-second_value = example_dict.get("Two")
+example_dict = {"num_one": 10, "num_two": 20, "num_three": 30}
+second_value = example_dict.get("num_two")
 print(second_value)
 
 # If the key that you provide does not exist in the dictionary, it will return "None".
-fourth_value = example_dict.get("Four")
+fourth_value = example_dict.get("num_four")
 print(fourth_value)
 
 # You can also specify a return value if the key does not exist in the dictionary.
-fourth_value = example_dict.get("Four", "Does not exist.")
+fourth_value = example_dict.get("num_four", "Does not exist.")
 print(fourth_value)
 
 # TODO: Section 3 TODO 6 (7 minutes for students, 3 minute demo)
