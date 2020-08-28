@@ -23,21 +23,26 @@ are typically self-explanatory.
 
 1. Download Python -> https://www.python.org/downloads/
         a. IMPORTANT: Check off the "Add to Path" box when installing
+        b. If the installer does not pop-up, click on it in your downloads to begin the installation process
 
 2. Create a Github Account -> github.com
         a. Download Git -> https://git-scm.com/downloads
+        b. If the installer does not pop-up, click on it in your downloads to begin the installation process
+        c. Leave all of the default installation steps and "Next" your way through the process.
   
 3. Download VS Code -> https://code.visualstudio.com/download
         
 4. Create a folder named "programming" in your computer's "Documents" directory.
   
 5. Open a new window in VS Code. Click "Open Folder". Find your programming folder. Click it once then click "Open".
-        a. To open a terminal in VS Code click "Shift + Ctrl + `"
-        b. Enter the command `pwd` into your terminal then click enter. Your "working directory" should
+        a. To open a terminal in VS Code click "Shift + Ctrl + ~"
+        b. If at any point in your terminal entries the beginning line of your terminal starts with ">>", ">>>", or is
+           seemingly unable to enter your commands, click "Ctrl + C". That will quit any process running in your terminal.Sidebar- three arrows probably means you start a Python shell in your terminal! Another way to quit this type of process would be to type "quit()" and then enter.
+        c. Enter the command `pwd` into your terminal then click enter. Your "working directory" should
            be in the "programming" folder, and the path response you get from the pwd command should end in "programming"
            (i.e. user/Documents/programming)
-        c. Create a folder called "python-work" by entering the command `mkdir python-work`
-        d. Download the following VS Code extensions- Python and Highlight. You can find the extensions tab in VS
+        d. Create a folder called "python-work" by entering the command `mkdir python-work`
+        e. Download the following VS Code extensions- Python and Highlight. You can find the extensions tab in VS
            Code by clicking "Shift + Ctrl + X" (windows) or "Shift + Command + X" (mac). Once there, search for those exact extensions and download the first result for each of them. Once you are done downloading those extensions, return back to the main "Explorer" page where you will be viewing your folders/files by clicking "Shift + Ctrl + E" (windows) or "Shift + Command + E" (mac). There are icons on the left panel of your VS Code to navigate through these different pages as well. You will see how these extensions are to be used at the bottom of this README
         
 6. Create a repository in Github -> https://help.github.com/en/enterprise/2.13/user/articles/creating-a-new-repository
