@@ -14,7 +14,7 @@ Indexing and range function for lists, dictionaries, strings and numbers
 # starting with the first key.
 
 ####################################################################################################
-
+# TITLE: Section 1.1: FOR loops (2 min)
 # "for x in range(y)" is a loop that would iterate through every number from zero up until the
 # given number of "y". When there is only one number passed to the range() function, the "lower bound" of
 # that range would default to zero. The "upper bound", which in the case below is 9, would NOT be
@@ -27,6 +27,7 @@ for num in range(9):
 
 ####################################################################################################
 
+# TITLE: Section 1.2 : Loops with range (2 min)
 # If you put in an initial argument, that number is included in the range and would be the
 # "lower bound". The second number would be the "upper bound", and therefore not included
 # in the loop.
@@ -38,11 +39,14 @@ for num in range(3, 11):
 
 ####################################################################################################
 
+# TITLE: Section 2.1: String Indexing (30 seconds)
 # If you want to access a part of a string, you can get a portion of the string with indexing.
 beatles = "You say goodbye, and I say hello!"
 print("letters from the beatle song: " + beatles[3:11])
 
 ####################################################################################################
+
+# TITLE: Section 2.2: Combining String Indexing and Loops(10 min)
 
 # Index lists with for loops.
 grades = [72, 87, 99, 45, 70]
@@ -79,6 +83,8 @@ print("Number of students: " + str(len(grades)))
 
 ####################################################################################################
 
+# TITLE: Section 3.1: Using a dictionary in a loop (7 min)
+
 # Lets make reading grades easier by attaching them to the name of the student that got the grade
 # when you use a for loop, it will return each key in the dictionary. You can access the value
 # by indexing the dictionary using dictionary[key] to find that key's value
@@ -102,6 +108,8 @@ for student in grades:
 print("Number of students: " + str(len(grades)))
 
 ####################################################################################################
+# TITLE: Section 3.2: While loops (4 min)
+
 
 # The way that a for loop/while loop decides to continue running is if it evaluates a condition
 # as true. We will go over what is considered "True" for different types of iterable
@@ -117,6 +125,7 @@ while grocery_list:
 
 # TODO: Section 3 of the TODO
 
+# TITLE: Section 4: While Loop incraments (30 sec)
 # If you have a number that you are decrementing, the while loop will run until that number
 # is zero. A zero value equates to a False condition, and the loop will then end.
 i = 10
@@ -127,6 +136,7 @@ while i:
 # TODO: Section 4 of the TODO
 
 ####################################################################################################
+# TITLE: Section 5: Tying it all together (10 min)
 
 # "continue" statement:
 # The continue statement rejects all the remaining statements in the current iteration of the loop
