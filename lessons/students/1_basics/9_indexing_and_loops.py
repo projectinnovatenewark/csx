@@ -14,6 +14,7 @@ Indexing and range function for lists, dictionaries, strings and numbers
 # starting with the first key.
 
 ####################################################################################################
+
 # TITLE: Section 1: FOR loops
 # "for x in range(y)" is a loop that would iterate through every number from zero up until the
 # given number of "y". When there is only one number passed to the range() function, the "lower bound" 
@@ -63,7 +64,7 @@ grades = [72, 87, 99, 45, 70]
 # it with the str() function.
 
 # IMPORTANT:
-# if you want to use the f shorthand accross multiple lines, you need to use concatenation.
+# if you want to use f shorthand accross multiple lines, you need to use concatenation.
 print(f"The first element in the list is {grades[0]}",
       f"and the last element in the array is {grades[-1]}")
 
