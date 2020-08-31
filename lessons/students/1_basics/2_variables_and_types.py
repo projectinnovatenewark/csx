@@ -35,7 +35,7 @@ print(big_string)
 
 # Let's make the output look a little cleaner. You can add in a string of an empty space
 # directly between these variables. Also, variables can have their values changed!
-# IMPORTANT: Variable's with changing values is an important concept! More on this topic on line 41.
+# IMPORTANT: Variable's with changing values is an important concept! More on this topic on line 42.
 big_string = string1 + " " + string2
 print(big_string)
 
