@@ -3,6 +3,7 @@ import os
 
 # Let's start by examining a string, converting it to ASCII codes, converting those codes
 # to binary, and then exploring what is huffman, compressing, decoding
+# https://www.youtube.com/watch?v=_Kl3TtBXxq8
 
 class HeapNode:
 	def __init__(self, char, freq):
