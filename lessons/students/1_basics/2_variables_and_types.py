@@ -5,7 +5,7 @@ This is a docstring. They are used to detail files at a high level.
 # These lines that start with a pound sign are comments. They do nothing to the program
 # except provide instructions, personal notes, or anything that you want really!
 
-# TITLE  Section 1 (5 minutes)
+# TITLE  Section 1 (6 minutes)
 
 # Variables can be thought of as "pointers" to a value. These values have types.
 # Types include things like integers, strings, floats, booleans, lists, and dictionaries.
@@ -28,9 +28,24 @@ string3 = "369" # Yes this is a string too.
 # than the previous variable of 'string1'.
 String1 = "Wonderful!"
 
-# MULTIPLE VARIABLES IN ONE VARIABLE?! YEP!
+# You can even combine variables into one variable. We use the "print()" function to produce
+# an output to your terminal.
 big_string = string1 + string2
 print(big_string)
+
+# Let's make the output look a little cleaner. You can add in a string of an empty space
+# directly between these variables. Also, variables can have their values changed!
+# IMPORTANT: Variable's with changing values is an important concept! More on this topic on line 42.
+big_string = string1 + " " + string2
+print(big_string)
+
+# Python reads from the top of the file to the bottom. Therefore, when "big_string" is first
+# printed on line 40, it's value is "Hellomy name is robot", but since we changed the variable's
+# value on line 48, it prints out that new value on line 39, which adds a space.
+
+# You don't have to create a variable to print an output. You can put strings directly into print
+# statements!!
+print("Hello my name is robot")
 
 # When you see, TODO: Section x of TODO y, you should stop where you are and head over to
 # the corresponding assignment for this section of the lesson. The line below instructs
@@ -64,7 +79,7 @@ print("variable for later will equal", variable_for_later)
 # Print is an example of a function. A function is a block of code that runs when
 # it is called upon. The items you place in the parentheses are called arguments. Lets
 # call the print function and pass arguments to print them.
-string1 = "hello"
+string1 = "Hello"
 num3 = 45
 
 print("printing things, woohoo!!")
@@ -73,15 +88,14 @@ print(num3)
 print(string1)
 
 # FIXME: The code right here is broken, let's run it for fun to show that strings cannot be
-# FIXME: concatenated directly non-strings.
-
-# HINT: Be sure to comment it out before moving on in the lesson, or else your program will not run.
-print(string1 + "I am python number ", num3, ", hear me roar!!")
+# FIXME: concatenated directly non-strings. Uncomment and run the code.
+# print(string1 + "I am python number " + num3 + ", hear me roar!!") # TIP: Be sure to comment it out
+                                                                    # TIP: before moving on.
 
 # You can print any type by separating them with commas, as Python will automatically pass
 # them into the print statement as separate "arguments", then convert them all into strings
-# separated by one blank space.
-print(string1, "I am python number", num3, ",hear me roar!!")
+# separated by one blank space. However, commas have one pitfall- they ALWAYS add in a space!
+print(string1, "I am python number", num3, ", hear me roar!!")
 
 # TAKEAWAY:
 # Concatentation can only combine strings with other strings, and it does so using the plus
