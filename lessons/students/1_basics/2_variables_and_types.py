@@ -40,8 +40,8 @@ big_string = string1 + " " + string2
 print(big_string)
 
 # Python reads from the top of the file to the bottom. Therefore, when "big_string" is first
-# printed on line 34, it's value is "Hellomy name is robot", but since we changed the variable's
-# value on line 38, it prints out that new value on line 39, which adds a space.
+# printed on line 40, it's value is "Hellomy name is robot", but since we changed the variable's
+# value on line 48, it prints out that new value on line 39, which adds a space.
 
 # You don't have to create a variable to print an output. You can put strings directly into print
 # statements!!
