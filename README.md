@@ -102,7 +102,7 @@ are typically self-explanatory.
            - name the new file "currentlesson.py" (.py tells VS Code that it is a pthon file)
         c. Copy the first lesson from week one in your new file and try to solve it. 
            To run your code, simply click on the green arrow at the top right of your VS Code window.
- 
+
 13. When you are finished with the lesson and complete the corresponding todo
           (todos are meant to test what you learned from the lesson)
         a. repeat step 12.b but instead name the file "currentlessontodo.py"
