@@ -88,7 +88,7 @@ print(num3)
 print(string1)
 
 # FIXME: The code right here is broken, let's run it for fun to show that strings cannot be
-# FIXME: concatenated directly non-strings. Comment it in and run the code.
+# FIXME: concatenated directly non-strings. Uncomment and run the code.
 # print(string1 + "I am python number " + num3 + ", hear me roar!!") # TIP: Be sure to comment it out
                                                                     # TIP: before moving on.
 
