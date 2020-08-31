@@ -2,22 +2,31 @@
 Using functions and understanding scope
 """
 
-# A function is a block of code that executes some task. Functions are defined using the format
-# `def functionName(parameterName):` The parameter name can be anything you want---whatever you pass as
-# an argument to the function when you "call" it will be renamed to the parameter you set when defining the function.
-# To "call" a function simply means to run it.
-def addTen(n): # "addTen" is the name of the function and "n" is the parameter name
-    newNum = n + 10 # this is within the scope of the function
-    return newNum # this is also within the scope of the function
+# A function is a block of code that executes some task. Functions are defined using the format:
+# "def functionName(parameterName):" The parameter name can be anything you want (just like
+# variables), so whatever you pass as an argument to the function when you "call" it will be
+# renamed to the parameter you set when defining the function. To "call" a function simply means
+# to run it.
+def addTen(n): # "addTen" is the name of the function and "n" is the parameter name.
+    newNum = n + 10 # Lines of code indented after the function is defined are considered to be
+                    # in the scope of the function.
+    return newNum   # This is also in the scope of "addTen()".
 
-print("This is not a part of the function") # since this line is not indented within the function, it is outside
-                                            # the scope of the function and the function definition has therefore ended
+print("This is not a part of the function") # Since this line is not indented within the function,
+                                            # it is outside the scope of the function and the
+                                            # function definition has therefore ended
+
+    print("This is not in the scope of 'addTen()'") # FIXME: This will not be in the scope of
+                                                    # FIXME: addTen() because the scope was exited
+                                                    # FIXME: in line 15. Comment out to continue.
 
 # Now that we are at the leftmost part of the page, we have exited the scope of the function above.
-# This function should now take the argument passed, which is 3, and add ten to it. It will then return
-# that value. What you see below is called "calling a function", which basically runs the function with the given input.
+# This function should now take the argument passed, which is 3, and add ten to it. It will then
+# return that value. What you see below is called "calling a function", which basically runs the
+# function with the given input.
 print("First call to addTen function: ")
-addTen(3) # "3" is the argument we pass, which will be assigned to the variable "n" within the function call.
+addTen(3) # "3" is the argument we pass, which will be assigned to the parameter "n" within the
+          # function call.
 
 # Huh, why didnt this function call create an output?! Well, we didn't print it!! We could either
 # 1) change the "return" value to be a print statement in the function
@@ -25,22 +34,22 @@ addTen(3) # "3" is the argument we pass, which will be assigned to the variable 
 # 2) we can print the function call itself!
 
 # To do it the first way, you would just replace "return newNum" with "print(newNum)" within the
-# function definition
+# function definition. Line 13 would then look like the following: "return print(newNum)".
 
-# To do it the second way, do this. This would essentially print the return value of the function
+# Or to use option 2, you can print the function call like the following. 
 print("Second call to addTen function: ")
 print(addTen(5))
 
-# Functions also don't NEED parameters. They can perform some operation that doesn't require an argument.
-# In this case, we will just print a "global" variable that would be accessible to the whole file- including
-# within the scope of this function!
+# Functions also don't necessarliy parameters. They can perform some operation that doesn't require an
+# argument. In this case, we will just print a "global" variable that would be accessible to the
+# whole file- including within the scope of this function!
 randomNumVar = 12345
-def outputOurNumber():
+def giveOutput():
     print(randomNumVar)
 
 # This would call the above function which would print out the randomNumVar variable.
-print("Calling our outputOurNumber function: ")
-outputOurNumber()
+print("Calling our giveOutput function: ")
+giveOutput()
 
 ####################################################################################################
 

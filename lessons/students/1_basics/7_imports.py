@@ -2,7 +2,7 @@
 Importing modules and other files
 """
 
-# TITLE: Section 1 - Importing Modules
+# TITLE: Section 1 - Importing Modules (4 min)
 
 # Take a trip down memory lane and visit Lesson 4 Section 5. There we were introduced to importing
 # the "math" module which has some useful functions like hypot(), an easier way to find the length
@@ -22,15 +22,15 @@ print(rand_float)
 
 ####################################################################################################
 
-# TITLE: Section 1.1: Importing Specific Funcitons from Modules
+# TITLE: Section 1.1: Importing Specific Funcitons from Modules (5 min)
 
-# In Python, if we only wanted to import a specific function from the random module, we can do the
+# In Python, if we only wanted to import a specific function from the "random" module, we can do the
 # following:
 
-from random import randrange # This imports the randrange function from the random module.
+from random import randrange # This imports the randrange function from the "random" module.
 
 # We do not need to use dot notation anymore to reference our randrange function. The program can
-# now recognize it originates from the random module. Let's store a random number between 1 and 10
+# now recognize it originates from the "random" module. Let's store a random number between 1 and 10
 # in a variable called "rand". 
 
 rand = randrange(1,11) # The lower bound is included, but the upper bound is excluded.
@@ -39,7 +39,7 @@ print(f"Randomly generted number: {rand}. Here is rand + 2: {rand_plus_two}.")
 
 ####################################################################################################
 
-# TITLE: Section 2 Importing from Files in your directory
+# TITLE: Section 2 Importing from Files in your directory (6 min)
 
 # You can import data or functions from files that you yourself defined. In this folder theres a
 # file called importable_stuff.py . Let's import the file and use things from it. As you learned in
