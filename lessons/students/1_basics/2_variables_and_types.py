@@ -5,7 +5,7 @@ This is a docstring. They are used to detail files at a high level.
 # These lines that start with a pound sign are comments. They do nothing to the program
 # except provide instructions, personal notes, or anything that you want really!
 
-# TITLE  Section 1 (6 minutes)
+# TITLE: Section 1 - Intro to Variables & Types (6 minutes)
 
 # Variables can be thought of as "pointers" to a value. These values have types.
 # Types include things like integers, strings, floats, booleans, lists, and dictionaries.
@@ -54,7 +54,7 @@ print("Hello my name is robot")
 
 ####################################################################################################
 
-# TITLE  Section 2 (2 minutes)
+# TITLE: Section 2 - Setting Multiple Variables in One Line and Additional Types (2 minutes)
 
 # Setting multiple variables in one line of code? Yep. This is possible only when you use
 # commas to separate each variable. The positions of the varibale names correspond with the values.
@@ -74,7 +74,7 @@ print("variable for later will equal", variable_for_later)
 
 ####################################################################################################
 
-# TITLE  Section 3 (4 minutes)
+# TITLE: Section 3 - "print()" Function Elaboration and Concatenation (4 minutes)
 
 # Print is an example of a function. A function is a block of code that runs when
 # it is called upon. The items you place in the parentheses are called arguments. Lets
@@ -106,7 +106,7 @@ print(string1, "I am python number", num3, ", hear me roar!!")
 
 ####################################################################################################
 
-# TITLE  Section 4 (2 minutes)
+# TITLE: Section 4 - Using the "type()" Function (2 minutes)
 
 # Sometimes when you are dealing with variables, you are going to want to check the type of
 # the variable to make sure you are correctly using it. Python has a built in function for this!
@@ -126,7 +126,7 @@ print("flt1:", type(flt1))
 
 ####################################################################################################
 
-# TITLE  Section 5 (4 minutes)
+# TITLE: Section 5 - Type Conversions (4 minutes)
 
 # Python also makes it pretty easy to convert types into other types. For example,
 # you can convert integers to strings by wrapping the variable in the string

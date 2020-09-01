@@ -2,7 +2,7 @@
 Here we will cover lists and dicts
 """
 
-# TITLE: Section 1: (5 min)
+# TITLE: Section 1 - Lists and List Indexing (5 min)
 # A 'list' is a grouping of values that are ordered and changeable.
 # Each "item" in a list is separated by a comma.
 # In Python lists are written with square brackets, as shown below:
@@ -44,7 +44,7 @@ print(CLASS_LIST)
 #TODO: Section 1 of TODO 5 (4 minutes for students, 2 minute demo)
 ####################################################################################################
 
-# TITLE: Section 2: (6 min)
+# TITLE: Section 2 - Dictionaries, Reading and Adding Key/Value Pairs (6 min)
 # Dictionaries have keys which in turn have values similar to how a real life dictionary
 # has words with definitions, the keys represent the words and values represent the definitions.
 GRADES_DICT = {"Andy": 87, "Bronny": 95, "Carlos": 75, "Denisa": 55, "Enrique": 100}
@@ -64,7 +64,7 @@ print(GRADES_DICT)
 
 ####################################################################################################
 
-# TITLE: Section 2.1: (8 min)
+# TITLE: Section 2.1 - More On Accessing Key/Value Pairs in Dictionaries (8 min)
 # Lets think more about how variable assignments can play in here.
 CLASS_LIST = ["Aaron", "Bello", "Carla", "Droov", "Ebron"]
 GRADES_DICT = {"Aaron": 87, "Bello": 95, "Carla": 75, "Droov": 55, "Ebron": 100}
@@ -84,7 +84,7 @@ print(first_student + "'s grade was", first_student_grade)
 #TODO: Section 2 of TODO 5 (5 minutes for students, 2 minute demo)
 ####################################################################################################
 
-# TITLE: Section 3: (2 min)
+# TITLE: Section 3 - Tuples (2 min)
 # Tuples are lists that cannot have their values modified and they are denoted with parentheses
 months = ('January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December')
 
@@ -94,14 +94,14 @@ months = ('January', 'February', 'March', 'April', 'May', 'June', 'July', 'Augus
 
 ####################################################################################################
 
-# TITLE: Section 3.1: (10 min)
+# TITLE: Section 3.1 - Nested Lists and Dictionaries (10 min)
 # What about 'nested' data types? What if a list's items are all dictionaries? What if values in
 # dictionaries are lists? How would we handle that?
 
 # Lets look at this data here. You can see that each item in the list
 # is a dictionary that represents a class.
 classes = [
-    {
+    { # beginning of the first item
         'subject': 'math',
         'level': 'linear algebra',
         'students': ['billy', 'beatrice', 'bronny', 'bart'],
@@ -110,8 +110,8 @@ classes = [
             'education': ['Masters of Math', 'Bachelors of Science']
         },
         'classTime': ['11:00 AM', '12:30 PM']
-    },
-    {
+    }, # end of the first item
+    {  # beginning of second item
         'subject': 'english',
         'level': 'composition',
         'students': ['chris', 'callie', 'crysta', 'calista'],
@@ -120,7 +120,7 @@ classes = [
             'education': ['PHD of English', 'Masters of Literacy', 'Bachelors of Biology']
         },
         'classTime': ['1:00 PM', '2:45 PM']
-    }
+    }  # end of second item
 ]
 
 # Crazy data! How would we find the math teacher's level, the first student listed in her class, and
