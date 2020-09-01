@@ -36,7 +36,7 @@ print("range 3, 11 loop: ")
 for num in range(3, 11):
     print(num)
 
-# TODO: Section 1 of TODO 9
+# TODO: Section 1 of TODO 9 (3 min for students, 1 min for demo)
 
 ####################################################################################################
 
@@ -114,7 +114,7 @@ for student in grades:
     grade = grades[student]
     print(f"{student} got a {grade} on their comp sci exam")
 
-# TODO: Section 2 of TODO 9
+# TODO: Section 2 of TODO 9 (6 min for students, 3 min for demo)
 
 ####################################################################################################
 
@@ -138,7 +138,7 @@ while i:
     print(f"i ={i}")
     i -= 1
 
-# TODO: Section 3 of TODO 9
+# TODO: Section 3 of TODO 9 (3 min for students, 1 min for demo)
 
 ####################################################################################################
 
@@ -205,5 +205,3 @@ while var > 2: # This loop will only run if "var" is greater than 2.
 print("Your while loop has ended. Goodbye!") # Since this tabulation is set to the same
                                              # spacing as the while loop, this will run once
                                              # the loop is complete.
-
-# TODO: Section 4 of TODO 9
