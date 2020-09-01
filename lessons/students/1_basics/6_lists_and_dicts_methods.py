@@ -29,10 +29,17 @@ print(fruits)
 # set the .pop() method equal to a variable. You could also pick an index postion to remove from
 # the list with .pop() method.
 waiting_list = ["Candace", "Joe", "Ali", "Miller", "Carla"]
+
+waiting_list_length = len(waiting_list) # The len() function finds the length of a list/dictionary.
+print(f"The waiting list's length is {waiting_list_length}")
+
 person_in_line = waiting_list.pop() # This will remove the last item from the list and set
                                     # it equal to a variable, "list_item".
 
 waiting_list.pop(0) # This will remove the first index position's item from the list.
+
+# Let's recalculate the waiting list's length with len() after using pop() twice.
+print(f"The waiting list's length is now {len(waiting_list)}")
 
 # Lets print the list item and shopping list on different lines
 # TIP: \n creates a new line in the output (Lesson 3 flashback)
@@ -104,6 +111,7 @@ print("List stepper:", list_stepper)
 # While you may not recognize the syntax here, just know that you are creating a list of
 # squares for all numbers BETWEEN zero and ten, then printing them. "for x in something" means
 # that "x" is a variable assigned to the items we are iterating through.
+
 squares = [i**2 for i in range(10)] # Each "iteration" of this loop represents a number between
                                     # 0 and 9, which will be named "i". We square the number "i"
                                     # for each iteration and append it to the list, "squares".
@@ -115,8 +123,11 @@ print("Squares list", squares)
 # TITLE: Section 3 (7 minutes)
 
 # Let's define a dictionary called "programming_languages".
-programming_languages = {"lang_one" : "Python", "lang_two" : "Java"}
+programming_languages = {"lang_one": "Python", "lang_two": "Java"}
 print(programming_languages)
+
+# Here you can see that the len() function calculates the number of key/value pairs in a dictionary.
+print(f"The programming language dictionary's length is {len(programming_languages)}")
 
 # This would add a key of "lang_three" with a value of "CSharp" to the dictionary "programming_languages"
 programming_languages["lang_three"] = "CSharp"
