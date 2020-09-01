@@ -19,7 +19,7 @@ Indexing and range function for lists, dictionaries, strings and numbers.
 
 ####################################################################################################
 
-# TITLE: Section 1: FOR loops
+# TITLE: Section 1 - FOR loops
 # "for x in range(y)" is a loop that would iterate through every number from zero up until the
 # given number of "y". When there is only one number passed to the range() function, the "lower bound" 
 # of that range would default to zero. The "upper bound", which in the case below is 9, would NOT be
@@ -40,7 +40,7 @@ for num in range(3, 11):
 
 ####################################################################################################
 
-# TITLE: Section 2: String Slicing and Loops
+# TITLE: Section 2 - String Slicing and Loops
 
 # It is actually possible to loop through each character of a string. The for loop will keep the
 # same format as the above.
@@ -60,7 +60,7 @@ print("letters from the beatle song: " + beatles[3:11])
 
 ####################################################################################################
 
-# TITLE: Section 2.1: Lists and Loops
+# TITLE: Section 2.1 - Lists and Loops
 
 # Index lists with for loops.
 grades = [72, 87, 99, 45, 70]
@@ -94,7 +94,7 @@ print("End of second for loop. \n")
 
 ####################################################################################################
 
-# TITLE: Section 2.2- Using a dictionary in a loop
+# TITLE: Section 2.2 - Using a dictionary in a loop
 
 # Let's make reading grades easier by storing each grade as a value to the 
 # student's name as its key in the dictionary. When you use a for loop,
@@ -126,7 +126,7 @@ for student in grades:
 
 ####################################################################################################
 
-# TITLE: Section 3- While loops
+# TITLE: Section 3 - While loops
 
 # The way that a while loop decides to continue running is if it evaluates a condition as true.
 # The following while loop will continue to run until all the items have been removed with the
@@ -150,7 +150,7 @@ while i:
 
 ####################################################################################################
 
-# TITLE: Section 4- Continue Statements and Intro to Conditionals
+# TITLE: Section 4 - Continue Statements and Intro to Conditionals
 
 # The "continue" statement rejects all the remaining statements in the current iteration of the loop
 # and moves the control back to the top of the loop.
@@ -190,7 +190,7 @@ print("Goodbye!") # This print statement won't run until the while loop is compl
 
 ####################################################################################################
 
-# TITLE: Section 4.1- Break Statements
+# TITLE: Section 4.1 - Break Statements
 
 # "break" statements are used with conditionals to stop a loop from running before its natural end.
 # Normally in a for loop or while loop, the natural end is when the base condition is False whether
@@ -214,4 +214,4 @@ print("Your while loop has ended. Goodbye!") # Since this tabulation is set to t
                                              # spacing as the while loop, this will run once
                                              # the loop is complete.
 
-# TODO: Section 4 of TODO 9
+# TODO: Section 4 of TODO 9 (3 min for students, 2 min for demo)
