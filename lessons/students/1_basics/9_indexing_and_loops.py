@@ -190,7 +190,7 @@ print("Goodbye!") # This print statement won't run until the while loop is compl
 # break statement when a sub-condition is True though will end the for loop or while loop no matter
 # what iteration the program is on. Below is an example of this within a for loop.
 for letter in 'Python':
-    if letter == 'h': # Again, this will iterate through every letter in the word Python.
+    if (letter == 'h'): # Again, this will iterate through every letter in the word Python.
         break # When the variable "letter" is eequal to "h", the loop will break.
     print(F"Current Letter :{letter}")
 
