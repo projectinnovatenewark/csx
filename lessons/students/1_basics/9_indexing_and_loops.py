@@ -4,18 +4,17 @@ Indexing and range function for lists, dictionaries, strings and numbers.
 
 # "for loops" iterate through something that is passed to it. What it does with that item is
 # specified in the loop. Each time the control is passed through the loop is called an "iteration".
-# You will see for loops in the foolowing format: "for variable in object:" where "variable" is an
-# arbitrary name and "object" is the object you are iterating through.
+# You will see for loops in the following format: "for alias in iterable:" where "alias" is a
+# variable that assumes each iteration's value and "iterable" is an object in Python that can be
+# iterated through (i.e. list, dictionary, and strings).
 
-# When using a for loop within a range (i.e. "for x in range(10):"), x would equal each integer
-# from 0 to 9.
+# Since range returns a list of numbers, it can also be iterated through. When using a for loop
+# within a range (i.e. "for x in range(10):"), x would equal each integer from 0 to 9.
 
 # If we are using a for loop with a list, the variable will iterate through each item in the list
-# starting with the first item and looping until the last item.
-
-# When iterating through dictionaries, the variable would represent each key of a key/value pair
-# in the dictionary. Similar to lists, it will loop through starting at the first key until reaching
-# the last one.
+# starting with the first item and looping until the last item. When iterating through dictionaries,
+# the variable would represent each key of a key/value pair in the dictionary. Similar to lists, it
+# will loop through starting at the first key until reaching the last one.
 
 ####################################################################################################
 
@@ -23,7 +22,7 @@ Indexing and range function for lists, dictionaries, strings and numbers.
 # "for x in range(y)" is a loop that would iterate through every number from zero up until the
 # given number of "y". When there is only one number passed to the range() function, the "lower bound" 
 # of that range would default to zero. The "upper bound", which in the case below is 9, would NOT be
-# included. In the loop, each iteration will assign itself the variable `num`. For the first iteration
+# included. In the loop, each iteration will assign itself the variable "num". For the first iteration
 # of this for loop, zero (0) would be assigned to num. In the second iteration, num would be
 # assigned one (1) and so on.
 print("range 9 loop: ")
@@ -76,7 +75,7 @@ grades = [72, 87, 99, 45, 70]
 print(f"The first element in the list is {grades[0]}",
       f"and the last element in the array is {grades[-1]}")
 
-# Lets see how a for loop works with lists. This loop will "iterate" over each number. Each
+# Let's see how a for loop works with lists. This loop will "iterate" over each number. Each
 # item in the list will be iterated over in this loop.
 for grade in grades:
     print(grade)
@@ -85,12 +84,12 @@ print("End of first for loop. \n")
 
 # Now, lets make it readable! Add one to the index number so it starts at one instead of zero
 # to find the index of an element in a list, use the index function as shown below. The index
-# function will return an item's index value within the list, in the
-# format of `idx = list_name.index(item_name)`
+# function will return an item's index value within the list, in the format of:
+# "idx = list_name.index(item_name)"
 for num in grades:
-    print(f"Student number {grades.index(num) + 1}'s grade is a(n) {num}.'")
+    print(f"Student number {grades.index(num) + 1}'s grade is a(n) {num}.")
 
-print("End of second for loop. \n")
+print("End of second for loop.\n")
 
 ####################################################################################################
 
@@ -113,14 +112,14 @@ print(f"Chris got a {chris}")
 # or whatever falls within the tabulation set by the line thereafter. 
 # We use four spaces in one tab to denote that certain code falls within a function
 for student in grades:
-    print(f"{student} got a {grades[student]} on their comp sci exam")
+    print(f"{student} got a {grades[student]} on their comp sci exam.")
 
 # HINT:
 # We can use bracket notation inside the for loop to make it easier to reference the given values.
 print("\n2nd for loop:\n")
 for student in grades:
     grade = grades[student]
-    print(f"{student} got a {grade} on their comp sci exam")
+    print(f"{student} got a {grade} on their comp sci exam.")
 
 # TODO: Section 2 of TODO 9 (6 min for students, 3 min for demo)
 
@@ -132,11 +131,11 @@ for student in grades:
 # The following while loop will continue to run until all the items have been removed with the
 # .pop() method and your list is empty. This is because while there are items in the list, the
 # condition remains true. An empty list equates to a False condition, and the loop will end.
-grocery_list = ['Bread', 'Butter', 'Frozen Pizza', 'Mozz Sticks', 'Ice Cream']
+grocery_list = ["Bread", "Butter", "Frozen Pizza", "Mozz Sticks", "Ice Cream"]
 while grocery_list:
     purchased_item = grocery_list.pop()
-    print(f'You purchased {purchased_item} and removed it from your list.')
-    print('Your remaining items are', grocery_list)
+    print(f"You purchased {purchased_item} and removed it from your list.")
+    print(f"Your remaining items are: {grocery_list}")
 
 # If you want to execute an action a certain number of times, you can use an iterator with a while
 # loop to decrement until that number is 0. A zero value will equate to a False condition, thus
