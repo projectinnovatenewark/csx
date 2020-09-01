@@ -40,7 +40,7 @@ addTen(3) # "3" is the argument we pass, which will be assigned to the parameter
 print("Second call to addTen function: ")
 print(addTen(5))
 
-# Functions also don't necessarliy parameters. They can perform some operation that doesn't require an
+# Functions also don't necessarily parameters. They can perform some operation that doesn't require an
 # argument. In this case, we will just print a "global" variable that would be accessible to the
 # whole file- including within the scope of this function!
 randomNumVar = 12345
