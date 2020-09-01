@@ -2,16 +2,20 @@
 Indexing and range function for lists, dictionaries, strings and numbers
 """
 
-# for loops iterate through something that is passed to it. What it does with that item is specified
-# in the loop. Each time the control is passed through the loop is called an "iteration".
+# "for loops" iterate through something that is passed to it. What it does with that item is
+# specified in the loop. Each time the control is passed through the loop is called an "iteration".
+# You will see for loops in the foolowing format: "for variable in object:" where "variable" is an
+# arbitrary name and "object" is the object you are iterating through.
 
-# for ranges, the variable you set will be equal to the number in the range,
-# starting with the lower bound of that range.
+# When using a for loop within a range (i.e. "for x in range(10):"), x would equal each integer
+# from 0 to 9.
 
-# for lists, the variable will iterate through each item in the list, starting with the first item.
+# If we are using a for loop with a list, the variable will iterate through each item in the list
+# starting with the first item and looping until the last item.
 
-# for dictionaries, the variable will represent each iterate through each key,
-# starting with the first key.
+# When iterating through dictionaries, the variable would represent each key of a key/value pair
+# in the dictionary. Similar to lists, it will loop through starting at the first key until reaching
+# the last one.
 
 ####################################################################################################
 
@@ -20,18 +24,14 @@ Indexing and range function for lists, dictionaries, strings and numbers
 # given number of "y". When there is only one number passed to the range() function, the "lower bound" 
 # of that range would default to zero. The "upper bound", which in the case below is 9, would NOT be
 # included. In the loop, each iteration will assign itself the variable `num`. For the first iteration
-# of this for loop, zero would be assigned to num. In the second iteration, num would be
-# assigned one (and so on).
+# of this for loop, zero (0) would be assigned to num. In the second iteration, num would be
+# assigned one (1) and so on.
 print("range 9 loop: ")
 for num in range(9):
-    print(num)
+    print(num) # This print statement will run once for every iteration of "num".
 
-####################################################################################################
-
-# TITLE: Section 1.1: Loops with range 
-# If you put in an initial argument, that number is included in the range and would be the
-# "lower bound". The second number would be the "upper bound", and therefore not included
-# in the loop.
+# Let's put in an initial argument now to change our lower bound from zero (0) to three (3). Now
+# when we print each "num", we should see "3, 4, 5, ..., 10".
 print("range 3, 11 loop: ")
 for num in range(3, 11):
     print(num)
@@ -40,12 +40,19 @@ for num in range(3, 11):
 
 ####################################################################################################
 
-# TITLE: Section 2: String Indexing
-# If you want to access a part of a string, you can get a portion of the string with indexing.
+# TITLE: Section 2: String Slicing and Loops
+
+# It is actually possible to loop through each character of a string. The for loop will keep the
+# same format as the above.
 beatles = "You say goodbye, and I say hello!"
+for char in beatles:
+    print(char)
 
+# It is also possible to slice strings by their characters as we have ddone with lists in previous
+# lessons. This is done by setting each character to an index position, similar to a list. Below in
+# "beatles[3:11]", the 3 and 11 represent the third and eleventh index in the string. This can
+# also be looped through when set to a variable!
 parsed_beatles = beatles[3:11]
-
 for char in parsed_beatles:
     print(char)
 
@@ -64,14 +71,15 @@ grades = [72, 87, 99, 45, 70]
 # it with the str() function.
 
 # IMPORTANT:
-# if you want to use f shorthand accross multiple lines, you need to use concatenation.
+# if you want to use f shorthand accross multiple lines, you need to use concatenation. You'll
+# notice that although our print statement is across lines 76-77, its output will be on one line.
 print(f"The first element in the list is {grades[0]}",
       f"and the last element in the array is {grades[-1]}")
 
-# Lets show how a for loop works with lists. This loop will "iterate" over each number. Each
-# item in the list will iterated over in this loop.
-for num in grades:
-    print(num) # this will happen once for every "iteration"
+# Lets see how a for loop works with lists. This loop will "iterate" over each number. Each
+# item in the list will be iterated over in this loop.
+for grade in grades:
+    print(grade)
 
 print("End of first for loop. \n")
 
@@ -80,7 +88,7 @@ print("End of first for loop. \n")
 # function will return an item's index value within the list, in the
 # format of `idx = list_name.index(item_name)`
 for num in grades:
-    print("Student number " + str(grades.index(num) + 1) + "'s grade is " + str(num))
+    print(f"Student number {grades.index(num) + 1}'s grade is a(n) {num}.'")
 
 print("End of second for loop. \n")
 

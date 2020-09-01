@@ -11,7 +11,7 @@ Common errors you will/may have already encounter(ed).
 # there is an error. 
 
 # ZeroDivisionError: division by zero
-number = 10 * (1/0) # FIXME:
+number = 10 * (1/0) # FIXME: Comment out this line once this error has been demoed.
 print(number)
 
 ####################################################################################################
@@ -23,7 +23,7 @@ print(number)
 # to your terminal. It lets you know where the problem is and gives hints as to what's wrong!
 
 # NameError: name 'spam' is not defined
-equation = 4 + spam * 3 # FIXME:
+equation = 4 + spam * 3 # FIXME: Comment out this line once this error has been demoed.
 print(equation)
 
 ####################################################################################################
@@ -36,7 +36,7 @@ print(equation)
 # python throws us this error.
 
 # TypeError: Can't convert 'int' object to str implicitly
-four = '2' + 2 # FIXME:
+four = '2' + 2 # FIXME: Comment out this line once this error has been demoed.
 print(four)
 
 # TODO: Complete TODO 8
