@@ -2,7 +2,7 @@
 This is an introduction to basic math and imports in Python
 """
 
-# TITLE: Section 1: (8 min)
+# TITLE: Section 1 - Basic Mathematical Operations in Python, & Modulo (8 min)
 # Math in Python works exactly as you'd think it should. It's just like using a calculator,
 # except you can store equations in variables. Below are basic mathematical operations you have 
 # seen in standard algebra classes.
@@ -31,7 +31,7 @@ print("addition: ", addition, "subtraction: ", subtraction, "multiplication: ", 
 
 ####################################################################################################
 
-# TITLE Section 1.1: (5 min)
+# TITLE: Section 1.1 - PEMDAS and Order of Operations (5 min)
 
 # Math in Python follows all the same rules as if you were completing a problem in
 # your notebook or with a scientific calculator. In other words, Python follows PEMDAS.
@@ -52,12 +52,12 @@ print(f"we expect eq1 to equal 5. Python gives us {int(eq3)}")
 
 ####################################################################################################
 
-# TITLE Section 1.2: (15 min)
+# TITLE: Section 1.2 - Constants, Incrementing/Decrementing, & Converting Numeric User Inputs (9 min)
 # Here is a new concept we haven't covered yet- constants! Constants are like variables,
-# but they are typed in all caps and don't change. Variables can be manipulated and change,
-# whereas constants must remain the same.
+# but they are typed in all caps and shouldn't change. Variables can be manipulated and change,
+# whereas constants should remain the same.
 
-# For example, the corporate tax rate is 20%. Hence, that would be an example of a constant.
+# For example, the corporate tax rate is fixed at 20%. That would be an example of a constant.
 # You might also notice for company_profit, we use the int() function to convert the user input
 # (a string) to an integer.
 company_profit = int(input("How much money did your company make this year?: "))
@@ -75,7 +75,7 @@ summation = 3 + 3.0 # summation will now equal 6.0
 print(f"1. summation is {summation}")
 
 # Let's say you want to add to the variable summation. You want to increment it by one, for
-# whatever reason. There's one way to do this that is not the greatest.
+# whatever reason. There's two ways to do this, and one is a bit longer code-wise.
 # Lets do it that way first.
 summation = summation + 1 # summation will now be 7.0
 print(f"2. summation is {summation}")
@@ -86,7 +86,7 @@ print(f"2. summation is {summation}")
 summation += 2 # summation will now equal 9.0
 print(f"3. summation is {summation}")
 
-# To the same tone, you can decrement with -=. Let's see how that looks.
+# On a similar note, you can decrement with -=. Let's see how that looks.
 summation -= 3 # summation will now equal 6.0
 print(f"4. summation is {summation}")
 
@@ -94,7 +94,7 @@ print(f"4. summation is {summation}")
 
 ####################################################################################################
 
-# TITLE: Section 2: (10 min)
+# TITLE: Section 2 - Math with Lists and Absolute Values (10 min)
 # Python makes it easy to find things like min and max too. Luckily there are built in functions we can
 # use. Below is a list of random numbers we are going to work on to show some examples.
 number_list = [13, 27, 4, 12, 39, 100]
@@ -128,15 +128,14 @@ pos_float = 3.5
 print(f"The absolute value of {neg_float} is {abs(neg_float)}.")
 print(f"The absolute value of {pos_float} is {abs(pos_float)}.")
 
-# IMPORTANT:
-# Certain functions have return values that can be be placed in print statements, and their return
-# values will be printed as a string when using f shorthand.
+# IMPORTANT: Certain functions have return values that can be be placed in print statements, and
+# IMPORTANT: their return values will be printed as a string when using f shorthand.
 
 # TODO: Section 2 of TODO 4
 
 ####################################################################################################	
 
-# TITLE: Section 5 (8 min)
+# TITLE: Section 5 - Short Import Intro and the Math Package (8 min)
 # We also have the math package/module from python. Python has built in tools that we	
 # can import and use to help us in mathematical operations. Normally imports go at the	
 # TOP of a file, but we will put it here to consolidate the lesson.	

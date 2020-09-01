@@ -2,7 +2,7 @@
 Methods you can perform on lists and dictionaries
 """
 
-# TITLE: Section 1 (5 minutes)
+# TITLE: Section 1 - Adding and Removing Items From Lists, Reading List Items and Length (5 minutes)
 # The .append() method adds an item to the end of a list.
 medals = ["gold", "silver"]
 medals.append("bronze")
@@ -47,7 +47,7 @@ print("Last person in line:", person_in_line, "\nList of people waiting:", waiti
 
 ####################################################################################################
 
-# TITLE: Section 1.1 (6 minutes)
+# TITLE: Section 1.1 - Extending and Modifying Lists (6 minutes)
 # The .extend() method adds a list to the end of another list.
 # A list of languages.
 languages1 = ['French', 'English', 'German']
@@ -74,7 +74,7 @@ print("Languages List after methods were performed", languages1)
 # TODO: Section 1 of TODO 6 (5 minutes for students, 2 minute demo)
 ####################################################################################################
 
-# TITLE: Section 2 (7 minutes)
+# TITLE: Section 2 - Creating Segments, or "Slices", of Lists (7 minutes)
 # Slicing is a way to segment items in a list.
 table_items = ["cloth", "mug", "newspaper", "magazine", "remote", "coozie"]
 #                 0       1         2           3           4         5
@@ -106,7 +106,8 @@ print("List stepper:", list_stepper)
 
 ####################################################################################################
 
-# TITLE: Section 2.1 (3 minutes)
+# TITLE: Section 2.1 - List Comprehensions (3 minutes)
+
 # IMPORTANT: List comprehensions are ways to define potentially lengthy lists in one line.
 # While you may not recognize the syntax here, just know that you are creating a list of
 # squares for all numbers BETWEEN zero and ten, then printing them. "for x in something" means
@@ -120,7 +121,7 @@ print("Squares list", squares)
 # TODO: Section 2 of TODO 6 (3 minutes for students, 2 minute demo)
 ####################################################################################################
 
-# TITLE: Section 3 (7 minutes)
+# TITLE: Section 3 - Adding, Removing, Reading and Changing Dictionaries' Key/Value Pairs (7 minutes)
 
 # Let's define a dictionary called "programming_languages".
 programming_languages = {"lang_one": "Python", "lang_two": "Java"}

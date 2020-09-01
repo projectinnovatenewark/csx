@@ -2,7 +2,7 @@
 This is an introduction to string manipulation in Python
 """
 
-# TITLE: Section 1- The "input()" Function (5 minutes)
+# TITLE: Section 1 - The "input()" Function (5 minutes)
 
 # With the input function, you can get input from users.
 # Lets set the user inputs equal to variables, then use them appropriately.
@@ -30,7 +30,7 @@ print("Your favorite movie is", movie)
 # TODO: Section 1 of TODO 3 (2 minutes for students, 1 minute demo)
 ####################################################################################################
 
-# TITLE: Section 2- Modifying the Casing of Strings (3 minutes)
+# TITLE: Section 2 - Modifying the Casing of Strings (3 minutes)
 # Next we are going to introduce the .title() function. This will capitalize the beginning of every
 # word in a string as well as make the rest of the characters lower case.
 
@@ -57,7 +57,7 @@ print("\t" + mixed_string.title())
 # TODO: Section 2 of TODO 3 (4 minutes for students, 1 minute demo)
 ####################################################################################################
 
-# TITLE: Section 3- Formatting Variables in Strings (10 minutes)
+# TITLE: Section 3 - Formatting Variables in Strings (10 minutes)
 # There are many methods of string formatting including the .format() function and using
 # percent signs "%" to include numbers. Here are brief examples of each:
 integer_number = 3
@@ -97,7 +97,7 @@ print(attendance_output)
 # TODO: Section 3 of TODO 3 (5 minutes for students, 2 minute demo)
 ####################################################################################################
 
-# TITLE: Section 4- String Related Functions (7 minutes)
+# TITLE: Section 4 - String Related Functions (7 minutes)
 # The join function combines items in a list. In this case, it will create a large string.
 # The first input specifies how to join the items in the list.
 # In the example below, it will join each item with a comma.
