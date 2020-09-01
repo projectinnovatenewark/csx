@@ -111,6 +111,7 @@ print("List stepper:", list_stepper)
 # While you may not recognize the syntax here, just know that you are creating a list of
 # squares for all numbers BETWEEN zero and ten, then printing them. "for x in something" means
 # that "x" is a variable assigned to the items we are iterating through.
+
 squares = [i**2 for i in range(10)] # Each "iteration" of this loop represents a number between
                                     # 0 and 9, which will be named "i". We square the number "i"
                                     # for each iteration and append it to the list, "squares".
