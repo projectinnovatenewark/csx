@@ -102,48 +102,47 @@ print(attendance_output)
 # The first input specifies how to join the items in the list.
 # In the example below, it will join each item with a comma.
 list_to_join = ["combine", "these", "words", "into", "one", "string"]
-print(",".join(list_to_join))
+print(f"Join the list_to_join {','.join(list_to_join)}")
 
 # The join function will not change the original list. As you can see from this output, it stays
 # the same.
-print('as you can see, the list has not changed', list_to_join)
+print(f"As you can see, the original variable list_to_join has not changed {list_to_join}")
 
 # If you wanted to capture the new value of combining the items in the list, you would have
 # to set it equal to a new variable like this:
 new_var = "".join(list_to_join)
-print("this is the new var: ", new_var)
+print(f"This is the new var: {new_var}")
 
-# But that looks kind of silly without spaces! Lets join them with a space instead to see
+# But that looks kind of silly without spaces! Let's join them with a space instead to see
 # the better outcome. We can reassign the new_var variable to have this new value.
 new_var = " ".join(list_to_join)
-print("this is the new var's updated value: ", new_var)
+print(f"This is the new_var's updated value: {new_var}")
 
 # Split seperates a string into items in a list. The split occurs in the character that you specify.
 # For example, in the split we put an empty space. This will split the string into items whenever
 # there is a space, so each word will represent an item in the list.
 string_to_listify = "lets separate these words into separate items in a list"
-print(string_to_listify.split(" "))
+print(f"Split the string_to_listify {string_to_listify.split(' ')}")
 
-# IMPORTANT:
 # The behavior for the join function also applies to split. It will NOT update the original
 # variable. This will still be a string, even though we performed a split function on it.
-print(string_to_listify)
+print(f"As you can see, the original variable string_to_listify has not changed {string_to_listify}")
 
 # If we wanted to capture the value of that split, we would have to set it equal to a new variable.
 listified_string = string_to_listify.split(" ")
-print(listified_string)
+print("this is listified_string's updated value: ", listified_string)
 
 # The replace function exchanges one input for another.
 # Lets make the following polite statement a little less formal:
 print("Hello, how are you?".replace("Hello", "Sup"))
 
-# The startswith function returns a boolean value (true/false) on whether or not a
+# The startswith function returns a boolean value (True/False) on whether or not a
 # string begins with a certain set of characters. Lets check if someone is saying hello
 # in the following two statements:
 print("Hello, I am saying hi to someone".startswith("Hello"))
 print("Whats good?".startswith("Hello"))
 
-# The endswith function returns a boolean value (true/false) on whether or not a string ends
+# The endswith function returns a boolean value (True/False) on whether or not a string ends
 # with a certain set of characters. Lets check if these statements are questions:
 print("Am I a question?".endswith("?"))
 print("I'm not a question.".endswith("?"))
