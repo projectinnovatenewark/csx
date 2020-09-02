@@ -58,12 +58,15 @@ print("\t" + mixed_string.title())
 ####################################################################################################
 
 # TITLE: Section 3 - Formatting Variables in Strings (10 minutes)
+
+# TIP: This section can be of minor emphasis as it is not seen very often in our curriculum.
 # There are many methods of string formatting including the .format() function and using
 # percent signs "%" to include numbers. Here are brief examples of each:
 integer_number = 3
 print("Here is the number as a float: %.2f" %integer_number)
 
-# The cleaner to do the above is strictly by using the format function as shown below.
+# TIP: This section can be of minor emphasis as it is not seen very often in our curriculum.
+# The cleaner way to do the above is strictly by using the format function as shown below.
 # You can also modify a number (i.e. 06 below) to add padding to the front of a number
 # which means that the first number will print with 6 digits (including the decimal point)
 # and add any additional digits as zeros in front of the number.
@@ -87,9 +90,6 @@ print(song_lyric)
 # The first item in "students" is "Marcus", and we access the first item with the
 # convention "students[0]". The first item in a list is always zero, the second item is one, etc.
 students = ["Marcus", "Maria", "Sam"]
-first_student = students[0] # This variable would equal the string "Marcus".
-
-print("The first student in the list is", first_student, "and the second student is", students[1] + ".")
 
 attendance_output = f"The present students are {students[0]}, {students[1]}, and {students[2]}."
 print(attendance_output)
