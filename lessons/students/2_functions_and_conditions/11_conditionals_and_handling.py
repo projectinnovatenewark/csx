@@ -1,34 +1,82 @@
 """
 if, elif, else and iteratable operations
 """
+# TITLE: Section 1: Boolean Logic
+
 
 num = 3 # FIXME: Teacher, try changing this number up to satisfy the different conditions.
 
-if (num > 0):
-    print(num, "is a positive number.")
-if (num > 2): # any number of if statements will be evaluated upon running the code
-    print(num, "is greater than 2.")
-elif (num < 0): # the elif statement will only be triggered if none of the "if" statements are true.
-    print(num, "is a negative number.")
+# The three major coniditional operators are: if, elif, and else. They are used to
+# test if a given condition is true or false. First lets go over "if" statements
+# practicing with the variable "num" below.
+
+
+num = 3 
+
+# When an if statement is true, like in our case below while "num = 3", then the code
+# that follows inside its scope will exectue. In this case, "num" is 3, so our print statement
+# should execute.
+
+if (num < 0): # the elif statement will only be triggered if none of the "if" statements are true.
+    print(f"{num} is a negative number.")
 else: # the else statement will only run if none of the conditions above it are true.
-    print(num, "is a zero value.")
+    print(f"{num} is a positive number.")
+if (num > 2): # Any number of if statements will be evaluated upon running the code.
+    print(f"{num} is greater than 2.")
+
+# An "elif" statement can be thought of as "else-if". So, the condition inside of the elif statement
+# will only run if the if statements before are false. In this case, since "num" is equal to 3
+# and the previous if statement is true, the below elif will not exectute.
+elif (num < 0):
+    print(f"{num} is a negative number.") # FIXME: Change "num" to the value of -1 to test the elif.
+
+# Below is an else statement. An else statement will only execute if all of the above if and elif
+# statements are false. Notice we do not specify a condition as well. This is because the condition
+# is always "if everything above is false".
+else:
+    print(f"{num} is a zero value.")
+
+
 
 ####################################################################################################
 
-# notice how we used the same variable of "num" from the above function but reassigned its value.
-# we can do that because it is a variable and NOT a constant
 
+# TITLE: Section 1.1: AND operator
+
+# IMPORTANT:
+# Notice how we used the same variable of "num" from the above, but reassigned its value.
+# Remeber we can do that because it is a variable and NOT a constant.
 num = 2
-num = 533
+num1 = 533 # FIXME: Change num1 to equal 99 to test the below if statement.
 
-if (num % 2 == 0):
-    print(num, "is an even number.")
-else:
-    print(num, "is an odd number.")
+
+# Below is our first example of an "and" operator. This will mean that for the below if statement
+# to be true, both conditions on either side of the "and" must be true.
+if (num % 2 == 0 and num1 > 100):
+    print(f"{num} is even and {num1} is greater than 100")
+
+
+string1 = "Hello"
+num1 = 42
+
+
+
+# Next we'll look at the "or" operator. When this is used, as long as one of the conditions is true,
+# the if statement will be be reflected as true and the block will be executed.
+if (string1 == "What's up?" or num1 != 0):
+    print("At least one of these is right")
+
+
+
+
+
 
 # TODO: Section 1 of TODO 11
 
 ####################################################################################################
+
+
+# TITLE: Section 2: While Countdown
 
 # lets take 6 and add each number between it and zero to a variable (i.e. 6 + 5 + 4.....0)
 countdown = 6
@@ -43,18 +91,21 @@ while countdown > 0:
     countdown -= 1 # in this case of -= it will subtract one from countdown and then countdown will
                    # equal countdown - 1. so, in the first iteration of the while loop, countdown
                    # will go from 6 to 5
-    print("countdown equals", countdown)
-    print("countdown sum equals", countdown_sum)
+    print(f'countdown equals {countdown}')
+    print(f'countdown sum equals{countdown_sum}')
 
 # this code below the while loop will NOT run until the while loop 'breaks', which would happen when
 # the condition of countdown > 0 is no longer true
-print("countdown now equals: ", countdown)
+print(f'countdown now equals:  {countdown}')
 
-print("the final countdown equals: ", countdown_sum)
+print(f'the final countdown equals: {countdown_sum}')
 
 # TODO: Section 2 of TODO 11
 
 ####################################################################################################
+
+
+# TITLE: Section 3: List comprehensions
 
 # As a reminder, before jumping into a new way of iterating through a list, here is a review on
 # list comprehensions from week 2. They may seem similar to the functions in the next section,
@@ -73,6 +124,9 @@ print("Squares of odd numbers list", squares_of_odd_numbers)
 
 ####################################################################################################
 
+
+# TITLE: Section 3.1: More list comprehension 
+ 
 # In the next 3 sections, you can see that the condition actually comes before the "for" statement.
 # This differs from list comprehensions, where the action comes before the "for" statement.
 
@@ -84,6 +138,9 @@ if all(number % 2 != 0 for number in number_list):
     print("all the numbers are odd")
 
 ####################################################################################################
+
+
+# TITLE: Section 3.2: Checking Arrays
 
 number_list = [3, 15, 31, 1, 11, 107]
 
@@ -97,6 +154,9 @@ if (15 in number_list):
 
 ####################################################################################################
 
+
+# TITLE: Section 3.3: Even Numbers
+
 number_list = [3, 15, 31, 1, 11, 107]
 
 # `any` is helpful when you want to see if a single value (or more!) satisfies your conditional
@@ -105,17 +165,23 @@ if any(number % 2 == 0 for number in number_list):
 
 ####################################################################################################
 
+
+# TITLE: Section 3.4: Enumerate
+
 number_list = [3, 15, 31, 1, 11, 107]
 
 # `enumerate` gives you the index position and actual value of the items in a list
 for number in enumerate(number_list):
-    print(number) # enumerate returns you a tuple in the form of (index, value). Remember- tuples are
-                  # lists that cannot be changed!
+    print(number) # Enumerate returns you a tuple in the form of (index, value). 
+                # IMPORTANT: tuples are lists that cannot be changed!
     print(number[0]) # this will be the index number
     print(number[1]) # this will be the item
 
 # TODO: Section 3 of TODO 11
 ####################################################################################################
+
+
+# TITLE: Section 4: Switcher
 
 # `switch` statements are common in other languages. What a switch statement does is take a
 # case and apply it. Say you want to know what the name of the day is by it's place in the
