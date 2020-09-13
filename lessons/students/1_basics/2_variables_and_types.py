@@ -74,7 +74,7 @@ print("variable for later will equal", variable_for_later)
 
 ####################################################################################################
 
-# TITLE: Section 3 - "print()" Function Elaboration and Concatenation (4 minutes)
+# TITLE: Section 3 - "print()" Function Elaboration and Concatenation (5 minutes)
 
 # Print is an example of a function. A function is a block of code that runs when
 # it is called upon. The items you place in the parentheses are called arguments. Lets
@@ -88,7 +88,7 @@ print(num3)
 print(string1)
 
 # FIXME: The code right here is broken, let's run it for fun to show that strings cannot be
-# FIXME: concatenated directly non-strings. Uncomment and run the code.
+# FIXME: concatenated directly with non-strings. Uncomment and run the code.
 # print(string1 + "I am python number " + num3 + ", hear me roar!!") # TIP: Be sure to comment it out
                                                                     # TIP: before moving on.
 
