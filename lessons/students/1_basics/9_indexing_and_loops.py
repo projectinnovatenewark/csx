@@ -35,7 +35,7 @@ print("range 3, 11 loop: ")
 for num in range(3, 11):
     print(num)
 
-# TODO: Section 1 of the TODO
+# TODO: Section 1 of the TODO (4 minutes for students, 2 minutes for demo)
 
 ####################################################################################################
 
@@ -121,8 +121,7 @@ for student in grades:
     grade = grades[student]
     print(f"{student} got a {grade} on their comp sci exam.")
 
-# TODO: Section 2 of TODO 9 (6 min for students, 3 min for demo)
-
+# TODO: Section 2 of TODO 9 (6 minutes for students, 3 minutes for demo)
 ####################################################################################################
 
 # TITLE: Section 3 - While loops
@@ -145,8 +144,7 @@ while i:
     print(f"i ={i}")
     i -= 1
 
-# TODO: Section 3 of TODO 9 (3 min for students, 1 min for demo)
-
+# TODO: Section 3 of TODO 9 (3 minutes for students, 1 minutes for demo)
 ####################################################################################################
 
 # TITLE: Section 4 - Continue Statements and Intro to Conditionals
