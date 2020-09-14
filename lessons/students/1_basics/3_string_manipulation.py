@@ -122,7 +122,7 @@ print(f"This is the new_var's updated value: {new_var}")
 # For example, in the split we put an empty space. This will split the string into items whenever
 # there is a space, so each word will represent an item in the list.
 string_to_listify = "lets separate these words into separate items in a list"
-print(f"Split the string_to_listify {string_to_listify.split(' ')}")
+print(f"Split the string_to_listify {string_to_listify.split(' ')}") # FIXME: demo this with an "s", as well!
 
 # The behavior for the join function also applies to split. It will NOT update the original
 # variable. This will still be a string, even though we performed a split function on it.
