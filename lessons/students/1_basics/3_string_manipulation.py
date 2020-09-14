@@ -97,7 +97,7 @@ print(attendance_output)
 # TODO: Section 3 of TODO 3 (5 minutes for students, 2 minute demo)
 ####################################################################################################
 
-# TITLE: Section 4 - String-related Functions (7 minutes)
+# TITLE: Section 4 - String-related Functions (9 minutes)
 # The join function combines items in a list. In this case, it will create a large string.
 # The first input specifies how to join the items in the list.
 # In the example below, it will join each item with a comma.
