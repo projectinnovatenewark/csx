@@ -2,6 +2,7 @@
 Using functions and understanding scope
 """
 
+# TITLE: Section 1 - Printing Function Outputs
 # A function is a block of code that executes some task. Functions are defined using the format:
 # "def functionName(parameterName):" The parameter name can be anything you want (just like
 # variables), so whatever you pass as an argument to the function when you "call" it will be
@@ -51,10 +52,14 @@ def giveOutput():
 print("Calling our giveOutput function: ")
 giveOutput()
 
+# TODO: Section 1 of TODO 10 (2 min for students, 1 min for demo)
 ####################################################################################################
 
-# Calling functions within other functions and using their return values.
-# Here we will show you how the "control" of a program will navigate the code.
+# TITLE: Section 2 - Calling Functions with Other Functions
+# Functions are great because you can have them "return" a value. Generally, this will be whatever
+# you wanted the funciton to accomplish. These return values can then be used elsewhere in your file
+# inluding in other functions. Below we will show you how the "control" of a program will navigate
+# the code. Use "Control #" to follow along how your code is processed.
 
 def addTwo(j):
     newNum = j + 2
@@ -82,6 +87,7 @@ print(addingChain(9)) # Control 1: the addingChain function gets called and pass
 
 ####################################################################################################
 
+# TITLE: Section 2.1 - Using Return Values with Conditionals
 # Calling functions within other functions and using conditions.
 
 # Having return values from functions is important when you want to use that value,
@@ -91,14 +97,14 @@ def daysActivities(typeOfDay):
     """Analyze a user's input and return a message for them"""
     # These if statements check to see if the typeOfDay argument is equal to something- in our case
     # we are checking in three different statements if typeOfDay is either "fun", "productive",
-    # or "lazy". If one of those if's is true, then we do whatever is within the scope of that if
+    # or "relaxing". If one of those if's is true, then we do whatever is within the scope of that if
     # block. If none of the if statements are true, we execute what is in the "else" block.
 
     if (typeOfDay == "fun"):
         dayString = "You should enjoy some of your favorite activities"
     elif (typeOfDay == "productive"):
         dayString = "Let's get some work done, player!"
-    elif (typeOfDay == "lazy"):
+    elif (typeOfDay == "relaxing"):
         dayString = "You work too hard, and this day is all about YOU. Do NOTHING and enjoy it, you deserve it :)"
     else:
         dayString = "I can only compute one of the three provided types of days. Try again, chief!"
@@ -111,7 +117,7 @@ def inquireDay():
     """This function will ask the user what type of day they want to have"""
 
     # We will take the user input value and pass it as an argument to our "daysActivities" function.
-    userDay = input("What type of day do you want to have? You can choose from fun, productive, or lazy. Enter your choice!: ")
+    userDay = input("What type of day do you want to have? You can choose from fun, productive, or relaxing. Enter your choice!: ")
 
     # This variable below would be equal to the return value of the function call
     userMessage = daysActivities(userDay)
@@ -123,36 +129,41 @@ inquireDay()
 # TODO: Hey, Teach! You should have your students walk you through the control of the above function
 # TODO: call. Make sure the class understands the flow of the program 🚀
 
+# TODO: Section 2 of TODO 10 (2 min for students, 1 min for demo)
 ####################################################################################################
 
-# Here are a couple of dictionaries
-EXAMPLE_DICTIONARY_ONE = {"Abigail": 78, "Brian": 86, "Carlito": 95, "Debbie": 100, "Erion": 88}
-EXAMPLE_DICTIONARY_TWO = {"Andy": 73, "Brovan": 90, "Celeste": 65, "Danilo": 84, "Epsilo": 78}
+# TITLE: Section 3 - Looping in Functions
+# Here are a couple of dictionaries that we will work with.
+example_dict_1 = {"Abigail": 78, "Brian": 86, "Carlito": 95, "Debbie": 100, "Erion": 88}
+example_dict_1 = {"Andy": 73, "Brovan": 90, "Celeste": 65, "Danilo": 84, "Epsilo": 78}
 
 # One important concept of functions is that they can be reused. Therefore, we can execute the
 # same function to perform operations on BOTH of the above dictionaries.
 def dictionary_reader(dictionary):
-    """This function will format and print a dictionary. Just as a file gets a doc string, functions get one too!"""
+    """This function will format and print a dictionary. Just as a file gets a doc string,
+    functions get one too!"""
     print("Let's output a dictionary")
     print("\n")
 
     for student in dictionary: # TODO: Hi Teacher! Let's show how we can set a variable of grade to
                                # TODO: access every student's grade, then use that in our print statement.
-        print(student + " got a score of " + str(dictionary[student]) + " on their exam!")
+        print(f"{student} got a score of {dictionary[student]} on their exam!")
 
     print("\n")
     print("This function has finished running.")
 
-# Here we pass the function an argument for our first dictionary
-dictionary_reader(EXAMPLE_DICTIONARY_ONE)
+# Here we pass the function an argument for our first dictionary:
+dictionary_reader(example_dict_1)
 
 print("\n")
 
-# Here we see the same function performing operations with our second dictionary
-dictionary_reader(EXAMPLE_DICTIONARY_TWO)
+# Here we see the same function performing operations with our second dictionary:
+dictionary_reader(example_dict_2)
 
+# TODO: Section 3 of TODO 10 (3 min for students, 2 min for demo)
 ###################################################################################################
 
+# TITLE: Section 4 - Working with Scope
 # Below are examples of using variables & the timing of a function call to portray scope.
 # Here we call "s" after the function is called, which will return a NameError
 def func():
@@ -160,15 +171,11 @@ def func():
 func()
 s = "I love Paris in the summer!"
 
-####################################################################################################
-
 # Here, since the variable is declared before the function is called, it will print the "s2" value
 def func2():
     print(s2)
 s2 = "I love San Diego in the summer!"
 func2()
-
-####################################################################################################
 
 # Here, the variable in the function is referenced within the function's scope, therefore it will
 # print the "I love London" statement
@@ -181,4 +188,4 @@ func3()
 
 print(s3)
 
-# TODO: Section 1 of TODO 10
+# TODO: Section 4 of TODO 10 (2 min for students, 1 min for demo)
