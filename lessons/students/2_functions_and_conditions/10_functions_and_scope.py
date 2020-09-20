@@ -18,8 +18,8 @@ print("This is not a part of the function") # Since this line is not indented wi
                                             # function definition has therefore ended
 
     print("This is not in the scope of 'addTen()'") # FIXME: This will not be in the scope of
-                                                    # FIXME: addTen() because the scope was exited
-                                                    # FIXME: in line 15. Comment out to continue.
+                                                    # FIXME: addTen() because the function ended
+                                                    # FIXME: in line 14. Comment out to continue.
 
 # Now that we are at the leftmost part of the page, we have exited the scope of the function above.
 # This function should now take the argument passed, which is 3, and add ten to it. It will then
@@ -52,7 +52,7 @@ def giveOutput():
 print("Calling our giveOutput function: ")
 giveOutput()
 
-# TODO: Section 1 of TODO 10 (2 min for students, 1 min for demo)
+# TODO: Section 1 of TODO 10 (3 min for students, 1 min for demo)
 ####################################################################################################
 
 # TITLE: Section 2 - Calling Functions with Other Functions
@@ -65,6 +65,9 @@ def addTwo(j):
     newNum = j + 2
     return newNum # Control 3: "j", which is equal to the argument of 9 that was passed, has 2
                   # added to it and 11 is returned.
+
+added_two = addTwo(3)
+print(f"We called 'addTwo' and set it's return value equal to a variable. That variable equals {added_two}")
 
 def addFive(k):
     return k + 5 # Control 6: "k", which is equal to the arugment of 11 that was passed, has 5
