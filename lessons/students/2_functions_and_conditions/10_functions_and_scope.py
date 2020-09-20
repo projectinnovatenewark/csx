@@ -52,7 +52,7 @@ def giveOutput():
 print("Calling our giveOutput function: ")
 giveOutput()
 
-# TODO: Section 1 of TODO 10 (3 min for students, 1 min for demo)
+# TODO: Section 1 of TODO 10 (4 min for students, 1 min for demo)
 ####################################################################################################
 
 # TITLE: Section 2 - Calling Functions with Other Functions
@@ -88,6 +88,7 @@ def addingChain(i):
 print(addingChain(9)) # Control 1: the addingChain function gets called and passed 9 as an argument
 # Control 9: After the function call is complete, the print statement prints the return value.
 
+# TODO: Section 2 of TODO 10 (4 min for students, 1 min for demo)
 ####################################################################################################
 
 # TITLE: Section 2.1 - Using Return Values with Conditionals
@@ -132,7 +133,7 @@ inquireDay()
 # TODO: Hey, Teach! You should have your students walk you through the control of the above function
 # TODO: call. Make sure the class understands the flow of the program 🚀
 
-# TODO: Section 2 of TODO 10 (2 min for students, 1 min for demo)
+# TODO: Section 2.1 of TODO 10 (4 min for students, 1 min for demo)
 ####################################################################################################
 
 # TITLE: Section 3 - Looping in Functions
@@ -145,15 +146,12 @@ example_dict_1 = {"Andy": 73, "Brovan": 90, "Celeste": 65, "Danilo": 84, "Epsilo
 def dictionary_reader(dictionary):
     """This function will format and print a dictionary. Just as a file gets a doc string,
     functions get one too!"""
-    print("Let's output a dictionary")
-    print("\n")
+    print("Let's output a dictionary \n")
 
-    for student in dictionary: # TODO: Hi Teacher! Let's show how we can set a variable of grade to
-                               # TODO: access every student's grade, then use that in our print statement.
+    for student in dictionary:
         print(f"{student} got a score of {dictionary[student]} on their exam!")
 
-    print("\n")
-    print("This function has finished running.")
+    print("\n This function has finished running.")
 
 # Here we pass the function an argument for our first dictionary:
 dictionary_reader(example_dict_1)
@@ -163,7 +161,7 @@ print("\n")
 # Here we see the same function performing operations with our second dictionary:
 dictionary_reader(example_dict_2)
 
-# TODO: Section 3 of TODO 10 (3 min for students, 2 min for demo)
+# TODO: Section 3 of TODO 10 (4 min for students, 2 min for demo)
 ###################################################################################################
 
 # TITLE: Section 4 - Working with Scope
@@ -190,5 +188,3 @@ s3 = "I love Malaysia!"
 func3()
 
 print(s3)
-
-# TODO: Section 4 of TODO 10 (2 min for students, 1 min for demo)
