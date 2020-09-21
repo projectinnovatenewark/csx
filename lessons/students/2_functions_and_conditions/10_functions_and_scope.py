@@ -2,21 +2,23 @@
 Using functions and understanding scope
 """
 
-# TITLE: Section 1 - Printing Function Outputs
+# TITLE: Section 1 - Printing Function Outputs (8 minutes)
 # A function is a block of code that executes some task. Functions are defined using the format:
 # "def functionName(parameterName):" The parameter name can be anything you want (just like
 # variables), so whatever you pass as an argument to the function when you "call" it will be
 # renamed to the parameter you set when defining the function. To "call" a function simply means
 # to run it.
 def addTen(n): # "addTen" is the name of the function and "n" is the parameter name.
-    newNum = n + 10 # Lines of code indented after the function is defined are considered to be
-                    # in the scope of the function.
-    return newNum   # This is also in the scope of "addTen()".
+    newNum = n + 10             # Lines of code indented after the function is defined are
+    print("addTen is called\n") # considered to be in the scope of the function.
+    return newNum               # This is also in the scope of "addTen()". This will also end the
+                                # function, meaning there should be no more code in the function
+                                # after a return statement.
 
 print("This is not a part of the function") # Since this line is not indented within the function,
                                             # it is outside the scope of the function and the
                                             # function definition has therefore ended
-
+    # FIXME: this will throw an Indent Error
     print("This is not in the scope of 'addTen()'") # FIXME: This will not be in the scope of
                                                     # FIXME: addTen() because the function ended
                                                     # FIXME: in line 14. Comment out to continue.
@@ -34,12 +36,12 @@ addTen(3) # "3" is the argument we pass, which will be assigned to the parameter
 # ...OR...
 # 2) we can print the function call itself!
 
-# To do it the first way, you would just replace "return newNum" with "print(newNum)" within the
-# function definition. Line 13 would then look like the following: "return print(newNum)".
+# To use option one, you can set the return value equal to a variable and print it like such.
+num = addTen(4)
+print(f"Second call to addTen function: {num} \n")
 
 # Or to use option 2, you can print the function call like the following. 
-print("Second call to addTen function: ")
-print(addTen(5))
+print(f"Third call to addTen function: {addTen(5)} \n")
 
 # Functions also don't necessarily parameters. They can perform some operation that doesn't require an
 # argument. In this case, we will just print a "global" variable that would be accessible to the
@@ -55,11 +57,11 @@ giveOutput()
 # TODO: Section 1 of TODO 10 (4 min for students, 1 min for demo)
 ####################################################################################################
 
-# TITLE: Section 2 - Calling Functions with Other Functions
+# TITLE: Section 2 - Calling Functions with Other Functions (8 minutes)
 # Functions are great because you can have them "return" a value. Generally, this will be whatever
-# you wanted the funciton to accomplish. These return values can then be used elsewhere in your file
+# you wanted the function to accomplish. These return values can then be used elsewhere in your file
 # inluding in other functions. Below we will show you how the "control" of a program will navigate
-# the code. Use "Control #" to follow along how your code is processed.
+# the code. Use "Control #" to follow along how your code is executed.
 
 def addTwo(j):
     newNum = j + 2
@@ -91,7 +93,7 @@ print(addingChain(9)) # Control 1: the addingChain function gets called and pass
 # TODO: Section 2 of TODO 10 (4 min for students, 1 min for demo)
 ####################################################################################################
 
-# TITLE: Section 2.1 - Using Return Values with Conditionals
+# TITLE: Section 2.1 - Using Return Values with Conditionals (7 minutes)
 # Calling functions within other functions and using conditions.
 
 # Having return values from functions is important when you want to use that value,
@@ -136,10 +138,10 @@ inquireDay()
 # TODO: Section 2.1 of TODO 10 (4 min for students, 1 min for demo)
 ####################################################################################################
 
-# TITLE: Section 3 - Looping in Functions
+# TITLE: Section 3 - Looping in Functions (7 minutes)
 # Here are a couple of dictionaries that we will work with.
 example_dict_1 = {"Abigail": 78, "Brian": 86, "Carlito": 95, "Debbie": 100, "Erion": 88}
-example_dict_1 = {"Andy": 73, "Brovan": 90, "Celeste": 65, "Danilo": 84, "Epsilo": 78}
+example_dict_2 = {"Andy": 73, "Brovan": 90, "Celeste": 65, "Danilo": 84, "Epsilo": 78}
 
 # One important concept of functions is that they can be reused. Therefore, we can execute the
 # same function to perform operations on BOTH of the above dictionaries.
@@ -164,7 +166,7 @@ dictionary_reader(example_dict_2)
 # TODO: Section 3 of TODO 10 (4 min for students, 2 min for demo)
 ###################################################################################################
 
-# TITLE: Section 4 - Working with Scope
+# TITLE: Section 4 - Working with Scope (7 minutes)
 # Below are examples of using variables & the timing of a function call to portray scope.
 # Here we call "s" after the function is called, which will return a NameError
 def func():
