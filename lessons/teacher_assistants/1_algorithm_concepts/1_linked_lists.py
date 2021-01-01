@@ -15,7 +15,7 @@ class SLLNode:
 
   def list_data(self):
     print(self.data)
-    if (self.next != None):
+    if self.next != None:
       self.next.list_data()
 
 # Instantiate a SLLNode class
@@ -67,12 +67,12 @@ class DLLNode:
 
   def list_left_to_right(self):
     print(self.data)
-    if (self.next != None):
+    if self.next != None:
       self.next.list_left_to_right()
 
   def list_right_to_left(self):
     print(self.data)
-    if (self.prev != None):
+    if self.prev != None:
       self.prev.list_right_to_left()
 
 # TODO: After each step, put the LinkedList in order as such

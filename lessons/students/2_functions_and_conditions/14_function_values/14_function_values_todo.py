@@ -40,7 +40,7 @@ def isPrime(num):
   is_prime = True
 
   for n in range(2,num):
-    if (num % n == 0):
+    if num % n == 0:
       is_prime = False
       break
 

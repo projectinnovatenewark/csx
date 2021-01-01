@@ -144,7 +144,7 @@ math_classes = [
 
 for key in math_classes:
   level = key["level"]
-  if (level == "Calculus"):
+  if level == "Calculus":
     print(key)
 
 # We can use the same approach to find the 2nd student in the list of students from the Algebra
@@ -155,7 +155,7 @@ for key in math_classes:
 for key in math_classes:
   level = key["level"]
   student = key["students"]
-  if (level == "Algebra"):
+  if level == "Algebra":
     print(student[1])
 
 # Next, lets print each student from every course. To do so we can iterate through each course,

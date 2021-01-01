@@ -6,7 +6,7 @@ class Place():
 
   def print_places(self):
     print(f"The place is called {self.name}")
-    if (self.sub_place != None):
+    if self.sub_place != None:
       self.sub_place.print_places()
 
 place1 = Place("Country", "USA")

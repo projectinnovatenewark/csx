@@ -53,7 +53,7 @@ print(f"instance2: {instance2.x}")
 instance1.x_plus_five()
 instance2.x_plus_five()
 
-####################################################################################################
+###################################################################################################
 
 # TITLE: Section 1.2 - The "__init__" Method
 
@@ -110,6 +110,8 @@ class Dog:
 dog_1 = Dog("Fido", "brown")
 dog_1.add_trick("sit")
 dog_1.add_trick("roll over")
+
+dog1.tricks = ["roll", "jump"]
 
 dog_2 = Dog("Bella", "black")
 dog_2.add_trick("shake")

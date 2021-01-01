@@ -96,7 +96,7 @@ def playTheGame():
   user_guess = int(input("Guess a number between 1 and 10: "))
 
   # Check if the random number and user number equal each other.
-  if (random_number == user_guess):
+  if random_number == user_guess:
     print(f"You guessed correctly. Number {user_guess} is correct.\n")
   else:
     print(f"Your guess is incorrect! Number {random_number} doesnt equal {user_guess}.\n")

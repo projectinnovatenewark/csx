@@ -41,9 +41,9 @@ class Car:
     # TODO: If the odometer value is less than the current odometer
 
     def odometer_options(self, option):
-        if (option == "update"):
+        if option == "update":
 
-        if (option == "read"):
+        if option == "read":
 
 
 c1 = Car("Ford", "F150", "2019", 50000, 23)

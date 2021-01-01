@@ -136,6 +136,7 @@ class PIN:
 # A PINProgram should have attributes of 'name', 'program_coordinator', and 'schools'.
 
 # A PINProgram should have methods of 'change_coordinator', 'add_school', and 'remove_school'.
+# 'change_coordinator' should prompt the user and update the coordinator's name.
 # 'add_school' should inquire the user for the school's name.
 # 'remove_school' should list the schools the program currently has along with a
 # number (ie 1: Northstar, 2: East Side...) and the user should input the number of the school

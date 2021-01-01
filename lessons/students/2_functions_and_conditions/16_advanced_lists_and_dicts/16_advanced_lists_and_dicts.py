@@ -119,38 +119,38 @@ for league, sport in leagues.items():
 
 # A membership operator is used to test if an object is present in an iterable object. For example,
 # the "in" operator is used to check "if" a given element is "in" an iterable object. The syntax for
-# this is, "if (object 'in' iterable_object):". Below are examples of using the "in" operator
+# this is, "if object in iterable_object:". Below are examples of using the "in" operator
 # with a list and dictionary.
 
 listy = ["Take", "me", "out", "to", "the", "ballgame"]
 
 var = "ballgame"
-if (var in listy): # This checks if the value of "var", "ballgame" is in the list, "listy".
+if var in listy: # This checks if the value of "var", "ballgame" is in the list, "listy".
   print(f"The string {var} is in listy.")
 
-if ("CSX" in listy): # This checks if the value of "var2", "CSX" is in "listy".
+if "CSX" in listy: # This checks if the value of "var2", "CSX" is in "listy".
   print(f"'CSX' is in listy.")
 else: # If "var2" isn't in listy, the condition will be False and the "else" statement will execute
   print(f"'CSX' is not in listy.")
 
 languages = {"italian": "Italy", "spanish": "Spain", "french": "France"}
 
-if ("italian" in languages): # This checks if "italian" is in the dictionary "languages".
+if "italian" in languages: # This checks if "italian" is in the dictionary "languages".
   print(f"The string 'italian' is a key in languages.")
 
-if ("mandarin" in languages): # This checks if "mandarin" is in the dictionary "languages".
+if "mandarin" in languages: # This checks if "mandarin" is in the dictionary "languages".
   print(f"The string 'mandarin' is a key in languages.")
 else: # If "mandarin" isn't in languages, the condition will return False and the "else" statement will execute
   print(f"The string 'mandarin' is not a key in languages.")
 
 # In Python, we can also check if an object does not exist in an iterable object with the operator,
-# "not in". The syntax for using the "not in" operator is, "if (object "not in" iterable_object):".
+# "not in". The syntax for using the "not in" operator is, "if object not in iterable_object:".
 # Below are examples of using the "not in" operator with a list and dictionary.
 
-if ("peanuts" not in listy):
+if "peanuts" not in listy:
   print("The string 'peanuts' is not in listy")
 
-if ("german" not in languages):
+if "german" not in languages:
   print("The string 'german' is not a key in listy")
 
 

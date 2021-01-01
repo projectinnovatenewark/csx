@@ -11,7 +11,7 @@ def isPrime(n):
     truth_val = True
     # FIXME: this problem was supposed to range through numbers between 2 and n
     for n in (2,n): #missing range function; avoid double-assigning variable in for loop and range function; re-name for loop variable
-        if (num % n == 0): #argument in if statement should start with arbitrary number THEN for range variable 
+        if num % n == 0: #argument in if statement should start with arbitrary number THEN for range variable 
             truth_val = False
             print("Condition is satisfied") #this is an exmple of logging to check if the function is at least being tested.
         break # when would this break statement occur?
