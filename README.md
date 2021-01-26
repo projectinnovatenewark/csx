@@ -1,4 +1,4 @@
-# Day one doc
+# Welcome to the CSX After School Program!
 
 ### This semester we will be building a web application called "The Todo App". It will track personal tasks and
 categorize them as either not started, in progress, or completed. You can also assign due dates and different

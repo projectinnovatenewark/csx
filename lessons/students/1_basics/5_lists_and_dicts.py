@@ -6,76 +6,76 @@ Here we will cover lists and dicts
 # A 'list' is a grouping of values that are ordered and changeable.
 # Each "item" in a list is separated by a comma.
 # In Python lists are written with square brackets, as shown below:
-CLASS_LIST = ["Andy", "Bronny", "Carlos", "Denisa", "Enrique"]
+class_list = ["Andy", "Bronny", "Carlos", "Denisa", "Enrique"]
 
 # An index refers to a position within an ordered list.
 # For the following list, the indexes break down like this:
-CLASS_LIST = ["Andy", "Bronny", "Carlos", "Denisa", "Enrique"]
+class_list = ["Andy", "Bronny", "Carlos", "Denisa", "Enrique"]
 #               0        1         2          3         4
 # As you can see, the first item in any list has an index of ZERO
-# and the next item is 1, followed by 2, etc..
+# and the next item is 1, followed by 2, etc.
 
 # In addition, Python supports negative indexes, in which case it counts from the end.
 # So the last character can be indexed with -1, the second to last with -2, etc.:
-CLASS_LIST = ["Andy", "Bronny", "Carlos", "Denisa", "Enrique"]
+class_list = ["Andy", "Bronny", "Carlos", "Denisa", "Enrique"]
 #               -5       -4        -3        -2        -1
 
 # You can access single elements from a list using the name followed by a number in [], like so:
-print(CLASS_LIST[0]) # first element
+print(class_list[0]) # first element
 
 # You can also set a single element from the list as a variable, like so:
-second = CLASS_LIST[1] # second element
+second = class_list[1] # second element
 print(second)
 
 # To add an item to the end of a list, you use the append function as such:
-CLASS_LIST.append("Susan")
-print(CLASS_LIST)
+class_list.append("Susan")
+print(class_list)
 
 # The append function adds an item to the end of the list. For this reason, the index value of
 # "Susan" in the example above will be both '5' and '-1'. You can check this with the following code
-print(CLASS_LIST[5])
-print(CLASS_LIST[-1])
+print(class_list[5])
+print(class_list[-1])
 
 # Lastly, you can change an item based off of it's index position. Let's change the first item
 # to "Fred"
-CLASS_LIST[0] = "Fred"
-print(CLASS_LIST)
+class_list[0] = "Fred"
+print(class_list)
 
 #TODO: Section 1 of TODO 5 (4 minutes for students, 2 minute demo)
 ####################################################################################################
 
-# TITLE: Section 2 - Dictionaries, Reading and Adding Key/Value Pairs (6 min)
+# TITLE: Section 2.1 - Dictionaries, Reading and Adding Key/Value Pairs (6 min)
 # Dictionaries have keys which in turn have values similar to how a real life dictionary
 # has words with definitions, the keys represent the words and values represent the definitions.
-GRADES_DICT = {"Andy": 87, "Bronny": 95, "Carlos": 75, "Denisa": 55, "Enrique": 100}
+grades_dict = {"Andy": 87, "Bronny": 95, "Carlos": 75, "Denisa": 55, "Enrique": 100}
 
 # In dictionaries, however, values can only be accessed by their key. The format to finding
 # a key's value is `dictionary[key]`
-print("Bronny's grade: ", GRADES_DICT["Bronny"])
+print("Bronny's grade: ", grades_dict["Bronny"])
 
 #Just like lists,you can set a single element from the dictionary as a variable, like so:
-grade = GRADES_DICT["Denisa"]
+grade = grades_dict["Denisa"]
 print("Denisa's grade: ", grade)
 
 # To add a key/value pair to a dictionary, you simply place a new key in brackets and set
 # it equal to the desired value.
-GRADES_DICT["Susan"] = 92
-print(GRADES_DICT)
+grades_dict["Susan"] = 92
+print(grades_dict)
 
 ####################################################################################################
 
-# TITLE: Section 2.1 - More On Accessing Key/Value Pairs in Dictionaries (8 min)
+# TITLE: Section 2.2 - More On Accessing Key/Value Pairs in Dictionaries (8 min)
 # Lets think more about how variable assignments can play in here.
-CLASS_LIST = ["Aaron", "Bello", "Carla", "Droov", "Ebron"]
-GRADES_DICT = {"Aaron": 87, "Bello": 95, "Carla": 75, "Droov": 55, "Ebron": 100}
+class_list = ["Aaron", "Bello", "Carla", "Droov", "Ebron"]
+grades_dict = {"Aaron": 87, "Bello": 95, "Carla": 75, "Droov": 55, "Ebron": 100}
 
-# Hmm. so, the first student in class can be found using CLASS_LIST[0]. We can set that equal
+# Hmm. so, the first student in class can be found using class_list[0]. We can set that equal
 # to a variable like this.
-first_student = CLASS_LIST[0] # this will equal "Aaron"
+first_student = class_list[0] # this will equal "Aaron"
 
 # Now, since this student has a grade in the grades list, let's use this variable to find the
 # value of their grade in the list!
-first_student_grade = GRADES_DICT[first_student] # this is the equivalent of GRADES_DICT["Aaron"]
+first_student_grade = grades_dict[first_student] # this is the equivalent of grades_dict["Aaron"]
 
 # Lets print this out together in a readable way. Reminder- when you combine strings with commas,
 # a space is placed between the strings. However, when you use a `+` , there are no spaces added
@@ -84,7 +84,7 @@ print(first_student + "'s grade was", first_student_grade)
 #TODO: Section 2 of TODO 5 (5 minutes for students, 2 minute demo)
 ####################################################################################################
 
-# TITLE: Section 3 - Tuples (2 min)
+# TITLE: Section 3.1 - Tuples (2 min)
 # Tuples are lists that cannot have their values modified and they are denoted with parentheses
 months = ('January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December')
 
@@ -94,7 +94,7 @@ months = ('January', 'February', 'March', 'April', 'May', 'June', 'July', 'Augus
 
 ####################################################################################################
 
-# TITLE: Section 3.1 - Nested Lists and Dictionaries (10 min)
+# TITLE: Section 3.2 - Nested Lists and Dictionaries (10 min)
 # What about 'nested' data types? What if a list's items are all dictionaries? What if values in
 # dictionaries are lists? How would we handle that?
 
