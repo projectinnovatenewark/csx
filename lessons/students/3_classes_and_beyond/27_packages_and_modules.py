@@ -2,16 +2,16 @@
 Introduction to the packages Numpy, Pandas, Matplotlib, Scikit-Learn, Scipy, Asyncio and Time
 """
 
-# packages are a really useful way to expand what your program is capable of
+# Packages are a really useful way to expand what your program is capable of
 # dealing with things like handling multi demensional arrays and table visualizations
 # are really hard to do with "vanilla" python (using plain code without packages)
 
-# lets introduce these packages one by one with simple examples
+# Lets introduce these packages one by one with simple examples
 
 ####################################################################################################
 
 # Let's start with the numpy package. We can install this package using pip (the python package
-# installer). The command is `pip3 install numpy`. Numpy is the fundamental package for scientific
+# installer). The command is `pip3 install numpy`. Numpy is the standard package for scientific
 # computing with Python. It contains various features including these important ones:
 # 1) A powerful N-dimensional array object
 # 2) Sophisticated (broadcasting) functions

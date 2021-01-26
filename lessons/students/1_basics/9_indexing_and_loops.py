@@ -1,33 +1,34 @@
-# """
-# Indexing and range function for lists, dictionaries, strings and numbers.
-# """
+"""
+Indexing and range function for lists, dictionaries, strings and numbers.
+"""
 
-# # "for loops" iterate through something that is passed to it. What it does with that item is
-# # specified in the loop. Each time the control is passed through the loop is called an "iteration".
-# # You will see for loops in the following format: "for alias in iterable:" where "alias" is a
-# # variable that assumes each iteration's value and "iterable" is an object in Python that can be
-# # iterated through (i.e. list, dictionary, and strings).
+# "for loops" iterate through something that is passed to it. What it does with that item is
+# specified in the loop. Each time the control is passed through the loop is called an "iteration".
+# You will see for loops in the following format: "for alias in iterable:" where "alias" is a
+# variable that assumes each iteration's value and "iterable" is an object in Python that can be
+# iterated through (i.e. list, dictionary, and strings).
 
-# # Since range returns a list of numbers, it can also be iterated through. When using a for loop
-# # within a range (i.e. "for x in range(10):"), x would equal each integer from 0 to 9.
+# Since range returns a list of numbers, it can also be iterated through. When using a for loop
+# within a range (i.e. "for x in range(10):"), x would equal each integer from 0 to 9.
 
-# # If we are using a for loop with a list, the variable will iterate through each item in the list
-# # starting with the first item and looping until the last item. When iterating through dictionaries,
-# # the variable would represent each key of a key/value pair in the dictionary. Similar to lists, it
-# # will loop through starting at the first key until reaching the last one.
+# If we are using a for loop with a list, the variable will iterate through each item in the list
+# starting with the first item and looping until the last item. When iterating through dictionaries,
+# the variable would represent each key of a key/value pair in the dictionary. Similar to lists, it
+# will loop through starting at the first key until reaching the last one.
 
-# ####################################################################################################
+####################################################################################################
 
-# # TITLE: Section 1 - FOR loops
-# # "for x in range(y)" is a loop that would iterate through every number from zero up until the
-# # given number of "y". When there is only one number passed to the range() function, the "lower bound" 
-# # of that range would default to zero. The "upper bound", which in the case below is 9, would NOT be
-# # included. In the loop, each iteration will assign itself the variable "num". For the first iteration
-# # of this for loop, zero (0) would be assigned to num. In the second iteration, num would be
-# # assigned one (1) and so on.
-# print("range 9 loop: ")
-# for num in range(9):
-#     print(num) # This print statement will run once for every iteration of "num".
+# TITLE: Section 1 - FOR loops
+# "for x in range(y)" is a loop that would iterate through every number from zero up until the
+# given number of "y". When there is only one number passed to the range() function, the "lower bound" 
+# of that range would default to zero. The "upper bound", which in the case below is 9, would NOT be
+# included. In the loop, each iteration will assign itself the variable "num". For the first iteration
+# of this for loop, zero (0) would be assigned to num. In the second iteration, num would be
+# assigned one (1) and so on.
+print("range 9 loop: ")
+for num in range(9):
+    num = num + 1
+    print(num) # This print statement will run once for every iteration of "num".
 
 # # Let's put in an initial argument now to change our lower bound from zero (0) to three (3). Now
 # # when we print each "num", we should see "3, 4, 5, ..., 10".
@@ -35,7 +36,7 @@
 # for num in range(3, 11):
 #     print(num)
 
-# # TODO: Section 1 of the TODO (4 minutes for students, 2 minutes for demo)
+# TODO: Section 1 of the TODO (4 minutes for students, 2 minutes for demo)
 
 # ####################################################################################################
 
@@ -91,34 +92,34 @@
 
 # print("End of second for loop.\n")
 
-# TODO: Section 2 of TODO 9 (6 minutes for students, 3 minutes for demo)
-####################################################################################################
+# # TODO: Section 2 of TODO 9 (6 minutes for students, 3 minutes for demo)
+# ####################################################################################################
 
-# TITLE: Section 3 - Looping through a dictionary
+# # TITLE: Section 3 - Looping through a dictionary
 
-# Let's make reading grades easier by storing each grade as a value to the 
-# student's name as its key in the dictionary. When you use a for loop,
-# it will return each key in the dictionary. You can access each value by using
-# bracket notation: "dictionary[key]".
+# # Let's make reading grades easier by storing each grade as a value to the 
+# # student's name as its key in the dictionary. When you use a for loop,
+# # it will return each key in the dictionary. You can access each value by using
+# # bracket notation: "dictionary[key]".
 
-grades = {"Chris": 65, "Deshaun": 77, "Mariah": 88, "Paula": 94}
+# grades = {"Chris": 65, "Deshaun": 77, "Mariah": 88, "Paula": 94}
 
-# Here is how you access values in a dictionary and store it into a variable with the format:
-# value = dict[key]
-chris = grades["Chris"]
-print(f"Chris got a {chris}")
+# # Here is how you access values in a dictionary and store it into a variable with the format:
+# # value = dict[key]
+# chris = grades["Chris"]
+# print(f"Chris got a {chris}")
 
-# When you use a for loop with a dictionary, the variable gets set to every key, NOT the value :)
-# It is important to understand that functions and loops use a colon and work within a 'scope', 
-# or whatever falls within the tabulation set by the line thereafter. 
-# We use four spaces in one tab to denote that certain code falls within a function
-for student in grades:
-    print(f"{student} got a {grades[student]} on their comp sci exam.")
+# # When you use a for loop with a dictionary, the variable gets set to every key, NOT the value :)
+# # It is important to understand that functions and loops use a colon and work within a 'scope', 
+# # or whatever falls within the tabulation set by the line thereafter. 
+# # We use four spaces in one tab to denote that certain code falls within a function
+# for student in grades:
+#     print(f"{student} got a {grades[student]} on their comp sci exam.")
 
-# HINT: We can use bracket notation in the for loop to make it easier to reference the key's value
-print("\n2nd for loop:\n")
-for student in grades:
-    grade = grades[student]
-    print(f"{student} got a {grade} on their comp sci exam.")
+# # HINT: We can use bracket notation in the for loop to make it easier to reference the key's value
+# print("\n2nd for loop:\n")
+# for student in grades:
+#     grade = grades[student]
+#     print(f"{student} got a {grade} on their comp sci exam.")
 
-# TODO: Section 3 of TODO 9 (6 minutes for students, 3 minutes for demo)
+# # TODO: Section 3 of TODO 9 (6 minutes for students, 3 minutes for demo)
