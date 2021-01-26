@@ -46,14 +46,14 @@ are typically self-explanatory.
            Code by clicking "Shift + Ctrl + X" (windows) or "Shift + Command + X" (mac). Once there, search for those exact extensions and download the first result for each of them. Once you are done downloading those extensions, return back to the main "Explorer" page where you will be viewing your folders/files by clicking "Shift + Ctrl + E" (windows) or "Shift + Command + E" (mac). There are icons on the left panel of your VS Code to navigate through these different pages as well. You will see how these extensions are to be used at the bottom of this README
         
 6. Create a repository in Github -> https://help.github.com/en/enterprise/2.13/user/articles/creating-a-new-repository
-        Then copy this set of commands into your terminal after creating repository:
+        Then copy this set of commands into your terminal after creating repository, which can be found on your Github page after you created the repository in the first section:
           - `echo "# [INSERT REPOSITORY NAME]" >> README.md`
           - `git init`
           - `git add README.md`
           - `git commit -m "first commit"`
           - `git remote add origin [REPOSITORY URL]`
           - `git push -u origin master`
-          
+
 7. To check what your working directory is once again, enter `pwd` into your terminal
 
 8. When you want to go up a level in your directory, enter `cd ..` into your terminal
