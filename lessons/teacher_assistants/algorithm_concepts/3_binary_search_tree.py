@@ -45,7 +45,6 @@ class Node:
         if self.right:
             self.right.print_tree()
 
-
 root = Node(12)
 root.insert(6)
 root.insert(14)

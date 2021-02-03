@@ -8,14 +8,14 @@ This is an introduction to string manipulation in Python
 # Lets set the user inputs equal to variables, then use them appropriately.
 first_name = input("What is your first name?: ")
 last_name = input("What is your last name?: ")
-age = int(input("What is your age?: ")) # FIXME: Teacher, use type conversion after getting an error.
+age = input("What is your age?: ") # FIXME: Teacher, use type conversion after getting an error.
 
 # As you can see below, inputs automatically set a user input to a string.
 print(f"The variable age has a type of {type(age)}.")
 
-# The line below will try to concatenate the string variable "age" and the integer "1". This will
-# result in an error because as we learned previously, strings and integers cannot be conatenated.
-print(f"My name is {first_name} {last_name} and next year I will be {age + 1} years old.")
+# The line below will try to concatenate three variables. What type(s) can be concatenated?
+statement = first_name + last_name + age
+print(statement)
 
 # Additionally, if you want a user to enter an input on a blank line you can use an empty input
 # function.
