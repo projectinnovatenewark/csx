@@ -39,12 +39,13 @@ mixed_string = "whAT Does THIS dO?"
 print(mixed_string.lower()) # This will change all characters to lower case.
 print(mixed_string.upper()) # This will change all characters to upper case.
 
-# New string tools! You can start a string with '\n' when printing it to print
-# on a new line, which would add a line above it. "\" is a special character, also called
-# the "escape" character. It is used in representing certain 'whitespace characters' or
-# adding space between characters. : "\t" is a tab and "\n" is a newline,
+# An escape character is a backslash "\" followed by the character you want to insert in the string (Remember! A "character" is any letter or symbol on the keyboard).
+# To insert a new line before or after a string, we use "\n". It works just like the enter/return character on the keyboard.
+# To insert a tabulation, we use "\t". It works just like the tab character.
 print("\n" + mixed_string.lower())
+print(mixed_string.upper() + "\n")
 print("\t" + mixed_string.title())
+
 
 # TODO: Section 2 of TODO 3 (4 minutes for students, 1 minute demo)
 ##################################################################################################
