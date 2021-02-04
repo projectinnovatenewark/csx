@@ -44,6 +44,7 @@ print(mixed_string.upper()) # This will change all characters to upper case.
 # the "escape" character. It is used in representing certain 'whitespace characters' or
 # adding space between characters. : "\t" is a tab and "\n" is a newline,
 print("\n" + mixed_string.lower())
+print("Here is one line \nand here is another line")
 print("\t" + mixed_string.title())
 
 # TODO: Section 2 of TODO 3 (4 minutes for students, 1 minute demo)
