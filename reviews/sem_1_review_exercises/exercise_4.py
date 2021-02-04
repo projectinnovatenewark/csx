@@ -10,7 +10,7 @@
 
 # FIXME: Add import here
 
-# TODO: E-1 (1 minute)
+# TODO: E-1
 
 # First, import the "randrange()" function from the "random" module. The randrange function will
 # return a value between a lower bound and upper bound non-inclusive. For example, the function call
