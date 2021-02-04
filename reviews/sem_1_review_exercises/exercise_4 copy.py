@@ -9,6 +9,7 @@
 """
 
 # FIXME: Add import here
+from random import randrange
 
 # TODO: E-1 (1 minute)
 
@@ -36,4 +37,21 @@
 # Outside of the function's scope, store the "randrange()" function call with a lower bound of 1 and
 # includes up to 100 in a variable called "rand". 
 
-# Then call the "evaluateRand()" function and pass "rand" as an argument.
+# Call the "evaluateRand()" function and pass "rand" as an argument.
+
+def evaluateRand(rand_num):
+  if (rand_num % 2 == 0):
+    print(f"{rand_num} is an even number.")
+  else:
+    print("odd baby")
+  
+  if (rand_num > 50):
+    print("impressive rectangle")
+  elif (rand_num >= 30):
+    print("ok sized rectangle")
+  else:
+    print("get this rectangle out of here")
+
+rand = randrange(1,101)
+
+evaluateRand(rand)
