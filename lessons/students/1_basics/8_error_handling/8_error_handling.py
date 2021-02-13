@@ -11,7 +11,7 @@ Common errors you will/may have already encounter(ed).
 # there is an error. 
 
 # ZeroDivisionError: division by zero
-number = 10 * (1/0) # FIXME: Comment out this line once this error has been demoed.
+number = 10 * (1/0) # FIXME: Comment out this line once this error has been demonstrated.
 print(number)
 
 ####################################################################################################
@@ -29,11 +29,10 @@ print(equation)
 ####################################################################################################
 
 # TITLE: Know Your Types (3 min)
-# Lastly let's take a look a a 'TypeError'. In this case, the error is occuring
-# because we are trying to add together a string with an integer. Because a string is 
-# involved, python thinks you are trying to concatenate '2' + 2, instead of using addition. 
-# As we know form earlier lessons, we can't concatenate strings and integers, so 
-# python throws us this error.
+# Lastly let's take a look at a 'TypeError'. In this case, there is an error occuring because Python
+# thinks the variable "four" is looking to concatenate the string "2" and the integer "2", instead
+# of the intended outcome of adding 2 + 2 to equal 4. As we know form earlier lessons, we can't
+# concatenate strings and integers, so python throws us this error.
 
 # TypeError: Can't convert 'int' object to str implicitly
 four = '2' + 2 # FIXME: Comment out this line once this error has been demoed.
