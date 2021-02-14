@@ -6,20 +6,26 @@ Using methods on lists and dictionaries
 sweet_foods = ["ice cream", "skittles", "broccoli", "strawberries", "oreos", "asparagus"]
 
 # Remove "broccoli" from the sweet_foods list using the .remove() function.
+sweet_foods.remove("broccoli")
 
 # TODO: Section 1.2:
 # Remove the last item in the list using the .pop() method. Do not set it equal to a variable.
+sweet_foods.pop()
 
 # TODO: Section 1.3:
 # Use the .pop() method again on the list. This time, use it to remove the first item in the list.
 # Set it equal to a variable called "first_item", then print that variable.
+first_item = sweet_foods.pop(0)
+print(first_item)
 
 # TODO: Section 1.4:
 # Append the "first_item" to the "sweet_foods" list.
+sweet_foods.append(first_item)
 
 # TODO: Section 1.5:
 # Print the sweet_foods list. Your output should be:
 # ['skittles', 'strawberries', 'oreos', 'ice cream']
+print(sweet_foods)
 
 ####################################################################################################
 
