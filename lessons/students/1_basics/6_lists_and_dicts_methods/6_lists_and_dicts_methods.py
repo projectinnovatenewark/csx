@@ -29,11 +29,10 @@ print(fruits)
 # set the .pop() method equal to a variable. You could also pick an index postion to remove from
 # the list with .pop() method.
 waiting_list = ["Candace", "Joe", "Ali", "Miller", "Carla"]
-
 waiting_list_length = len(waiting_list) # The len() function is a built-in function that finds the
                                         # length of a list/dictionary.
-print(f"The waiting list's length is {waiting_list_length}")
 
+print(f"The waiting list's length is {waiting_list_length}")
 person_in_line = waiting_list.pop() # This will remove the last item from the list and set
                                     # it equal to a variable, "list_item".
 
@@ -63,7 +62,7 @@ print(f'Language List: {languages1}.') # Printing the extended list.
 # If you want to replace an item in a list you can simply set it's index position to a new value.
 print(f"Language List first variable before change {languages1[0]}.") # This will be French
 
-languages1[0] = "Malaysian" # This will assign "Malaysian" to the first index position of "languages1".
+languages1[0] = "Malaysian" # This will assign "Malaysian" to the 0 index position of "languages1".
 
 print(f"Language List first variable after change {languages1[0]}.") # "languages1[0]" will now be
                                                                      # equal to "Malaysian", and
