@@ -54,7 +54,7 @@ class Node:
 
   def find_minimum(self, parent):
     """return the minimum node in the current tree and its parent"""
-    # The parent node is passed in as an argument so that eventually when the leftmost
+    # The parent node is set as a parameter so that eventually when the minimum
     # child is reached, the call can return both the parent to the successor and the successor
 
     if self.left:
@@ -65,16 +65,17 @@ class Node:
   def delete_node(self, delete_value):
     """delete the node with the given key and return the root node of the tree"""
 
+    # We have found the node we want to delete.
     if self.data == delete_value:
-      # found the node we need to delete
 
+      # We can either replace the deleted node with the max in the left subtree or the
+      # min in the right subtree. In this implementation, we will do the latter.
       if self.right and self.left: 
         # get the successor node and its parent 
         [psucc, succ] = self.right.find_minimum(self)
 
         # splice out the successor
         # (we need the parent to do this) 
-
         if psucc.left == succ:
           psucc.left = succ.right
         else:

@@ -104,6 +104,10 @@ max_heap.print_heap()
 
 # TITLE: Min Heap using heapq package
 
+
+# sample list 
+listy = [5, 7, 9, 1, 3]
+
 # using heapify to convert list into heap 
 heapq.heapify(listy) 
   
@@ -125,6 +129,8 @@ print(f"The modified heap after pop is : {listy}")
 
 # TITLE: Max heap using a modified implementation of heapq package
 
+# sample list 
+listy = [5, 7, 9, 1, 3]
 li = []
 # using heapify to convert list into heap 
 heapq.heapify(li) 

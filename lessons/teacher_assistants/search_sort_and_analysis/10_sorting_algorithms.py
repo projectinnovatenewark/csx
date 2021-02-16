@@ -15,9 +15,7 @@ def insertion_sort(some_list):
 
     # if current num is less than previous num, swap them till current num is in sorted position
     while position > 0 and some_list[position-1] > current:
-      print("Swapped {} for {}".format(some_list[position], some_list[position-1]))
       some_list[position] = some_list[position-1]
-      print(some_list)
       position -= 1
 
       some_list[position] = current
@@ -26,6 +24,9 @@ def insertion_sort(some_list):
 
 arr = [12, 11, 2, 13, 5, 6, 19, 9, 17]
 print(f"Insertion sort result {insertion_sort(arr)}")
+
+# Time complexity is n in best case and n^2 in average/worst case
+# Space complexity is 1
 
 ##################################################################################################
 
@@ -57,6 +58,9 @@ def mergesort(listy):
 arr = [12, 11, 2, 13, 5, 6, 19, 9, 17]
 print(f"Mergesort result {mergesort(arr)}")
 
+# Time complexity in all cases is n logn
+# Space complexity is logn
+
 ##################################################################################################
 
 # TITLE: Quicksort
@@ -77,3 +81,6 @@ def quicksort(listy):
 
 arr = [12, 11, 2, 13, 5, 6, 19, 9, 17]
 print(f"Quicksort result {quicksort(arr)}")
+
+# Time complexity in average is n logn whereas worst case is n^2
+# Space complexity is n
