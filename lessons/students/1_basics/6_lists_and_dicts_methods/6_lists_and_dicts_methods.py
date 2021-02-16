@@ -30,7 +30,7 @@ print(fruits)
 
 last_fruit = fruits.pop()
 print(f"The last fruit in the list is {last_fruit}") # This will remove the last item from the list and
-                                                # set it equal to a variable, "last_fruit".
+                                                     # set it equal to a variable, "last_fruit".
 print(fruits)
 
 # You can also pick an index postion to remove from the

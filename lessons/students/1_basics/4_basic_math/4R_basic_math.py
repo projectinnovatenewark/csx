@@ -97,9 +97,9 @@ print(f"The absolute value of {pos_float} is {abs(pos_float)}.")
 # TITLE: Section 3 - Short Import Intro and the Math Package (8 minutes)
 # We also have the math package/module from python. Python has built in tools that we	
 # can import and use to help us in mathematical operations. Normally imports go at the	
-# TOP of a file, but we will put it here to consolidate the lesson.	
+# TOP of a file, but we will put it here to consolidate the lesson.
 
-import math	
+import math
 
 # Now that we have the math package imported, we can use methods attached to the module. We will be
 # using the pi method, which returns the numerical value of π. We will be using this to calculate

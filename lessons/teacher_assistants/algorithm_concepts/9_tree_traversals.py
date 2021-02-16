@@ -9,26 +9,26 @@ Review iterative tree traversals and then move on to recursive implementations
 # LIFO method is used when performing these operations.
 
 def iterativePreorderTraversal(self, root):
-    current = [root]
-    listy = []
-    
-    while current:
-        curr_node = current.pop()
-        if (curr_node):
-            listy.append(curr_node.val)
-            
-            if (curr_node.right):
-                current.append(curr_node.right)
-            if (curr_node.left):
-                current.append(curr_node.left)
+  current = [root]
+  listy = []
 
-    return listy
+  while current:
+    curr_node = current.pop()
+    if (curr_node):
+      listy.append(curr_node.val)
+        
+      if (curr_node.right):
+        current.append(curr_node.right)
+      if (curr_node.left):
+        current.append(curr_node.left)
+
+  return listy
     
 # Now that you understand how the above works iteratively, let's create a recursive implementation.
 
 def recursivePreorderTraversal(self, root):
-    if (root):
-        listy = [root.val] + self.preorderTraversal(root.left) + self.preorderTraversal(root.right)
-            return listy
-        else:
-            return []
+  if (root):
+    listy = [root.val] + self.preorderTraversal(root.left) + self.preorderTraversal(root.right)
+      return listy
+    else:
+      return []
