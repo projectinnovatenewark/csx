@@ -35,9 +35,9 @@ values = [1, 2, 3, 4, 5, 6]
 # TODO: Section 3.1:
 my_car = {"make": "Tesla", "model": "Cybertruck", "year": "2022"}
 
-# Use the .get() method on the my_car dictionary to search for the "car_type" key. Set it equal
+# Use the .get() method on the "my_car" dictionary to search for the "car_type" key. Set it equal
 # to a variable called "c_type". If that key doesn't exist, have the .get() method return
-# "type doesn't exist". Finally, print "c_type".
+# "type doesn't exist". Finally, print c_type's value.
 
 # TODO: Section 3.2:
 # Next add a key/value pair of "car_type": "Electric" to the above "my_car" dictionary
@@ -49,7 +49,7 @@ my_car = {"make": "Tesla", "model": "Cybertruck", "year": "2022"}
 # TODO: Section 3.4:
 automobile_attributes = ['color', 'engine', 'door count']
 
-# First, append the string "make" to the automobile_attributes list. Then set a variable called
+# First, append the string "make" to the "automobile_attributes" list. Then set a variable called
 # "car_make" equal to the last item in the newly updated list.
 
 # Next use "car_make" to find the value of the key/value pair in the "my_car" dictionary using the

@@ -2,12 +2,15 @@
 Importing modules and other files
 """
 
+
+# TODO: Hey Teacher, have the students create their own "importable_stuff.py" within the same folder
+# TODO: as this file. Then have them copy and paste the file from Github.
 # TITLE: Section 1 - Importing Modules (4 min)
 
 # Take a trip down memory lane and visit Lesson 4R Section 3. There we were introduced to importing
 # the "math" module which has some useful functions like pi(), an easier way to find the value of π.
-# There is a vast amount of modules that can be used that are even just built in to Python. Lets
-# import a built in Python module used to generate random numbers called "random".
+# There is a vast amount of modules that can be used that are natively built in to Python. Let's
+# import a built in Python module called "random" that is used to generate random numbers.
 
 # As we mentioned in Lesson 4, imports should generally be at the top of the file. For the sake of
 # this lesson though they will be placed throughout the file.
@@ -23,8 +26,8 @@ print(rand_float)
 
 # TITLE: Section 1.1 - Importing Specific Funcitons from Modules (5 min)
 
-# In Python, if we only wanted to import a specific function from the "random" module, we can do the
-# following:
+# In Python, if we only wanted to import a specific function from the "random" module, we can do so
+# using the following format:
 
 from random import randrange # This imports the randrange function from the "random" module.
 
@@ -41,8 +44,11 @@ print(f"Randomly generted number: {rand}. Here is rand + 2: {rand_plus_two}.")
 
 # TITLE: Section 2 - Importing from Files in your directory (6 min)
 
-# You can import data or functions from files that you yourself defined. In this folder there's a
-# file called importable_stuff.py . Let's import the file and use constants from it.
+# TODO: Hey Teacher, comment out each import before running the file and demonstrate
+# TODO: each individually.
+
+# You can import data or functions that you have defined yourself in other files. Let's import 
+# importable_stuff.py to use the constants we previously defined in it.
 # TIP: Remember constants are indicated by the variable name being presented in all caps.
 
 # As you learned in Section 1, below is the most straight forward way to import a file.
@@ -57,7 +63,7 @@ import importable_stuff as stuff # Now this import can be referred to going forw
 print(f"Renaming as stuff: {stuff.DAYS_OF_WEEK}")
 
 # Similar to Section 1, we can import specific objects from importable_stuff.py. If we wanted to
-# specifically import DAYS_OF_WEEK, then we use the following import statement.
+# specifically import DAYS_OF_WEEK, then we use the following import statement:
 from importable_stuff import DAYS_OF_WEEK
 print(f"Importing the constant: {DAYS_OF_WEEK}")
 
@@ -66,11 +72,13 @@ print(f"Importing the constant: {DAYS_OF_WEEK}")
 from importable_stuff import SEASONS as SZNS
 print(f"Importing and renaming the constant: {SZNS}")
 
-# Lastly, if you want to import multiple objects from another file, there's an easier way to do that
-# than writing multiple import lines. This would look like the following:
-
-# Lastly, an easy and efficient way to import multiple objects is to separate them by commas.
+# An easy and efficient way to import multiple objects is to separate them by commas.
 from importable_stuff import DAYS_OF_WEEK, MONTHS
-print(DAYS_OF_WEEK,"\n", MONTHS) # "\n" prints whatever follows on a new line.
+print(f"{DAYS_OF_WEEK}\n{MONTHS}") # "\n" prints whatever follows on a new line.
+
+# Lastly, there is a way to import all of the contents of a file without needing to use dot
+# notation. The syntax to do so is, "from file_name import *".
+from importable_stuff import *
+print(f"{DAYS_OF_WEEK}\n{MONTHS}\n{SEASONS}")
 
 # TODO: Complete TODO 7 (6 min for students, 2 min for dem0)

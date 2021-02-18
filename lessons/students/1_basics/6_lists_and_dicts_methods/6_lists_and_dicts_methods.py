@@ -16,7 +16,7 @@ print(f"The last medal is {last_medal} and the first medal is {medals[0]}")
 # The .insert() method adds an element at a given index. The first argument passed defines the index
 # position, and the second argument defines the element you want to add to the list.
 priority_list = ["go to sports practice", "hangout with friends", "talk to mom", "eat vegetables"]
-priority_list.insert(2, "study computer science") # This will insert "study computer science" tnto
+priority_list.insert(2, "study computer science") # This will insert "study computer science" into
                                                   # "priority_list" at index position 2.
 print(priority_list)
 
@@ -30,10 +30,10 @@ print(fruits)
 
 last_fruit = fruits.pop()
 print(f"The last fruit in the list is {last_fruit}") # This will remove the last item from the list and
-                                                     # set it equal to a variable, "last_fruit".
+                                                     # set it equal to the variable, "last_fruit".
 print(fruits)
 
-# You can also pick an index postion to remove from the
+# You can also pick an index position to remove from the
 # list with the .pop() method by providing an argument defining the desired index position.
 
 first_fruit = fruits.pop(0) # This will remove the first index position's item from the list.
@@ -150,8 +150,8 @@ print(f"The programming language dictionary's length is {len(programming_languag
 programming_languages["lang_three"] = "CSharp"
 print(f"After adding a key/value pair: {programming_languages}")
 
-# Bracket notation is also used to update values of a given key that already exists in the
-# disctionary.
+# Bracket notation is also used to update values of a given key that already exists in
+# the dictionary.
 programming_languages["lang_two"] = "Golang" # "lang_two" already exists, so its value will change
                                              # from "Java" to "Golang".
 print(f"post golang {programming_languages}")
