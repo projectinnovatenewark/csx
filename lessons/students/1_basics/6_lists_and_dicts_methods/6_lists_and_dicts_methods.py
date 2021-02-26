@@ -117,6 +117,7 @@ print(f"List stepper:  {list_stepper}.")
 squares = [i**2 for i in range(10)] # Each "iteration" of this loop represents a number between
                                     # 0 and 9, which will be named "i". We square the number "i"
                                     # for each iteration and append it to the list, "squares".
+
 print(f"Squares list {squares}")
 
 # TODO: Section 2 of TODO 6 (3 minutes for students, 2 minute demo)
