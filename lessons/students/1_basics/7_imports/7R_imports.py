@@ -62,8 +62,8 @@ print(f"Normal dot notation: {importable_stuff.DAYS_OF_WEEK}")
 import importable_stuff as stuff # Now this import can be referred to going forward as "stuff".
 print(f"Renaming as stuff: {stuff.DAYS_OF_WEEK}")
 
-Similar to Section 1, we can import specific objects from importable_stuff.py. If we wanted to
-specifically import DAYS_OF_WEEK, then we use the following import statement:
+# Similar to Section 1, we can import specific objects from importable_stuff.py. If we wanted to
+# specifically import DAYS_OF_WEEK, then we use the following import statement:
 from importable_stuff import DAYS_OF_WEEK
 print(f"Importing the constant: {DAYS_OF_WEEK}")
 
