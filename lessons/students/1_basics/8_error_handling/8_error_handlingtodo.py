@@ -15,10 +15,10 @@ number = 10 * (1/0) # FIXME
 # Again, run the code below to find what type of error you are encountering. Then define 'spam' on
 # the correct line and print the error type you originally received.
 
-equation = 4 + spam*3 # FIXME
+equation = 4 + spam * 3 # FIXME
 
 # TODO: Section 1.3:
 # Finally, run the code below to find what type of error you are encountering. Change the code so that
 # our '2 + 2' addition works and print the error type you originally received.
 
-four = '2' + 2 # FIXME
+twotwo = '2' + 2 # FIXME

@@ -8,11 +8,11 @@ Common errors you will/may have already encounter(ed).
 
 # TITLE: Section 1: No Dividing by Zero! (3 min)
 # Our first error is a ZeroDivisionError. This is pretty self explanatory. As we know from math
-# classes, you can't divide a number by 0. That rule doesn't go away in python. Pay attention
-# to the message in the terminal, as it tells you where python thinks there is an error. 
+# classes, you can't divide a number by 0. That rule doesn't go away in Python. Pay attention
+# to the message in the terminal, as it tells you where Python thinks there is an error. 
 
 # ZeroDivisionError: division by zero
-number = 10 * (1/0) # FIXME: Comment out this line once this error has been demonstrated.
+number = 10 * (1/0) # FIXME: Comment out this line once this error has been demo'd.
 print(number)
 
 ####################################################################################################
@@ -24,19 +24,19 @@ print(number)
 # where the problem is and gives hints as to what's wrong.
 
 # NameError: name 'spam' is not defined
-equation = 4 + spam * 3 # FIXME: Comment out this line once this error has been demoed.
+equation = 4 + spam * 3 # FIXME: Comment out this line once this error has been demo'd.
 print(equation)
 
 ####################################################################################################
 
-# TITLE: Section 3 Know Your Types (3 min)
+# TITLE: Section 3: Know Your Types (3 min)
 # Lastly let's take a look at a 'TypeError'. In this case, there is an error occuring because Python
-# thinks the variable "four" is looking to concatenate the string "2" and the integer "2". As we
-# know from earlier lessons, we can't concatenate strings and integers, so python throws us
+# thinks the variable "twotwo" is looking to concatenate the string "2" and the integer "2". As we
+# know from earlier lessons, we can't concatenate strings and integers, so Python throws us
 # this error.
 
 # TypeError: Can't convert 'int' object to str implicitly
-four = '2' + 2 # FIXME: Comment out this line once this error has been demoed.
-print(four)
+twotwo = '2' + 2 # FIXME: Comment out this line once this error has been demo'd.
+print(twotwo)
 
-# TODO: Complete TODO 8
+# TODO: Complete TODO 8 (5 minutes for students, 2 minute demo)
