@@ -22,7 +22,7 @@ if (rectangle_area > 50):
 else:
     print("This is a small rectangle.")
 
-# TODO: Section 1 of TODO 10 (3 minutes for students, 1 minutes for demo)
+# TODO: Section 1 of TODO 10 (3 minutes for students, 2 minutes for demo)
 
 ####################################################################################################
 
