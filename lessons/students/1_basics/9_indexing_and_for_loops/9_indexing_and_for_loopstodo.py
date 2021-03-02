@@ -53,4 +53,7 @@ temperature_forecast = {
 }
 
 # Create a for loop that prints out each day of the week with its associated temperature in the
-# format. "On [day] it will be [temperate] degrees outside."
+# format. "On [day] it will be [temperature] degrees outside."
+
+for day in temperature_forecast:
+  print(f"On {day} it will be {temperature_forecast[day]}")
