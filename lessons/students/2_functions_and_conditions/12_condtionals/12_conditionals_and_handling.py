@@ -1,6 +1,8 @@
 """
 if, elif, else and iteratable operations
 """
+# IMPORTANT
+# FIXME: This should be an advanced conditionals lesson with continue and break statements
 
 num = 3 # FIXME: Teacher, try changing this number up to satisfy the different conditions.
 
