@@ -3,9 +3,6 @@
 import heapq
 import math
 
-# FIXME: Before going into these, explain directed vs undirected graphs
-# FIXME: and why negative edges make things really messy. Reference algorithms.wtf
-
 def calculate_distances(graph, start):
   distances = {vertex: math.inf for vertex in graph} # Create dictionary to hold shortest paths for each vertex.
   distances[start] = 0 # Set path from starting vertex to itself as zero.

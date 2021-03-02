@@ -34,8 +34,8 @@ print("End of first for loop. \n")
 # ".index()" method takes one argument, the item you would like the index position of, and returns
 # the first instances index position for that item.
 print(f"Student #{grades.index(72)} recieved a grade of {grades[0]}\n") # Remember when indexing lists
-                                                                      # the first position starts
-                                                                      # with zero.
+                                                                        # the first position starts
+                                                                        # with zero.
 
 # The print statement above refers to "Student #0", which wouldn't make much sense as an output to
 # an end user. However, we can use a "for loop" to make print statements more readable when using
