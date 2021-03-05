@@ -10,7 +10,6 @@ Expanding on loops
 
 ####################################################################################################
 
-
 # TODO: Section 1.2
 # Write a while loop that iterates through the list "todos". For each iteration, remove an item
 # using the ".pop()" method and append it to the list "finsihed_todos". Keep track of all of your

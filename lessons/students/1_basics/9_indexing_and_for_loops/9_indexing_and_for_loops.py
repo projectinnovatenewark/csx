@@ -9,7 +9,10 @@ Indexing and range function for lists, dictionaries, strings and numbers.
 # Python that you can loop through and has a collection of items. This includes lists, dictionaries,
 # strings, and more.
 
-# It is important to understand that "for loops" use a colon to define it's body.
+# It is important to understand that "for loops" use a colon to define it's body. Another thing to
+# note is that for loops are "controlled" loops, meaning that they will only loop over an iterable
+# object until there is no iterations remaining. In the next lesson we will review another type of
+# loop that is different in how it iterates, called a "while" loop.
 
 ####################################################################################################
 

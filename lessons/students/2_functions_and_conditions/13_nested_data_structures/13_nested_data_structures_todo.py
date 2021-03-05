@@ -4,8 +4,10 @@ Practice using nested for loops to iterate through different data structures
 
 # TODO: Section 1:
 
-# Hint! Remember that None is basically setting something as an undefined value. This is helpful when
-# you intend on being specific about the scope of a variable and wanting to populate it later
+# HINT: Remember that None is basically setting something as an undefined value. This is helpful
+# HINT: when you intend on being specific about the scope of a variable and wanting to populate
+# HINT: it later.
+
 # TODO: Create a series of for loops that prints out each day of the week with the 
 # TODO: high and low of each day in this problem, the high and low of 
 # TODO: each period of the day is set in the array in the key value pair
@@ -21,46 +23,46 @@ ADVANCED_FORECAST = {
 }
 
 
-# TODO: ###########################################################################################
+####################################################################################################
 
 # TODO: Section 2:
 
 transactions_data = [
-    {
-        "amount": 2307.21,
-        "place": "Apple Store",
-        "acct": "Chase Checking",
-    },
-    {
-        "amount": 75.20,
-        "place": "Qdoba",
-        "acct": "Wells Savings",
-    },
-    {
-        "amount": 25,
-        "place": "Food Depot",
-        "acct": "Chase Checking",
-    },
-    {
-        "amount": 10000,
-        "place": "Home Depot",
-        "acct": "BofA Savings",
-    },
-    {
-        "amount": "1500",
-        "place": "Chipotle",
-        "acct": "Chase Checking",
-    },
-    {
-        "amount": 1700.56565656,
-        "place": "Lowe's",
-        "acct": "Chase Checking",
-    },
-    {
-        "amount": 150,
-        "place": "AMC Theaters",
-        "acct": "Deutsche Bank",
-    },
+  {
+    "amount": 2307.21,
+    "place": "Apple Store",
+    "acct": "Chase Checking",
+  },
+  {
+    "amount": 75.20,
+    "place": "Qdoba",
+    "acct": "Wells Savings",
+  },
+  {
+    "amount": 25,
+    "place": "Food Depot",
+    "acct": "Chase Checking",
+  },
+  {
+    "amount": 10000,
+    "place": "Home Depot",
+    "acct": "BofA Savings",
+  },
+  {
+    "amount": "1500",
+    "place": "Chipotle",
+    "acct": "Chase Checking",
+  },
+  {
+    "amount": 1700.56565656,
+    "place": "Lowe's",
+    "acct": "Chase Checking",
+  },
+  {
+    "amount": 150,
+    "place": "AMC Theaters",
+    "acct": "Deutsche Bank",
+  },
 ]
 
 # TODO: do all of the below todo's inside a function called "transactify" and pass it an argument
@@ -74,4 +76,5 @@ transactions_data = [
 
 def transactify(transactions):
     """this function should complete the above tasks"""
+
 transactify(transactions_data) 
