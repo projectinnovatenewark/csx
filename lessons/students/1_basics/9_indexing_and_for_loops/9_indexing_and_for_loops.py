@@ -3,15 +3,16 @@ Indexing and range function for lists, dictionaries, strings and numbers.
 """
 
 # In Python, "for loops" are used to iterate through objects. The syntax of a "for loop" is:
-# "for alias in iterable_object:". In plain english this reads as, "for each instance of an item in
-# an object, do something." The "alias" is a variable that assumes the value of each instance in
-# the iterable object, also known as each 'iteration'. The "iterable_object" can be any object in
+# "for iteration in iterable:". In plain english this reads as, "for each element in
+# an object, do something." The "iteration" is a variable that assumes the value of each instance in
+# the iterable object, also known as each "iteration". The "iterable_object" can be any object in
 # Python that you can loop through and has a collection of items. This includes lists, dictionaries,
 # strings, and more.
 
-# It is important to understand that "for loops" use a colon to define it's scope. You will learn
-# more about scope in later lessons, but all you need ot know right now is anything that falls
-# inside a loop's indentation after a colon, will be executed during the for "loop".
+# It is important to understand that "for loops" use a colon to define it's body. Another thing to
+# note is that for loops are "controlled" loops, meaning that they will only loop over an iterable
+# object until there is no iterations remaining. In the next lesson we will review another type of
+# loop that is different in how it iterates, called a "while" loop.
 
 ####################################################################################################
 
@@ -26,7 +27,7 @@ grades = [72, 87, 99, 45, 70]
 # Each "grade" in the list "grades" will be printed in this loop starting at index 0 until reaching
 # the end of the list.
 for grade in grades:
-    print(grade)
+  print(grade)
 
 print("End of first for loop. \n")
 
@@ -50,7 +51,7 @@ print("End of second for loop.\n")
 
 # TODO: Section 1 of TODO 9 (5 minutes for students, 3 minutes for demo)
 
-####################################################################################################
+###################################################################################################
 
 # TITLE: Section 2 - String Slicing and For Loops
 
@@ -91,12 +92,21 @@ for num in range(9):
     print(num)
 
 # If we want to add a lower bound we can use the following syntax: "range(lower, upper)" where
-# "lower" is an inclusive lower bound and "upper" is an non-inclusive upper bound. Let's put in an
-# initial argument to change our lower bound from 0 to 3 and the upper bound to 11. Now the range
-# will include numbers 3 to 10.
+# "lower" is inclusive and "upper" is non-inclusive. Let's put in an initial argument to change
+# our lower bound from 0 to 3 and the upper bound to 11. Now the range will include numbers 3 to 10.
 print("\nrange(3, 11) loop: ")
 for num in range(3, 11):
     print(num)
+
+# A common pattern you may encounter is that of an iterator outside of the loop that is modified
+# inside the loop. This can be done for a number of reasons, which you will see later in our
+# curriculum.
+i = 0 # i will be incremented by one for every iteration in our loop
+for n in range (100):
+  j = 0 # j will be set to zero at the beginning of every loop, therefore it will always print 1.
+  i += 1
+  j += 1
+  print(f"i: {i}, j: {j}")
 
 # TODO: Section 3 of the TODO (4 minutes for students, 2 minutes for demo)
 
