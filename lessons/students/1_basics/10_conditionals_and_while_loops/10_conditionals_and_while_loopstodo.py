@@ -20,11 +20,6 @@ Expanding on loops
 todos = ["exercise for fun", "eat food", "go to school", "write some code"]
 finished_todos = []
 
-while todos:
-  last_item = todos.pop()
-  finished_todos.append(last_item)
-  print(f"Finished todos list: ", finished_todos)
-
 ####################################################################################################
 
 # TODO: Section 2.2
@@ -34,9 +29,6 @@ while todos:
 # iteration.
 
 var = 7
-while var < 21:
-  var += 2
-  print(var)
 
 ####################################################################################################
 
@@ -49,13 +41,3 @@ while var < 21:
 
 # Important:
 # For the purpose of this exercise please input only POSITIVE integers.
-
-user_int = int(input("Insert integer here: "))
-
-while user_int:
-  if (user_int % 2 == 0):
-    print(f"user int is even: {user_int}")
-    user_int += 1
-  else:
-    print(f"user int is odd: {user_int}")
-    user_int -= 3
