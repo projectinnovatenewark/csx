@@ -151,13 +151,13 @@ example_dict_2 = {"Andy": 73, "Benny": 64, "Celeste": 90, "Danilo": 84, "Eric": 
 # One important concept related to functions is that they can be reused. Therefore, we can execute
 # the same function to perform operations on BOTH of the above dictionaries.
 def dictionary_reader(dictionary):
-    """This function will format and print a dictionary."""
-    print("Let's output a dictionary \n")
+  """This function will format and print a dictionary."""
+  print("Let's output a dictionary \n")
 
-    for student in dictionary:
-        print(f"{student} got a score of {dictionary[student]} on their exam!")
+  for student in dictionary:
+    print(f"{student} got a score of {dictionary[student]} on their exam!")
 
-    print("\n This function has finished running.")
+  print("\n This function has finished running.")
 
 dictionary_reader(example_dict_1) # Here we pass the function an argument for our first dictionary
 
@@ -173,13 +173,13 @@ dictionary_reader(example_dict_2) # Here we see the same function performing ope
 # Below are examples of using variables & the timing of a function call to portray scope.
 # Here we call "s" after the function is called, which will return a NameError.
 def func():
-    print(s)
+  print(s)
 func()
 s = "I love Paris in the summer!"
 
 # Here, since the variable is declared before the function is called, it will print the "s2" value
 def func2():
-    print(s2)
+  print(s2)
 s2 = "I love San Diego in the summer!"
 func2()
 
@@ -188,8 +188,8 @@ func2()
 # of the function has no impact on the output. Therefore "func3()" will print the statement,
 # "I love London."
 def func3():
-    s3 = "I love London!"
-    print(s3)
+  s3 = "I love London!"
+  print(s3)
 
 s3 = "I love Malaysia!"
 func3()
