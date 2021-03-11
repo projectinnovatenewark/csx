@@ -56,7 +56,7 @@ def giveOutput():
 print("Calling our giveOutput function: ")
 giveOutput() # This would call "giveOutput()" which would print out num variable.
 
-# TODO: Section 1 of TODO 10 (4 min for students, 1 min for demo)
+# TODO: Section 1 of TODO 11 (4 min for students, 1 min for demo)
 ####################################################################################################
 
 # TITLE: Section 2 - Calling Functions with Other Functions (8 minutes)
@@ -99,7 +99,7 @@ print(addingChain(9)) # Control 1: the "addingChain()" function gets called and 
 # Control 9: After the function call is complete, the print statement prints the value of
 # "addingChain(9)".
 
-# TODO: Section 2 of TODO 10 (4 min for students, 1 min for demo)
+# TODO: Section 2 of TODO 11 (4 min for students, 1 min for demo)
 ####################################################################################################
 
 # TITLE: Section 3 - Using Return Values with Conditionals (7 minutes)
@@ -140,7 +140,7 @@ inquireDay() # This is a standard function call without any parameters.
 # Hey, Teacher, You should have your students walk you through the control of the above
 # function call. Make sure the class understands the flow of the program.
 
-# TODO: Section 3 of TODO 10 (4 min for students, 1 min for demo)
+# TODO: Section 3 of TODO 11 (4 min for students, 1 min for demo)
 ####################################################################################################
 
 # TITLE: Section 4 - Looping in Functions (7 minutes)
@@ -166,7 +166,7 @@ print("\n")
 dictionary_reader(example_dict_2) # Here we see the same function performing operations with our
                                   # second dictionary.
 
-# TODO: Section 4 of TODO 10 (4 min for students, 2 min for demo)
+# TODO: Section 4 of TODO 11 (4 min for students, 2 min for demo)
 ###################################################################################################
 
 # TITLE: Section 5 - Working with Scope (7 minutes)
