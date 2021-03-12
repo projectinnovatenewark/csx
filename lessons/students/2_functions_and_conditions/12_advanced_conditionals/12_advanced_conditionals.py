@@ -29,7 +29,7 @@ else:
 else:
     print("This doesn't work")
 
-# TODO: Section 1 of TODO 12 (X min for students, Y min for demo)
+# TODO: Section 1 of TODO 12 (6 min for students, 3 min for demo)
 
 ####################################################################################################
 
@@ -74,7 +74,7 @@ else: # Since both the most recent "if statement" and above "elif statement" are
       # statement" is executed.
     print(num, "is a zero value.")
 
-# TODO: Section 2 of TODO 12 (X min for students, Y min for demo)
+# TODO: Section 2 of TODO 12 (7 min for students, 3 min for demo)
 
 ####################################################################################################
 
@@ -98,6 +98,8 @@ while i > 0:
         continue
     print(f"Current variable value :{var}")
 
+# TODO: Section 3 of TODO 12 (4 min for students, 2 min for demo)
+
 ####################################################################################################
 
 # TITLE: Section 4 - Break Statements
@@ -119,4 +121,4 @@ while var > 2:
         break # When the variable "var" is eequal to 5, the loop will break.
     print(f"Current variable value: {var}")
 
-# TODO: Section 2 of TODO 12 (X min for students, Y min for demo)
+# TODO: Section 4 of TODO 12 (4 min for students, 2 min for demo)
