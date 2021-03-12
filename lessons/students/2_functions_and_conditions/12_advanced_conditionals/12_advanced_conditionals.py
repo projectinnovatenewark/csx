@@ -11,25 +11,25 @@ Advanced conditional statements with continue and break statements.
 
 booly = True
 if (booly):
-    print("This runs if booly is true.")
+  print("This runs if booly is true.")
 
 # Another conditional statement we have learned previously is an "else statement". An "else
 # statement" will run only if a given condition in an "if statement" does not return true. 
 
 num = 10
 if (num > 11):
-    print(f"The number {num} is greater than 11.")
+  print(f"The number {num} is greater than 11.")
 else:
-    print(f"The number {num} is less than 11.")
+  print(f"The number {num} is less than 11.")
 
 # IMPORTANT:
 # An "else statement" must follow an "if statement". There cannot be a standalone "else statement"
 
 # TODO: Hey Teacher: Demonstrate how this doesn't work, then comment it out and move on.
 else:
-    print("This doesn't work")
+  print("This doesn't work")
 
-# TODO: Section 1 of TODO 12 (X min for students, Y min for demo)
+# TODO: Section 1 of TODO 12 (5 min for students, 2 min for demo)
 
 ####################################################################################################
 
@@ -41,9 +41,9 @@ else:
 
 num = 57
 if (num <= 50):
-    print("The number is less than or equal to 50.")
+  print("The number is less than or equal to 50.")
 elif (num > 55): #This conditional statement will only run if the above if statement is false.
-    print("the number is greater than 55.")
+  print("the number is greater than 55.")
 
 # The difference between an "else statement" and an "elif statement" is that an "else statement"
 # does not test its own condition, whereas an "elif statement" does.
@@ -52,29 +52,29 @@ elif (num > 55): #This conditional statement will only run if the above if state
 num = 3 # TODO: Teacher, try changing this number up to satisfy the different conditions.
 
 if (num > 0):
-    print(num, "is a positive number.")
+  print(num, "is a positive number.")
 elif (num < 0): # The "elif statement" will only be triggered if the "if statement" is true.
-    print(num, "is a negative number.")
+  print(num, "is a negative number.")
 else: # the "else statement" will only run if none of the conditions above are true.
-    print(num, "is a zero value.")
+  print(num, "is a zero value.")
 
 # Below is a similar example to above, except multiple "if statement's" are used.
 num = 2 # TODO: Teacher, try changing this number up again to satisfy the different conditions.
 
 if (num > 0):
-    print(num, "is a positive number.")
+  print(num, "is a positive number.")
 if (num > 2): # Any number of "if statements" can be evaluated when executing the file.
-    print(num, "is greater than 2.")
+  print(num, "is greater than 2.")
 elif (num < 0): # When "num" is equal to 2, the most recent "if statement" will return false. Each
                 # "if statement" is the beginning of a new conditional chain, so even though the
                 # first "if statement" is evaluated to be true, the "elif statement" will still
                 # be evaluated.
-    print(num, "is a negative number.")
+  print(num, "is a negative number.")
 else: # Since both the most recent "if statement" and above "elif statement" are false, the "else
       # statement" is executed.
-    print(num, "is a zero value.")
+  print(num, "is a zero value.")
 
-# TODO: Section 2 of TODO 12 (X min for students, Y min for demo)
+# TODO: Section 2 of TODO 12 (7 min for students, 4 min for demo)
 
 ####################################################################################################
 
@@ -84,19 +84,21 @@ else: # Since both the most recent "if statement" and above "elif statement" are
 
 # Below are examples of how to use a continue statement within a "for loop" and a "while loop".
 for letter in 'Python':
-   if (letter == 'h'):
-      continue # When the "for loop" recognizes the string 'h', the program will skip the print
-               # statement and begin the next iteration.
-   print(f"Current Letter :{letter}")
+  if (letter == 'h'):
+    continue # When the "for loop" recognizes the string 'h', the program will skip the print
+             # statement and begin the next iteration.
+  print(f"Current Letter :{letter}")
 
 i = 10
 while i > 0:
-    i -= 1 # TIP: Remember the "-=" is used as a decrementor and will subtract 1 from "i" during
-           # TIP: each iteration.
-    if(i == 5):
-        print("The continue statement will be triggered.\n")
-        continue
-    print(f"Current variable value :{var}")
+  i -= 1 # TIP: Remember the "-=" is used as a decrementor and will subtract 1 from "i" during
+         # TIP: each iteration.
+  if(i == 5):
+    print("The continue statement will be triggered.\n")
+    continue
+  print(f"Current variable value: {var}")
+
+# TODO: Section 3 of TODO 12 (4 min for students, 2 min for demo)
 
 ####################################################################################################
 
@@ -107,16 +109,16 @@ while i > 0:
 # condition is met, the loop will stop.
 
 for letter in 'Python':
-    if (letter == 'o'):
-        break # When the variable "letter" is eequal to "o", the loop will break.
-    print(F"Current Letter :{letter}")
+  if (letter == 'o'):
+    break # When the variable "letter" is eequal to "o", the loop will break.
+  print(F"Current Letter :{letter}")
 
 var = 10
 while var > 2:
-    var -= 1
-    if (var == 5):
-        print("The break statement will be triggered.\n")
-        break # When the variable "var" is eequal to 5, the loop will break.
-    print(f"Current variable value: {var}")
+  var -= 1
+  if (var == 5):
+    print("The break statement will be triggered.\n")
+    break # When the variable "var" is eequal to 5, the loop will break.
+  print(f"Current variable value: {var}")
 
-# TODO: Section 2 of TODO 12 (X min for students, Y min for demo)
+# TODO: Section 4 of TODO 12 (4 min for students, 2 min for demo)
