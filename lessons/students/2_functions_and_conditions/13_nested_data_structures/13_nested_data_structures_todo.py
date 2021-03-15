@@ -4,28 +4,47 @@ Practice using nested for loops to iterate through different data structures
 
 # TODO: Section 1:
 
-# HINT: Remember that None is basically setting something as an undefined value. This is helpful
-# HINT: when you intend on being specific about the scope of a variable and wanting to populate
-# HINT: it later.
+# Below is a nested data structure containing a list of lists called "toppings". Use a nested
+# for loop to print each topping.
 
-# TODO: Create a series of for loops that prints out each day of the week with the 
-# TODO: high and low of each day in this problem, the high and low of 
-# TODO: each period of the day is set in the array in the key value pair
-
-ADVANCED_FORECAST = {
-    "Sunday": [42, 55, 52],
-    "Monday": [40, 50, 51],
-    "Tuesday": [55, 65, 59],
-    "Wednesday": [50, 60, 48],
-    "Thursday": [52, 59, 53],
-    "Friday": [42, 50, 41],
-    "Saturday": [43, 51, 47]
-}
-
+toppings = [
+  ["lettuce", "tomato", "onion"],
+  ["bacon", "cheese", "avocado"]
+]
 
 ####################################################################################################
 
 # TODO: Section 2:
+
+movie_series = {
+  "Harry Potter": {
+    "Movie 1": "The Sorcerer's Stone",
+    "Movie 2": "The Chamber of Secrets",
+    "Movie 3": "The Prisoner of Azkaban"
+  },
+  "Lord of the Rings": {
+    "Movie 1": "The Fellowship of the Ring",
+    "Movie 2": "The Two Towers",
+    "Movie 3": "The Return of the King"
+  },
+  "The Hunger Games": {
+    "Movie 1": "The Hunger Games",
+    "Movie 2": "Catching Fire",
+    "Movie 3": "Mockingjay"
+  }
+}
+
+# The nested dictionary "movie_series" contains the first 3 movies in a few popular movie
+# franchises. Iterate through "movie_series" and print the statement: "The second movie in the
+# [franchise] franchise is [movie]." (i.e The second movie in the The Hunger Games franchise is
+# Catching Fire.)
+
+# HINT: Use a nested "for loop" to iterate through "movie_series".
+
+####################################################################################################
+
+# TODO: Section 3:
+
 
 transactions_data = [
   {
@@ -74,7 +93,13 @@ transactions_data = [
 # TODO: print out each transaction in a string indicating:
 # TODO: "You spent $ X at X with your X account"
 
+
+# Inside the function "transactify", write a program that will print the statement: "You spent
+# $[amount] at [location] with your [account]." if the dollar amount was over $100.
+
+# IMPORTANT: Use variables to make your code more readable, as noted in the lesson.
+
 def transactify(transactions):
-    """this function should complete the above tasks"""
+    """This function should complete the above tasks"""
 
 transactify(transactions_data) 

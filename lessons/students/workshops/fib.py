@@ -16,6 +16,7 @@
 
 def factorial(x):
   """Find the factorial of an integer"""
+  print(f"factorial({x}) was called.")
 
   # Base Case - this is when the function will stop calling itself recursively
   if x == 1:
