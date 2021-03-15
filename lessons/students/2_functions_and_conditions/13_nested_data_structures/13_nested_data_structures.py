@@ -39,30 +39,30 @@ for sublist in my_shows: # The variable "sublist" represents each list of shows 
 spongebob = {
   "Season 1":
   {
-    "Episode 1" : "Help Wanted",
-    "Episode 2" : "Bubblestand",
-    "Episode 3" : "Jellyfishing",
-    "Episode 4" : "Naughty Nautical Neighbors",
-    "Episode 5" : "Pizza Delivery",
-    "Episode 6" : "Mermaid Man and Barnacle Boy",
+    "Episode 1": "Help Wanted",
+    "Episode 2": "Bubblestand",
+    "Episode 3": "Jellyfishing",
+    "Episode 4": "Naughty Nautical Neighbors",
+    "Episode 5": "Pizza Delivery",
+    "Episode 6": "Mermaid Man and Barnacle Boy",
   },
   "Season 2":
   {
-    "Episode 1" : "Your Shoe's Untied",
-    "Episode 2" : "Something Smells",
-    "Episode 3" : "Big Pink Loser",
-    "Episode 4" : "Dying for Pie",
-    "Episode 5" : "Wormy",
-    "Episode 6" : "Grandma's Kisses",
+    "Episode 1": "Your Shoe's Untied",
+    "Episode 2": "Something Smells",
+    "Episode 3": "Big Pink Loser",
+    "Episode 4": "Dying for Pie",
+    "Episode 5": "Wormy",
+    "Episode 6": "Grandma's Kisses",
   },
   "Season 3":
   {
-    "Episode 1" : "The Algae's Always Greener",
-    "Episode 2" : "Club SpongeBob",
-    "Episode 3" : "Just One Bite",
-    "Episode 4" : "Nasty Patty",
-    "Episode 5" : "Mermaid Man and Barnacle Boy IV",
-    "Episode 6" : "Snowball Effect",
+    "Episode 1": "The Algae's Always Greener",
+    "Episode 2": "Club SpongeBob",
+    "Episode 3": "Just One Bite",
+    "Episode 4": "Nasty Patty",
+    "Episode 5": "Mermaid Man and Barnacle Boy IV",
+    "Episode 6": "Snowball Effect",
   },
 }
 
@@ -103,39 +103,39 @@ for season_num in spongebob:
 
 math_classes = [
   {
-    'subject': 'Math',
-    'level': 'Geometry',
-    'teacher': 'Professor Alisson',
-    'students': ['Bill', 'Bob', 'Beatrice', 'Brandi'],
-    'averages': {
-      'MP1': 89.5,
-      'MP2': 82,
-      'MP3': 92,
-      'MP4': 94,
+    "subject": "Math",
+    "level": "Geometry",
+    "teacher": "Professor Alisson",
+    "students": ["Bill", "Bob", "Beatrice", "Brandi"],
+    "averages": {
+      "MP1": 89.5,
+      "MP2": 82,
+      "MP3": 92,
+      "MP4": 94,
     }
   },
   {
-    'subject': 'Math',
-    'level': 'Algebra',
-    'teacher': 'Professor Dylan',
-    'students': ['Callie', 'Chris', 'Cayla', 'Chantelle'],
-    'averages': {
-      'MP1': 95,
-      'MP2': 86,
-      'MP3': 97,
-      'MP4': 79,
+    "subject": "Math",
+    "level": "Algebra",
+    "teacher": "Professor Dylan",
+    "students": ["Callie", "Chris", "Cayla", "Chantelle"],
+    "averages": {
+      "MP1": 95,
+      "MP2": 86,
+      "MP3": 97,
+      "MP4": 79,
     }
   },
   {
-    'subject': 'Math',
-    'level': 'Calculus',
-    'teacher': 'Professor Johnson',
-    'students': ['Dani', 'Damien', 'Dinesh', 'Dira'],
-    'averages': {
-      'MP1': 99,
-      'MP2': 86,
-      'MP3': 77,
-      'MP4': 94.8,
+    "subject": "Math",
+    "level": "Calculus",
+    "teacher": "Professor Johnson",
+    "students": ["Dani", "Damien", "Dinesh", "Dira"],
+    "averages": {
+      "MP1": 99,
+      "MP2": 86,
+      "MP3": 77,
+      "MP4": 94.8,
     }
   },
 ]
@@ -181,4 +181,4 @@ for key in math_classes:
     for student in students:
         print(f"{teacher} teaches {subject} to {student}.")
 
-# TODO: Complete Section 2 of TODO 13 (7 min for students, 4 min for demo)
+# TODO: Complete Section 3 of TODO 13 (7 min for students, 4 min for demo)
