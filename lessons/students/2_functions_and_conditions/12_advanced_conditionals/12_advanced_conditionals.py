@@ -58,7 +58,7 @@ elif (num < 0): # The "elif statement" will only be triggered if the "if stateme
 else: # the "else statement" will only run if none of the conditions above are true.
   print(num, "is a zero value.")
 
-# Below is a similar example to above, except multiple "if statement's" are used.
+# Below is a similar example to above, except multiple "if" statements are used.
 num = 2 # TODO: Teacher, try changing this number up again to satisfy the different conditions.
 
 if (num > 0):
@@ -85,7 +85,7 @@ else: # Since both the most recent "if statement" and above "elif statement" are
 # Below are examples of how to use a continue statement within a "for loop" and a "while loop".
 for letter in 'Python':
   if (letter == 'h'):
-    continue # When the "for loop" recognizes the string 'h', the program will skip the print
+    continue # When the "for loop" observes the character 'h', the program will skip the print
              # statement and begin the next iteration.
   print(f"Current Letter :{letter}")
 
@@ -110,7 +110,7 @@ while i > 0:
 
 for letter in 'Python':
   if (letter == 'o'):
-    break # When the variable "letter" is eequal to "o", the loop will break.
+    break # When the variable "letter" is equal to "o", the loop will break.
   print(F"Current Letter :{letter}")
 
 var = 10
@@ -118,7 +118,7 @@ while var > 2:
   var -= 1
   if (var == 5):
     print("The break statement will be triggered.\n")
-    break # When the variable "var" is eequal to 5, the loop will break.
+    break # When the variable "var" is equal to 5, the loop will break.
   print(f"Current variable value: {var}")
 
 # TODO: Section 4 of TODO 12 (4 min for students, 2 min for demo)
