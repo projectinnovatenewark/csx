@@ -1,31 +1,29 @@
 """
 Use employees.txt to perform operations on a list of employees
-Referenced lesson(s): week_3/3_file_handling.py
 """
 
-# IMPORTANT- BEFORE ATTEMPTING TO SOLVE THIS PROBLEM, CD INTO THE WEEK3 FOLDER
-# IN YOUR TERMINAL. THE WORKING DIRECTORY MUST BE IN WEEK3 FOR THE PROGRAM TO WORK.
+# IMPORTANT:
+# Make sure your terminal is using the same working directory is in the same working directory as
+# "employees.txt". Also, the spacing in "employees.txt" may look off, but it will not impact your
+# ability to complete the todos.
 
-# Tip- while the spacing in the text file may look off, there is exactly one tab
-# between every word on the lines. Text files are weird with tabs in code editors.
+# TODO: Section 1.1
 
-# For example: firstname (tab) lastname (tab) department (tab) salary (tab)
+# Use the "open" function to read the contents of "employees.txt" and print them to the terminal
+# using the ".read()" method. Then close the file.
 
-# TODO: Section 1:
-# TODO: Use the "open" function with "r" for read to open the employees.txt file
+# TODO: Section 1.2
 
-# TODO: #########################################################################################
+# Reopen "employees.txt". Then read each line in the file seperately using the ".readline()" method
+# and print them out to the terminal. Lastly close the file.
 
-# TODO: Section 2:
-# TODO: Read each line in the text file and print them out one-by-one
+####################################################################################################
 
-# TODO: #########################################################################################
+# TODO: Section 2
 
-# TODO: Section 3:
-# TODO: Write to the file and add in a new employee using the same format currently in use
-# TODO: Reminder: the format is `firstname (tab) lastname (tab) department (tab) salary (tab)`
+# Open "employees.txt". Then write to the file without overwriting its contents and add a new 
+# employee. The format of the employee information should be:
+# "John (tab) Smith (tab) Public Relations (tab) 50000". Then open the file again to read its
+# contents and print them to the terminal. Lastly close the file.
 
-# TODO: #########################################################################################
-
-# TODO: Section 4:
-# TODO: Print the newly modified text file as a whole, instead of line by line.
+# HINT: Use "\t" in strings to create a tab.
