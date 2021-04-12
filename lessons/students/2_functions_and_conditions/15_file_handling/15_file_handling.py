@@ -54,7 +54,7 @@ for line in contents_list:
     print(line)
 fh.close()
 
-# TODO: Section 1 of TODO 15 (X min for students, Y min for demo)
+# TODO: Section 1 of TODO 15 (6 min for students, 3 min for demo)
 
 ####################################################################################################
 
@@ -87,4 +87,4 @@ message = "Hello World, again."
 fh.write(message)
 fh.close()
 
-# TODO: Section 2 of TODO 15 (X min for students, Y min for demo)
+# TODO: Section 2 of TODO 15 (6 min for students, 3 min for demo)
