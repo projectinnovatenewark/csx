@@ -1,3 +1,9 @@
+
+"""
+NEXT ADVANCED LESSON
+SOLID principles
+"""
+
 # review optional arguments and advanced functions including
 # nested for loops, conditionals, and possibly use packages
 
