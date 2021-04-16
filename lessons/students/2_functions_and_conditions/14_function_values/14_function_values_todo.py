@@ -23,9 +23,11 @@ Solve the problems below using helper functions.
 # call both "isPrime()" and "isEven()" for each iteration. Store the function call of "isPrime()" in
 # a variable called "is_prime" and the function call of "isEven()" in a variable called "is_even".
 
-# TIP: The following 2 lines are examples of potential outputs from the "main()" function. This is
+# TIP: The following 4 lines are examples of potential outputs from the "main()" function. This is
 # TIP: the format that should be followed for solving this problem.
 # "The number num is odd and prime."
+# "The number num is odd and not prime."
+# "THe number num is even and prime."
 # "THe number num is even and not prime."
 
 # TIP: Test your helper functions out along the way. Make sure each helper function works

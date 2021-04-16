@@ -69,7 +69,7 @@ print(f"The area of your rectangle is {rectangle_area} feet.")
 # TITLE: Section 3 - Functions and Loops
 
 # Let's develop a small program using multiple functions to create a game where a user guesses a
-# number between one and ten. The program should then let the user input how many time they want to
+# number between one and ten. The program should then let the user input how many times they want to
 # play the game and tell them whether they have won or lost after each round.
 
 # The game will use the "random" package to produce a random number that the user is trying to
@@ -78,45 +78,45 @@ print(f"The area of your rectangle is {rectangle_area} feet.")
 from random import randint # Remember import statements generally belong at the top of a file.
 
 def inquireUserGames():
-    """Ask a user how many times they want to play."""
+  """Ask a user how many times they want to play."""
 
-    num_games = int(input("How many times would you like to play the 'Guess the Number' game?: "))
-    num_games_string = f"You've signed on to play {num_games} games."
+  num_games = int(input("How many times would you like to play the 'Guess the Number' game?: "))
+  num_games_string = f"You've signed on to play {num_games} games."
 
-    return num_games, num_games_string # Just as you can define multiple variables at once, you can
-                                       # also return multiple values from a single function.
+  return num_games, num_games_string # Just as you can define multiple variables at once, you can
+                                      # also return multiple values from a single function.
 
 def playTheGame():
-    """Ask the user for a number between 1 and 10, generate a random number between 1 and 10, and
-     check if those numbers match. If they do, congratulate the user! If not, tell them they were
-     incorrect."""
+  """Ask the user for a number between 1 and 10, generate a random number between 1 and 10, and
+    check if those numbers match. If they do, congratulate the user! If not, tell them they were
+    incorrect."""
 
-    random_number = randint(1, 10) # Generate a random number between 1 and 10.
-    
-    user_guess = int(input("Guess a number between 1 and 10: "))
+  random_number = randint(1, 10) # Generate a random number between 1 and 10.
+  
+  user_guess = int(input("Guess a number between 1 and 10: "))
 
-    # Check if the random number and user number equal each other.
-    if (random_number == user_guess):
-        print(f"You guessed correctly. Number {user_guess} is correct.\n")
-    else:
-        print(f"Your guess is incorrect! Number {random_number} doesnt equal {user_guess}.\n")
+  # Check if the random number and user number equal each other.
+  if (random_number == user_guess):
+    print(f"You guessed correctly. Number {user_guess} is correct.\n")
+  else:
+    print(f"Your guess is incorrect! Number {random_number} doesnt equal {user_guess}.\n")
 
 def initializeGame():
-    """Lets initialize our game and call the inquireUserGames function."""
+  """Lets initialize our game and call the inquireUserGames function."""
 
-    # Recall that in the function "inquireUserGames()" will return 2 values. We use a comma to
-    # separate the returned values when storing them into variables.
-    game_count, welcome_string = inquireUserGames()
-    print(f"\n{welcome_string}\n")
+  # Recall that in the function "inquireUserGames()" will return 2 values. We use a comma to
+  # separate the returned values when storing them into variables.
+  game_count, welcome_string = inquireUserGames()
+  print(f"\n{welcome_string}\n")
 
-    # The variable "game_count" will equal the user's input for their desired number of games to
-    # play. The variable "welcome_string" will equal the output "You've signed on to play
-    # {game_count} games!"
-    while game_count: # This while loop will continue to run until "game_count" equals zero.
-        playTheGame()
-        # Every time we run the "playTheGame()" function we want to decrement the game_count
-        # by one until it hits zero, at which point the while loop will stop running.
-        game_count -= 1
+  # The variable "game_count" will equal the user's input for their desired number of games to
+  # play. The variable "welcome_string" will equal the output "You've signed on to play
+  # {game_count} games!"
+  while game_count: # This while loop will continue to run until "game_count" equals zero.
+    playTheGame()
+    # Every time we run the "playTheGame()" function we want to decrement the game_count
+    # by one until it hits zero, at which point the while loop will stop running.
+    game_count -= 1
 
 initializeGame()
 
