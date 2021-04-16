@@ -1,96 +1,93 @@
-"""
-Working with nested data structures.
-"""
+# """
+# Working with nested data structures.
+# """
 
-# TITLE: Section 1 - Nested Lists and Nested Loops
+# # TITLE: Section 1 - Nested Lists and Nested Loops
 
-# In programming, nesting is a popular way of storing information and/or objects in layers. In this
-# lesson we will cover a few examples of different nested data structures and how to iterate through
-# them.
+# # In programming, nesting is a popular way of storing information and/or objects in layers. In this
+# # lesson we will cover a few examples of different nested data structures and how to iterate through
+# # them.
 
-# In the following example, "my_shows" is considered a nested data structure because it is a list
-# where each element is also a list. To iterate through "my_shows" we would use a "for loop". Then,
-# to iterate through each sublist, we can use a second "for loop".
+# # In the following example, "my_shows" is considered a nested data structure because it is a list
+# # where each element is also a list. To iterate through "my_shows" we would use a "for loop". Then,
+# # to iterate through each sublist, we can use a second "for loop".
 
-my_shows = [
-  ['How I Met Your Mother', 'The Office', 'Silicon Valley'],
-  ['Family Guy', 'South Park', 'Rick and Morty'],
-  ['Breaking Bad', 'Game of Thrones', 'The Wire']
-]
+# my_shows = [
+#   ['How I Met Your Mother', 'The Office', 'Silicon Valley'],
+#   ['Family Guy', 'South Park', 'Rick and Morty'],
+#   ['Breaking Bad', 'Game of Thrones', 'The Wire']
+# ]
 
-# The below nested for loop will first print the sublist of shows for the current iteration followed by
-# each individual show within the sublist.
-for sublist in my_shows: # The variable "sublist" represents each list of shows in "my_shows".
-  print(f"Current sublist: {sublist}"
-  for show_name in sublist: # The variable "show_name" represents each show in a given "sublist".
-    print(f"Current show: {show_name}")
+# # The below nested for loop will first print the sublist of shows for the current iteration followed by
+# # each individual show within the sublist.
+# for sublist in my_shows: # The variable "sublist" represents each list of shows in "my_shows".
+#   print(f"Current sublist: {sublist}"
+#   for show_name in sublist: # The variable "show_name" represents each show in a given "sublist".
+#     print(f"Current show: {show_name}")
 
-# TODO: Complete Section 1 of TODO 13 (7 min for students, 4 min for demo)
+# # TODO: Complete Section 1 of TODO 13 (7 min for students, 4 min for demo)
 
-####################################################################################################$
+# ####################################################################################################$
 
-# TITLE: Section 2 - Nested Dictionaries and Nested Loops
+# # TITLE: Section 2 - Nested Dictionaries and Nested Loops
 
-# In the next example we williterate through a nested dictionary called "spongebob". A nested
-# dictionary consists of key value pairs where the value of each key is another dictionary. Just as
-# in section 1, we can use a nested for loop to iterate through each nested dictionary. The
-# dictionary "spongebob" includes 3 seasons with 6 episodes in each season.
+# # In the next example we will iterate through a nested dictionary called "spongebob". A nested
+# # dictionary consists of key value pairs where the value of each key is another dictionary. Just as
+# # in section 1, we can use a nested for loop to iterate through each nested dictionary. The
+# # dictionary "spongebob" includes 3 seasons with 6 episodes in each season.
 
-spongebob = {
-  "Season 1":
-  {
-    "Episode 1": "Help Wanted",
-    "Episode 2": "Bubblestand",
-    "Episode 3": "Jellyfishing",
-    "Episode 4": "Naughty Nautical Neighbors",
-    "Episode 5": "Pizza Delivery",
-    "Episode 6": "Mermaid Man and Barnacle Boy",
-  },
-  "Season 2":
-  {
-    "Episode 1": "Your Shoe's Untied",
-    "Episode 2": "Something Smells",
-    "Episode 3": "Big Pink Loser",
-    "Episode 4": "Dying for Pie",
-    "Episode 5": "Wormy",
-    "Episode 6": "Grandma's Kisses",
-  },
-  "Season 3":
-  {
-    "Episode 1": "The Algae's Always Greener",
-    "Episode 2": "Club SpongeBob",
-    "Episode 3": "Just One Bite",
-    "Episode 4": "Nasty Patty",
-    "Episode 5": "Mermaid Man and Barnacle Boy IV",
-    "Episode 6": "Snowball Effect",
-  },
-}
+# spongebob = {
+#   "Season 1": {
+#     "Episode 1": "Help Wanted",
+#     "Episode 2": "Bubblestand",
+#     "Episode 3": "Jellyfishing",
+#     "Episode 4": "Naughty Nautical Neighbors",
+#     "Episode 5": "Pizza Delivery",
+#     "Episode 6": "Mermaid Man and Barnacle Boy",
+#   },
+#   "Season 2": {
+#     "Episode 1": "Your Shoe's Untied",
+#     "Episode 2": "Something Smells",
+#     "Episode 3": "Big Pink Loser",
+#     "Episode 4": "Dying for Pie",
+#     "Episode 5": "Wormy",
+#     "Episode 6": "Grandma's Kisses",
+#   },
+#   "Season 3": {
+#     "Episode 1": "The Algae's Always Greener",
+#     "Episode 2": "Club SpongeBob",
+#     "Episode 3": "Just One Bite",
+#     "Episode 4": "Nasty Patty",
+#     "Episode 5": "Mermaid Man and Barnacle Boy IV",
+#     "Episode 6": "Snowball Effect",
+#   },
+# }
 
-# To find the title of episode 1 in season 3 of "spongebob", you would use the following syntax:
-# "spongebob["Season 3"]["Episode 1"]".
+# # To find the title of episode 1 in season 3 of "spongebob", you would use the following syntax:
+# # "spongebob["Season 3"]["Episode 1"]".
 
-# Let's use the above syntax to find the value of "Season 3" and print it:
-print(spongebob["Season 3"])
+# # Let's use the above syntax to find the value of "Season 3" and print it:
+# print(spongebob["Season 3"])
 
-# Now lets print out the title of "Episode 6" in Season 3:
-season_3 = spongebob["Season 3"]
-print(season_3["Episode 6"])
+# # Now lets print out the title of "Episode 6" in Season 3:
+# season_3 = spongebob["Season 3"]
+# print(season_3["Episode 6"])
 
-# Let's walk through the control of the nested "for loop" below. The first iteration of our top
-# level "for loop" is "Season 1" since it is the first key in our dictionary. To make iterating
-# through each season easier to read, we use the following syntax: variable dictionary[key]. In this
-# example the variable is called "season", which is the iterable object in the second "for loop".
-# The first iteration of "season" will be the key/value pair "Episode 1: "Help Wanted"".
+# # Let's walk through the control of the nested "for loop" below. The first iteration of our top
+# # level "for loop" is "Season 1" since it is the first key in our dictionary. To make iterating
+# # through each season easier to read, we use the following syntax: variable = dictionary[key]. In this
+# # example the variable is called "season", which is the iterable object in the second "for loop".
+# # The first iteration of "season" will be the key/value pair "Episode 1: "Help Wanted"".
 
-for season_num in spongebob:
-  season = spongebob[season_num] # Here we create the variable "season" to use as the iterable for
-                                 # the second "for loop".
-  for episode_num in season:
-    episode = season[episode_num]
-    print(f"{season_num}, {episode_num}: {episode}") # IMPORTANT: You can reference variables
-                                                     # IMPORTANT: in the top level "for loop".
+# for season_num in spongebob:
+#   season = spongebob[season_num] # Here we create the variable "season" to use as the iterable for
+#                                  # the second "for loop".
+#   for episode_num in season:
+#     episode = season[episode_num]
+#     print(f"{season_num}, {episode_num}: {episode}") # IMPORTANT: You can reference variables
+#                                                      # IMPORTANT: in the top level "for loop".
 
-# TODO: Complete Section 2 of TODO 13 (7 min for students, 4 min for demo)
+# # TODO: Complete Section 2 of TODO 13 (7 min for students, 4 min for demo)
 
 ####################################################################################################
 
@@ -172,13 +169,13 @@ for key in math_classes:
 # Lastly, let's use what we have learned to print the following statement for each iteration:
 # "[Teacher] teaches [subject] to [student]".
 # TIP: Setting variables will not only help in readability, but will also keep track of your
-# TIP: program's funcitonality.
+# TIP: program's functionality.
 
 for key in math_classes:
-    students = key["students"]
-    teacher = key["teacher"]
-    subject = key["subject"]   
-    for student in students:
-        print(f"{teacher} teaches {subject} to {student}.")
+  students = key["students"]
+  teacher = key["teacher"]
+  subject = key["subject"]   
+  for student in students:
+    print(f"{teacher} teaches {subject} to {student}.")
 
 # TODO: Complete Section 3 of TODO 13 (7 min for students, 4 min for demo)

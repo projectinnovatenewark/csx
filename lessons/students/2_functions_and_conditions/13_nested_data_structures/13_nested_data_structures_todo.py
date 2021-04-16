@@ -18,19 +18,19 @@ toppings = [
 
 movie_series = {
   "Harry Potter": {
-    "Movie 1": "The Sorcerer's Stone",
-    "Movie 2": "The Chamber of Secrets",
-    "Movie 3": "The Prisoner of Azkaban"
+    "first": "The Sorcerer's Stone",
+    "second": "The Chamber of Secrets",
+    "third": "The Prisoner of Azkaban"
   },
   "Lord of the Rings": {
-    "Movie 1": "The Fellowship of the Ring",
-    "Movie 2": "The Two Towers",
-    "Movie 3": "The Return of the King"
+    "first": "The Fellowship of the Ring",
+    "second": "The Two Towers",
+    "third": "The Return of the King"
   },
   "The Hunger Games": {
-    "Movie 1": "The Hunger Games",
-    "Movie 2": "Catching Fire",
-    "Movie 3": "Mockingjay"
+    "first": "The Hunger Games",
+    "second": "Catching Fire",
+    "third": "Mockingjay"
   }
 }
 
@@ -84,7 +84,7 @@ transactions_data = [
   },
 ]
 
-# TODO: do all of the below todo's inside a function called "transactify" and pass it an argument
+# TODO: Do all of the below todo's inside a function called "transactify" and pass it an argument
 # TODO: which will be the transactions_data list
 
 # TODO: create and print a list of all transactions above $100

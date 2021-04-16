@@ -7,7 +7,7 @@ Advanced conditional statements with continue and break statements.
 # Generate a user input asking for an integer and store it in a variable called "num". Then write a
 # function called "evaluate()" that tells the user whether "num" is an odd or even number.
 
-# The defined function should take a parameter called "user_input" and print the statement "The user
+# The defined function should set a parameter called "user_input" and print the statement "The user
 # input is even." if the input is even, or "The user input is odd." if the input is odd. Lastly, use
 # "num" as the argument to call "evaluate()".
 
@@ -42,6 +42,13 @@ stringy3 = ""
 
 i = 0
 
+while i < 30:
+  i += 3
+  if (i % 2 == 0):
+    print("Skipping number", i)
+    continue
+  print(f"i: {i}")
+
 ####################################################################################################
 
 # TODO: Section 4
@@ -52,3 +59,11 @@ i = 0
 # loop from running. 
 
 i = 1
+
+while i < 200:
+  i += 4
+
+  if (i > 42):
+    print("Breaking the loop now")
+    break
+  print(f"i: {i}")
