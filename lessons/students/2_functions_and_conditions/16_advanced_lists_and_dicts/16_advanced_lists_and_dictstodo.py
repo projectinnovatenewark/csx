@@ -10,6 +10,9 @@ stringy = "supercalifragilisticexpialidocious"
 # characters except for the letter "s".
 # TIP: Conditions can be added to the end of list comprehensions.
 
+x = [s for s in stringy if s != "s"]
+
+print(x)
 
 
 ####################################################################################################
