@@ -1,45 +1,81 @@
 """
-Creating classes for your classmates
+Classes ToDo
 """
 
-# TODO: Create a class for an Employee, and include basic data
-# TODO: like hours worked, salary, first name, last name, age, and title
+# TODO: Section 1
 
-
-# TODO: Create a function inside the class and print out a formatted
-# TODO: set of strings explaining the details from the employee. Use the f shorthand
-# TODO: for formatting that was used in the previous example.
-
-# TODO: Then, call that function to print out those strings with a class
-# TODO: of Employee set equal to a variable employeeOne
+# Create a class for an "Employee" that includes the instance attributes: "first_name", "last_name",
+# "salary", and "title".
 
 
 
-# TODO: Set up a child class that derives from the Employee class and add the attribute 'h_benefits'.
-# TODO: Define a function 'intro' to print:
-# TODO: "Hi, my name is Garrett Palmeri. I am 24 year old Financial Analyst that makes $40000 per year.
-# TODO: I do not have insurance."
+# Next, within the "Employee" class, create a method called "printer()" that prints the statement,
+# "[first_name] [last_name] works as a [title] and makes $[salary] per year."
+# IMPORTANT: Use f shorthand to fosrmat your print statement.
 
 
 
-# TODO: Create a class named 'Animal' with the attributes no_of_legs, weight, height 
+# Then, define a new instantion of "Employee" with "first_name" equal to "Spongebob", "last_name"
+# equal to "Squarepants", "salary" equal to "50000" and "title" equal to "Fry Cook"
 
 
 
-# TODO: Then you will create 2 classes derived from 'Animal' named 'Mammal' and 'Fish' 
-# TODO: Define the variable 'habit' for 'Mammal' and 'Fish' to = 'Land' and 'Water' respectively,
-# TODO: so that it will apply to all Mammals and Fish.
-# TODO: Also give 'Mammal' a new attribute - 'can_fly' 
+# Lastly, call the "printer()" method to print your formatted statement.
 
 
 
-# TODO: Then set the class 'Dog' derived from 'Mammal' and 'Shark' derived from 'Fish'.
-# TODO: Give a new attribute to each - 'd_type' and 's_type' respectively.
+####################################################################################################
+
+# TODO: Section 2
+
+# Below is the class "SuperHero" with the instance attributes "name" and "powers". Within the class,
+# write a method called "add_power()" that adds a new superpower to the "powers" list.
+
+class SuperHero:
+  def __init__(self, name):
+    self.name = name
+    self.powers = []
+
+  # FIXME: Write your method here.
 
 
 
-# TODO: Define a function in 'Dog' that prints the statement
-# TODO: "Golden Retriever: 4 legs, 65 lbs, 47 inches. Habitat: Land"
-# TODO: Define a function in 'Shark' that prints the statement
-# TODO: "Great White: 0 legs, 2100 lbs, 144 inches. Habitat: Water"
-# TODO: Print each statement
+# Then, define a new instantiation of "SuperHero" with the "name" equal to "Superman" and store it
+# in a variable called "super".
+
+
+
+# Next, call the "add_power()" method three times to add the superpowers: "heat vision",
+# "super strength", and "invincibility".
+
+
+
+# Lastly, print the list of Superman's superpowers.
+
+
+####################################################################################################
+
+# TODO: Section 3
+
+# Create a class named "Animal" with the instnace attributes "num_legs" and "weight".
+
+
+
+# Then create a child class derived from "Animal" named "Mammal". Define the class attribute
+# "habitat" equal to "land" for "Mammal". Define "species" and "color" as new instance attributes in
+# the "Mammal" class.
+# HINT: Use the "super()" function.
+
+
+# Define a method in the "Mammal" class called "printer()" that prints the statement "The [species]
+# is [weight] pounds and lives on [habitat]".
+
+
+
+# Define an instantion of the "Mammal" class with "num_legs" eqaul to 4, "weight" equal to
+# "700", "species" equal to "black bear", and "color" equal to "black" stored in the variable
+# "bear".
+
+
+
+# Lastly, call the "printer()" method.
