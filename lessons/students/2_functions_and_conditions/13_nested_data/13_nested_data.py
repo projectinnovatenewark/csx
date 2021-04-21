@@ -1,5 +1,5 @@
 """
-Working with nested data structures.
+Working with nested data.
 """
 
 # TITLE: Section 1 - Nested Lists and Nested Loops
