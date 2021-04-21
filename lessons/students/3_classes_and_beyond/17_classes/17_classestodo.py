@@ -11,7 +11,7 @@ Classes ToDo
 
 # Next, within the "Employee" class, create a method called "printer()" that prints the statement,
 # "[first_name] [last_name] works as a [title] and makes $[salary] per year."
-# IMPORTANT: Use f shorthand to format your print statement.
+# IMPORTANT: Use f shorthand to fosrmat your print statement.
 
 
 
@@ -64,6 +64,7 @@ class SuperHero:
 # Then create a child class derived from "Animal" named "Mammal". Define the class attribute
 # "habitat" equal to "land" for "Mammal". Define "species" and "color" as new instance attributes in
 # the "Mammal" class.
+# HINT: Use the "super()" function.
 
 
 # Define a method in the "Mammal" class called "printer()" that prints the statement "The [species]
