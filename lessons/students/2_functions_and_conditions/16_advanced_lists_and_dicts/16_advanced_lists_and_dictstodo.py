@@ -11,7 +11,6 @@ stringy = "supercalifragilisticexpialidocious"
 # TIP: Conditions can be added to the end of list comprehensions.
 
 
-
 ####################################################################################################
 
 # TODO: Section 3
@@ -21,7 +20,6 @@ nums = [35, 47, 624, 19, 754, 90, 10]
 # Given the list "nums", use a "for loop" and the "enumerate()" function to iterate through the
 # list. Print the current iteration's number if the number is even OR if the index is even.
 # TIP: Use the % operator to check if a number is even.
-
 
 
 ####################################################################################################
@@ -35,8 +33,6 @@ check_cities1 = ["New York", "Boston", "Toronto"]
 # statement: "The city [city] exists in the dictionary." When a key does not exist, print the
 # statement: "The city [city] does not exist in the dictionary."
 # TIP: Loop through "check_cities1" to more easily test your condition.
-
-
 
 # TODO: Section 4.2
 check_cities2 = ["Rome", "Paris"]

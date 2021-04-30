@@ -27,8 +27,8 @@ Solve the problems below using helper functions.
 # TIP: the format that should be followed for solving this problem.
 # "The number num is odd and prime."
 # "The number num is odd and not prime."
-# "THe number num is even and prime."
-# "THe number num is even and not prime."
+# "The number num is even and prime."
+# "The number num is even and not prime."
 
 # TIP: Test your helper functions out along the way. Make sure each helper function works
 # TIP: individually before trying to solve the whole problem in one shot.
@@ -43,4 +43,28 @@ def isPrime(num):
     if (num % n == 0):
       is_prime = False
       break
+
   return is_prime
+
+def isEven(num):
+  if (num % 2 == 0):
+    return f"{num} is even"
+  return f"{num} is odd"
+
+def main(listy): # return "The number num is [even or odd] and [prime or not prime]."
+  for num in listy:
+    is_prime = isPrime(num)
+    is_even = isEven(num)
+
+    if (is_prime):
+      print(f"The number {is_even} and is prime.")
+    else:
+      print(f"The number {is_even} and is not prime.")
+
+main(num_list)
+
+# "The number num is odd and prime."
+# "The number num is odd and not prime."
+# "The number num is even and prime."
+# "The number num is even and not prime."
+  
