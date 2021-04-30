@@ -1,5 +1,5 @@
 """
-Practice using nested for loops to iterate through different data structures
+Practice using nested for loops to iterate through different data
 """
 
 # TODO: Section 1:
