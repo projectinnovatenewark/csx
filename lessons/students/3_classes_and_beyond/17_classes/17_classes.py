@@ -16,14 +16,14 @@ Understanding classes and scope within a class
 # The syntax for constructing a custom class is "class ClassName:". Below is an example of creating
 # a class called "TenClass".
 
-class TenClass: # Define class names starting with a capital letter and use CamelCase as a best
+class TenClass: # Define class names starting with a capital letter and use TitleCase as a best
                 # practice.
   x = 10 # This is a class attribute because all instances of "TenClass" will have the value x be
          # equal to 10.
 
   def x_plus_five(self): # This is a method. Methods always take at least one parameter of self to
                          # access the instance of the object it is called on.
-    print(f"x_plus_five Called{self.x + 5}") # We use "self" to print a given instance's value of
+    print(f"x_plus_five called: {self.x}") # We use "self" to print a given instance's value of
                                              # x + 5.
 
 # Just as other means of storing values in variables, we can instantiate an instance of the "TenClass"
