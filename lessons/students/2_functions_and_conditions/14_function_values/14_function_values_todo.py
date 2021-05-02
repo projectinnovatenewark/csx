@@ -45,26 +45,3 @@ def isPrime(num):
       break
 
   return is_prime
-
-def isEven(num):
-  if (num % 2 == 0):
-    return f"{num} is even"
-  return f"{num} is odd"
-
-def main(listy): # return "The number num is [even or odd] and [prime or not prime]."
-  for num in listy:
-    is_prime = isPrime(num)
-    is_even = isEven(num)
-
-    if (is_prime):
-      print(f"The number {is_even} and is prime.")
-    else:
-      print(f"The number {is_even} and is not prime.")
-
-main(num_list)
-
-# "The number num is odd and prime."
-# "The number num is odd and not prime."
-# "The number num is even and prime."
-# "The number num is even and not prime."
-  

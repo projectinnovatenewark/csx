@@ -30,7 +30,6 @@ stringy1 = "racecar"
 stringy2 = "supercalifragilisticexpialidocious"
 stringy3 = ""
 
-
 ####################################################################################################
 
 # TODO: Section 3
@@ -42,13 +41,6 @@ stringy3 = ""
 
 i = 0
 
-while i < 30:
-  i += 3
-  if (i % 2 == 0):
-    print("Skipping number", i)
-    continue
-  print(f"i: {i}")
-
 ####################################################################################################
 
 # TODO: Section 4
@@ -59,11 +51,3 @@ while i < 30:
 # loop from running. 
 
 i = 1
-
-while i < 200:
-  i += 4
-
-  if (i > 42):
-    print("Breaking the loop now")
-    break
-  print(f"i: {i}")

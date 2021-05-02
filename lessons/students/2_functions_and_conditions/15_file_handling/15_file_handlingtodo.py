@@ -35,12 +35,5 @@ Use employees.txt to perform operations on a list of employees
 # employee. The format of the employee information should be:
 # "John (tab) Smith (tab) Public Relations (tab) 50000". Then open the file again to read its
 # contents and print them to the terminal. Lastly close the file.
-fh = open("employees.txt", "a")
-message = "\nJohn\tSmith\tPublic Relations\t50,000"
-fh.write(message)
-
-fh = open("employees.txt", "r")
-print(fh.read())
-fh.close()
 
 # HINT: Use "\t" in strings to create a tab.
