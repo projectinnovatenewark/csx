@@ -8,13 +8,13 @@ Data Structures/Nested Data Types/Nested Data Structures Review
     # 3a) The first item always has an index of 0 and is increased by one with each item.
 
 names = [
-    "John",
-    "Marshall",
-    "Amy",
-    "Chris",
-    "Nicole",
-    "Brittany",
-    "Lisa"
+  "John",
+  "Marshall",
+  "Amy",
+  "Chris",
+  "Nicole",
+  "Brittany",
+  "Lisa"
 ]
 
 # Lists can also be displayed as below. We will refer to the above as spreading.
@@ -178,53 +178,59 @@ print(fourth_value)
 ###############################################################################
 
 # Nested Data Structures
-# These data structures can be used together to create complex data sets!
-# Below is an example of a dictionary holding multiple dictionaries and lists!
+# These data structures can be used together to create complex data sets.
+# Below is an example of a dictionary holding multiple dictionaries and lists.
 
-# This is what a spread data set would look like with correct tabulation.
-# If something is nested, it should be tabbed once from the original position
+# This is what spread data set would look like with correct tabulation.
+# If something is nested, it should be tabbed once from the original position.
 bobs_burgers = {
-    "season 1": {
-        "episode 1": {
-            "cast": [
-                "H. Jon Benjamin",
-                "Kristen Schall",
-                "Dan Mintz"
-            ],
-            "title": "Food Truckin",
-            "run time": 30
-        },
-        "episode 2": {
-            "cast": [
-                "H. Jon Benjamin",
-                "Kristen Schall",
-                "Dan Mintz"
-            ],
-            "title": "Out of Burgers",
-            "run time": 30
-        }
+  "season 1": {
+    "episode 1": {
+      "cast": [
+        "H. Jon Benjamin",
+        "Kristen Schall",
+        "Dan Mintz"
+      ],
+      "title": "Food Truckin",
+      "run time": "30"
     },
-    "season 2": {
-        "episode 1": {
-            "cast":[
-                "H. Jon Benjamin",
-                "Kristen Schall",
-                "Dan Mintz"
-            ],
-            "title": "Sheesh! Cab, Bob?",
-            "run time": 30
-        },
-        "episode 2": {
-            "cast": [
-                "H. Jon Benjamin",
-                "Kristen Schall",
-                "Dan Mintz"
-            ],
-            "title": "Buns City",
-            "run time": 30
-        }
+    "episode 2": {
+      "cast": [
+        "H. Jon Benjamin",
+        "Kristen Schall",
+        "Dan Mintz"
+      ],
+      "title": "Out of Burgers",
+      "run time": "29.30"
     }
+  },
+  "season 2": {
+    "episode 1": {
+      "cast":[
+        "H. Jon Benjamin",
+        "Kristen Schall",
+        "Dan Mintz"
+      ],
+      "title": "Sheesh! Cab, Bob?",
+      "run time": "28.42"
+    },
+    "episode 2": {
+      "cast": [
+        "H. Jon Benjamin",
+        "Kristen Schall",
+        "Dan Mintz"
+      ],
+      "title": "Buns City",
+      "run time": "29.15"
+    }
+  }
 }
+
+# TODO: Calculate the average runtime of the episodes in our nested data
+
+# TODO: Output a single string of every episode in the format of:
+# TODO: "[Episode One Name] + [Episode Two Name] ... [Last Episode Name]"
+
 # Matrices
 
 # Python doesn't have a formal way of creating a matrix, but we can think of one as a list of lists.
