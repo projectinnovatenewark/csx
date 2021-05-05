@@ -1,13 +1,42 @@
 import random
 
-# TITLE: Loops
+# TITLE: Data Types
 
-# TODO:  Solve the FizzBuzz problem.
+# TODO: Define a dictionary with some key value pairs of your choice. Print a value by using
+# TODO: its key in a readable string.
+
+# TODO: Define a list with some items of your choice. Print an item by using
+# TODO: it's index position in a readable string.
+
+####################################################################################################
+
+# TITLE: Conditions
+
+# TODO: Write a condition to check if this variable is a string. If it is true, print "string here"
+type_test = "i am a string"
+
+# TODO: Write a condition to check if this is an even number AND the number is two, if it is print
+# TODO: "this is even AND two". If the number is even and not two, print "this is just even".
+# TODO: If neither of those conditions is true, print "this is an odd number".
+
+# TIP: Test your code by first keeping this variable set to 2.
+# TIP: Then change the variable to 4 and 7 in that order.
+num_check = 2
+
+####################################################################################################
+
+# TITLE: Basic Loops
+
+# TODO: Solve the FizzBuzz problem.
 # Below is 10 random numbers between 0 and 100. Iterate over each number. If the number is
 # divisible by 3, print "fizz". If the number is divisible by 5, print "buzz". If the number
 # is divisible by both 3 and 5, print ONLY "fizzbuzz".
 
 nums = [random.randrange(0, 100) for n in range(10)]
+
+# TODO: Add the numbers 1 through 100 to a single integer. Print out that integer.
+
+####################################################################################################
 
 # TITLE: Nested Data
 # These data structures can be used together to create complex data sets.
@@ -61,14 +90,34 @@ bobs_burgers = {
 # TODO: Calculate the average runtime of the episodes in our nested data
 
 # TODO: Output a single string of every episode in the format of:
-# TODO: "[Episode One Name] + [Episode Two Name] ... [Last Episode Name]"
+# "[Episode One Name] + [Episode Two Name] ... [Last Episode Name]"
+
+####################################################################################################
+
+# TITLE: Functions
+
+# TODO: Define a function called "wordy" that takes a string & returns 'yell', 'whisper' or 'words'
+# If the word is all caps it should return "yell", if it is all lowercase it should return "whisper",
+# and if it is neither all caps nor all lowercase it should return "words".
+
+yelling = 'AHHHHH'
+whispering = 'shhhh'
+words = 'Whats up?'
+
+print(wordy(yelling)) # should print "yell"
+print(wordy(whispering)) # should print "whisper"
+print(wordy(words)) # should print "words"
+
+####################################################################################################
 
 # TITLE: Classes
 
 # TODO: Define a class of PIN. This class should have attributes and methods as the following:
 class PIN:
   """
-  Attributes:
+  Class Attribute:
+  'organization_type' should be set to 'nonprofit'.
+  Instance Attributes:
   'purpose' should be a short string describing the purpose of PIN.
   'board_members' should contain names of people on the board of directors.
   'years_old' should be an integer containing how many years PIN has been active for.
@@ -78,6 +127,8 @@ class PIN:
   'age_pin' should increment the years_old attribute by one.
   'add_member' should prompt the user to input a first/last name and add that name to the board.
   """
+
+# TITLE: Inheritance
 
 # TODO: Define a class of PINProgram. This class should inherit the PIN class and add some
 # TODO: additional functionality.
