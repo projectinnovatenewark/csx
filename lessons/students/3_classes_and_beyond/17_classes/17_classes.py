@@ -10,7 +10,7 @@ Understanding Classes, Attributes, Methods, and Inheritance.
 # Python constructs an object of the type "str" for string. The string class has methods that
 # you can perform on the variable, such as ".upper()" to convert every character to uppercase.
 # As you can see, classes are a key component of Python and you've been exposed to these concepts
-# since Lesson 1!
+# since Lesson 1.
 
 # The primary point of this lesson is to understand how to create our own types of objects.
 # To create user-defined objects in Python, we can use an object constructor known as a "class".
@@ -78,9 +78,11 @@ class Cat:
 # Below we are instantiating a class of "Cat" and setting the "name" attribute to "Simba" and the
 # "color" attribute to "orange".
 simba = Cat("Simba", "orange")
+
+# Let's create another instance of the "Cat" class.
 grumpy = Cat("Grumpy Cat", "brown and white")
 
-# Again, we can use dot notation to access the attributes of "Simba" and "Grumpy Cat".
+# Again, we can use dot notation to access the attributes of "simba" and "grumpy".
 print(f"{simba.name} is a(n) {simba.color} {simba.animal_type}.")
 print(f"{grumpy.name} is a(n) {grumpy.color} {grumpy.animal_type}.")
 
@@ -142,8 +144,6 @@ class Person:
   def identifier(self):
     print(f"This person's name is {self.first_name} {self.last_name}.")
 
-# Below the "Student" class is defined. The "Student" class will be instantiated to include both
-# instance attributes as well as the method defined in "Person".
 class Student(Person): # To inherit functionality of the "Person" class, we pass it as a parameter.
   """
   This class will inherit the 'Person' class, add an attribute 'grad_year', and add a method

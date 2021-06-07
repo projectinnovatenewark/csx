@@ -18,8 +18,11 @@ print(f"listy: {listy}, type: {type(listy)}")
 
 # You can create a dictionary using keyword arguments in Python with a dictionary constructor. A
 # "keyword arguement" is a way to define key/value pairs as an argument when executing a function or
-# method call. The syntax for using "dict()" with keyword arguments is "dict(key1=value1, key2=value2)".
-# Also, the dictionary constructor can take as many arguments as the
+# method call. The syntax for using "dict()" with keyword arguments is:
+
+# "dict(key1=value1, key2=value2)".
+
+# Additionally, the dictionary constructor can take as many arguments as the
 # user wants. Below is an example:
 
 dicty = dict(Apple='iPhone', Samsung='Galaxy', Google='Pixel')
@@ -43,7 +46,7 @@ print(f"Squares list: {squares}")
 squares_of_odd_numbers = [i**2 for i in range(10) if i % 2 != 0]
 print(f"Squares of odd numbers list:\n{squares_of_odd_numbers}")
 
-# ####################################################################################################
+####################################################################################################
 
 # TITLE:  Section 2.2 - Dictionary Comprehension
 
@@ -125,10 +128,10 @@ for league, sport in leagues.items():
 listy = ["Take", "me", "out", "to", "the", "ballgame"]
 
 var = "ballgame"
-if var in listy: # This checks if the value of "var", "ballgame" is in the list, "listy".
+if var in listy: # This checks if the value of "ballgame" is in the list "listy".
   print(f"The string {var} is in listy.")
 
-if "CSX" in listy: # This checks if the value of "var2", "CSX" is in "listy".
+if "CSX" in listy: # This checks if the value of "CSX" is in the list "listy".
   print(f"'CSX' is in listy.")
 else: # If "var2" isn't in listy, the condition will be False and the "else" statement will execute
   print(f"'CSX' is not in listy.")

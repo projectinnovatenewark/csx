@@ -84,7 +84,7 @@ def inquireUserGames():
   num_games_string = f"You've signed on to play {num_games} games."
 
   return num_games, num_games_string # Just as you can define multiple variables at once, you can
-                                      # also return multiple values from a single function.
+                                     # also return multiple values from a single function.
 
 def playTheGame():
   """Ask the user for a number between 1 and 10, generate a random number between 1 and 10, and

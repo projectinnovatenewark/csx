@@ -87,7 +87,7 @@ for letter in 'Python':
   if letter == 'h':
     continue # When the "for loop" observes the character 'h', the program will skip the print
              # statement and begin the next iteration.
-  print(f"Current Letter :{letter}")
+  print(f"Current Letter: {letter}")
 
 i = 10
 while i > 0:
@@ -111,7 +111,7 @@ while i > 0:
 for letter in 'Python':
   if letter == 'o':
     break # When the variable "letter" is equal to "o", the loop will break.
-  print(f"Current Letter : {letter}")
+  print(f"Current Letter: {letter}")
 
 var = 10
 while var > 2:
