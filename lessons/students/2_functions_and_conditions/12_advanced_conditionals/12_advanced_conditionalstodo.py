@@ -7,7 +7,7 @@ Advanced conditional statements with continue and break statements.
 # Generate a user input asking for an integer and store it in a variable called "num". Then write a
 # function called "evaluate()" that tells the user whether "num" is an odd or even number.
 
-# The defined function should take a parameter called "user_input" and print the statement "The user
+# The defined function should set a parameter called "user_input" and print the statement "The user
 # input is even." if the input is even, or "The user input is odd." if the input is odd. Lastly, use
 # "num" as the argument to call "evaluate()".
 
@@ -29,7 +29,6 @@ Advanced conditional statements with continue and break statements.
 stringy1 = "racecar"
 stringy2 = "supercalifragilisticexpialidocious"
 stringy3 = ""
-
 
 ####################################################################################################
 

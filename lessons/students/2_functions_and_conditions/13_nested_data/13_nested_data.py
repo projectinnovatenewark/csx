@@ -31,14 +31,13 @@ for sublist in my_shows: # The variable "sublist" represents each list of shows 
 
 # TITLE: Section 2 - Nested Dictionaries and Nested Loops
 
-# In the next example we williterate through a nested dictionary called "spongebob". A nested
+# In the next example we will iterate through a nested dictionary called "spongebob". A nested
 # dictionary consists of key value pairs where the value of each key is another dictionary. Just as
 # in section 1, we can use a nested for loop to iterate through each nested dictionary. The
 # dictionary "spongebob" includes 3 seasons with 6 episodes in each season.
 
 spongebob = {
-  "Season 1":
-  {
+  "Season 1": {
     "Episode 1": "Help Wanted",
     "Episode 2": "Bubblestand",
     "Episode 3": "Jellyfishing",
@@ -46,8 +45,7 @@ spongebob = {
     "Episode 5": "Pizza Delivery",
     "Episode 6": "Mermaid Man and Barnacle Boy",
   },
-  "Season 2":
-  {
+  "Season 2": {
     "Episode 1": "Your Shoe's Untied",
     "Episode 2": "Something Smells",
     "Episode 3": "Big Pink Loser",
@@ -55,8 +53,7 @@ spongebob = {
     "Episode 5": "Wormy",
     "Episode 6": "Grandma's Kisses",
   },
-  "Season 3":
-  {
+  "Season 3": {
     "Episode 1": "The Algae's Always Greener",
     "Episode 2": "Club SpongeBob",
     "Episode 3": "Just One Bite",
@@ -78,7 +75,7 @@ print(season_3["Episode 6"])
 
 # Let's walk through the control of the nested "for loop" below. The first iteration of our top
 # level "for loop" is "Season 1" since it is the first key in our dictionary. To make iterating
-# through each season easier to read, we use the following syntax: variable dictionary[key]. In this
+# through each season easier to read, we use the following syntax: variable = dictionary[key]. In this
 # example the variable is called "season", which is the iterable object in the second "for loop".
 # The first iteration of "season" will be the key/value pair "Episode 1: "Help Wanted"".
 
@@ -147,7 +144,7 @@ math_classes = [
 
 for key in math_classes:
   level = key["level"]
-  if (level == "Calculus"):
+  if level == "Calculus":
     print(key)
 
 # We can use the same approach to find the 2nd student in the list of students from the Algebra
@@ -158,7 +155,7 @@ for key in math_classes:
 for key in math_classes:
   level = key["level"]
   student = key["students"]
-  if (level == "Algebra"):
+  if level == "Algebra":
     print(student[1])
 
 # Next, lets print each student from every course. To do so we can iterate through each course,
@@ -172,13 +169,13 @@ for key in math_classes:
 # Lastly, let's use what we have learned to print the following statement for each iteration:
 # "[Teacher] teaches [subject] to [student]".
 # TIP: Setting variables will not only help in readability, but will also keep track of your
-# TIP: program's funcitonality.
+# TIP: program's functionality.
 
 for key in math_classes:
-    students = key["students"]
-    teacher = key["teacher"]
-    subject = key["subject"]   
-    for student in students:
-        print(f"{teacher} teaches {subject} to {student}.")
+  students = key["students"]
+  teacher = key["teacher"]
+  subject = key["subject"]   
+  for student in students:
+    print(f"{teacher} teaches {subject} to {student}.")
 
 # TODO: Complete Section 3 of TODO 13 (7 min for students, 4 min for demo)

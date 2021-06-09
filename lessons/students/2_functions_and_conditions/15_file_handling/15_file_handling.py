@@ -51,7 +51,7 @@ fh = open("hello.txt", "r")
 contents_list = fh.readlines()
 print("Contents .readlines() method: \n", contents_list, "\n")
 for line in contents_list:
-    print(line)
+  print(line)
 fh.close()
 
 # TODO: Section 1 of TODO 15 (6 min for students, 3 min for demo)
@@ -64,7 +64,7 @@ fh.close()
 # function needs to be set to "w". Writing to a file will overwrite its contents with the argument
 # passed. The syntax for using the "write()" method is "file_object.write("string")". 
 fh = open("hello.txt", "w")
-fh.write("Hello World") # This overwrites the contents of hello.txt with "Hello World"
+fh.write("Goodbye World") # This overwrites the contents of hello.txt with "Goodbye World"
 
 # After overwriting the file we can open it using the "r" mode to read the file's contents.
 fh = open("hello.txt", "r") 
@@ -81,10 +81,17 @@ fh.writelines(lines_of_text)
 fh.close()
 
 # Lastly, we can write to a file without overwriting its contents by using the "a" mode in the
-# "open()" function. The "write()" method is then used to append the file.
-fh = open("hello.txt", "a")
+# "open()" function. The "write()" method is then used to append to the file.
+fh = open("hello.txt", "a") # IMPORTANT: Using append mode vs write mode determines whether
+                            # IMPORTANT: or not you overwrite the existing file contents.
 message = "Hello World, again."
 fh.write(message)
+fh.close()
+
+# TODO: Hey Teacher, run this final code block to return the .txt file to its
+# TODO: original state.
+fh = open("hello.txt", "w")
+fh.write("Hello World") # This overwrites the contents of hello.txt with "Hello World".
 fh.close()
 
 # TODO: Section 2 of TODO 15 (6 min for students, 3 min for demo)

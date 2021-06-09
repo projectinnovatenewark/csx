@@ -12,7 +12,7 @@ Example recursion functions. reference: https://realpython.com/python-thinking-r
 
 def factorial_recursive(n):
     # Base case: 1! = 1
-    if (n == 1):
+    if n == 1:
         return 1
 
     # Recursive case: n! = n * (n-1)!
@@ -27,7 +27,7 @@ print(factorial_recursive(10))
 
 def fibonacci(num):
     """use recursion to find the n'th term in the fibonacci sequence"""
-    if (num < 2):
+    if num < 2:
         return num
     else:
         return fibonacci(num-1)+fibonacci(num-2)

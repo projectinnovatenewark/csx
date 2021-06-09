@@ -54,7 +54,7 @@ print(f"{num}'s factorial: {factorial(num)}")
 def fib(n):
   """Find the n'th term in the Fibonacci Sequence"""
   # Base Case
-  if (n < 2):
+  if n < 2:
     return n
   else:
     # Recursive function calls

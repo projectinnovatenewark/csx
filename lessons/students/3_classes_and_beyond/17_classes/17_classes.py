@@ -1,12 +1,19 @@
 """
-Understanding classes and scope within a class
+Understanding Classes, Attributes, Methods, and Inheritance.
 """
 # TITLE: Section 1.1 - Constructing Classes
 
 # As we have covered previously, Python is an object oriented programming (OOP) language. Therefore,
 # almost everything in Python is an object. An object consists of various data and the methods that
-# perform operations on those data. To create user-defined objects in Python, we can use an object
-# constructor known as a "class".
+# perform operations on those data. Python implements certain types of object constructors
+# inherently, such as when a user defines a string. When you set a variable equal to a string,
+# Python constructs an object of the type "str" for string. The string class has methods that
+# you can perform on the variable, such as ".upper()" to convert every character to uppercase.
+# As you can see, classes are a key component of Python and you've been exposed to these concepts
+# since Lesson 1.
+
+# The primary point of this lesson is to understand how to create our own types of objects.
+# To create user-defined objects in Python, we can use an object constructor known as a "class".
 
 # Both objects and classes are comprised of attributes and methods. There are two types of
 # attributes; class attributes and instance attributes. Class attributes are shared by all
@@ -16,19 +23,20 @@ Understanding classes and scope within a class
 # The syntax for constructing a custom class is "class ClassName:". Below is an example of creating
 # a class called "TenClass".
 
-class TenClass: # Define class names starting with a capital letter and use CamelCase as a best
-                # practice.
-  x = 10 # This is a class attribute because all instances of "TenClass" will have the value x be
-         # equal to 10.
+class TenClass: # Class names use "TitleCase" as opposed to either "camelCase" or "snake_case".
+  x = 10 # This is a class attribute - all instances of "TenClass" will have this attribute.
 
-  def x_plus_five(self): # This is a method. Methods always take at least one parameter of self to
-                         # access the instance of the object it is called on.
-    print(f"x_plus_five Called{self.x + 5}") # We use "self" to print a given instance's value of
-                                             # x + 5.
+  def x_plus_five(self): 
+    """
+    This is a method. Methods always set at least one parameter of self to
+    access the instance of the object it is called on.
+    """
+    
+    # We use "self" to print a given instance's value of x + 5.
+    print(f"x_plus_five called: {self.x + 5}")
 
-# Just as other means of storing values in variables, we can instantiate an instance of the "TenClass"
+# Just as other means of storing values in variables, we can create an instance of the "TenClass"
 # class and store it in a variable.
-
 instance1 = TenClass()
 instance2 = TenClass()
 
@@ -45,29 +53,33 @@ print(f"instance2: {instance2.x}")
 instance1.x_plus_five()
 instance2.x_plus_five()
 
-####################################################################################################
+###################################################################################################
 
-# TITLE: Section 1.2 - The __init__ Function
+# TITLE: Section 1.2 - The "__init__" Method
 
 # The "__init__()" function is a special Python function that is called automatically by an object
 # creation statement. In OOP, the "__init__()" function is known as a constructor, as its job is to
 # build (construct) an object of the type specified by the class. Below we are defining the class
-# "Cat" and want to give it instance attributes of "name" and "color". Remeber that instance
+# "Cat" and want to give it instance attributes of "name" and "color". Remember that instance
 # attributes are defined in each individual class instantiation.
 
 class Cat:
   animal_type = 'feline' # This is a class attribute that will be shared by all instances of "Cat".
 
-  def __init__(self, name, color): # Our constructor takes 3 parameters: "self" (the instance of
-                                   # the class), name, and color.
-    # Using the syntax "self.var", where "var" is a given parameter, we can set attributes of a
-    # given instantiation of a class during its creation.
+  # Our constructor takes 3 parameters: "self" (the instance of the class), name, and color.
+  def __init__(self, name, color):
+    """
+    Using the syntax "self.var", where "var" is a given parameter, we can set
+    attributes of a given instantiation of a class during its creation.
+    """
     self.name = name
     self.color = color
 
-# Below we are intantiating a class of "Cat" and setting the "name" attribute to "Simba" and the
+# Below we are instantiating a class of "Cat" and setting the "name" attribute to "Simba" and the
 # "color" attribute to "orange".
 simba = Cat("Simba", "orange")
+
+# Let's create another instance of the "Cat" class.
 grumpy = Cat("Grumpy Cat", "brown and white")
 
 # Again, we can use dot notation to access the attributes of "simba" and "grumpy".
@@ -78,7 +90,7 @@ print(f"{grumpy.name} is a(n) {grumpy.color} {grumpy.animal_type}.")
 
 ####################################################################################################
 
-# TITLE: Section 2 - Using methods to mutate attributes
+# TITLE: Section 2 - Using Methods to Mutate Attributes
 
 # In Python, we can use class methods to change the value of an instance's attribute. Below we are
 # defining a class called 'Dog' that will have a class attribute of "animal_type" equal to "canine",
@@ -87,13 +99,12 @@ print(f"{grumpy.name} is a(n) {grumpy.color} {grumpy.animal_type}.")
 # we will call the "add_trick()" method.
 
 class Dog:
-
   animal_type = 'canine' # This is a class attribute.
 
   def __init__(self, name, color):
     self.name = name
     self.color = color
-    self.tricks = []  # Creates a new empty list for each Dog.
+    self.tricks = [] # Creates a new empty list for each Dog.
 
   def add_trick(self, trick):
     self.tricks.append(trick) # We pass "trick" as a parameter and append it to the "tricks" list.
@@ -101,6 +112,8 @@ class Dog:
 dog_1 = Dog("Fido", "brown")
 dog_1.add_trick("sit")
 dog_1.add_trick("roll over")
+
+dog1.tricks = ["roll", "jump"]
 
 dog_2 = Dog("Bella", "black")
 dog_2.add_trick("shake")
@@ -121,37 +134,40 @@ print(f"{dog_2.name}'s list of tricks: {dog_2.tricks}")
 # to as the parent class, or base class, while the new class is referred to as a child class, or
 # derived class.
 
-# Below we have a parent class of Person. We will use this class to create a child class called
-# "Student".
 class Person:
-    def __init__(self, first_name, last_name):
-        self.first_name = first_name
-        self.last_name = last_name
-    
-    def identifier(self):
-        print(f"My name is {self.first_name} {self.last_name}.")
+  """This class will have instance attributes of first/last names & a method to print the name"""
 
-# Below the "Student" class is defined. The "Student" class will be instantiated to include both
-# instance attributes as well as the method defined in "Person".
+  def __init__(self, first_name, last_name):
+    self.first_name = first_name
+    self.last_name = last_name
 
-class Student(Person): # To inherit funcitonality of the "Person" class, we pass it as a parameter.
-    def __init__(self, first_name, last_name, grad_year):
+  def identifier(self):
+    print(f"This person's name is {self.first_name} {self.last_name}.")
 
-        # The "super()" function is a built-in Python function that allows programmers to access the
-        # functionality of a parent class without naming it explicitely.
-        super().__init__(first_name, last_name) # The "super()" function is used to inherit the
-                                       # attributes defined in the "Person" class.
-                                                
-        self.grad_year = grad_year # The attribute "grad_year" is specific to the "Student" class.
-                                   #  This attribute would not be accessible by the "Person" class.
+class Student(Person): # To inherit functionality of the "Person" class, we pass it as a parameter.
+  """
+  This class will inherit the 'Person' class, add an attribute 'grad_year', and add a method
+  'print_grad_year'. This allows us to utilize the parent class' attributes and methods
+  without having to redefine them in the Student class.
+  """
 
-    def print_grad_year(self):
-        print(f"{self.first_name} {self.last_name} will graduate in {self.grad_year}.")
+  def __init__(self, first_name, last_name, grad_year):
+    """
+    The 'super()' function is a built-in Python function that allows programmers to access the
+    functionality of a parent class. In this case, the 'super()' function is used to inherit
+    the attributes defined in the 'Person' class.
+    """
+    super().__init__(first_name, last_name)
+    self.grad_year = grad_year # The attribute "grad_year" is specific to the "Student" class.
 
-student_1 = Student("Joey", "Walnut", 2023) # This is an instantion of the child class, "Student".
+  def print_grad_year(self):
+    print(f"{self.first_name} {self.last_name} will graduate in {self.grad_year}.")
 
-# Methods from either the parent class or child class can be called on instantiations of the child
-# class.
+# This is an instantiation of the child class, "Student".
+student_1 = Student("Joey", "Walnut", 2023)
+
+# Methods from either the parent class or child class can be called
+# on instantiations of the child class.
 student_1.identifier() # This was defined in the parent class.
 student_1.print_grad_year() # This was defined in the child class.
 

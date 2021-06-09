@@ -30,7 +30,7 @@ def playTheGame():
     promptUserForNumber = input("Guess a number between 1 and 10: ")
     userNumber = int(promptUserForNumber)
 
-    if (randomNumber == userNumber):
+    if randomNumber == userNumber:
         print("You guessed correctly! Number", userNumber, "was the correct guess.", "\n")
     else:
         print("Wrong Answer!!! Number", randomNumber, "doesnt equal", userNumber, "\n")

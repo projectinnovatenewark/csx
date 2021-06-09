@@ -10,14 +10,14 @@ Introduction to conditionals and covering while loops.
 # "some_condition" is the condition to be evaluated.
 
 rectangle_area = 100
-if (rectangle_area > 50): # if "rectangle_area" is > 50, the print statement will run.
+if rectangle_area > 50: # if "rectangle_area" is > 50, the print statement will run.
   print("This is a large rectangle")
 
 # Another type of conditional statement is an "else statement". An "else statement" will only
 # run if a paired "if statement" is false.
 
 rectangle_area = 43
-if (rectangle_area > 50):
+if rectangle_area > 50:
   print("This is a large rectangle.")
 else:
   print("This is a small rectangle.")

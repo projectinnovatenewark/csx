@@ -115,7 +115,7 @@ def daysActivities(type_of_day):
   # conditional is true, then whatever is within the scope of the conditional is executed. If the
   # conditional is not true, the "else" block's code is executed.
 
-  if (type_of_day.lower() == "fun"):
+  if type_of_day.lower() == "fun":
     day_string = "You should enjoy some of your favorite activities."
   else:
     day_string = "You should try to have some more fun!"
@@ -156,7 +156,7 @@ def dictionary_reader(dictionary):
 
   for student in dictionary:
     print(f"{student} got a score of {dictionary[student]} on their exam!")
-
+  
   print("\n This function has finished running.")
 
 dictionary_reader(example_dict_1) # Here we pass the function an argument for our first dictionary
