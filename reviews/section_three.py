@@ -104,9 +104,10 @@ yelling = 'AHHHHH'
 whispering = 'shhhh'
 words = 'Whats up?'
 
-print(wordy(yelling)) # should print "yell"
-print(wordy(whispering)) # should print "whisper"
-print(wordy(words)) # should print "words"
+# FIXME: Uncomment this to test your code, students.
+# print(wordy(yelling)) # should print "yell"
+# print(wordy(whispering)) # should print "whisper"
+# print(wordy(words)) # should print "words"
 
 ####################################################################################################
 
