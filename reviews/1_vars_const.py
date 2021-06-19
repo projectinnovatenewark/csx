@@ -78,7 +78,6 @@ print(GRAVITY)
 # Concatenation
 # Concatenation is the combining of strings
 
-
 print("Hello my name is " + "Gary")
 
 # Tip: Using plus signs is inconvienent and slows down your code.
@@ -93,7 +92,7 @@ print("Hello my name is", name) #(name is the varable here)
 var1 = "Hello"
 var2 = "my name is"
 var3 = "Gary"
-print(var1, var2, var3)
+print(var1 + var2 + var3)
 
 #################################################################################################
 

@@ -2,9 +2,9 @@
 Introduce data structures like queue and stack
 """
 
-# python lists breakdown: https://developers.google.com/edu/python/lists
-# python dicts breakdown: https://developers.google.com/edu/python/dict-files
-    # and methods for dicts: 
+# python list breakdown: https://developers.google.com/edu/python/lists
+# python dict breakdown: https://developers.google.com/edu/python/dict-files
+# and methods for dicts: 
 
 
 # Stacks follow the Last-in-First-Out (LIFO) principle. As if stacking
@@ -13,14 +13,14 @@ Introduce data structures like queue and stack
 
 letters = []
 
-# push - adds an element to the top of the stack:
+# push - add element to the top of the stack:
 # Let's push some letters into our list
 letters.append('c')
 letters.append('a')
 letters.append('t')
 letters.append('g')
 
-# pop - removes the element at the top of the stack:
+# pop - remove element at the top of the stack:
 # Now let's pop letters, we should get 'g'
 last_item = letters.pop()
 print(last_item)
