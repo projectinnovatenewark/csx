@@ -13,14 +13,14 @@ Introduce data structures like queue and stack
 
 letters = []
 
-# Push - adds an element to the top of the stack:
+# Push - add element to the top of the stack:
 # Let's push some letters into our list
 letters.append('c')
 letters.append('a')
 letters.append('t')
 letters.append('g')
 
-# Pop - removes the element at the top of the stack:
+# Pop - remove element at the top of the stack:
 # Now let's pop letters, we should get 'g'
 last_item = letters.pop()
 print(last_item)
@@ -40,7 +40,7 @@ print(letters) # ['c', 'a']
 
 fruits = []
 
-# Enqueue - adds an element to the end of the queue:
+# Enqueue - add element to the end of the queue:
 # Let's enqueue some fruits into our list
 fruits.append('banana')
 fruits.append('grapes')

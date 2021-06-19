@@ -40,4 +40,3 @@ num_feet = 4
 
 three = '3'
 # print(f"3 Plus 10 is {three + 10}")
-
