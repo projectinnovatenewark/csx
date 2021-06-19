@@ -2,8 +2,8 @@
 Introduce data structures like queue and stack
 """
 
-# python list breakdown: https://developers.google.com/edu/python/lists
-# python dict breakdown: https://developers.google.com/edu/python/dict-files
+# Python lists breakdown: https://developers.google.com/edu/python/lists
+# Python dicts breakdown: https://developers.google.com/edu/python/dict-files
 # and methods for dicts: 
 
 
@@ -13,14 +13,14 @@ Introduce data structures like queue and stack
 
 letters = []
 
-# push - add element to the top of the stack:
+# Push - add element to the top of the stack:
 # Let's push some letters into our list
 letters.append('c')
 letters.append('a')
 letters.append('t')
 letters.append('g')
 
-# pop - remove element at the top of the stack:
+# Pop - remove element at the top of the stack:
 # Now let's pop letters, we should get 'g'
 last_item = letters.pop()
 print(last_item)
@@ -40,14 +40,14 @@ print(letters) # ['c', 'a']
 
 fruits = []
 
-# enqueue - add element to the end of the queue:
+# Enqueue - add element to the end of the queue:
 # Let's enqueue some fruits into our list
 fruits.append('banana')
 fruits.append('grapes')
 fruits.append('mango')
 fruits.append('orange')
 
-# dequeue - remove element at the beginning of the queue:
+# Dequeue - removes the element at the beginning of the queue:
 # Now let's dequeue our fruits, we should get 'banana'
 first_item = fruits.pop(0)
 print(first_item)
