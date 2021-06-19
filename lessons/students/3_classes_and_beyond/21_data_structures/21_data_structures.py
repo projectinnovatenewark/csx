@@ -40,14 +40,14 @@ print(letters) # ['c', 'a']
 
 fruits = []
 
-# enqueue - adds an element to the end of the queue:
+# enqueue - add element to the end of the queue:
 # Let's enqueue some fruits into our list
 fruits.append('banana')
 fruits.append('grapes')
 fruits.append('mango')
 fruits.append('orange')
 
-# dequeue - removes the element at the beginning of the queue:
+# dequeue - remove element at the beginning of the queue:
 # Now let's dequeue our fruits, we should get 'banana'
 first_item = fruits.pop(0)
 print(first_item)
