@@ -2,9 +2,9 @@
 Introduce data structures like queue and stack
 """
 
-# python lists breakdown: https://developers.google.com/edu/python/lists
-# python dicts breakdown: https://developers.google.com/edu/python/dict-files
-    # and methods for dicts: 
+# Python lists breakdown: https://developers.google.com/edu/python/lists
+# Python dicts breakdown: https://developers.google.com/edu/python/dict-files
+# and methods for dicts: 
 
 
 # Stacks follow the Last-in-First-Out (LIFO) principle. As if stacking
@@ -13,14 +13,14 @@ Introduce data structures like queue and stack
 
 letters = []
 
-# push - adds an element to the top of the stack:
+# Push - adds an element to the top of the stack:
 # Let's push some letters into our list
 letters.append('c')
 letters.append('a')
 letters.append('t')
 letters.append('g')
 
-# pop - removes the element at the top of the stack:
+# Pop - removes the element at the top of the stack:
 # Now let's pop letters, we should get 'g'
 last_item = letters.pop()
 print(last_item)
@@ -40,14 +40,14 @@ print(letters) # ['c', 'a']
 
 fruits = []
 
-# enqueue - adds an element to the end of the queue:
+# Enqueue - adds an element to the end of the queue:
 # Let's enqueue some fruits into our list
 fruits.append('banana')
 fruits.append('grapes')
 fruits.append('mango')
 fruits.append('orange')
 
-# dequeue - removes the element at the beginning of the queue:
+# Dequeue - removes the element at the beginning of the queue:
 # Now let's dequeue our fruits, we should get 'banana'
 first_item = fruits.pop(0)
 print(first_item)
