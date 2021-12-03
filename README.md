@@ -46,15 +46,20 @@ are typically self-explanatory.
            Code by clicking "Shift + Ctrl + X" (windows) or "Shift + Command + X" (mac). Once there, search for those exact extensions and download the first result for each of them. Once you are done downloading those extensions, return back to the main "Explorer" page where you will be viewing your folders/files by clicking "Shift + Ctrl + E" (windows) or "Shift + Command + E" (mac). There are icons on the left panel of your VS Code to navigate through these different pages as well. You will see how these extensions are to be used at the bottom of this README
         
 6. Create a repository in Github -> https://help.github.com/en/enterprise/2.13/user/articles/creating-a-new-repository
-        Then copy this set of commands into your terminal after creating repository, which can be found on your Github page after you created the repository in the first section:
-          - `echo "# [INSERT REPOSITORY NAME]" >> README.md`
-          - `git init`
-          - `git add README.md`
-          - `git commit -m "first commit"`
-          - `git remote add origin [REPOSITORY URL]`
-          - `git push -u origin master`
+        Then after creating the repository, you should have some commands to choose from on the repository page. The top block of commamnds will look a bit like the following:
 
-7. To check what your working directory is once again, enter `pwd` into your terminal
+```
+echo "# [INSERT REPOSITORY NAME]" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin [REPOSITORY URL]
+git push -u origin master
+```
+
+Click on the copy icon next to that top block. You will paste it into your terminal momentarily - we will instruct you when to do that.
+
+7. To check what your working directory is once again, enter `pwd` into your terminal.
 
 8. When you want to go up a level in your directory, enter `cd ..` into your terminal
     ex: if you are in "/Users/user/Documents/programming/python-work"
@@ -67,12 +72,17 @@ are typically self-explanatory.
                                                  you can hit the tab button and the directory should fill in)
         your working directory will then be "/Users/username/Documents/programming/python-work"
         
-10. The steps to commit code to Github are:
-        `git add .`
-        `git commit -m "commit message`
-        `git push`
+    Your working directory should now end in /python-work. If that is the case, go ahead and paste in the block of commands from your Github repository page. Wait till all of the commands run, then click enter in your terminal. This connects your current working directory to the Github repository you just created.
         
-11. To pull code from the master branch of a repository:
+10. The steps to commit code to Github are:
+```
+git add .
+git commit -m "commit here"
+git push
+```
+Run those commands one-by-one in order in your terminal. Following `git push` you might see an output in your terminal with instructions (i.e. "Run this command to do X", you should go ahead and follow those instructions. Some of these instructions have included commands to set your Github email or set the origin for different users. After, if everything worked, when you refresh your Github repository page you should have a file in the repository called README.md. Then, once you make new files in your "python-work" folder and want to put them on Github, you can simply run those 3 git commands to push up code to your repository.
+   
+11. If you are collaborating with someone else on a repository and you want to pull changes on to your computer, you would run this command. :
         `git pull origin master`
 
 12. We will now include steps so that your files are formatted appropriately with the extensions you installed. Here are the different conventions we use
@@ -94,13 +104,13 @@ are typically self-explanatory.
         h. ## IMPORTANT: an important statement will be used to emphasize a section of the lesson. There will only be a handful of these throughout the curriculum- so make sure to read into these statements!
         
 13. Next you should copy and paste the todos (file ends in "todo") into VS Code
-        a. Go to -> https://github.com/projectinnovatenewark/student_repository/tree/master/todos
-           to see the assignment files separated by week.
-        b. Create a file in your "python-work" folder in VS Code:
+        a. Go to -> https://github.com/projectinnovatenewark/csx/tree/master/lessons/students
+           to see the assignment files separated by section.
+        b. Create a new file in your "python-work" folder in VS Code:
            - right click on "python-work" folder
            - click "new file"
-           - name the new file "currentlesson.py" (.py tells VS Code that it is a pthon file)
-        c. Copy the first lesson from week one in your new file and try to solve it. 
+           - name the new file "currentlesson.py" (the .py extension tells your computer that it is a Python file)
+        c. Copy the first lesson from week one in your new file follow the instructions. 
            To run your code, simply click on the green arrow at the top right of your VS Code window.
 
 13. When you are finished with the lesson and complete the corresponding todo
