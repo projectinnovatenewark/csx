@@ -62,17 +62,19 @@ Click on the copy icon next to that top block. You will paste it into your termi
 7. To check what your working directory is once again, enter `pwd` into your terminal.
 
 8. When you want to go up a level in your directory, enter `cd ..` into your terminal
-    ex: if you are in "/Users/user/Documents/programming/python-work"
+    ex: if you are in "/Users/username/Documents/programming/python-work"
         Enter in the Terminal: `cd ..`
         your working directory will then be "/Users/username/Documents/programming"
 
-9. When you want to chamge your working directory, enter `cd [directory name]`
+9. When you want to change your working directory, enter `cd [directory name]`
         For example, if you are in "/Users/username/Documents/programming"
-        Enter in the Terminal: `cd python-work` (If you begin to type the name of the desired directory,
-                                                 you can hit the tab button and the directory should fill in)
-        your working directory will then be "/Users/username/Documents/programming/python-work"
+        Enter in the Terminal: `cd python-work`
+        TIP: If you begin to type the name of the desired directory, 
+        you can hit the tab button to autocomplete, then the directory should fill in. If you
+        are using Windows, clicking tab will be a requirement. That means, after typing in `cd python-work`, you will have to click tab on a Windows computer
+        before clicking enter. Your working directory will then be "/Users/username/Documents/programming/python-work"
         
-    Your working directory should now end in /python-work. If that is the case, go ahead and paste in the block of commands from your Github repository page. Wait till all of the commands run, then click enter in your terminal. This connects your current working directory to the Github repository you just created.
+    Your working directory should now end in /python-work, which you can confirm using the `pwd` command. If that is the case, go ahead and paste in the block of commands from your Github repository page. Wait till all of the commands run, then click enter in your terminal. This connects your current working directory to the Github repository you just created.
         
 10. The steps to commit code to Github are:
 ```
