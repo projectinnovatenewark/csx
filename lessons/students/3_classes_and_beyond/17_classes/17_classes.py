@@ -113,7 +113,7 @@ dog_1 = Dog("Fido", "brown")
 dog_1.add_trick("sit")
 dog_1.add_trick("roll over")
 
-dog1.tricks = ["roll", "jump"]
+dog_1.tricks = ["roll", "jump"]
 
 dog_2 = Dog("Bella", "black")
 dog_2.add_trick("shake")
