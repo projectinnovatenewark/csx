@@ -1,1 +1,0 @@
-# FIXME: review public/private methods/attr's and decorators in classes
