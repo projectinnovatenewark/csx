@@ -58,3 +58,8 @@ print(first_item)
 
 # 'mango' and 'orange' remain
 print(fruits) # ['c', 'a']
+
+# checkout from master, pull master, add/commit changes on local branch, push changes to branch on remote repository, create pull request,
+# get pull request (or PR as its referred to) reviewed by a collaborator, address any changes that might need to be made, have 
+# collaborator approve, merge the code to master, checkout to master on local computer, pull from master to update local branch,
+# checkout to new branch for some new code to be written, rinse and repeat!
