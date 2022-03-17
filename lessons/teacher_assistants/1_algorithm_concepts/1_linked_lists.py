@@ -7,12 +7,16 @@ Slides: https://docs.google.com/presentation/d/12ZTtT-OSKM3i5LIc6-oxYhg4E8YXQqtL
 # TITLE: SINGLE LINKED LISTS
 
 class SLLNode:
-  def __init__(self, data = None, next = None):
-    self.data = data
-    self.next = next
+  def __init__(self, d = None, n = None):
+    self.data = d
+    self.next = n
 
-  def change_data(self, new_data):
-    self.data = new_data
+  def traverse(self):
+    curr_node = self
+    while curr_node:
+      print(curr_node.data)
+      curr_node = curr_node.next
+    print("DONE!!!")
 
   def append(self, new_data):
     curr_node = self
@@ -71,7 +75,10 @@ print("\n")
 
 # CHALLENGE: https://leetcode.com/problems/reverse-linked-list/
 
-####################################################################################################
+node1.append(SLLNode(2))
+node1.append(SLLNode(3))
+node1.append(SLLNode(4))
+node1.append(SLLNode(5))
 
 # TITLE: DOUBLE LINKED LIST
 
