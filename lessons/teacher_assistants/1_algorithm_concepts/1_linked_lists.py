@@ -11,13 +11,6 @@ class SLLNode:
     self.data = d
     self.next = n
 
-  def traverse(self):
-    curr_node = self
-    while curr_node:
-      print(curr_node.data)
-      curr_node = curr_node.next
-    print("DONE!!!")
-
   def append(self, new_data):
     curr_node = self
     while curr_node.next:
