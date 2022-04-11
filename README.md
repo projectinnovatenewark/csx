@@ -42,7 +42,9 @@ are typically self-explanatory.
            be in the "programming" folder, and the path response you get from the pwd command should end in "programming"
            (i.e. user/Documents/programming)
         d. Create a folder called "python-work" by entering the command `mkdir python-work`
-        e. Download the following VS Code extensions- Python and Highlight. You can find the extensions tab in VS
+        e. If you want to have these lessons stored locally on your computer and/or your mentor advises you to do so, type 
+           `git clone https://github.com/projectinnovatenewark/csx.git` into your command terminal.
+        f. Download the following VS Code extensions- Python and Highlight. You can find the extensions tab in VS
            Code by clicking "Shift + Ctrl + X" (windows) or "Shift + Command + X" (mac). Once there, search for those exact extensions and download the first result for each of them. Once you are done downloading those extensions, return back to the main "Explorer" page where you will be viewing your folders/files by clicking "Shift + Ctrl + E" (windows) or "Shift + Command + E" (mac). There are icons on the left panel of your VS Code to navigate through these different pages as well. You will see how these extensions are to be used at the bottom of this README
         
 6. Create a repository in Github -> https://help.github.com/en/enterprise/2.13/user/articles/creating-a-new-repository
@@ -106,16 +108,19 @@ Run those commands one-by-one in order in your terminal. Following `git push` yo
         h. ## IMPORTANT: an important statement will be used to emphasize a section of the lesson. There will only be a handful of these throughout the curriculum- so make sure to read into these statements!
         
 13. Next you should copy and paste the todos (file ends in "todo") into VS Code
-        a. Go to -> https://github.com/projectinnovatenewark/csx/tree/master/lessons/students
-           to see the assignment files separated by section.
-        b. Create a new file in your "python-work" folder in VS Code:
-           - right click on "python-work" folder
-           - click "new file"
-           - name the new file "currentlesson.py" (the .py extension tells your computer that it is a Python file)
-        c. Copy the first lesson from week one in your new file follow the instructions. 
-           To run your code, simply click on the green arrow at the top right of your VS Code window.
-
-13. When you are finished with the lesson and complete the corresponding todo
-          (todos are meant to test what you learned from the lesson)
-        a. repeat step 12.b but instead name the file "currentlessontodo.py"
-        b. try to complete the todo and then peer review
+        a. If you are accessing the repository through the browser -> https://github.com/projectinnovatenewark/csx/tree/master/lessons/students
+           to see the lesson files separated by section.
+                - Create a new file in your "python-work" folder in VS Code.
+                        - right click on "python-work" folder
+                        - click "new file"
+                        - name the new file "currentlesson.ipynb" 
+                                - the ".ipynb" extension tells your computer that it is a Jupyter notebook file running Python
+                                - normal python files have just a ".py" extension
+                        - replace the "currentlesson" with the name of the current lesson that you are on
+                - Copy the first lesson from week one in your new file follow the instructions. 
+                - To run your code, simply click on the green arrow at the top right of your VS Code window.
+        b. If you are accessing the repository locally on your computer.
+                - `cd` into your programming folder.
+                - Enter the following command in your terminal `cp csx/lessons/students/[insert section]/[insert lesson folder]/[insertfile name] ./python-work` 
+                - This should have copied the file in the first path into the location of the second path.
+        
