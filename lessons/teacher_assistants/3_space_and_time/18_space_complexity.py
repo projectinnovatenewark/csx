@@ -1,2 +1,0 @@
-# FIXME: write lesson on space complexity. use link from previous lesson as a reference
-# FIXME: as well as this link: https://stackabuse.com/big-o-notation-and-algorithm-analysis-with-python-examples/
