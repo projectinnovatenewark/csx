@@ -21,7 +21,7 @@ my_shows = [
 # The below nested for loop will first print the sublist of shows for the current iteration followed by
 # each individual show within the sublist.
 for sublist in my_shows: # The variable "sublist" represents each list of shows in "my_shows".
-  print(f"Current sublist: {sublist}"
+  print(f"Current sublist: {sublist}")
   for show_name in sublist: # The variable "show_name" represents each show in a given "sublist".
     print(f"Current show: {show_name}")
 
