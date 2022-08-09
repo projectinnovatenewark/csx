@@ -1,3 +1,31 @@
 # this will make sure unwanted DS_Store files dont get added to the github repository by accident
-.DS_Store
 __pycache__/
+
+.DS_Store
+.flaskenv
+*.pyc
+*.pyo
+*cloudstorage.json
+*.json
+env/
+dist/
+build/
+*.egg
+*.egg-info/
+_mailinglist
+.tox/
+.cache/
+.pytest_cache/
+.idea/
+docs/_build/
+.vscode
+.env
+
+*.gz
+*.tar
+
+# Coverage reports
+htmlcov/
+.coverage
+.coverage.*
+*,cover
