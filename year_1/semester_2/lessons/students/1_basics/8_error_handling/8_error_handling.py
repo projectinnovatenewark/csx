@@ -1,6 +1,4 @@
-"""
-Common errors you will/may have already encounter(ed).
-"""
+
 
 # Below are a few examples of errors you will undoubtedly see in your time as a programmer.
 # These errors will show up in your terminal letting you know where the problem is and which
