@@ -1,3 +1,5 @@
+#FIXME: Must update images!
+
 <div align=center><h1>Setting up your Raspberry Pi</h1></div>
 
 In this workshop, the student will assemble the Raspberry Pi single-board computer and install the necessary software for the rest of the semester.
