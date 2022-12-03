@@ -11,7 +11,7 @@ num1 = 82
 num2 = 100
 num3 = -45
 
-# Write a conditional that prints "num1 is greater than num3" if num1 is greater than num3.
+# Write a condition that prints "num1 is greater than num3" if num1 is greater than num3.
 # If that condition isn't true, then print "num1 is NOT greater than num3".
 
 # Write a conditional that prints f"{num2} + {num3} is equal to 55" if num2 plus num3 equals 55.
@@ -28,5 +28,3 @@ num3 = -45
 # HINT: What conditional can be used to test a specific condition only if the above is false?
 bool1 = True
 bool2 = False
-
-
