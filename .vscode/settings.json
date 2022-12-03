@@ -5,8 +5,6 @@
     "python.linting.lintOnSave": true,
     "files.autoSave": "afterDelay",
     "files.autoSaveDelay": 2500,
-    "powermode.enabled": true,
-    "powermode.presets": "flames",
     // use the five digit codes to disable certain pylint rules
     "python.linting.pylintArgs": [
         "--load-plugins=pylint_django",
