@@ -45,7 +45,6 @@ class Node:
         if n.left:
           next_level.append(n.left)
         if n.right is None and n.left:
-          print('this condition happened')
           next_level.append(Node(0))
         if n.right:
           next_level.append(n.right)

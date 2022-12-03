@@ -101,10 +101,10 @@ print(adding_Chain(9)) # Control 1: the adding_Chain function gets called and pa
 
 def days_activities(type_of_day):
     """Analyze a user's input and return a message for them"""
-    # These if statements check to see if the type_of_day argument is equal to something- in our case
-    # we are checking in three different statements if type_of_day is either "fun", "productive",
-    # or "relaxing". If one of those if's is true, then we do whatever is within the scope of that if
-    # block. If none of the if statements are true, we execute what is in the "else" block.
+    # These conditions statements check to see if the type_of_day argument is equal to
+    # "fun", "productive", or "relaxing". If it is one of those strings, then we execute
+    # the body of the given condition. If none of the if/elif statements are true, we execute
+    # what is in the "else" block.
 
     if (type_of_day == "fun"):
         day_string = "You should enjoy some of your favorite activities"
