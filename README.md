@@ -50,18 +50,9 @@ are typically self-explanatory.
 6. Create a repository in Github -> https://help.github.com/en/enterprise/2.13/user/articles/creating-a-new-repository
         Then after creating the repository, you should have some commands to choose from on the repository page. The top block of commamnds will look a bit like the following:
 
-```
-echo "# [INSERT REPOSITORY NAME]" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git remote add origin [REPOSITORY URL]
-git push -u origin master
-```
+Copy the code block from the "...or create a new repository from the command line" section. You will paste it into your terminal momentarily - we will instruct you when to do that.
 
-Click on the copy icon next to that top block. You will paste it into your terminal momentarily - we will instruct you when to do that.
-
-7. To check what your working directory is once again, enter `pwd` into your terminal.
+7. To check what your working directory is once again, enter `pwd` into your VS Code terminal.
 
 8. When you want to go up a level in your directory, enter `cd ..` into your terminal
     ex: if you are in "/Users/username/Documents/programming/python-work"
