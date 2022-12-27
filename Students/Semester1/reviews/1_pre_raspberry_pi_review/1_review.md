@@ -1,4 +1,4 @@
-<div align=center><h1>Review</h1></div>
+<div align=center><h1>Intro to Computing Review</h1></div>
 
 <h3>Section 1: Hardware and Computing</h3>
 
@@ -21,8 +21,8 @@ Components of a computer:
 
 Examples of Operating systems:
 <ul>
-<li>Windows </li>
-<li>Linux </li>
+<li>Windows</li>
+<li>Linux</li>
 <li>Raspbian</li>
 </ul>
 Programming Languages

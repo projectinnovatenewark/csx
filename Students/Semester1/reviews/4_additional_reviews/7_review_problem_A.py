@@ -10,7 +10,9 @@ instantiated class object.
 class Movie():
 
   def __init__(self, param1, param2):
-    # Insert code here
+    # Insert code here and remove "pass"
+    pass
 
   def printer(self):
-    # Insert code here
+    # Insert code here and remove "pass"
+    pass
