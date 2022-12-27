@@ -1,5 +1,5 @@
 """
-Data Structures/Nested Data Types/Nested Data Structures Review
+Nested Data Review
 """
 # Here are some things to remember about Lists before we get started:
     # 1) A list is a set of items seperated by commas.
@@ -177,8 +177,8 @@ print(fourth_value)
 
 ###############################################################################
 
-# Nested Data Structures
-# These data structures can be used together to create complex data sets.
+# Nested Data
+# These data can be used together to create complex data sets.
 # Below is an example of a dictionary holding multiple dictionaries and lists.
 
 # This is what spread data set would look like with correct tabulation.

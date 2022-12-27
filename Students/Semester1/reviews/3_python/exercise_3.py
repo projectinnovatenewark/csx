@@ -41,10 +41,10 @@
 
 # TODO: E-3
 
-# Instantiate 3 instances of "Computer" and store them in the variables, "mac", "pc", "pi".
-# The instantiation stored in "mac" should have the attributes, "macOS", "Apple", "space grey".
-# The instantiation stored in "pc" should have the attributes, "Windows", "Lenovo", "black".
-# The instantiation stored in "pi" should have the attributes, "Raspberry Pi OS", "Raspberry Pi", "black".
+# Create three instances of a "Computer" and store them in the variables, "mac", "pc", "pi".
+# The instance stored in "mac" should have the attributes, "macOS", "Apple", "space grey".
+# The instance stored in "pc" should have the attributes, "Windows", "Lenovo", "black".
+# The instance stored in "pi" should have the attributes, "Raspberry Pi OS", "Raspberry Pi", "black".
 
 
 # TODO E-4
