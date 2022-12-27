@@ -1,13 +1,11 @@
 # Welcome to the CSX After School Program!
 
 ### This semester we will be building a web application called "The Todo App". It will track personal tasks and
-categorize them as either not started, in progress, or completed. You can also assign due dates and different
+categorize them as either "Not Started", "In Progress", or "Completed". You can also assign due dates and different
 categories (i.e. school, fun, family, etc.) to your todos. Since we prepared this course to accommodate all levels
-of students, we will start assuming the student has no knowledge of programming. Seeing as we are starting from scratch,
-we will teach the basics of programming in Python, using functions and classes, object oriented programming concepts, and
-then begin working with HTML/CSS and Javascript. Our final project will use programming languages including HTML/CSS, Javascript, and Python. We look forward to embarking on this journey with you to learning programming and app development!
+of students, we will start assuming the student has no knowledge of programming. We will teach the basics of programming in Python, functions and classes, object oriented programming, followed by a bit of HTML/CSS and Javascript. Our final project will use Python, HTML/CSS, and Javascript. We look forward to embarking on this journey with you to learning programming and app development!
 
-0. We use certain typings that allow us to convey information to the user.
+0. Here are some conventions we use in our documentation.
 
 - Text wrapped in backticks `` (they are generally found in the top left of a keyboard along with the tilda "~")
 should be directly copied and pasted. For example, `mkdir programming` as shown below would be directly copied and
@@ -48,7 +46,7 @@ are typically self-explanatory.
            Code by clicking "Shift + Ctrl + X" (windows) or "Shift + Command + X" (mac). Once there, search for those exact extensions and download the first result for each of them. Once you are done downloading those extensions, return back to the main "Explorer" page where you will be viewing your folders/files by clicking "Shift + Ctrl + E" (windows) or "Shift + Command + E" (mac). There are icons on the left panel of your VS Code to navigate through these different pages as well. You will see how these extensions are to be used at the bottom of this README
         
 6. Create a repository in Github -> https://help.github.com/en/enterprise/2.13/user/articles/creating-a-new-repository
-        Then after creating the repository, you should have some commands to choose from on the repository page. The top block of commamnds will look a bit like the following:
+        Then after creating the repository, you should have some commands to choose from on the repository page. The top block of commands will look a bit like the following:
 
 Copy the code block from the "...or create a new repository from the command line" section. You will paste it into your terminal momentarily - we will instruct you when to do that.
 
