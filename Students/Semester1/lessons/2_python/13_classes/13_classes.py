@@ -11,12 +11,13 @@ Understanding classes and scope within a class
 
 # This variable is an object. As you can see in the output of "<class 'str'>",
 # it is an instance of the class "string".
-random_string = "string"
+random_string = "sTrInG"
 print(type(random_string))
 
 # String methods that we've previously reviewed are a part of the class "string"
 # For example, .upper and .lower are functions that are unique to the class of string,
 # which means that they are a "method" of the string class.
+print(random_string)
 print(random_string.upper())
 print(random_string.lower())
 
@@ -26,11 +27,10 @@ print(random_string.lower())
 # class named "Cat".
 
 # TIP: Naming Classes
-# Classes are defined with the first letter as a capital and the rest of the name using camel case,
-# whereas snake case is generally used to define variables and functions.
+# Classes are defined in title case with the first letter of each word capitalized.
 # This is "camelCase"
 # This is "snake_case"
-# This is a "CamelCaseClass"
+# This is a "TitleCase"
 
 class Cat: # Here we are defining the class "Cat"
 
@@ -40,7 +40,7 @@ class Cat: # Here we are defining the class "Cat"
     # called automatically on an object creation statement. The computer science term for it is
     # constructor, as its job is to build an object of the type specified by the class.
 
-    def __init__(self, name): # The __init__ funciton takes at least 2 parameters; self and 1 or
+    def __init__(self, name): # The __init__ function takes at least 2 parameters; self and 1 or
         self.name = name      # more attributes. The param, "self", refers to itself as an
                               # instantiated object. The param, "name", is an attribute of the "Cat"
                               # class. You assign attributes using "self.var_name = var_name" within
