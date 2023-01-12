@@ -103,23 +103,10 @@ Before getting started coding, each student should set up a new gmail account to
 
 To set up third party access, <a href="https://myaccount.google.com/?utm_source=account-marketing-page&utm_medium=go-to-account-button&pli=1">click here</a>.
 
-On the main account page click "Security" on the left side of the screen.
-
-<div class=mdImage align=center>
-<kbd>
-    <img src="./motion_images/15_security.png" width="800" height="auto" />
-</kbd>
-</div>
-<br>
-
-Then click "Turn on access (not recommended)". This is what allows our email server to communicate with Gmail. Even though Google does not recommend it, we are using TLS (Transport Layer Security). TLS is the standard for encrypting (securing) data and is the descendant of SSL (Secure Sockets Layer).
-
-<div class=mdImage align=center>
-<kbd>
-    <img src="./motion_images/16_less_secure.png" width="600" height="auto" />
-</kbd>
-</div>
-<br>
+- Go into your email's settings.
+- Find two-step authentication and enable it.
+- Under two-step authentication there should be a tab labeled App passwords. Click on it, select mail as the app, and your device of choice
+- Use the password generated from the app password to authenticate the connection later in the code
 
 Then click to allow access.
 
@@ -266,7 +253,7 @@ After doing so, we will store the body of our message in a variable called "body
 
         def texter(timestamp):
             email = "your.email.here@gmail.com"
-            password = "INSERT PASSWORD FOR ABOVE EMAIL"
+            password = "INSERT PASSWORD FROM EMAIL APP"
 
             sms_gateway = "PHONE_NUMBER@CARRIER_GATEWAY"
 
