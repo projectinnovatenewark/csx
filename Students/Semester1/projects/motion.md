@@ -289,7 +289,7 @@ The complete file now looks like the below:
 
         def texter(timestamp):
             email = "your.email.here@gmail.com" # This should be deleted in between uses so sensitive information is not pushed to your remote repository
-            password = "INSERT PASSWORD FOR ABOVE EMAIL" # This should be deleted in between uses so sensitive information is not pushed to your remote repository
+            password = "insert auto-generated password from 'App password'" # Don't share this password with anyone or put it in your github repository
 
             sms_gateway = "PHONE_NUMBER@CARRIER_GATEWAY" # This should be deleted in between uses so sensitive information is not pushed to your remote repository
 
