@@ -18,7 +18,7 @@ Here is the list of external parts you need besides your Raspberry Pi Desktop th
 
 <div align=center><h3>Tips for the Project</h3></div>
 
-Use `pinout` on the Pi or use the image below as a reference.
+Use `pinout` on the Pi or use the image below as a reference. This image shows the placement of the GPIO pins on the Raspberry Pi. Reminder: the **odd numbered physical pins are the ones that are closest to the top of your monitor**.
 
 <div class=mdImage align=center>
     <img src="./motion_images/1_pinout.png" width="auto" height="600" />
