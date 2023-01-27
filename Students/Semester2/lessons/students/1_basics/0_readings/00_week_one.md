@@ -7,10 +7,7 @@ We have some preferences here that we want to make clear to students.
     Ex: file_name_in_snake_case vs. fileNameInCamelCase
 
 2)  When we decide what software to use, we go off of what is most popular within the
-    computer science industry. For each of the following use cases, we will put what we are
-    using first, followed by other popular alternatives. The owner of each respective technology
-    will be in parentheses following the software. If it is self owned or open source, there
-    will be no label.
+    computer science industry. For each of the following use cases, we will put what we are using first, followed by other popular alternatives. The owner of each respective technology will be in parentheses following the software. If it is self owned or open source, there will be no label.
 
     Code editors: VS Code (Microsoft), Atom (Github (owned by Microsoft now)), Sublime (Sublime HQ)
     Version Control Tool: Github (Microsoft), Gitlab (Gitlab), Bitbucket (Atlassian)
@@ -27,11 +24,11 @@ We have some preferences here that we want to make clear to students.
     What matters is that you learn the fundamentals of programming- and since Python is one of the most readable and popular
     programming languages of all, that's what we're going to be using in this class!
 
-4)  To run a program in Python 3 using VS Code, navigate to the top right of your VS Code window when in a Python file and click 
-    the green arrow which is titled "run python file in your terminal". If you want to open an integrated terminal in your VS Code window,
-    simply use 'Shift' + 'Control' + '~' and one will pop right up. The terminal allows you to use a command line. The command line
-    is a user interface that is navigated by typing commands at prompts, instead of using the mouse. For example, if you wanted to create
-    a folder on your computer, you could navigate to the start panel, open your navigator, and click 'Create New Folder'. But, in the
+4)  To run a program in Python 3 using VS Code, navigate to the top right of your VS Code window in a Python file and click 
+    the green arrow which is titled "run python file in your terminal". If you want to open an integrated terminal in your VS Code window, simply use
+    'Shift' + 'Control' + '~' and one will pop right up. The terminal allows you to use a command line. (The command line
+    is a user interface that is navigated by typing commands at prompts, instead of using the mouse). 
+    For example, if you wanted to create a folder on your computer, you could navigate to the start panel, open your navigator, and click 'Create New Folder'. But, in the
     command line, you would just type 'mkdir folder-name' and press enter! (PS- mkdir stands for make directory, which is the same
     thing as a folder).
 
