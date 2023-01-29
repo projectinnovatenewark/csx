@@ -10,7 +10,7 @@ This is a docstring. They are used to detail files at a high level.
 # Variables can be thought of as "pointers" to a value. These values have types.
 # Types include things like integers, strings, floats, booleans, lists, and dictionaries.
 # The name of the variable is on the left of the "=" sign and on the right is the content
-# of the variable.
+# of the variable. 
 
 # A number without a decimal point is of the type integer.
 number1 = 5
@@ -77,8 +77,8 @@ print("variable for later will equal", variable_for_later)
 # TITLE: Section 3 - "print()" Function Elaboration and Concatenation (5 minutes)
 
 # Print is an example of a function. A function is a block of code that runs when
-# it is called upon. The items you place in the parentheses are called arguments. Lets
-# call the print function and pass arguments to print them.
+# it is called upon. The items you place in the parentheses are called arguments. 
+# Lets call the print function and pass arguments to print them.
 string1 = "Hello"
 num3 = 45
 
@@ -110,12 +110,12 @@ print(string1, "I am python number", num3, ", hear me roar!!")
 
 # Sometimes when you are dealing with variables, you are going to want to check the type of
 # the variable to make sure you are correctly using it. Python has a built in function for this!
-# To check the type of a variable, simply use type([some_variable_here]). Here's a bunch of
-# different variables that we can test this with:
+# To check the type of a variable, simply use type([some_variable_here]). 
+# Here's a bunch of different variables that we can test this with:
 
 num1, string1, bool1, flt1 = 2, "Any string", True, 12.903
 
-# Now we use type(variable) to check.. Don't forget we need to use print() also to see an output.
+# Now we use type(variable) to check. Don't forget we need to use print() also to see an output.
 
 print("num1:", type(num1))
 print("string1:", type(string1))
