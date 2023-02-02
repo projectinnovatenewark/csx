@@ -14,7 +14,7 @@ age = input("What is your age?: ") # FIXME: Teacher, use type conversion after g
 print(f"The variable age has a type of {type(age)}.")
 
 # The line below will try to concatenate three variables. What type(s) can be concatenated?
-statement = first_name + last_name + age
+statement = first_name + " " + last_name + " " + str(age)
 print(statement)
 
 # Additionally, if you want a user to enter an input on a blank line you can use an empty input
