@@ -18,26 +18,26 @@ Here is the list of external parts you need besides your Raspberry Pi Desktop th
 
 <div align=center><h3>Tips for the Project</h3></div>
 
-Use `pinout` on the Pi or use the image below as a reference.
+Use `pinout` on the Pi or use the image below as a reference. This image shows the placement of the GPIO pins on the Raspberry Pi. Reminder: the **odd numbered physical pins are the ones that are closest to the top of your monitor**.
 
 <div class=mdImage align=center>
     <img src="./motion_images/1_pinout.png" width="auto" height="600" />
 </div>
 
 
-We will be using specific coordinates on the breadboard to aid in placing jumper wires and peripheral devices. In the image below, there is a red dot, a blue dot, a green dot and a black dot on the breadboard. The red dot is at pinhole **A5**, he blue dot is at **C12**, the green dot is at **negative Rail 10**, and lastly the black dot is on **posititve Rail 3**. This is how each type of pin hole will be referred to throughout the project.
+We will be using specific coordinates on the breadboard to aid in placing jumper wires and peripheral devices. In the image below, there is a red dot, a blue dot, a green dot and a black dot on the breadboard. The red dot is at pinhole **A5**, the blue dot is at **C12**, the green dot is at **negative Rail 10**, and lastly the black dot is on **posititve Rail 3**. This is how each type of pin hole will be referred to throughout the project.
 
 <div class=mdImage align=center>
     <img src="./motion_images/1_breadboard.png" width="auto" height="300" />
 </div>
 
-Although the specific locations used on the breadboard are not necessarily important, the alignment of components is key to them functioning correctly. Do not confuse this concept with the pins on the Pi, however. The difference between **3V3**, **5V**, **GND**, and **GPIO#** pins differ greatly in their purpose and funcionality.
+Although the specific locations used on the breadboard are not necessarily important, the alignment of components is key to them for functioning correctly. Do not confuse this concept with the pins on the Pi, however. The difference between **3V3**, **5V**, **GND**, and **GPIO#** pins differ greatly in their purpose and funcionality.
 
 <div align=center><h2>Configuring the FamCam</h2></div>
 
 In this section, we will be putting together the physical components of the FamCam.
 
-1. First, connect two female-male wires to a **5V** and **GND** pin on the Pi. Similar to the workshop, any pin with the label denoted will suffice, but for this project we are using *physical pin 2* for the **5V** pin and *physical pin 6* for the **GND** pin. Connect the male end of the **5V** wire to **Positive Rail 3** of the breadboard and the male end of the **GND** wire to **negative Rail 3** of the breadboard. 
+1. First, connect two female-male wires to a **5V** and **GND** pin on the Pi. Similar to the workshop, any pin with the label denoted will suffice, but for this project we are using *at the bottom physical pin 2* for the **5V** pin and *physical pin 6* for the **GND** pin. Connect the male end of the **5V** wire to **Positive Rail 3** of the breadboard and the male end of the **GND** wire to **negative Rail 3** of the breadboard. 
 
 <div class=mdImage align=center>
     <img src="./motion_images/4_motion.jpg" width="auto" height="350" />
