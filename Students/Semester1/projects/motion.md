@@ -103,6 +103,8 @@ Before getting started coding, each student should set up a new gmail account to
 
 To set up third party access, <a href="https://myaccount.google.com/?utm_source=account-marketing-page&utm_medium=go-to-account-button&pli=1">click here</a>.
 
+**Note** that if you are unable to complete the following steps on your Raspberry Pi, students have found success completing these steps on their personal phones.
+
 - Go into your email's settings.
 - Find two-step authentication and enable it.
 - Under two-step authentication there should be a tab labeled App passwords. Click on it, select mail as the app, and your device of choice
