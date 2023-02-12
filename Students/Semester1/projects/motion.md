@@ -198,7 +198,7 @@ We now have a working file. Test it out by executing the file and waving in fron
 
 <div align=center><h2>SMS Alert System</h2></div>
 
-In this section, we will code out the FamCam's text message notification system. The cool thing about SMTP is that even though it is an email server, it can send text messages by using SMS gateways. An sms gateway service is what allows a computer to send emails as texts by using a given phone number and carrier specific gateway. If you wanted to send a text to a Verizon number it would look like: “1234567890@vtext.com”. Most gateway services can be hound <a href='https://dev.to/mraza007/sending-sms-using-python-jkd'>here</a>. We can then utilize the “MIME” module to structure our message. The new Gmail account you created will be used to send this message. If you still need to create the new account, <a href="https://accounts.google.com/signup/v2/webcreateaccount?flowName=GlifWebSignIn&flowEntry=SignUp">click here.</a>
+In this section, we will code out the FamCam's text message notification system. The cool thing about SMTP is that even though it is an email server, it can send text messages by using SMS gateways. An sms gateway service is what allows a computer to send emails as texts by using a given phone number and carrier specific gateway. If you wanted to send a text to a Verizon number it would look like: “1234567890@vtext.com”. Most gateway services can be found <a href='https://dev.to/mraza007/sending-sms-using-python-jkd'>here</a>. We can then utilize the “MIME” module to structure our message. The new Gmail account you created will be used to send this message. If you still need to create the new account, <a href="https://accounts.google.com/signup/v2/webcreateaccount?flowName=GlifWebSignIn&flowEntry=SignUp">click here.</a>
 > Don't forget to go allow third party app access or else the message won't send!
 
 **Note:** Text messaging rates might apply, so keep that in mind. If that is an issue, let your teacher know.
@@ -292,7 +292,7 @@ The complete file now looks like the below:
 
         def texter(timestamp):
             email = "your.email.here@gmail.com" # This should be deleted in between uses so sensitive information is not pushed to your remote repository
-            password = "INSERT PASSWORD FOR ABOVE EMAIL" # This should be deleted in between uses so sensitive information is not pushed to your remote repository
+            password = "insert auto-generated password from 'App password'" # Don't share this password with anyone or put it in your github repository
 
             sms_gateway = "PHONE_NUMBER@CARRIER_GATEWAY" # This should be deleted in between uses so sensitive information is not pushed to your remote repository
 
