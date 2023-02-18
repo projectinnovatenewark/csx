@@ -33,20 +33,21 @@ are typically self-explanatory.
 4. Create a folder named "programming" in your computer's "Documents" directory.
   
 5. Open a new window in VS Code. Click "Open Folder". Find your programming folder. Click it once then click "Open".
-        a. To open a terminal in VS Code click "Shift + Ctrl + ~"
-        b. If at any point in your terminal entries the beginning line of your terminal starts with ">>", ">>>", or is
-           seemingly unable to enter your commands, click "Ctrl + C". That will quit any process running in your terminal.Sidebar- three arrows probably means you start a Python shell in your terminal! Another way to quit this type of process would be to type "quit()" and then enter.
-        c. Enter the command `pwd` into your terminal then click enter. Your "working directory" should
-           be in the "programming" folder, and the path response you get from the pwd command should end in "programming"
-           (i.e. user/Documents/programming)
-        d. Create a folder called "python-work" by entering the command `mkdir python-work`
-        e. If you want to have these lessons stored locally on your computer and/or your mentor advises you to do so, type 
-           `git clone https://github.com/projectinnovatenewark/csx.git` into your command terminal.
-        f. Download the following VS Code extensions- Python and Highlight. You can find the extensions tab in VS
-           Code by clicking "Shift + Ctrl + X" (windows) or "Shift + Command + X" (mac). Once there, search for those exact extensions and download the first result for each of them. Once you are done downloading those extensions, return back to the main "Explorer" page where you will be viewing your folders/files by clicking "Shift + Ctrl + E" (windows) or "Shift + Command + E" (mac). There are icons on the left panel of your VS Code to navigate through these different pages as well. You will see how these extensions are to be used at the bottom of this README
+   - To open a terminal in VS Code click "Shift + Ctrl + ~"
+
+   - If at any point in your terminal entries the beginning line of your terminal starts with ">>", ">>>", or is seemingly unable to enter your commands, click "Ctrl + C". That will quit any process running in your terminal.Sidebar- three arrows probably means you start a Python shell in your terminal! Another way to quit this type of process would be to type "quit()" and then enter.
+
+   - Enter the command `pwd` into your terminal then click enter. Your "working directory" should be in the "programming" folder, and the path response you get from the pwd command should end in "programming" (i.e. user/Documents/programming)
+
+   - Create a folder called "python-work" by entering the command `mkdir python-work`
+
+   - If you want to have these lessons stored locally on your computer and/or your mentor advises you to do so, type `git clone https://github.com/projectinnovatenewark/csx.git` into your command terminal.
+
+   - Download the following VS Code extensions- Python and Highlight. You can find the extensions tab in VS Code by clicking "Shift + Ctrl + X" (windows) or "Shift + Command + X" (mac). Once there, search for those exact extensions and download the first result for each of them. Once you are done downloading those extensions, return back to the main "Explorer" page where you will be viewing your folders/files by clicking "Shift + Ctrl + E" (windows) or "Shift + Command + E" (mac). There are icons on the left panel of your VS Code to navigate through these different pages as well. 
+   > Note: Before reviewing the following, make sure that the Highlight extension by "Fabio Spampinato" is installed in your VS Code application as well as the "Python" extension by Microsoft. You should also have the VS Code "settings.json" file that comes with the csx repository copied and pasted into your own "settings.json" file. To access your own settings.json file click "Shift + Control (Command for Mac) + P" and type in "Open Settings (JSON)" and click on the option of the same name. That file should be scrapped and replaced entirely with the settings.json file that comes with the csx repository that is stored in the folder called ".vscode".
         
-6. Create a repository in Github -> https://help.github.com/en/enterprise/2.13/user/articles/creating-a-new-repository
-        Then after creating the repository, you should have some commands to choose from on the repository page. The top block of commands will look a bit like the following:
+6. Create a repository called `python-work` in Github -> https://help.github.com/en/enterprise/2.13/user/articles/creating-a-new-repository.
+        Then after creating the repository, you should have some commands to choose from on the repository page. The top block of commands will look a bit like the following: 
 
 Copy the code block from the "...or create a new repository from the command line" section. You will paste it into your terminal momentarily - we will instruct you when to do that.
 
@@ -67,13 +68,13 @@ Copy the code block from the "...or create a new repository from the command lin
         
     Your working directory should now end in /python-work, which you can confirm using the `pwd` command. If that is the case, go ahead and paste in the block of commands from your Github repository page. Wait till all of the commands run, then click enter in your terminal. This connects your current working directory to the Github repository you just created.
         
-10. The steps to commit code to Github are:
+10. At some point in the following steps, you will likely be prompted to login to Github through your browser. The steps to commit code to Github are:
 ```
 git add .
 git commit -m "commit here"
 git push
 ```
-Run those commands one-by-one in order in your terminal. Following `git push` you might see an output in your terminal with instructions (i.e. "Run this command to do X", you should go ahead and follow those instructions. Some of these instructions have included commands to set your Github email or set the origin for different users. After, if everything worked, when you refresh your Github repository page you should have a file in the repository called README.md. Then, once you make new files in your "python-work" folder and want to put them on Github, you can simply run those 3 git commands to push up code to your repository.
+Run those commands one-by-one in order in your terminal. Some of these instructions have included commands to set your Github email or set the origin for different users. After, if everything worked, when you refresh your Github repository page you should have a file in the repository called README.md. Then, once you make new files in your "python-work" folder and want to put them on Github, you can simply run those 3 git commands to push up code to your repository.
    
 11. If you are collaborating with someone else on a repository and you want to pull changes on to your computer, you would run this command. :
         `git pull origin master`
@@ -82,19 +83,18 @@ Run those commands one-by-one in order in your terminal. Following `git push` yo
 
         a. Comment Blocks. Sections of code from a lesson are meant to be run in isolation. If a line in the file is completely composed of pound signs, it is a divider between sections. Each of these sections that are comment blocked should be ran one-by-one so you can observe their outputs and understand the content.
 
-        b. Before reviewing the following, make sure that the Highlight extension by "Fabio Spampinato" is installed in your VS Code application as well as the "Python" extension by Microsoft. You should also have the VS Code "settings.json" file that comes with the csx repository copied and pasted into your own "settings.json" file. To access your own settings.json file click "Shift + Control (Command for Mac) + P" and type in "Open Settings (JSON)" and click on the option of the same name. That file should be scrapped and replaced entirely with the settings.json file that comes with the csx repository that is stored in the folder called ".vscode".
 
-        c. ## FIXME's: callout questions and in-class demonstrations. FIXME's are meant to catch the teacher and students attention to do something. The FIXME will include items such as callout questions (questions to randomly choose a student from the class to solve), or in-class demonstrations (i.e. change a variable to show a different output). FIXME's will be highlighted red if you have the Highlight extension installed in your VS Code window.
+        b. ## FIXME's: callout questions and in-class demonstrations. FIXME's are meant to catch the teacher and students attention to do something. The FIXME will include items such as callout questions (questions to randomly choose a student from the class to solve), or in-class demonstrations (i.e. change a variable to show a different output). FIXME's will be highlighted red if you have the Highlight extension installed in your VS Code window.
 
-        d. ## TODO's: working as a class. When you see a TODO in a lesson, it means that the class should pause the lesson and begin working on a problem. Nearly all TODO's in our lessons would lead to a question in the student_repository. There are often several TODO's per lesson and it is very important that you stop teaching and give the students time to solve each problem. After a reasonable amount of time (and drop-by support to students that need help), the teacher can then demo the solution on either the whiteboard or the projector with your computer connected. TODO's will be highlighted yellow if you have the Highlight extension installed in your VS Code window.
+        c. ## TODO's: working as a class. When you see a TODO in a lesson, it means that the class should pause the lesson and begin working on a problem. Nearly all TODO's in our lessons would lead to a question in the student_repository. There are often several TODO's per lesson and it is very important that you stop teaching and give the students time to solve each problem. After a reasonable amount of time (and drop-by support to students that need help), the teacher can then demo the solution on either the whiteboard or the projector with your computer connected. TODO's will be highlighted yellow if you have the Highlight extension installed in your VS Code window.
 
-        e. ## TITLE: is what will be placed at the top of each section.
+        d. ## TITLE: is what will be placed at the top of each section.
 
-        f. ## HINT: is what will be used to give some tips or tricks to our students.
+        e. ## HINT: is what will be used to give some tips or tricks to our students.
 
-        g. ## TAKEAWAY: you will see this after an important lesson/todo to highlight what you should takeaway from it. These statements are crucial to summarize what you've learned.
+        f. ## TAKEAWAY: you will see this after an important lesson/todo to highlight what you should takeaway from it. These statements are crucial to summarize what you've learned.
 
-        h. ## IMPORTANT: an important statement will be used to emphasize a section of the lesson. There will only be a handful of these throughout the curriculum- so make sure to read into these statements!
+        g. ## IMPORTANT: an important statement will be used to emphasize a section of the lesson. There will only be a handful of these throughout the curriculum- so make sure to read into these statements!
         
 13. Next you should copy and paste the todos (file ends in "todo") into VS Code
         a. If you are accessing the repository through the browser -> https://github.com/projectinnovatenewark/csx/tree/master/lessons/students
