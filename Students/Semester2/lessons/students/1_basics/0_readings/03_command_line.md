@@ -1,6 +1,6 @@
 Now that you've got a terminal window up on your VS Code, let's figure out how to use this tool 🔨
 
-Here are some commands to get going.
+Here are some commands to get going:
 
 TODO: Start by typing in 'pwd' and press enter. PWD stands for path in working directory. That will show you the current 'path' of your terminal. If you're in your user, that's a good place to start.
 
@@ -19,7 +19,7 @@ TODO: Type in 'cd ..' and re-enter 'pwd'. Your new directory should be back up i
 
 <!-- ! Now we will make a folder of our own and create new files in it -->
 
-TODO: Write out 'mkdir python-work' when your path is in Desktop. This will create a folder on your desktop called python-work once you press enter. Use 'cd python-work'. You're now in that new folder. 
+TODO: Write out 'mkdir python-work' when your path is in Desktop. This will create a folder on your desktop called python-work. Once you press enter, use 'cd python-work'. You're now in that new folder. 
 Enter 'touch hello_world.py' within the terminal and an empty file called hello_world.py will be made. (Files that end with .py indicate that this is a python file. These documents that end in .md are 'markdown' files, Javascript files end in .js, etc. You will see some more examples in the 'many hello worlds' folder).
 
 In VS Code, click the open folder. Navigate over to your python-work folder in Desktop and open the entire folder. You should see an empty python file. And so begins our journey 🚀
