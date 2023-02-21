@@ -10,13 +10,13 @@ We have some preferences here that we want to make clear to the students.
 
     Code editors: VS Code (Microsoft), Atom (Github (owned by Microsoft now)), Sublime (Sublime HQ)
     Version Control Tool: Github (Microsoft), Gitlab (Gitlab), Bitbucket (Atlassian)
-    Frontend Frameworks: React, Angular, Vue.
-    Backend Frameworks: Django.
-    Cloud Computing: AWS (Amazon), Azure (Microsoft), GCP (Google).
+    Frontend Frameworks: React, Angular, Vue
+    Backend Frameworks: Django
+    Cloud Computing: AWS (Amazon), Azure (Microsoft), GCP (Google)
     Database Analysis: DBeaver, Postico (egger apps), Table Plus.
-    API REST Client: Insomnia, Postman.
-    Containerization Tool: Docker, VMWare.
-    Deep Learning: Tensorflow is ML-based, Keras is Neural Networks centric, and PyTorch is for Natural Language Processing.
+    API REST Client: Insomnia, Postman
+    Containerization Tool: Docker, VMWare
+    Deep Learning: Tensorflow is ML-based, Keras is Neural Networks centric, and PyTorch is for Natural Language Processing
 
 3)  The written code of a specific language is called it's "syntax". As you can see in the many hello worlds folder, there are many ways of doing the same task in different programming languages. A good coder can pick up most languages in no time!
     What matters is that you learn the fundamentals of programming- and since Python is one of the most readable and popular programming languages of all, that's what we're going to be using in this class!
