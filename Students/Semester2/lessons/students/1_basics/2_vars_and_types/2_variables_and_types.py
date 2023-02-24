@@ -16,7 +16,7 @@ This is a docstring. They are used to detail files at a high level.
 number1 = 5
 
 # A number with a decimal point is a float.
-float1 = 6.3 # Floating point number
+float1 = 6.3 # Floating point number.
 float2 = 7. # This is also a floating point number.
 
 # Anything wrapped in quotation marks is a string.
@@ -40,7 +40,7 @@ big_string = string1 + " " + string2
 print(big_string)
 
 # Python reads from the top of the file to the bottom. Therefore, when "big_string" is first
-# printed on line 40, it's value is "Hellomy name is robot", but since we changed the variable's
+# printed on line 40, it's value is "Hellomy name is robot". But since we changed the variable's
 # value on line 48, it prints out that new value on line 39, which adds a space.
 
 # You don't have to create a variable to print an output. You can put strings directly into print
@@ -54,7 +54,7 @@ print("Hello my name is robot")
 
 ####################################################################################################
 
-# TITLE: Section 2 - Setting Multiple Variables in One Line and Additional Types (2 minutes)
+# TITLE: Section 2 - Setting Multiple Variables in one Line and Additional Types (2 minutes)
 
 # Setting multiple variables in one line of code? Yep. This is possible only when you use
 # commas to separate each variable. The positions of the varibale names correspond with the values.
@@ -66,7 +66,7 @@ print(var1, var2, var3)
 boolean = False
 boolean2 = True
 
-# if you want to set a variable to an empty value, use the None type.
+# If you want to set a variable to an empty value, use the None type.
 variable_for_later = None
 print("variable for later will equal", variable_for_later)
 
@@ -89,8 +89,8 @@ print(string1)
 
 # FIXME: The code right here is broken, let's run it for fun to show that strings cannot be
 # FIXME: concatenated directly with non-strings. Uncomment and run the code.
-# print(string1 + "I am python number " + num3 + ", hear me roar!!") # TIP: Be sure to comment it out
-                                                                    # TIP: before moving on.
+# print(string1 + "I am python number " + num3 + ", hear me roar!!") 
+# TIP: Be sure to comment it out before moving on.
 
 # You can print any type by separating them with commas, as Python will automatically pass
 # them into the print statement as separate "arguments", then convert them all into strings
@@ -98,8 +98,8 @@ print(string1)
 print(string1, "I am python number", num3, ", hear me roar!!")
 
 # TAKEAWAY:
-# Concatentation can only combine strings with other strings, and it does so using the plus
-# sign. Concatentation does NOT place a space between your strings, but using a comma automatically
+# Concatentation can only combine strings with other strings, by using the plus sign.
+# Concatentation does NOT place a space between your strings, but using a comma automatically
 # places a space between your different values.
 
 # TODO: Section 3 of TODO 2 (4 minutes for students, 2 minute demo)
@@ -129,8 +129,8 @@ print("flt1:", type(flt1))
 # TITLE: Section 5 - Type Conversions (4 minutes)
 
 # Python also makes it pretty easy to convert types into other types. For example,
-# you can convert integers to strings by wrapping the variable in the string
-# function to make concatenation possible as seen below:
+# you can convert integers to strings by wrapping the variable in the string function 
+# to make concatenation possible as seen below:
 
 player_name = "Lebron James"
 player_weight = 250
