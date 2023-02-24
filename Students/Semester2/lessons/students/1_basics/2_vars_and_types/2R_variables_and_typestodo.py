@@ -12,8 +12,8 @@ Using variables and types
 
 # TODO: Section 1.2
 
-# Assign an string to the variable "Mary_had_a_little_lamb", then print it.
-# Mary_had_a_little_lamb = # FIXME: Uncomment to complet.e
+# Assign an string to the variable "mary_had_a_little_lamb", then print it.
+# mary_had_a_little_lamb = # FIXME: Uncomment to complete.
 # print() # FIXME: Uncomment to complete.
 
 # TODO: Section 1.3
