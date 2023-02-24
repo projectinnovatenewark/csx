@@ -25,7 +25,7 @@ are typically self-explanatory.
 
 2. Create a Github Account -> github.com
         a. Download Git -> https://git-scm.com/downloads
-        b. If the installer does not pop-up, click on it in your downloads to begin the installation process
+        b. If the installer does not pop-up, click on it in your downloads to begin the installation process.
         c. Leave all of the default installation steps and "Next" your way through the process.
   
 3. Download VS Code -> https://code.visualstudio.com/download
@@ -33,18 +33,18 @@ are typically self-explanatory.
 4. Create a folder named "programming" in your computer's "Documents" directory.
   
 5. Open a new window in VS Code. Click "Open Folder". Find your programming folder. Click it once then click "Open".
-   - To open a terminal in VS Code click "Shift + Ctrl + ~"
+   - To open a terminal in VS Code click "Shift + Ctrl + ~".
 
    - If at any point in your terminal entries the beginning line of your terminal starts with ">>", ">>>", or is seemingly unable to enter your commands, click "Ctrl + C". That will quit any process running in your terminal.Sidebar- three arrows probably means you start a Python shell in your terminal! Another way to quit this type of process would be to type "quit()" and then enter.
 
-   - Enter the command `pwd` into your terminal then click enter. Your "working directory" should be in the "programming" folder, and the path response you get from the pwd command should end in "programming" (i.e. user/Documents/programming)
+   - Enter the command `pwd` into your terminal then click enter. Your "working directory" should be in the "programming" folder, and the path response you get from the pwd command should end in "programming" (i.e. user/Documents/programming).
 
-   - Create a folder called "python-work" by entering the command `mkdir python-work`
+   - Create a folder called "python-work" by entering the command `mkdir python-work`.
 
    - If you want to have these lessons stored locally on your computer and/or your mentor advises you to do so, type `git clone https://github.com/projectinnovatenewark/csx.git` into your command terminal.
 
-   - Download the following VS Code extensions- Python and Highlight. You can find the extensions tab in VS Code by clicking "Shift + Ctrl + X" (windows) or "Shift + Command + X" (mac). Once there, search for those exact extensions and download the first result for each of them. Once you are done downloading those extensions, return back to the main "Explorer" page where you will be viewing your folders/files by clicking "Shift + Ctrl + E" (windows) or "Shift + Command + E" (mac). There are icons on the left panel of your VS Code to navigate through these different pages as well. 
-   > Note: Before reviewing the following, make sure that the Highlight extension by "Fabio Spampinato" is installed in your VS Code application as well as the "Python" extension by Microsoft. You should also have the VS Code "settings.json" file that comes with the csx repository copied and pasted into your own "settings.json" file. To access your own settings.json file click "Shift + Control (Command for Mac) + P" and type in "Open Settings (JSON)" and click on the option of the same name. That file should be scrapped and replaced entirely with the settings.json file that comes with the csx repository that is stored in the folder called ".vscode".
+   - Download the following VS Code extensions - Python and Highlight. You can find the extensions tab in VS Code by clicking "Shift + Ctrl + X" (windows) or "Shift + Command + X" (mac). Once there, search for those exact extensions. The author of the "Python" extension is Microsoft and the author of "Highlight" is Fabio Spampinato. Once you are done downloading those extensions, return back to the main "Explorer" page where you will be viewing your folders/files by clicking "Shift + Ctrl + E" (windows) or "Shift + Command + E" (mac). There are icons on the left panel of your VS Code to navigate through these different pages as well.
+   > Note: You should also have the VS Code `settings.json` file that comes with the csx repository copied and pasted into your own `settings.json` file. To access your own `settings.json` file click "Shift + Control (Command for Mac) + P" and type in "Open Settings (JSON)" and click on the option of the same name. That file should be scrapped and replaced entirely with the `settings.json` file that comes with the csx repository that is stored in the folder called ".vscode".
         
 6. Create a repository called `python-work` in Github -> https://help.github.com/en/enterprise/2.13/user/articles/creating-a-new-repository.
         Then after creating the repository, you should have some commands to choose from on the repository page. The top block of commands will look a bit like the following: 
@@ -56,7 +56,7 @@ Copy the code block from the "...or create a new repository from the command lin
 8. When you want to go up a level in your directory, enter `cd ..` into your terminal
     ex: if you are in "/Users/username/Documents/programming/python-work"
         Enter in the Terminal: `cd ..`
-        your working directory will then be "/Users/username/Documents/programming"
+        your working directory will then be "/Users/username/Documents/programming".
 
 9. When you want to change your working directory, enter `cd [directory name]`
         For example, if you are in "/Users/username/Documents/programming"
@@ -64,7 +64,7 @@ Copy the code block from the "...or create a new repository from the command lin
         TIP: If you begin to type the name of the desired directory, 
         you can hit the tab button to autocomplete, then the directory should fill in. If you
         are using Windows, clicking tab will be a requirement. That means, after typing in `cd python-work`, you will have to click tab on a Windows computer
-        before clicking enter. Your working directory will then be "/Users/username/Documents/programming/python-work"
+        before clicking enter. Your working directory will then be "/Users/username/Documents/programming/python-work".
         
     Your working directory should now end in /python-work, which you can confirm using the `pwd` command. If that is the case, go ahead and paste in the block of commands from your Github repository page. Wait till all of the commands run, then click enter in your terminal. This connects your current working directory to the Github repository you just created.
         
@@ -81,7 +81,7 @@ Run those commands one-by-one in order in your terminal. Some of these instructi
 
 12. We will now include steps so that your files are formatted appropriately with the extensions you installed. Here are the different conventions we use
 
-        a. Comment Blocks. Sections of code from a lesson are meant to be run in isolation. If a line in the file is completely composed of pound signs, it is a divider between sections. Each of these sections that are comment blocked should be ran one-by-one so you can observe their outputs and understand the content.
+        a. Comment Blocks: Sections of code from a lesson are meant to be run in isolation. If a line in the file is completely composed of pound signs, it is a divider between sections. Each of these sections that are comment blocked should be ran one-by-one so you can observe their outputs and understand the content.
 
 
         b. ## FIXME's: callout questions and in-class demonstrations. FIXME's are meant to catch the teacher and students attention to do something. The FIXME will include items such as callout questions (questions to randomly choose a student from the class to solve), or in-class demonstrations (i.e. change a variable to show a different output). FIXME's will be highlighted red if you have the Highlight extension installed in your VS Code window.
