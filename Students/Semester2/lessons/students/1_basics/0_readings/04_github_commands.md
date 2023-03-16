@@ -8,7 +8,7 @@ git push = pushes your commits to the remote repository/branch (sends it to gith
  
 git clone = copies the repository to a specific folder on your computer; copy and paste the URL right after typing this command.
  
-git pull = pulls down the changes from the remote repository into the branch you're in (you can use git pull to access lessons).
+git pull = pulls down the changes from the remote repository into the branch you're in (you can use git pull to access lessons)
 
 git pull origin master = fetches a copy of the master branch from the remote repository, then merges it with your current branch. 
 
