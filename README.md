@@ -3,7 +3,7 @@
 ### This semester we will be building a web application called "The Todo App". It will track personal tasks and
 categorize them as either "Not Started", "In Progress", or "Completed". You can also assign due dates and different
 categories (i.e. school, fun, family, etc.) to your todos. Since we prepared this course to accommodate all levels
-of students, we will start assuming the student has no knowledge of programming. We will teach the basics of programming in Python, functions and classes, object oriented programming, followed by a bit of HTML/CSS and Javascript. Our final project will use Python, HTML/CSS, and Javascript. We look forward to embarking on this journey with you to learning programming and app development!
+of students, we will start assuming the student has no knowledge of programming. We will teach the basics of programming in Python(the latest version), functions and classes, object oriented programming, followed by a bit of HTML/CSS and Javascript. Our final project will use Python, HTML/CSS, and Javascript. We look forward to embarking on this journey with you to learning programming and app development!
 
 0. Here are some conventions we use in our documentation.
 
@@ -19,7 +19,7 @@ this- `cd py-files`. As you can see, the brackets are removed when you are inser
 - Text wrapped in double quotes is a reference to some text, or an action that should be taken by the user. These
 are typically self-explanatory.
 
-1. Download Python -> https://www.python.org/downloads/
+1. Download Python(the latest version) -> https://www.python.org/downloads/
         a. IMPORTANT: Check off the "Add to Path" box when installing
         b. If the installer does not pop-up, click on it in your downloads to begin the installation process
 
