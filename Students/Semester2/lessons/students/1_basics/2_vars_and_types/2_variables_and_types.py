@@ -78,7 +78,7 @@ print("variable for later will equal", variable_for_later)
 
 # Print is an example of a function. A function is a block of code that runs when
 # it is called upon. The items you place in the parentheses are called arguments. 
-# Lets call the print function and pass arguments to print them.
+# Let's call the print function and pass arguments to print them.
 string1 = "Hello"
 num3 = 45
 
