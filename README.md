@@ -19,7 +19,7 @@ this- `cd py-files`. As you can see, the brackets are removed when you are inser
 - Text wrapped in double quotes is a reference to some text, or an action that should be taken by the user. These
 are typically self-explanatory.
 
-1. Download Python -> https://www.python.org/downloads/
+1. Download the latest version available for Python -> https://www.python.org/downloads/
         a. IMPORTANT: Check off the "Add to Path" box when installing
         b. If the installer does not pop-up, click on it in your downloads to begin the installation process
 
