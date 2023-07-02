@@ -34,7 +34,7 @@ print(equation)
 # this error.
 
 # TypeError: Can't convert 'int' object to str implicitly
-twotwo = '2' + 2 # FIXME: Comment out this line once this error has been demo'd.
+twotwo = '2' + 2 # FIXME: Comment out this line once this error has been demonstrated.
 print(twotwo)
 
 # TODO: Complete TODO 8 (5 minutes for students, 2 minute demo)
