@@ -103,5 +103,7 @@
                 }
             ]
         }
-    },    
+    },
+    "python.linting.pylintEnabled": true,
+    
 }
