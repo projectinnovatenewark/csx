@@ -1,7 +1,6 @@
-from sqlalchemy.sql.functions import user
 from sqlalchemy import create_engine
 from config import get_connection
-from sqlalchemy import create_engine
+from sqlalchemy import create_engine, text
 
 DB_CONNECTION_STRING = get_connection()
 
@@ -17,4 +16,4 @@ def execute_query(statement):
 
   with engine.connect() as con:
       print("running command: ", statement)
-      return con.execute(statement)
+      return con.execute(text(statement))
