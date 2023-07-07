@@ -1,1 +1,5 @@
-https://docs.google.com/presentation/d/1zZ7bJoXMm2Ifh34qzxP9B-WS8FxT_4IavIIcsxbTBBo/edit?usp=sharing
+# Statistical Analysis and Visualization
+
+To start, you should fork off of this [repl](https://replit.com/@Christiantav/data-science-pandas?v=1). It will include the python packages you need (pandas and others) to run the code in this lesson.
+
+<insert more info on the lesson>
