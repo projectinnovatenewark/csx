@@ -2,7 +2,7 @@
 Importing modules and other files
 """
 
-# TITLE: Section 1 - Importing Modules (4 min)
+# TITLE: Section 1.1 - Importing Modules (4 min)
 
 # Take a trip down memory lane and visit Lesson 4 Section 5. There we were introduced to importing
 # the "math" module which has some useful functions like hypot(), an easier way to find the length
@@ -22,7 +22,7 @@ print(rand_float)
 
 ####################################################################################################
 
-# TITLE: Section 1.1 - Importing Specific Funcitons from Modules (5 min)
+# TITLE: Section 1.2 - Importing Specific Funcitons from Modules (5 min)
 
 # In Python, if we only wanted to import a specific function from the "random" module, we can do the
 # following:
@@ -39,7 +39,7 @@ print(f"Randomly generted number: {rand}. Here is rand + 2: {rand_plus_two}.")
 
 ####################################################################################################
 
-# TITLE: Section 2 - Importing from Files in your directory (6 min)
+# TITLE: Section 1.3 - Importing from Files in your directory (6 min)
 
 # You can import data or functions from files that you yourself defined. In this folder theres a
 # file called importable_stuff.py . Let's import the file and use things from it. As you learned in

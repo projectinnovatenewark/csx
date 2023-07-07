@@ -22,11 +22,23 @@ classic = "thE GREat GatSBy"
 
 ####################################################################################################
 
-# TITLE: Section 4 - String-related Functions
+# TITLE: Section 3 - String-related Functions
 
-# TODO: Section 4:
+# TODO: Section 3:
 # It looks like the below list was meant to be one long string. Use what you learned in this section
 #  to join the items together and separate each item with a space. Set this to a new variable called
 # "phrase" and print it to check your output.
 
 listy = ["This", "shouldn't be", "a list."]
+
+####################################################################################################
+
+# TITLE: Section 4 - F-Shorthand
+
+# TODO: Section 4:
+# Print a sentence that says 'Hello, my name is Jeff Green and I am 25 years old'. Be sure to use
+# f-shorthand when making this sentence. Use the variables below for the name and the age.
+
+
+name = "Jeff Green"
+age = 25
