@@ -1,0 +1,3 @@
+SQLAlchemy
+Python-Dotenv
+Psycopg2-binary
