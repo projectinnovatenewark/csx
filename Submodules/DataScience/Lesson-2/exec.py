@@ -12,8 +12,10 @@ def execute_query(statement):
   :return: The result of the query.
   """
   DB_CONNECTION_STRING = get_connection()
-  engine = create_engine(DB_CONNECTION_STRING)
+  engine = create_engine(DB_CONNECTION_STRING, future=True)
 
   with engine.connect() as con:
-      print("running command: ", statement)
-      return con.execute(text(statement))
+      print("running query: ", statement)
+      res = con.execute(text(statement))
+      con.commit() # not needed in sqlalchemy>2.0
+      return res

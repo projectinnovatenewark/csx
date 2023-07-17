@@ -1,8 +1,11 @@
-user = '<YOUR_POSTGRES_USER>'
-password = '<YOUR_POSTGRES_PASSWORD>'
-host = '<YOUR_POSTGRES_HOST>'
-database = '<YOUR_POSTGRES_DB>'
-port = '<YOUR_POSTGRES_PORT>'
- 
+import psycopg2 
+
+
+psycopg2.connect = user = 'postgres'
+password = 'abcde12345'
+host = 'localhost'
+database = 'fitter'
+port = '5432'
+
 def get_connection():
     return f"postgresql+psycopg2://{user}:{password}@{host}:{port}/{database}"
