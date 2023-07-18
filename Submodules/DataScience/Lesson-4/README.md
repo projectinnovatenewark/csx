@@ -1,1 +1,5 @@
-https://docs.google.com/presentation/d/1zZ7bJoXMm2Ifh34qzxP9B-WS8FxT_4IavIIcsxbTBBo/edit?usp=sharing
+# EDA, Time-Series Analysis, and Correlation and Relationship Analysis
+
+To start, you should open up  this github [git](https://github.com/projectinnovatenewark/csx/tree/main/Submodules/DataScience/Lesson-4) and download the nessessary files. This includes the `sp500_index.csv` file which you will be using to execute our functions. You will be copy pasting the lesson as we go through it in Google Colab. 
+
+Today we will continue learning about exploratory data analysis while also delving into topics such as time-series analysis and analysing relationships and their correlation. Correlation and relationship analysis is important for determining wheather the data has any meaningful connection to each other or if it is mostly Exploratory Data Analysis (EDA) is the process of examining and analyzing data sets to understand their main characteristics, patterns, and relationships. Time-series analysis is important for finding trends and eventually mkaing forecasts to where the trend may go based on the past data. It involves mutiple steps where cleaning, preparing and visualizing the data is used as preperation for eventually using models to further understand the type of trend seen within the data. Lastly 
